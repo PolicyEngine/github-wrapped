@@ -29,11 +29,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch GitHub data
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/fetch-data.js
-
       - name: Build
         run: npm run build
 

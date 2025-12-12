@@ -12,8 +12,7 @@ dist
 dist-ssr
 *.local
 
-# Generated data (run scripts/fetch-data.js to create)
-public/github-data.json
+# Generated data is now committed (refreshed via workflow)
 
 # Editor directories and files
 .vscode/*
