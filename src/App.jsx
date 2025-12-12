@@ -1,0 +1,249 @@
+import { useState, useEffect } from 'react'
+import './App.css'
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+function App() {
+  const [data, setData] = useState(null)
+  const [selectedMember, setSelectedMember] = useState(null)
+  const [memberData, setMemberData] = useState(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
+  const [copied, setCopied] = useState(false)
+
+  // Load pre-fetched data
+  useEffect(() => {
+    fetch('/github-data.json')
+      .then(res => res.json())
+      .then(data => {
+        setData(data)
+        setLoading(false)
+      })
+      .catch(err => {
+        setError(err.message)
+        setLoading(false)
+      })
+  }, [])
+
+  const selectMember = (github) => {
+    const member = data.members[github]
+    if (!member) return
+    setSelectedMember(member.member)
+    setMemberData(member)
+  }
+
+  const copySummary = () => {
+    if (!memberData || !selectedMember) return
+
+    const topRepos = Object.entries(memberData.repoCommits || {})
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5)
+      .map(r => r[0])
+      .join(', ')
+
+    const summary = `## 2025 GitHub Activity Summary
+
+- **Commits:** ${memberData.stats.commits.toLocaleString()}
+- **Pull Requests:** ${memberData.stats.prs.toLocaleString()}
+- **PRs Reviewed:** ${memberData.stats.reviews.toLocaleString()}
+- **Issues Created:** ${memberData.stats.issues.toLocaleString()}
+- **Top Repositories:** ${topRepos}
+
+(Data from PolicyEngine GitHub organization, Jan 1 - Dec 8, 2025)`
+
+    navigator.clipboard.writeText(summary).then(() => {
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    })
+  }
+
+  const maxMonthly = Math.max(...(memberData?.monthlyPRs || [1]), 1)
+
+  if (loading) {
+    return (
+      <div className="app">
+        <div className="loading-state">
+          <div className="spinner" />
+          <p>Loading GitHub data...</p>
+        </div>
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className="app">
+        <div className="error-state">
+          <p>Error: {error}</p>
+          <p>Run <code>node scripts/fetch-data.js</code> to generate data.</p>
+        </div>
+      </div>
+    )
+  }
+
+  const team = Object.values(data.members).map(m => m.member)
+
+  return (
+    <div className="app">
+      <div className="bg-pattern" />
+
+      <header className="header">
+        <img
+          src="https://raw.githubusercontent.com/PolicyEngine/policyengine-app/master/src/images/logos/policyengine/teal.svg"
+          alt="PolicyEngine"
+          className="logo"
+        />
+        <div className="header-content">
+          <div className="year-badge">2025</div>
+          <h1>Year in Code</h1>
+          <p className="tagline">Your contribution summary for self-reviews</p>
+        </div>
+      </header>
+
+      <nav className="team-nav">
+        {team.map((member, i) => (
+          <button
+            key={member.github}
+            className={`team-btn ${selectedMember?.github === member.github ? 'active' : ''}`}
+            onClick={() => selectMember(member.github)}
+            style={{ '--delay': `${i * 50}ms` }}
+          >
+            <span className="team-name">{member.name.split(' ')[0]}</span>
+            <span className="team-role">{member.role}</span>
+          </button>
+        ))}
+      </nav>
+
+      <main className="main">
+        {!selectedMember && (
+          <div className="empty-state">
+            <div className="empty-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <h2>Select a team member</h2>
+            <p>View their 2025 contributions to PolicyEngine</p>
+          </div>
+        )}
+
+        {memberData && selectedMember && (
+          <div className="dashboard">
+            <div className="profile">
+              <img
+                src={`https://github.com/${selectedMember.github}.png`}
+                alt={selectedMember.name}
+                className="avatar"
+              />
+              <div>
+                <h2>{selectedMember.name}</h2>
+                <p>{selectedMember.role}</p>
+              </div>
+            </div>
+
+            <div className="stats">
+              <div className="stat">
+                <div className="stat-value">{memberData.stats.commits.toLocaleString()}</div>
+                <div className="stat-label">Commits</div>
+              </div>
+              <div className="stat">
+                <div className="stat-value">{memberData.stats.prs.toLocaleString()}</div>
+                <div className="stat-label">Pull Requests</div>
+              </div>
+              <div className="stat">
+                <div className="stat-value">{memberData.stats.reviews.toLocaleString()}</div>
+                <div className="stat-label">Reviews</div>
+              </div>
+              <div className="stat">
+                <div className="stat-value">{memberData.stats.issues.toLocaleString()}</div>
+                <div className="stat-label">Issues</div>
+              </div>
+            </div>
+
+            <section className="section">
+              <h3>Monthly PR Activity</h3>
+              <div className="chart">
+                {(memberData.monthlyPRs || []).map((count, i) => (
+                  <div key={i} className="bar-wrap">
+                    <div
+                      className="bar"
+                      style={{
+                        '--height': `${Math.max((count / maxMonthly) * 100, 4)}%`,
+                        '--delay': `${i * 40}ms`
+                      }}
+                    >
+                      {count > 0 && <span className="bar-val">{count}</span>}
+                    </div>
+                    <span className="bar-label">{MONTHS[i]}</span>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <div className="grid-2">
+              <section className="section">
+                <h3>Top Repositories</h3>
+                <ul className="repo-list">
+                  {Object.entries(memberData.repoCommits || {})
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 8)
+                    .map(([repo, count], i) => (
+                      <li key={repo} style={{ '--delay': `${i * 40}ms` }}>
+                        <span className="repo-name">{repo}</span>
+                        <span className="repo-count">{count}</span>
+                      </li>
+                    ))}
+                </ul>
+              </section>
+
+              <section className="section">
+                <h3>Pull Requests</h3>
+                <ul className="pr-list">
+                  {(memberData.prs || []).slice(0, 20).map((pr, i) => {
+                    const linesChanged = (pr.files || []).reduce((sum, f) => sum + (f.additions || 0) + (f.deletions || 0), 0)
+                    const commits = pr.commits || 0
+                    const comments = pr.comments || 0
+                    return (
+                      <li key={pr.id} style={{ '--delay': `${i * 30}ms` }}>
+                        <a href={pr.html_url} target="_blank" rel="noopener noreferrer">
+                          {pr.title}
+                        </a>
+                        <span className="pr-meta">
+                          {pr.repository_url.split('/').pop()}
+                          <span className={`status ${pr.state}`}>{pr.state}</span>
+                        </span>
+                        <span className="pr-stats">
+                          <span className="pr-stat" title="Discussion threads">{comments + (pr.review_comments || 0)} 💬</span>
+                          {commits > 0 && <span className="pr-stat" title="Commits">{commits} 📝</span>}
+                          <span className="pr-stat" title="Lines changed">±{linesChanged.toLocaleString()}</span>
+                        </span>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </section>
+            </div>
+
+            <section className="section copy-section">
+              <div className="copy-inner">
+                <div>
+                  <h3>Copy for Self-Review</h3>
+                  <p>Paste this summary into your self-review form</p>
+                </div>
+                <button className="copy-btn" onClick={copySummary}>
+                  {copied ? 'Copied!' : 'Copy Summary'}
+                </button>
+              </div>
+            </section>
+          </div>
+        )}
+      </main>
+
+      <footer className="footer">
+        <p>Data fetched {new Date(data.fetchedAt).toLocaleDateString()}  ·  {data.period.start} to {data.period.end}</p>
+      </footer>
+    </div>
+  )
+}
+
+export default App
