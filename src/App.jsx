@@ -13,7 +13,7 @@ function App() {
 
   // Load pre-fetched data
   useEffect(() => {
-    fetch('/github-data.json')
+    fetch(`${import.meta.env.BASE_URL}github-data.json`)
       .then(res => res.json())
       .then(data => {
         setData(data)
