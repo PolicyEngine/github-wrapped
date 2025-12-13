@@ -1,14 +1,21 @@
 # GitHub Wrapped
 
-Year in Code: PolicyEngine team GitHub activity viewer for self-reviews.
+Year in Code: View your PolicyEngine GitHub contributions.
+
+**Live site:** https://policyengine.github.io/github-wrapped/
 
 ## Features
 
-- View commits, PRs, reviews, and issues scoped to PolicyEngine org
+- Auto-discovers all PolicyEngine org contributors
+- View commits, PRs, reviews, and issues
 - Monthly activity charts
 - Top repositories by contribution
 - PR list with file changes and discussion stats
-- Copy summary button for self-review forms
+- Copy summary button for self-reviews
+
+## How It Works
+
+The data fetcher automatically discovers anyone who contributed to PolicyEngine repos in 2025 (5+ commits or PRs). No manual team list required.
 
 ## Setup
 
@@ -25,7 +32,7 @@ export GITHUB_TOKEN=your_token_here
 node scripts/fetch-data.js
 ```
 
-This generates `public/github-data.json` with team activity data.
+This generates `public/github-data.json` with contributor activity data.
 
 ## Development
 
@@ -33,25 +40,8 @@ This generates `public/github-data.json` with team activity data.
 npm run dev
 ```
 
-## Build & Deploy
+## Deployment
 
-```bash
-npm run build
-```
+Deployed automatically via GitHub Actions to GitHub Pages.
 
-The `dist/` folder can be deployed to GitHub Pages or any static host.
-
-## Team Configuration
-
-Edit `scripts/fetch-data.js` to update the team list:
-
-```javascript
-const TEAM = [
-  { name: 'Max Ghenis', github: 'MaxGhenis', role: 'CEO' },
-  // ...
-];
-```
-
-## Date Range
-
-Update `START_DATE` and `END_DATE` in `scripts/fetch-data.js` for different periods.
+Data is refreshed weekly (Mondays 6am UTC) or can be triggered manually via the "Refresh GitHub Data" workflow.

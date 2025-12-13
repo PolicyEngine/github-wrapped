@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * Fetches all GitHub data for PolicyEngine team members for 2025.
+ * Fetches GitHub data for ALL PolicyEngine contributors in 2025.
+ * Discovers contributors automatically from org activity.
  * Run with: node scripts/fetch-data.js
  * Requires: GITHUB_TOKEN environment variable (for higher rate limits)
  */
@@ -14,16 +15,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const GITHUB_ORG = 'PolicyEngine';
 const START_DATE = '2025-01-01';
-const END_DATE = '2025-12-08';
-
-const TEAM = [
-  { name: 'Max Ghenis', github: 'MaxGhenis', role: 'CEO' },
-  { name: 'Nikhil Woodruff', github: 'nikhilwoodruff', role: 'CTO' },
-  { name: 'Pavel Makarchuk', github: 'PavelMakarchuk', role: 'Director of Growth' },
-  { name: 'Vahid Ahmadi', github: 'vahid-ahmadi', role: 'UK Research Associate' },
-  { name: 'Daphne Hansell', github: 'daphnehanse11', role: 'Health Policy Analyst' },
-  { name: 'Sakshi Kekre', github: 'SakshiKekre', role: 'Software Engineer' },
-];
+const END_DATE = '2025-12-31';
+const MIN_CONTRIBUTIONS = 5; // Minimum commits+PRs to be included
 
 const TOKEN = process.env.GITHUB_TOKEN;
 const headers = {
@@ -63,7 +56,6 @@ async function fetchAllPages(baseUrl, maxPages = 10) {
     const url = `${baseUrl}&page=${page}&per_page=100`;
     const data = await fetchJSON(url);
 
-    // Capture the real total from GitHub's response (first page has it)
     if (page === 1 && data.total_count !== undefined) {
       realTotalCount = data.total_count;
     }
@@ -74,10 +66,83 @@ async function fetchAllPages(baseUrl, maxPages = 10) {
 
     if (data.items.length < 100) break;
     page++;
-    await sleep(500); // Be nice to the API
+    await sleep(500);
   }
 
   return { items, total_count: realTotalCount || items.length };
+}
+
+async function discoverContributors() {
+  console.log('\nDiscovering org contributors...');
+  const contributors = new Map();
+
+  // Get commits from the org
+  console.log('  Scanning commits...');
+  const commitsUrl = `https://api.github.com/search/commits?q=org:${GITHUB_ORG}+committer-date:${START_DATE}..${END_DATE}`;
+  const commitsData = await fetchAllPages(commitsUrl, 5);
+
+  for (const commit of commitsData.items) {
+    const author = commit.author;
+    if (author && author.login && !author.login.includes('[bot]')) {
+      const existing = contributors.get(author.login) || { commits: 0, prs: 0 };
+      existing.commits++;
+      existing.avatar = author.avatar_url;
+      contributors.set(author.login, existing);
+    }
+  }
+
+  await sleep(2000);
+
+  // Get PRs from the org
+  console.log('  Scanning PRs...');
+  const prsUrl = `https://api.github.com/search/issues?q=org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}`;
+  const prsData = await fetchAllPages(prsUrl, 5);
+
+  for (const pr of prsData.items) {
+    const author = pr.user;
+    if (author && author.login && !author.login.includes('[bot]')) {
+      const existing = contributors.get(author.login) || { commits: 0, prs: 0 };
+      existing.prs++;
+      existing.avatar = author.avatar_url;
+      contributors.set(author.login, existing);
+    }
+  }
+
+  // Filter to contributors with minimum activity
+  const activeContributors = [];
+  for (const [login, data] of contributors) {
+    const total = data.commits + data.prs;
+    if (total >= MIN_CONTRIBUTIONS) {
+      activeContributors.push({
+        github: login,
+        name: login, // Will be updated with real name if available
+        avatar: data.avatar,
+        estimatedActivity: total
+      });
+    }
+  }
+
+  // Sort by activity
+  activeContributors.sort((a, b) => b.estimatedActivity - a.estimatedActivity);
+
+  console.log(`  Found ${activeContributors.length} active contributors`);
+  return activeContributors;
+}
+
+async function fetchUserProfile(github) {
+  try {
+    const url = `https://api.github.com/users/${github}`;
+    const user = await fetchJSON(url);
+    return {
+      name: user.name || github,
+      avatar: user.avatar_url,
+      bio: user.bio,
+      company: user.company,
+      location: user.location
+    };
+  } catch (e) {
+    return { name: github };
+  }
 }
 
 async function fetchPRFiles(owner, repo, prNumber) {
@@ -86,7 +151,6 @@ async function fetchPRFiles(owner, repo, prNumber) {
     const files = await fetchJSON(url);
     return files;
   } catch (e) {
-    console.log(`    Could not fetch files for PR #${prNumber}: ${e.message}`);
     return [];
   }
 }
@@ -102,9 +166,17 @@ async function fetchPRDetails(owner, repo, prNumber) {
 }
 
 async function fetchMemberData(member) {
-  console.log(`\nFetching data for ${member.name} (@${member.github})...`);
+  console.log(`\nFetching data for @${member.github}...`);
 
-  // Fetch commits (search API)
+  // Get user profile
+  const profile = await fetchUserProfile(member.github);
+  member.name = profile.name;
+  member.avatar = profile.avatar || member.avatar;
+  member.bio = profile.bio;
+
+  await sleep(500);
+
+  // Fetch commits
   console.log('  Commits...');
   const commitsUrl = `https://api.github.com/search/commits?q=author:${member.github}+org:${GITHUB_ORG}+committer-date:${START_DATE}..${END_DATE}`;
   const commitsData = await fetchAllPages(commitsUrl, 10);
@@ -130,10 +202,10 @@ async function fetchMemberData(member) {
   const issuesUrl = `https://api.github.com/search/issues?q=author:${member.github}+org:${GITHUB_ORG}+type:issue+created:${START_DATE}..${END_DATE}`;
   const issuesData = await fetchAllPages(issuesUrl, 5);
 
-  // For each PR, fetch the files changed and commit count
+  // Fetch PR details for top 30 PRs
   console.log('  Fetching PR details...');
   const prsWithFiles = [];
-  for (const pr of prsData.items.slice(0, 50)) { // Limit to 50 most recent PRs
+  for (const pr of prsData.items.slice(0, 30)) {
     const repoName = pr.repository_url.split('/').pop();
     await sleep(300);
     const [files, details] = await Promise.all([
@@ -203,9 +275,9 @@ async function fetchMemberData(member) {
 
 async function main() {
   console.log('='.repeat(60));
-  console.log('PolicyEngine GitHub Data Fetcher');
+  console.log('PolicyEngine GitHub Wrapped - Org-Wide Data Fetcher');
   console.log(`Period: ${START_DATE} to ${END_DATE}`);
-  console.log(`Token: ${TOKEN ? 'Provided (higher rate limits)' : 'Not provided (60 req/hr limit)'}`);
+  console.log(`Token: ${TOKEN ? 'Provided' : 'Not provided (60 req/hr limit)'}`);
   console.log('='.repeat(60));
 
   if (!TOKEN) {
@@ -213,24 +285,28 @@ async function main() {
     console.log('Set it with: export GITHUB_TOKEN=your_token_here\n');
   }
 
+  // Discover all contributors
+  const contributors = await discoverContributors();
+
   const allData = {
     fetchedAt: new Date().toISOString(),
     period: { start: START_DATE, end: END_DATE },
     org: GITHUB_ORG,
+    contributorCount: contributors.length,
     members: {}
   };
 
-  for (const member of TEAM) {
+  for (const member of contributors) {
     try {
       const data = await fetchMemberData(member);
       allData.members[member.github] = data;
-      console.log(`  ✓ ${member.name}: ${data.stats.commits} commits, ${data.stats.prs} PRs`);
+      console.log(`  ✓ ${data.member.name}: ${data.stats.commits} commits, ${data.stats.prs} PRs`);
     } catch (error) {
-      console.error(`  ✗ Error fetching ${member.name}: ${error.message}`);
+      console.error(`  ✗ Error fetching ${member.github}: ${error.message}`);
       allData.members[member.github] = { member, error: error.message };
     }
 
-    await sleep(2000); // Pause between members
+    await sleep(2000);
   }
 
   // Write to file
@@ -240,6 +316,7 @@ async function main() {
 
   console.log('\n' + '='.repeat(60));
   console.log(`✓ Data saved to ${outputPath}`);
+  console.log(`✓ ${Object.keys(allData.members).length} contributors included`);
   console.log('='.repeat(60));
 }
 
