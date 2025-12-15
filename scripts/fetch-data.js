@@ -16,7 +16,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const GITHUB_ORG = 'PolicyEngine';
 const START_DATE = '2025-01-01';
 const END_DATE = '2025-12-31';
-const MIN_CONTRIBUTIONS = 5; // Minimum commits+PRs to be included
+const MIN_CONTRIBUTIONS = 1; // Include anyone with at least 1 commit or PR
 
 const TOKEN = process.env.GITHUB_TOKEN;
 const headers = {
@@ -76,10 +76,10 @@ async function discoverContributors() {
   console.log('\nDiscovering org contributors...');
   const contributors = new Map();
 
-  // Get commits from the org
+  // Get commits from the org (scan up to 1000, the GitHub API max)
   console.log('  Scanning commits...');
   const commitsUrl = `https://api.github.com/search/commits?q=org:${GITHUB_ORG}+committer-date:${START_DATE}..${END_DATE}`;
-  const commitsData = await fetchAllPages(commitsUrl, 5);
+  const commitsData = await fetchAllPages(commitsUrl, 10);
 
   for (const commit of commitsData.items) {
     const author = commit.author;
@@ -93,10 +93,10 @@ async function discoverContributors() {
 
   await sleep(2000);
 
-  // Get PRs from the org
+  // Get PRs from the org (scan up to 1000, the GitHub API max)
   console.log('  Scanning PRs...');
   const prsUrl = `https://api.github.com/search/issues?q=org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}`;
-  const prsData = await fetchAllPages(prsUrl, 5);
+  const prsData = await fetchAllPages(prsUrl, 10);
 
   for (const pr of prsData.items) {
     const author = pr.user;
