@@ -25,6 +25,9 @@ const ACCOUNT_ALIASES = {
   'nwoodruff-co': 'nikhilwoodruff'
 };
 
+// Accounts to exclude (bots, etc.)
+const EXCLUDED_ACCOUNTS = ['PolicyEngine-Bot'];
+
 const TOKEN = process.env.GITHUB_TOKEN;
 const headers = {
   'Accept': 'application/vnd.github.v3+json',
@@ -90,7 +93,8 @@ async function discoverContributors() {
 
   for (const commit of commitsData.items) {
     const author = commit.author;
-    if (author && author.login && !author.login.includes('[bot]')) {
+    const isBot = author?.login?.includes('[bot]') || EXCLUDED_ACCOUNTS.includes(author?.login);
+    if (author && author.login && !isBot) {
       // Resolve alias to primary account
       const login = ACCOUNT_ALIASES[author.login] || author.login;
       const existing = contributors.get(login) || { commits: 0, prs: 0, aliases: [] };
@@ -112,7 +116,8 @@ async function discoverContributors() {
 
   for (const pr of prsData.items) {
     const author = pr.user;
-    if (author && author.login && !author.login.includes('[bot]')) {
+    const isPrBot = author?.login?.includes('[bot]') || EXCLUDED_ACCOUNTS.includes(author?.login);
+    if (author && author.login && !isPrBot) {
       // Resolve alias to primary account
       const login = ACCOUNT_ALIASES[author.login] || author.login;
       const existing = contributors.get(login) || { commits: 0, prs: 0, aliases: [] };
