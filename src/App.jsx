@@ -35,6 +35,22 @@ function App() {
     setMemberData(member)
   }
 
+  // Team members (for highlighting)
+  const TEAM_MEMBERS = ['MaxGhenis', 'nikhilwoodruff', 'PavelMakarchuk', 'vahid-ahmadi', 'daphnehanse11', 'hua7450', 'anth-volk', 'DTrim99', 'elenacura', 'SakshiKekre']
+
+  // Display name overrides
+  const NAME_OVERRIDES = {
+    'elenacura': 'Elena Cura'
+  }
+
+  // Helper to get display name
+  const getDisplayName = (member) => {
+    return NAME_OVERRIDES[member.github] || member.name
+  }
+
+  // Helper to check if someone is a team member
+  const isTeamMember = (github) => TEAM_MEMBERS.includes(github)
+
   const copySummary = () => {
     if (!memberData || !selectedMember) return
 
@@ -44,10 +60,12 @@ function App() {
       .map(r => r[0])
       .join(', ')
 
+    const filteredPRs = (memberData.prs || []).filter(pr => !isAutomatedPR(pr)).length
+
     const summary = `## 2025 GitHub Activity Summary
 
 - **Commits:** ${memberData.stats.commits.toLocaleString()}
-- **Pull Requests:** ${memberData.stats.prs.toLocaleString()}
+- **Pull Requests:** ${filteredPRs.toLocaleString()}
 - **PRs Reviewed:** ${memberData.stats.reviews.toLocaleString()}
 - **Issues Created:** ${memberData.stats.issues.toLocaleString()}
 - **Top Repositories:** ${topRepos}
@@ -86,6 +104,11 @@ function App() {
 
   const team = Object.values(data.members).map(m => m.member)
 
+  // Helper to count non-automated PRs for a member
+  const getFilteredPRCount = (member) => {
+    return (member.prs || []).filter(pr => !isAutomatedPR(pr)).length
+  }
+
   // Calculate aggregate stats for "All" view
   const aggregateStats = {
     commits: 0,
@@ -99,7 +122,7 @@ function App() {
 
   Object.values(data.members).forEach(m => {
     aggregateStats.commits += m.stats?.commits || 0
-    aggregateStats.prs += m.stats?.prs || 0
+    aggregateStats.prs += getFilteredPRCount(m)
     aggregateStats.reviews += m.stats?.reviews || 0
     aggregateStats.issues += m.stats?.issues || 0
     Object.keys(m.repoCommits || {}).forEach(r => aggregateStats.repos.add(r))
@@ -124,7 +147,6 @@ function App() {
         <div className="header-content">
           <div className="year-badge">2025</div>
           <h1>Year in Code</h1>
-          <p className="tagline">Your 2025 contribution summary</p>
         </div>
       </header>
 
@@ -144,7 +166,7 @@ function App() {
             onClick={() => selectMember(member.github)}
             style={{ '--delay': `${(i + 1) * 50}ms` }}
           >
-            <span className="team-name">{member.name.split(' ')[0]}</span>
+            <span className="team-name">{getDisplayName(member).split(' ')[0]}</span>
             <span className="team-role">{member.role}</span>
           </button>
         ))}
@@ -240,21 +262,25 @@ function App() {
               <h3>Contributors</h3>
               <div className="contributors-grid">
                 {team.map((member, i) => {
-                  const memberStats = data.members[member.github]?.stats || {}
+                  const memberObj = data.members[member.github]
+                  const memberStats = memberObj?.stats || {}
+                  const filteredPRs = getFilteredPRCount(memberObj || {})
+                  const isTeam = isTeamMember(member.github)
                   return (
                     <button
                       key={member.github}
-                      className="contributor-card"
+                      className={`contributor-card ${isTeam ? 'team-member' : ''}`}
                       onClick={() => selectMember(member.github)}
                       style={{ '--delay': `${i * 30}ms` }}
                     >
-                      <img src={`https://github.com/${member.github}.png`} alt={member.name} className="contributor-avatar" />
+                      <img src={`https://github.com/${member.github}.png`} alt={getDisplayName(member)} className="contributor-avatar" />
                       <div className="contributor-info">
-                        <span className="contributor-name">{member.name}</span>
+                        <span className="contributor-name">{getDisplayName(member)}</span>
                         <span className="contributor-stats">
-                          {memberStats.commits || 0} commits · {memberStats.prs || 0} PRs
+                          {memberStats.commits || 0} commits · {filteredPRs} PRs
                         </span>
                       </div>
+                      {isTeam && <span className="team-badge">Team</span>}
                     </button>
                   )
                 })}
@@ -268,11 +294,11 @@ function App() {
             <div className="profile">
               <img
                 src={`https://github.com/${selectedMember.github}.png`}
-                alt={selectedMember.name}
+                alt={getDisplayName(selectedMember)}
                 className="avatar"
               />
               <div>
-                <h2>{selectedMember.name}</h2>
+                <h2>{getDisplayName(selectedMember)}</h2>
                 <p>{selectedMember.role}</p>
               </div>
             </div>
@@ -283,7 +309,7 @@ function App() {
                 <div className="stat-label">Commits</div>
               </div>
               <div className="stat">
-                <div className="stat-value">{memberData.stats.prs.toLocaleString()}</div>
+                <div className="stat-value">{getFilteredPRCount(memberData).toLocaleString()}</div>
                 <div className="stat-label">Pull Requests</div>
               </div>
               <div className="stat">
@@ -364,24 +390,10 @@ function App() {
               </section>
             </div>
 
-            <section className="section copy-section">
-              <div className="copy-inner">
-                <div>
-                  <h3>Copy Summary</h3>
-                  <p>Share your contribution stats</p>
-                </div>
-                <button className="copy-btn" onClick={copySummary}>
-                  {copied ? 'Copied!' : 'Copy Summary'}
-                </button>
-              </div>
-            </section>
           </div>
         )}
       </main>
 
-      <footer className="footer">
-        <p>Data fetched {new Date(data.fetchedAt).toLocaleDateString()}  ·  {data.period.start} to {data.period.end}</p>
-      </footer>
     </div>
   )
 }
