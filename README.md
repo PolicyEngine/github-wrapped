@@ -11,7 +11,7 @@ Year in Code: View your PolicyEngine GitHub contributions.
 - Monthly activity charts
 - Top repositories by contribution
 - PR list with file changes and discussion stats
-- Copy summary button for self-reviews
+- Copy summary button to share stats
 
 ## How It Works
 

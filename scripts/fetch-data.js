@@ -18,6 +18,13 @@ const START_DATE = '2025-01-01';
 const END_DATE = '2025-12-31';
 const MIN_CONTRIBUTIONS = 1; // Include anyone with at least 1 commit or PR
 
+// Merge alternate accounts into primary accounts
+// Key = alias, Value = primary account
+const ACCOUNT_ALIASES = {
+  'eccuraa': 'elenacura',
+  'nwoodruff-co': 'nikhilwoodruff'
+};
+
 const TOKEN = process.env.GITHUB_TOKEN;
 const headers = {
   'Accept': 'application/vnd.github.v3+json',
@@ -84,10 +91,15 @@ async function discoverContributors() {
   for (const commit of commitsData.items) {
     const author = commit.author;
     if (author && author.login && !author.login.includes('[bot]')) {
-      const existing = contributors.get(author.login) || { commits: 0, prs: 0 };
+      // Resolve alias to primary account
+      const login = ACCOUNT_ALIASES[author.login] || author.login;
+      const existing = contributors.get(login) || { commits: 0, prs: 0, aliases: [] };
       existing.commits++;
       existing.avatar = author.avatar_url;
-      contributors.set(author.login, existing);
+      if (author.login !== login && !existing.aliases.includes(author.login)) {
+        existing.aliases.push(author.login);
+      }
+      contributors.set(login, existing);
     }
   }
 
@@ -101,10 +113,15 @@ async function discoverContributors() {
   for (const pr of prsData.items) {
     const author = pr.user;
     if (author && author.login && !author.login.includes('[bot]')) {
-      const existing = contributors.get(author.login) || { commits: 0, prs: 0 };
+      // Resolve alias to primary account
+      const login = ACCOUNT_ALIASES[author.login] || author.login;
+      const existing = contributors.get(login) || { commits: 0, prs: 0, aliases: [] };
       existing.prs++;
       existing.avatar = author.avatar_url;
-      contributors.set(author.login, existing);
+      if (author.login !== login && !existing.aliases.includes(author.login)) {
+        existing.aliases.push(author.login);
+      }
+      contributors.set(login, existing);
     }
   }
 
@@ -117,7 +134,8 @@ async function discoverContributors() {
         github: login,
         name: login, // Will be updated with real name if available
         avatar: data.avatar,
-        estimatedActivity: total
+        estimatedActivity: total,
+        aliases: data.aliases || []
       });
     }
   }
@@ -167,6 +185,8 @@ async function fetchPRDetails(owner, repo, prNumber) {
 
 async function fetchMemberData(member) {
   console.log(`\nFetching data for @${member.github}...`);
+  const aliases = member.aliases || [];
+  const allAccounts = [member.github, ...aliases];
 
   // Get user profile
   const profile = await fetchUserProfile(member.github);
@@ -176,36 +196,64 @@ async function fetchMemberData(member) {
 
   await sleep(500);
 
-  // Fetch commits
+  // Fetch commits for all accounts (primary + aliases)
   console.log('  Commits...');
-  const commitsUrl = `https://api.github.com/search/commits?q=author:${member.github}+org:${GITHUB_ORG}+committer-date:${START_DATE}..${END_DATE}`;
-  const commitsData = await fetchAllPages(commitsUrl, 10);
+  const allCommits = [];
+  let totalCommits = 0;
+  for (const account of allAccounts) {
+    const commitsUrl = `https://api.github.com/search/commits?q=author:${account}+org:${GITHUB_ORG}+committer-date:${START_DATE}..${END_DATE}`;
+    const commitsData = await fetchAllPages(commitsUrl, 10);
+    allCommits.push(...commitsData.items);
+    totalCommits += commitsData.total_count;
+    await sleep(500);
+  }
 
-  await sleep(1000);
+  await sleep(500);
 
-  // Fetch PRs authored
+  // Fetch PRs authored for all accounts
   console.log('  PRs authored...');
-  const prsUrl = `https://api.github.com/search/issues?q=author:${member.github}+org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}`;
-  const prsData = await fetchAllPages(prsUrl, 10);
+  const allPRs = [];
+  let totalPRs = 0;
+  for (const account of allAccounts) {
+    const prsUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}`;
+    const prsData = await fetchAllPages(prsUrl, 10);
+    allPRs.push(...prsData.items);
+    totalPRs += prsData.total_count;
+    await sleep(500);
+  }
 
-  await sleep(1000);
+  await sleep(500);
 
-  // Fetch PRs reviewed
+  // Fetch PRs reviewed for all accounts
   console.log('  PRs reviewed...');
-  const reviewsUrl = `https://api.github.com/search/issues?q=reviewed-by:${member.github}+org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}`;
-  const reviewsData = await fetchAllPages(reviewsUrl, 5);
+  let totalReviews = 0;
+  const allReviews = [];
+  for (const account of allAccounts) {
+    const reviewsUrl = `https://api.github.com/search/issues?q=reviewed-by:${account}+org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}`;
+    const reviewsData = await fetchAllPages(reviewsUrl, 5);
+    allReviews.push(...reviewsData.items);
+    totalReviews += reviewsData.total_count;
+    await sleep(500);
+  }
 
-  await sleep(1000);
+  await sleep(500);
 
-  // Fetch issues created
+  // Fetch issues created for all accounts
   console.log('  Issues created...');
-  const issuesUrl = `https://api.github.com/search/issues?q=author:${member.github}+org:${GITHUB_ORG}+type:issue+created:${START_DATE}..${END_DATE}`;
-  const issuesData = await fetchAllPages(issuesUrl, 5);
+  let totalIssues = 0;
+  const allIssues = [];
+  for (const account of allAccounts) {
+    const issuesUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:issue+created:${START_DATE}..${END_DATE}`;
+    const issuesData = await fetchAllPages(issuesUrl, 5);
+    allIssues.push(...issuesData.items);
+    totalIssues += issuesData.total_count;
+    await sleep(500);
+  }
 
   // Fetch PR details for top 30 PRs
   console.log('  Fetching PR details...');
   const prsWithFiles = [];
-  for (const pr of prsData.items.slice(0, 30)) {
+  for (const pr of allPRs.slice(0, 30)) {
     const repoName = pr.repository_url.split('/').pop();
     await sleep(300);
     const [files, details] = await Promise.all([
@@ -228,21 +276,30 @@ async function fetchMemberData(member) {
 
   // Process commits by repo
   const repoCommits = {};
-  for (const commit of commitsData.items) {
+  for (const commit of allCommits) {
     const repo = commit.repository.name;
     repoCommits[repo] = (repoCommits[repo] || 0) + 1;
+  }
+
+  // Count unique repos contributed to
+  const reposContributed = new Set();
+  for (const commit of allCommits) {
+    reposContributed.add(commit.repository.name);
+  }
+  for (const pr of allPRs) {
+    reposContributed.add(pr.repository_url.split('/').pop());
   }
 
   // Process monthly activity
   const monthlyPRs = new Array(12).fill(0);
   const monthlyCommits = new Array(12).fill(0);
 
-  for (const pr of prsData.items) {
+  for (const pr of allPRs) {
     const month = new Date(pr.created_at).getMonth();
     monthlyPRs[month]++;
   }
 
-  for (const commit of commitsData.items) {
+  for (const commit of allCommits) {
     const date = commit.commit?.author?.date || commit.commit?.committer?.date;
     if (date) {
       const month = new Date(date).getMonth();
@@ -253,18 +310,19 @@ async function fetchMemberData(member) {
   return {
     member,
     stats: {
-      commits: commitsData.total_count,
-      prs: prsData.total_count,
-      reviews: reviewsData.total_count,
-      issues: issuesData.total_count,
+      commits: totalCommits,
+      prs: totalPRs,
+      reviews: totalReviews,
+      issues: totalIssues,
+      repos: reposContributed.size,
     },
     repoCommits,
     monthlyPRs,
     monthlyCommits,
     prs: prsWithFiles,
-    reviews: reviewsData.items.slice(0, 30),
-    issues: issuesData.items.slice(0, 30),
-    commits: commitsData.items.slice(0, 100).map(c => ({
+    reviews: allReviews.slice(0, 30),
+    issues: allIssues.slice(0, 30),
+    commits: allCommits.slice(0, 100).map(c => ({
       sha: c.sha,
       message: c.commit.message.split('\n')[0],
       date: c.commit.author?.date,
