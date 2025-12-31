@@ -3,6 +3,9 @@ import './App.css'
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
+// Filter out automated PRs (dependency updates, etc.)
+const isAutomatedPR = (pr) => pr.title?.startsWith('Update PolicyEngine')
+
 function App() {
   const [data, setData] = useState(null)
   const [selectedMember, setSelectedMember] = useState(null)
@@ -219,7 +222,7 @@ function App() {
             </section>
 
             <section className="section">
-              <h3>Top Repositories</h3>
+              <h3>Top Repositories (by commits)</h3>
               <ul className="repo-list">
                 {Object.entries(aggregateRepoCommits)
                   .sort((a, b) => b[1] - a[1])
@@ -319,7 +322,7 @@ function App() {
 
             <div className="grid-2">
               <section className="section">
-                <h3>Top Repositories</h3>
+                <h3>Top Repositories (by commits)</h3>
                 <ul className="repo-list">
                   {Object.entries(memberData.repoCommits || {})
                     .sort((a, b) => b[1] - a[1])
@@ -336,7 +339,7 @@ function App() {
               <section className="section">
                 <h3>Pull Requests</h3>
                 <ul className="pr-list">
-                  {(memberData.prs || []).slice(0, 20).map((pr, i) => {
+                  {(memberData.prs || []).filter(pr => !isAutomatedPR(pr)).slice(0, 20).map((pr, i) => {
                     const linesChanged = (pr.files || []).reduce((sum, f) => sum + (f.additions || 0) + (f.deletions || 0), 0)
                     const commits = pr.commits || 0
                     const comments = pr.comments || 0
