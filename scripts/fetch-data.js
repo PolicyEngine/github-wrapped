@@ -215,12 +215,13 @@ async function fetchMemberData(member) {
 
   await sleep(500);
 
-  // Fetch PRs authored for all accounts
+  // Fetch PRs authored for all accounts (excluding automated dependency updates)
   console.log('  PRs authored...');
   const allPRs = [];
   let totalPRs = 0;
   for (const account of allAccounts) {
-    const prsUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}`;
+    // Exclude automated "Update PolicyEngine" PRs from the count
+    const prsUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}+-in:title+"Update+PolicyEngine"`;
     const prsData = await fetchAllPages(prsUrl, 10);
     allPRs.push(...prsData.items);
     totalPRs += prsData.total_count;
