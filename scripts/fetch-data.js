@@ -215,30 +215,39 @@ async function fetchMemberData(member) {
 
   await sleep(500);
 
-  // Fetch PRs authored for all accounts (excluding automated dependency updates)
+  // Fetch all PRs authored for all accounts
   console.log('  PRs filed...');
   const allPRs = [];
-  let totalPRs = 0;
   for (const account of allAccounts) {
-    // Exclude automated version bump PRs (e.g., "Update PolicyEngine US to 1.234.0")
-    const prsUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}+NOT+%22Update+PolicyEngine+US+to%22+NOT+%22Update+PolicyEngine+UK+to%22+NOT+%22Update+PolicyEngine+Canada+to%22+NOT+%22Update+PolicyEngine+Core+to%22`;
+    const prsUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}`;
     const prsData = await fetchAllPages(prsUrl, 10);
     allPRs.push(...prsData.items);
-    totalPRs += prsData.total_count;
     await sleep(500);
   }
+
+  // Filter out automated version bump PRs client-side
+  const isAutomatedPR = (pr) => {
+    const title = pr.title || '';
+    return title.startsWith('Update PolicyEngine US to') ||
+           title.startsWith('Update PolicyEngine UK to') ||
+           title.startsWith('Update PolicyEngine Canada to') ||
+           title.startsWith('Update PolicyEngine Core to');
+  };
+  const filteredPRs = allPRs.filter(pr => !isAutomatedPR(pr));
+  const totalPRs = filteredPRs.length;
 
   await sleep(500);
 
-  // Fetch merged PRs for all accounts (excluding automated dependency updates)
+  // Fetch all merged PRs for all accounts
   console.log('  PRs merged...');
-  let totalPRsMerged = 0;
+  const allMergedPRs = [];
   for (const account of allAccounts) {
-    const mergedUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:pr+is:merged+merged:${START_DATE}..${END_DATE}+NOT+%22Update+PolicyEngine+US+to%22+NOT+%22Update+PolicyEngine+UK+to%22+NOT+%22Update+PolicyEngine+Canada+to%22+NOT+%22Update+PolicyEngine+Core+to%22`;
-    const mergedData = await fetchAllPages(mergedUrl, 1);  // Only need count, not items
-    totalPRsMerged += mergedData.total_count;
+    const mergedUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:pr+is:merged+merged:${START_DATE}..${END_DATE}`;
+    const mergedData = await fetchAllPages(mergedUrl, 10);
+    allMergedPRs.push(...mergedData.items);
     await sleep(500);
   }
+  const totalPRsMerged = allMergedPRs.filter(pr => !isAutomatedPR(pr)).length;
 
   await sleep(500);
 
@@ -268,10 +277,10 @@ async function fetchMemberData(member) {
     await sleep(500);
   }
 
-  // Fetch PR details for top 30 PRs
+  // Fetch PR details for top 30 non-automated PRs
   console.log('  Fetching PR details...');
   const prsWithFiles = [];
-  for (const pr of allPRs.slice(0, 30)) {
+  for (const pr of filteredPRs.slice(0, 30)) {
     const repoName = pr.repository_url.split('/').pop();
     await sleep(300);
     const [files, details] = await Promise.all([
