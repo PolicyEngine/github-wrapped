@@ -440,6 +440,40 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h3 {
+  margin-bottom: 0;
+}
+
+.sort-select {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: rgba(255, 255, 255, 0.7);
+  background: var(--dark-700);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sort-select:hover {
+  border-color: var(--teal-500);
+  color: #fff;
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: var(--teal-400);
+  box-shadow: 0 0 0 2px rgba(49, 151, 149, 0.2);
+}
+
 /* Monthly Chart */
 .chart {
   display: flex;

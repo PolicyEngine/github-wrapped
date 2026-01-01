@@ -13,6 +13,7 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [copied, setCopied] = useState(false)
+  const [sortBy, setSortBy] = useState('merged')
 
   // Load pre-fetched data
   useEffect(() => {
@@ -77,6 +78,26 @@ function App() {
   }
 
   const team = Object.values(data.members).map(m => m.member)
+
+  // Sort team based on selected criteria
+  const sortedTeam = [...team].sort((a, b) => {
+    const statsA = data.members[a.github]?.stats || {}
+    const statsB = data.members[b.github]?.stats || {}
+    switch (sortBy) {
+      case 'merged':
+        return (statsB.prs_merged || 0) - (statsA.prs_merged || 0)
+      case 'filed':
+        return (statsB.prs || 0) - (statsA.prs || 0)
+      case 'commits':
+        return (statsB.commits || 0) - (statsA.commits || 0)
+      case 'reviews':
+        return (statsB.reviews || 0) - (statsA.reviews || 0)
+      case 'name':
+        return (a.name || a.github).localeCompare(b.name || b.github)
+      default:
+        return 0
+    }
+  })
 
   // Calculate aggregate stats for "All" view
   const aggregateStats = {
@@ -233,9 +254,22 @@ function App() {
             </section>
 
             <section className="section">
-              <h3>Contributors</h3>
+              <div className="section-header">
+                <h3>Contributors</h3>
+                <select
+                  className="sort-select"
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value)}
+                >
+                  <option value="merged">PRs Merged</option>
+                  <option value="filed">PRs Filed</option>
+                  <option value="commits">Commits</option>
+                  <option value="reviews">Reviews</option>
+                  <option value="name">Name</option>
+                </select>
+              </div>
               <div className="contributors-grid">
-                {team.map((member, i) => {
+                {sortedTeam.map((member, i) => {
                   const memberObj = data.members[member.github]
                   const memberStats = memberObj?.stats || {}
                   const prsFiled = memberStats.prs || 0
