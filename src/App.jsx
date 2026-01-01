@@ -37,7 +37,7 @@ function App() {
   }
 
   // Team members (for highlighting)
-  const TEAM_MEMBERS = ['MaxGhenis', 'nikhilwoodruff', 'PavelMakarchuk', 'vahid-ahmadi', 'daphnehanse11', 'hua7450', 'anth-volk', 'DTrim99', 'elenacura', 'SakshiKekre']
+  const TEAM_MEMBERS = ['MaxGhenis', 'nikhilwoodruff', 'PavelMakarchuk', 'vahid-ahmadi', 'daphnehanse11', 'hua7450', 'anth-volk', 'DTrim99', 'baogorek', 'elenacura', 'SakshiKekre', 'juaristi22']
 
   // Display name overrides
   const NAME_OVERRIDES = {
