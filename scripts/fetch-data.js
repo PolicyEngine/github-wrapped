@@ -220,8 +220,8 @@ async function fetchMemberData(member) {
   const allPRs = [];
   let totalPRs = 0;
   for (const account of allAccounts) {
-    // Exclude automated "Update PolicyEngine" PRs from the count
-    const prsUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}+-in:title+"Update+PolicyEngine"`;
+    // Exclude automated "Update PolicyEngine" PRs using NOT keyword
+    const prsUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}+NOT+%22Update+PolicyEngine%22`;
     const prsData = await fetchAllPages(prsUrl, 10);
     allPRs.push(...prsData.items);
     totalPRs += prsData.total_count;
