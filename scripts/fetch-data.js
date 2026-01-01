@@ -220,8 +220,8 @@ async function fetchMemberData(member) {
   const allPRs = [];
   let totalPRs = 0;
   for (const account of allAccounts) {
-    // Exclude automated "Update PolicyEngine" PRs using NOT keyword
-    const prsUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}+NOT+%22Update+PolicyEngine%22`;
+    // Exclude automated version bump PRs (e.g., "Update PolicyEngine US to 1.234.0")
+    const prsUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:pr+created:${START_DATE}..${END_DATE}+NOT+%22Update+PolicyEngine+US+to%22+NOT+%22Update+PolicyEngine+UK+to%22+NOT+%22Update+PolicyEngine+Canada+to%22+NOT+%22Update+PolicyEngine+Core+to%22`;
     const prsData = await fetchAllPages(prsUrl, 10);
     allPRs.push(...prsData.items);
     totalPRs += prsData.total_count;
