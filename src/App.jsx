@@ -92,6 +92,7 @@ function App() {
   Object.values(data.members).forEach(m => {
     aggregateStats.commits += m.stats?.commits || 0
     aggregateStats.prs += m.stats?.prs || 0
+    aggregateStats.prs_merged = (aggregateStats.prs_merged || 0) + (m.stats?.prs_merged || 0)
     aggregateStats.reviews += m.stats?.reviews || 0
     aggregateStats.issues += m.stats?.issues || 0
     Object.keys(m.repoCommits || {}).forEach(r => aggregateStats.repos.add(r))
@@ -176,7 +177,11 @@ function App() {
               </div>
               <div className="stat">
                 <div className="stat-value">{aggregateStats.prs.toLocaleString()}</div>
-                <div className="stat-label">Pull Requests</div>
+                <div className="stat-label">PRs Filed</div>
+              </div>
+              <div className="stat">
+                <div className="stat-value">{(aggregateStats.prs_merged || 0).toLocaleString()}</div>
+                <div className="stat-label">PRs Merged</div>
               </div>
               <div className="stat">
                 <div className="stat-value">{aggregateStats.reviews.toLocaleString()}</div>
@@ -233,7 +238,8 @@ function App() {
                 {team.map((member, i) => {
                   const memberObj = data.members[member.github]
                   const memberStats = memberObj?.stats || {}
-                  const prCount = memberStats.prs || 0
+                  const prsFiled = memberStats.prs || 0
+                  const prsMerged = memberStats.prs_merged || 0
                   const isTeam = isTeamMember(member.github)
                   return (
                     <button
@@ -246,7 +252,7 @@ function App() {
                       <div className="contributor-info">
                         <span className="contributor-name">{getDisplayName(member)}</span>
                         <span className="contributor-stats">
-                          {memberStats.commits || 0} commits · {prCount} PRs
+                          {memberStats.commits || 0} commits · {prsMerged} merged
                         </span>
                       </div>
                       {isTeam && <span className="team-badge">Team</span>}
@@ -279,7 +285,11 @@ function App() {
               </div>
               <div className="stat">
                 <div className="stat-value">{memberData.stats.prs.toLocaleString()}</div>
-                <div className="stat-label">Pull Requests</div>
+                <div className="stat-label">PRs Filed</div>
+              </div>
+              <div className="stat">
+                <div className="stat-value">{(memberData.stats.prs_merged || 0).toLocaleString()}</div>
+                <div className="stat-label">PRs Merged</div>
               </div>
               <div className="stat">
                 <div className="stat-value">{memberData.stats.reviews.toLocaleString()}</div>

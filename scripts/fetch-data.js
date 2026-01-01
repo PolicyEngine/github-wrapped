@@ -216,7 +216,7 @@ async function fetchMemberData(member) {
   await sleep(500);
 
   // Fetch PRs authored for all accounts (excluding automated dependency updates)
-  console.log('  PRs authored...');
+  console.log('  PRs filed...');
   const allPRs = [];
   let totalPRs = 0;
   for (const account of allAccounts) {
@@ -225,6 +225,18 @@ async function fetchMemberData(member) {
     const prsData = await fetchAllPages(prsUrl, 10);
     allPRs.push(...prsData.items);
     totalPRs += prsData.total_count;
+    await sleep(500);
+  }
+
+  await sleep(500);
+
+  // Fetch merged PRs for all accounts (excluding automated dependency updates)
+  console.log('  PRs merged...');
+  let totalPRsMerged = 0;
+  for (const account of allAccounts) {
+    const mergedUrl = `https://api.github.com/search/issues?q=author:${account}+org:${GITHUB_ORG}+type:pr+is:merged+merged:${START_DATE}..${END_DATE}+NOT+%22Update+PolicyEngine+US+to%22+NOT+%22Update+PolicyEngine+UK+to%22+NOT+%22Update+PolicyEngine+Canada+to%22+NOT+%22Update+PolicyEngine+Core+to%22`;
+    const mergedData = await fetchAllPages(mergedUrl, 1);  // Only need count, not items
+    totalPRsMerged += mergedData.total_count;
     await sleep(500);
   }
 
@@ -318,6 +330,7 @@ async function fetchMemberData(member) {
     stats: {
       commits: totalCommits,
       prs: totalPRs,
+      prs_merged: totalPRsMerged,
       reviews: totalReviews,
       issues: totalIssues,
       repos: reposContributed.size,
