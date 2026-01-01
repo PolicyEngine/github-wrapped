@@ -3,7 +3,7 @@ import './App.css'
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
-// Filter out automated PRs (dependency updates, etc.)
+// Filter out automated PRs from display list (not from counts)
 const isAutomatedPR = (pr) => pr.title?.startsWith('Update PolicyEngine')
 
 function App() {
@@ -51,32 +51,6 @@ function App() {
   // Helper to check if someone is a team member
   const isTeamMember = (github) => TEAM_MEMBERS.includes(github)
 
-  const copySummary = () => {
-    if (!memberData || !selectedMember) return
-
-    const topRepos = Object.entries(memberData.repoCommits || {})
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 5)
-      .map(r => r[0])
-      .join(', ')
-
-    const filteredPRs = (memberData.prs || []).filter(pr => !isAutomatedPR(pr)).length
-
-    const summary = `## 2025 GitHub Activity Summary
-
-- **Commits:** ${memberData.stats.commits.toLocaleString()}
-- **Pull Requests:** ${filteredPRs.toLocaleString()}
-- **PRs Reviewed:** ${memberData.stats.reviews.toLocaleString()}
-- **Issues Created:** ${memberData.stats.issues.toLocaleString()}
-- **Top Repositories:** ${topRepos}
-
-(Data from PolicyEngine GitHub organization, Jan 1 - Dec 8, 2025)`
-
-    navigator.clipboard.writeText(summary).then(() => {
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    })
-  }
 
   const maxMonthly = Math.max(...(memberData?.monthlyPRs || [1]), 1)
 
@@ -104,11 +78,6 @@ function App() {
 
   const team = Object.values(data.members).map(m => m.member)
 
-  // Helper to count non-automated PRs for a member
-  const getFilteredPRCount = (member) => {
-    return (member.prs || []).filter(pr => !isAutomatedPR(pr)).length
-  }
-
   // Calculate aggregate stats for "All" view
   const aggregateStats = {
     commits: 0,
@@ -122,7 +91,7 @@ function App() {
 
   Object.values(data.members).forEach(m => {
     aggregateStats.commits += m.stats?.commits || 0
-    aggregateStats.prs += getFilteredPRCount(m)
+    aggregateStats.prs += m.stats?.prs || 0
     aggregateStats.reviews += m.stats?.reviews || 0
     aggregateStats.issues += m.stats?.issues || 0
     Object.keys(m.repoCommits || {}).forEach(r => aggregateStats.repos.add(r))
@@ -264,7 +233,7 @@ function App() {
                 {team.map((member, i) => {
                   const memberObj = data.members[member.github]
                   const memberStats = memberObj?.stats || {}
-                  const filteredPRs = getFilteredPRCount(memberObj || {})
+                  const prCount = memberStats.prs || 0
                   const isTeam = isTeamMember(member.github)
                   return (
                     <button
@@ -277,7 +246,7 @@ function App() {
                       <div className="contributor-info">
                         <span className="contributor-name">{getDisplayName(member)}</span>
                         <span className="contributor-stats">
-                          {memberStats.commits || 0} commits · {filteredPRs} PRs
+                          {memberStats.commits || 0} commits · {prCount} PRs
                         </span>
                       </div>
                       {isTeam && <span className="team-badge">Team</span>}
@@ -309,7 +278,7 @@ function App() {
                 <div className="stat-label">Commits</div>
               </div>
               <div className="stat">
-                <div className="stat-value">{getFilteredPRCount(memberData).toLocaleString()}</div>
+                <div className="stat-value">{memberData.stats.prs.toLocaleString()}</div>
                 <div className="stat-label">Pull Requests</div>
               </div>
               <div className="stat">
