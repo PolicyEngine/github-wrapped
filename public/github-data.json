@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-05T06:13:03.585Z",
+  "fetchedAt": "2026-01-12T06:13:12.470Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -22,7 +22,7 @@
         "commits": 2263,
         "prs": 273,
         "prs_merged": 395,
-        "reviews": 192,
+        "reviews": 193,
         "issues": 505,
         "repos": 28
       },
@@ -8260,12 +8260,12 @@
         "bio": "Co-founder and CEO of @PolicyEngine"
       },
       "stats": {
-        "commits": 2882,
+        "commits": 2874,
         "prs": 502,
         "prs_merged": 357,
         "reviews": 710,
         "issues": 609,
-        "repos": 75
+        "repos": 74
       },
       "repoCommits": {
         "obbba-household-explorer": 18,
@@ -8287,10 +8287,9 @@
         "policyengine-project-management-comparison": 8,
         "gitlab-ai-economic-opportunity-2025": 1,
         "us-sources": 2,
-        "policyengine-uk-data": 43,
+        "policyengine-uk-data": 45,
         "policyengine-context-generator": 1,
         "L0": 33,
-        "nuffield-rda-2025": 10,
         "policyengine-sg": 1,
         "LegislationBuilder": 2,
         "atlas": 103,
@@ -8301,7 +8300,7 @@
         "policyengine-canada": 4,
         "policyengine-nz": 13,
         "pe-compile": 6,
-        "policyengine-us-data": 119,
+        "policyengine-us-data": 127,
         "policyengine-app": 278,
         "policyengine-data": 2
       },
@@ -8323,15 +8322,15 @@
         25,
         28,
         31,
-        23,
+        27,
         30,
         33,
-        154,
+        158,
         218,
         50,
-        84,
+        78,
         299,
-        25
+        23
       ],
       "prs": [
         {
@@ -10720,15 +10719,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 4,
           "created_at": "2025-12-03T22:33:39Z",
-          "updated_at": "2025-12-09T10:19:09Z",
-          "closed_at": null,
+          "updated_at": "2026-01-06T10:13:42Z",
+          "closed_at": "2026-01-06T10:13:39Z",
           "author_association": "CONTRIBUTOR",
           "type": null,
           "active_lock_reason": null,
@@ -10738,7 +10737,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-uk-data/pull/246",
             "diff_url": "https://github.com/PolicyEngine/policyengine-uk-data/pull/246.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-uk-data/pull/246.patch",
-            "merged_at": null
+            "merged_at": "2026-01-06T10:13:39Z"
           },
           "body": "## Summary\n\nThis PR moves ALL random number generation from policyengine-uk into the dataset generation in policyengine-uk-data. The country package is now a purely deterministic rules engine.\n\n**⚠️ MERGE ORDER: This PR must be merged BEFORE the companion policyengine-uk PR**\n\n## Changes\n\n### New take-up rate parameters\nAdded YAML parameter files in `policyengine_uk_data/parameters/take_up/`:\n- child_benefit.yaml\n- child_benefit_opts_out_rate.yaml\n- pension_credit.yaml\n- universal_credit.yaml\n- marriage_allowance.yaml\n- tax_free_childcare.yaml\n- extended_childcare.yaml\n- universal_childcare.yaml\n- targeted_childcare.yaml\n\n### Stochastic rate parameters\nAdded YAML parameter files in `policyengine_uk_data/parameters/stochastic/`:\n- tv_ownership_rate.yaml\n- tv_licence_evasion_rate.yaml\n- first_time_buyer_rate.yaml\n\n### FRS dataset generation\n- Load take-up rates from YAML parameter files\n- Generate all stochastic boolean take-up decisions\n- Use seeded RNG (seed=100) for full reproducibility\n- Generate random draws for tie-breaking and conditional probabilities\n\n### Stochastic variables generated\n\n**Take-up decisions (boolean):**\n- would_claim_child_benefit\n- child_benefit_opts_out\n- would_claim_pc (Pension Credit)\n- would_claim_uc (Universal Credit)\n- would_claim_marriage_allowance\n- would_claim_tfc (Tax-Free Childcare)\n- would_claim_extended_childcare\n- would_claim_universal_childcare\n- would_claim_targeted_childcare\n\n**Other stochastic variables:**\n- household_owns_tv\n- would_evade_tv_licence_fee\n- main_residential_property_purchased_is_first_home\n- higher_earner_tie_break\n- attends_private_school_random_draw\n\n## Trade-offs\n\n**IMPORTANT**: Take-up rates can no longer be adjusted dynamically via policy reforms or in the web app. They are fixed in the microdata at generation time. This is an acceptable trade-off for the cleaner architecture of keeping the country package purely deterministic.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>",
           "reactions": {
@@ -10757,7 +10756,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 3,
+          "commits": 5,
           "review_comments": 0,
           "files": [
             {
@@ -10864,6 +10863,13 @@
               "additions": 6,
               "deletions": 0,
               "changes": 6
+            },
+            {
+              "filename": "policyengine_uk_data/tests/microsimulation/reforms_config.yaml",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2
             },
             {
               "filename": "policyengine_uk_data/tests/test_stochastic_variables.py",
@@ -17490,7 +17496,7 @@
         "commits": 2149,
         "prs": 428,
         "prs_merged": 389,
-        "reviews": 440,
+        "reviews": 442,
         "issues": 479,
         "repos": 26
       },
@@ -22113,6 +22119,77 @@
           "score": 1
         },
         {
+          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/events",
+          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065",
+          "id": 3770617564,
+          "node_id": "PR_kwDOFqFFMc66_i2_",
+          "number": 7065,
+          "title": "Update Kansas 2025 Individual Income Tax Model",
+          "user": {
+            "login": "DTrim99",
+            "id": 178813244,
+            "node_id": "U_kgDOCqh5PA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/178813244?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/DTrim99",
+            "html_url": "https://github.com/DTrim99",
+            "followers_url": "https://api.github.com/users/DTrim99/followers",
+            "following_url": "https://api.github.com/users/DTrim99/following{/other_user}",
+            "gists_url": "https://api.github.com/users/DTrim99/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/DTrim99/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/DTrim99/subscriptions",
+            "organizations_url": "https://api.github.com/users/DTrim99/orgs",
+            "repos_url": "https://api.github.com/users/DTrim99/repos",
+            "events_url": "https://api.github.com/users/DTrim99/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/DTrim99/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [],
+          "state": "open",
+          "locked": false,
+          "assignee": null,
+          "assignees": [],
+          "milestone": null,
+          "comments": 3,
+          "created_at": "2025-12-30T15:59:58Z",
+          "updated_at": "2026-01-06T14:37:48Z",
+          "closed_at": null,
+          "author_association": "COLLABORATOR",
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/7065",
+            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065",
+            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065.diff",
+            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065.patch",
+            "merged_at": null
+          },
+          "body": "## Summary\n\nWork in progress implementation of Kansas 2025 individual income tax updates.\n\nFixes #7064\n\n### Key Changes\n\n- **Disabled Veteran Exemption**: Update from $2,250 to $2,320 for 2025\n- **2025 References**: Add ip25.pdf references to all Kansas income tax parameters\n- **Food Sales Tax Credit Sunset**: Implement sunset (returns $0 for 2025+)\n- **Pregnancy Resource Act Credit (K-94)**: New credit - 70% of charitable contributions to eligible organizations\n- **Integration Tests**: Add 2025-specific tests\n\n## Status\n\n- [ ] Documentation collected\n- [ ] Parameters updated\n- [ ] Variables implemented\n- [ ] Tests written\n- [ ] CI passing\n\n## Reference Documents\n\n- [2025 Kansas Individual Income Tax Booklet (ip25.pdf)](https://www.ksrevenue.gov/pdf/ip25.pdf)\n- [Pregnancy Resource Credit](https://www.ksrevenue.gov/prtaxcredits-pregnancy.html)\n- [K.S.A. 79-32,309](https://www.ksrevenue.gov/prtaxcredits-pregnancy.html) - Pregnancy Resource Act\n\n---\n*This is a draft PR created for early visibility. Implementation work is in progress.*",
+          "reactions": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null,
+          "score": 1
+        },
+        {
           "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7063",
           "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
           "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7063/labels{/name}",
@@ -22223,7 +22300,7 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-29T20:03:45Z",
-          "updated_at": "2025-12-29T22:20:02Z",
+          "updated_at": "2026-01-05T18:09:03Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -23139,15 +23216,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-16T18:23:34Z",
-          "updated_at": "2026-01-04T23:41:35Z",
-          "closed_at": null,
+          "updated_at": "2026-01-05T21:26:03Z",
+          "closed_at": "2026-01-05T21:26:03Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -23157,7 +23234,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6997",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6997.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6997.patch",
-            "merged_at": null
+            "merged_at": "2026-01-05T21:26:03Z"
           },
           "body": "## Summary\n- Implements a reform to separate dependent children from Virginia's personal exemption\n- Allows policy analysis where dependent children can receive different exemption treatment than filers/spouses\n- Per Josh McCabe's request: Virginia stakeholders are interested in modeling fallback options that modify the dependent children portion of the personal exemption\n\n## Changes\n- Add contrib parameters under `gov/contrib/states/va/dependent_exemption/`:\n  - `in_effect.yaml` - enables/disables the reform\n  - `amount.yaml` - exemption amount per eligible dependent child\n  - `age_limit/in_effect.yaml` - whether to apply age limits\n  - `age_limit/threshold.yaml` - age threshold for eligibility\n  - `phaseout/rate.yaml` - phaseout rate per dollar of excess AGI\n  - `phaseout/threshold.yaml` - AGI phaseout thresholds by filing status\n\n- Create reform at `reforms/states/va/dependent_exemption/va_dependent_exemption_reform.py`:\n  - `va_eligible_dependents_count` - counts dependents eligible for the special exemption\n  - `va_dependent_exemption_maximum` - maximum exemption before phaseout\n  - `va_dependent_exemption_phaseout` - phaseout amount based on AGI\n  - `va_dependent_exemption` - final dependent exemption amount\n  - `va_older_dependents_count` - counts dependents not eligible for special exemption\n  - `va_personal_exemption` (modified) - separates filer/spouse exemptions from dependent exemptions\n\n- Register reform in `reforms/reforms.py`\n\n## Test plan\n- [x] 6 test cases covering:\n  - Age limit restrictions (under 18, under 13)\n  - Different exemption amounts for dependents vs filers\n  - AGI phaseout functionality\n  - Joint filing scenarios\n  - No age limit (all dependents eligible)\n- [x] All tests pass\n\n## References\n- Fixes #6996\n- Similar implementations: Delaware PR #6889, Rhode Island exemption reform\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
@@ -23217,7 +23294,7 @@
           "milestone": null,
           "comments": 5,
           "created_at": "2025-12-16T15:09:12Z",
-          "updated_at": "2026-01-03T03:45:51Z",
+          "updated_at": "2026-01-05T16:31:52Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -23315,6 +23392,77 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6990/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null,
+          "score": 1
+        },
+        {
+          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6987",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6987/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6987/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6987/events",
+          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6987",
+          "id": 3732107330,
+          "node_id": "PR_kwDOFqFFMc65AzR1",
+          "number": 6987,
+          "title": "Add Colorado ACA subsidies for immigrants ",
+          "user": {
+            "login": "daphnehanse11",
+            "id": 128793799,
+            "node_id": "U_kgDOB608xw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/128793799?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/daphnehanse11",
+            "html_url": "https://github.com/daphnehanse11",
+            "followers_url": "https://api.github.com/users/daphnehanse11/followers",
+            "following_url": "https://api.github.com/users/daphnehanse11/following{/other_user}",
+            "gists_url": "https://api.github.com/users/daphnehanse11/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/daphnehanse11/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/daphnehanse11/subscriptions",
+            "organizations_url": "https://api.github.com/users/daphnehanse11/orgs",
+            "repos_url": "https://api.github.com/users/daphnehanse11/repos",
+            "events_url": "https://api.github.com/users/daphnehanse11/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/daphnehanse11/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [],
+          "state": "closed",
+          "locked": false,
+          "assignee": null,
+          "assignees": [],
+          "milestone": null,
+          "comments": 3,
+          "created_at": "2025-12-15T21:02:04Z",
+          "updated_at": "2026-01-08T18:02:50Z",
+          "closed_at": "2026-01-08T18:02:24Z",
+          "author_association": "COLLABORATOR",
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/6987",
+            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6987",
+            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6987.diff",
+            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6987.patch",
+            "merged_at": "2026-01-08T18:02:24Z"
+          },
+          "body": "Fixes #6364",
+          "reactions": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6987/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6987/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1
@@ -23954,148 +24102,6 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6955/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null,
-          "score": 1
-        },
-        {
-          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6954",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6954/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6954/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6954/events",
-          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6954",
-          "id": 3723783550,
-          "node_id": "PR_kwDOFqFFMc64ljFU",
-          "number": 6954,
-          "title": "Fix MT income tax calculation with negative capital gains",
-          "user": {
-            "login": "policyengine[bot]",
-            "id": 239815650,
-            "node_id": "BOT_kgDODktL4g",
-            "avatar_url": "https://avatars.githubusercontent.com/u/88570531?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/policyengine%5Bbot%5D",
-            "html_url": "https://github.com/apps/policyengine",
-            "followers_url": "https://api.github.com/users/policyengine%5Bbot%5D/followers",
-            "following_url": "https://api.github.com/users/policyengine%5Bbot%5D/following{/other_user}",
-            "gists_url": "https://api.github.com/users/policyengine%5Bbot%5D/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/policyengine%5Bbot%5D/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/policyengine%5Bbot%5D/subscriptions",
-            "organizations_url": "https://api.github.com/users/policyengine%5Bbot%5D/orgs",
-            "repos_url": "https://api.github.com/users/policyengine%5Bbot%5D/repos",
-            "events_url": "https://api.github.com/users/policyengine%5Bbot%5D/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/policyengine%5Bbot%5D/received_events",
-            "type": "Bot",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [],
-          "state": "closed",
-          "locked": false,
-          "assignee": null,
-          "assignees": [],
-          "milestone": null,
-          "comments": 7,
-          "created_at": "2025-12-12T15:14:30Z",
-          "updated_at": "2025-12-15T21:42:09Z",
-          "closed_at": "2025-12-15T21:41:47Z",
-          "author_association": "NONE",
-          "type": null,
-          "active_lock_reason": null,
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/6954",
-            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6954",
-            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6954.diff",
-            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6954.patch",
-            "merged_at": "2025-12-15T21:41:47Z"
-          },
-          "body": "Fixes #6947\n\n## Summary\n\nFixed two bugs in Montana income tax calculation that caused incorrect non-zero tax ($277.41) when capital gains were negative and taxable income was zero.\n\n## Changes\n\n### Bug 1: Phantom taxable income in regular income tax calculation\n- **Files**: `mt_regular_income_tax_joint.py`, `mt_regular_income_tax_indiv.py`\n- **Issue**: Subtracting negative capital gains from taxable income created phantom positive taxable income\n- **Fix**: Clamp capital gains to zero before subtraction (only positive capital gains are taxed separately)\n\n### Bug 2: Negative tax from capital gains tax calculation\n- **Files**: `mt_capital_gains_tax_joint.py`, `mt_capital_gains_tax_indiv.py`\n- **Issue**: Calculation produced negative tax amounts when capital gains were negative\n- **Fix**: Return zero tax when capital gains are zero or negative\n\n## Test Coverage\n\nAdded integration test case `MT no income tax with negative capital gains (issue 6947)` that verifies:\n- Taxpayers with negative capital gains (household capital loss of -$22,824.44, capped at -$3,000 AGI)\n- Zero taxable income\n- Results in $0 Montana income tax (not $277.41)\n\n## References\n\n- TAXSIM Issue: https://github.com/PolicyEngine/policyengine-taxsim/issues/546\n- TaxAct validation showing $0 tax\n- Montana Form 2 Instructions 2024",
-          "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6954/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6954/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null,
-          "score": 1
-        },
-        {
-          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6953",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6953/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6953/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6953/events",
-          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6953",
-          "id": 3723783543,
-          "node_id": "PR_kwDOFqFFMc64ljFQ",
-          "number": 6953,
-          "title": "Fix HI Food/Excise Tax Credit parameter threshold for negative AGI",
-          "user": {
-            "login": "policyengine[bot]",
-            "id": 239815650,
-            "node_id": "BOT_kgDODktL4g",
-            "avatar_url": "https://avatars.githubusercontent.com/u/88570531?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/policyengine%5Bbot%5D",
-            "html_url": "https://github.com/apps/policyengine",
-            "followers_url": "https://api.github.com/users/policyengine%5Bbot%5D/followers",
-            "following_url": "https://api.github.com/users/policyengine%5Bbot%5D/following{/other_user}",
-            "gists_url": "https://api.github.com/users/policyengine%5Bbot%5D/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/policyengine%5Bbot%5D/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/policyengine%5Bbot%5D/subscriptions",
-            "organizations_url": "https://api.github.com/users/policyengine%5Bbot%5D/orgs",
-            "repos_url": "https://api.github.com/users/policyengine%5Bbot%5D/repos",
-            "events_url": "https://api.github.com/users/policyengine%5Bbot%5D/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/policyengine%5Bbot%5D/received_events",
-            "type": "Bot",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [],
-          "state": "closed",
-          "locked": false,
-          "assignee": null,
-          "assignees": [],
-          "milestone": null,
-          "comments": 5,
-          "created_at": "2025-12-12T15:14:30Z",
-          "updated_at": "2025-12-15T21:03:03Z",
-          "closed_at": "2025-12-15T21:02:51Z",
-          "author_association": "NONE",
-          "type": null,
-          "active_lock_reason": null,
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/6953",
-            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6953",
-            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6953.diff",
-            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6953.patch",
-            "merged_at": "2025-12-15T21:02:51Z"
-          },
-          "body": "## Summary\nFixes the Hawaii Food/Excise Tax Credit to correctly handle negative AGI by changing the first bracket threshold from 0 to -.inf in all filing status parameter files.\n\n## Changes\n- Updated all 5 filing status parameter files (joint, single, head_of_household, separate, surviving_spouse)\n- Changed first threshold from `2021-01-01: 0` to `2021-01-01: -.inf`\n- Added test case for negative AGI scenario\n\n## Test Plan\n✅ All existing tests pass\n✅ New test verifies that joint filers with AGI of -$3,000 and 2 exemptions receive $440 credit (2 × $220)\n✅ Test output matches TaxAct calculation from issue verification\n\n## Verification\nThe fix ensures taxpayers with negative income are correctly included in the \"Under $15,000\" bracket (or other thresholds depending on filing status), as intended by Form N-311 instructions.\n\nWith this fix, the test case from the issue now returns:\n- `hi_food_excise_credit: 440` (was 0)\n- `hi_income_tax: -440` (was 0)\n\nFixes #6946\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
-          "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6953/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6953/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1
@@ -27020,16 +27026,16 @@
         "bio": "Research Associate @PolicyEngine"
       },
       "stats": {
-        "commits": 648,
+        "commits": 649,
         "prs": 145,
         "prs_merged": 110,
-        "reviews": 38,
+        "reviews": 39,
         "issues": 69,
         "repos": 20
       },
       "repoCommits": {
         "policyengine-uk-event-2025": 17,
-        "policyengine-uk-data": 59,
+        "policyengine-uk-data": 60,
         "uk-two-child-limit-app": 17,
         "policyengine-canada": 5,
         "policyengine-app": 111,
@@ -27071,7 +27077,7 @@
         19,
         29,
         117,
-        43
+        44
       ],
       "prs": [
         {
@@ -27397,7 +27403,7 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": {
             "login": "vahid-ahmadi",
@@ -27446,8 +27452,8 @@
           "milestone": null,
           "comments": 3,
           "created_at": "2025-12-18T11:10:51Z",
-          "updated_at": "2025-12-19T11:22:48Z",
-          "closed_at": null,
+          "updated_at": "2026-01-06T09:54:50Z",
+          "closed_at": "2026-01-06T09:54:44Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -27457,7 +27463,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-uk-data/pull/255",
             "diff_url": "https://github.com/PolicyEngine/policyengine-uk-data/pull/255.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-uk-data/pull/255.patch",
-            "merged_at": null
+            "merged_at": "2026-01-06T09:54:44Z"
           },
           "body": "**Summary**                                                                                                           \r\n                                                                                                                    \r\n  - Add np.maximum(0, ...) clipping to 5 income variables that previously allowed negative values                   \r\n  - Add test to validate all income variables are non-negative                                                      \r\n                                                                                                                    \r\n  **Variables fixed**                                                                                                   \r\n                                                                                                                    \r\n  | Variable                | Line    |                                                                             \r\n  |-------------------------|---------|                                                                             \r\n  | employment_income       | 342     |                                                                             \r\n  | self_employment_income  | 368     |                                                                             \r\n  | tax_free_savings_income | 372-380 |                                                                             \r\n  | savings_interest_income | 393-395 |                                                                             \r\n  | dividend_income         | 396-411 |                                                                             \r\n                                                                                                                    \r\n  **Variables already protected (no changes needed)**                                                                   \r\n                                                                                                                    \r\n  - private_pension_income - filters (pension.penpay > 0)                                                           \r\n  - property_income - uses np.maximum(0, ...)                                                                       \r\n  - maintenance_income - uses sum_positive_variables()                                                              \r\n  - miscellaneous_income - uses sum_from_positive_fields()                                                          \r\n                                                                                                                    \r\n  **Test plan**                                                                                                         \r\n                                                                                                                    \r\n  - Run pytest policyengine_uk_data/tests/test_non_negative_incomes.py                                              \r\n  - Verify all 9 income variables pass the non-negative check  ",
           "reactions": {
@@ -31675,6 +31681,77 @@
       ],
       "reviews": [
         {
+          "url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1462",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1462/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1462/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1462/events",
+          "html_url": "https://github.com/PolicyEngine/policyengine-uk/pull/1462",
+          "id": 3744467872,
+          "node_id": "PR_kwDOEQDGps65qhna",
+          "number": 1462,
+          "title": "Standardize parameter labels to sentence case",
+          "user": {
+            "login": "policyengine[bot]",
+            "id": 239815650,
+            "node_id": "BOT_kgDODktL4g",
+            "avatar_url": "https://avatars.githubusercontent.com/u/88570531?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/policyengine%5Bbot%5D",
+            "html_url": "https://github.com/apps/policyengine",
+            "followers_url": "https://api.github.com/users/policyengine%5Bbot%5D/followers",
+            "following_url": "https://api.github.com/users/policyengine%5Bbot%5D/following{/other_user}",
+            "gists_url": "https://api.github.com/users/policyengine%5Bbot%5D/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/policyengine%5Bbot%5D/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/policyengine%5Bbot%5D/subscriptions",
+            "organizations_url": "https://api.github.com/users/policyengine%5Bbot%5D/orgs",
+            "repos_url": "https://api.github.com/users/policyengine%5Bbot%5D/repos",
+            "events_url": "https://api.github.com/users/policyengine%5Bbot%5D/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/policyengine%5Bbot%5D/received_events",
+            "type": "Bot",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [],
+          "state": "open",
+          "locked": false,
+          "assignee": null,
+          "assignees": [],
+          "milestone": null,
+          "comments": 2,
+          "created_at": "2025-12-18T19:09:26Z",
+          "updated_at": "2026-01-07T09:43:27Z",
+          "closed_at": null,
+          "author_association": "CONTRIBUTOR",
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/pulls/1462",
+            "html_url": "https://github.com/PolicyEngine/policyengine-uk/pull/1462",
+            "diff_url": "https://github.com/PolicyEngine/policyengine-uk/pull/1462.diff",
+            "patch_url": "https://github.com/PolicyEngine/policyengine-uk/pull/1462.patch",
+            "merged_at": null
+          },
+          "body": "Applied sentence case formatting to all parameter label fields. Converted 141 parameter files while preserving proper names (Bank of England, Child Benefit, etc.) and acronyms (HMRC, VAT, NHS, etc.). Fixes #1461",
+          "reactions": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1462/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1462/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null,
+          "score": 1
+        },
+        {
           "url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-data/issues/243",
           "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-data",
           "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-data/issues/243/labels{/name}",
@@ -34715,119 +34792,6 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1085/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null,
-          "score": 1
-        },
-        {
-          "url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2441",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-app",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2441/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2441/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2441/events",
-          "html_url": "https://github.com/PolicyEngine/policyengine-app/pull/2441",
-          "id": 2947341691,
-          "node_id": "PR_kwDOIS8n6s6QFmfX",
-          "number": 2441,
-          "title": "Add OBR forecast post",
-          "user": {
-            "login": "nikhilwoodruff",
-            "id": 35577657,
-            "node_id": "MDQ6VXNlcjM1NTc3NjU3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/35577657?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/nikhilwoodruff",
-            "html_url": "https://github.com/nikhilwoodruff",
-            "followers_url": "https://api.github.com/users/nikhilwoodruff/followers",
-            "following_url": "https://api.github.com/users/nikhilwoodruff/following{/other_user}",
-            "gists_url": "https://api.github.com/users/nikhilwoodruff/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/nikhilwoodruff/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/nikhilwoodruff/subscriptions",
-            "organizations_url": "https://api.github.com/users/nikhilwoodruff/orgs",
-            "repos_url": "https://api.github.com/users/nikhilwoodruff/repos",
-            "events_url": "https://api.github.com/users/nikhilwoodruff/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/nikhilwoodruff/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [],
-          "state": "closed",
-          "locked": false,
-          "assignee": {
-            "login": "nikhilwoodruff",
-            "id": 35577657,
-            "node_id": "MDQ6VXNlcjM1NTc3NjU3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/35577657?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/nikhilwoodruff",
-            "html_url": "https://github.com/nikhilwoodruff",
-            "followers_url": "https://api.github.com/users/nikhilwoodruff/followers",
-            "following_url": "https://api.github.com/users/nikhilwoodruff/following{/other_user}",
-            "gists_url": "https://api.github.com/users/nikhilwoodruff/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/nikhilwoodruff/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/nikhilwoodruff/subscriptions",
-            "organizations_url": "https://api.github.com/users/nikhilwoodruff/orgs",
-            "repos_url": "https://api.github.com/users/nikhilwoodruff/repos",
-            "events_url": "https://api.github.com/users/nikhilwoodruff/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/nikhilwoodruff/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "assignees": [
-            {
-              "login": "nikhilwoodruff",
-              "id": 35577657,
-              "node_id": "MDQ6VXNlcjM1NTc3NjU3",
-              "avatar_url": "https://avatars.githubusercontent.com/u/35577657?v=4",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/nikhilwoodruff",
-              "html_url": "https://github.com/nikhilwoodruff",
-              "followers_url": "https://api.github.com/users/nikhilwoodruff/followers",
-              "following_url": "https://api.github.com/users/nikhilwoodruff/following{/other_user}",
-              "gists_url": "https://api.github.com/users/nikhilwoodruff/gists{/gist_id}",
-              "starred_url": "https://api.github.com/users/nikhilwoodruff/starred{/owner}{/repo}",
-              "subscriptions_url": "https://api.github.com/users/nikhilwoodruff/subscriptions",
-              "organizations_url": "https://api.github.com/users/nikhilwoodruff/orgs",
-              "repos_url": "https://api.github.com/users/nikhilwoodruff/repos",
-              "events_url": "https://api.github.com/users/nikhilwoodruff/events{/privacy}",
-              "received_events_url": "https://api.github.com/users/nikhilwoodruff/received_events",
-              "type": "User",
-              "user_view_type": "public",
-              "site_admin": false
-            }
-          ],
-          "milestone": null,
-          "comments": 1,
-          "created_at": "2025-03-25T17:56:56Z",
-          "updated_at": "2025-03-26T14:49:09Z",
-          "closed_at": "2025-03-26T14:48:04Z",
-          "author_association": "COLLABORATOR",
-          "type": null,
-          "active_lock_reason": null,
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-app/pulls/2441",
-            "html_url": "https://github.com/PolicyEngine/policyengine-app/pull/2441",
-            "diff_url": "https://github.com/PolicyEngine/policyengine-app/pull/2441.diff",
-            "patch_url": "https://github.com/PolicyEngine/policyengine-app/pull/2441.patch",
-            "merged_at": "2025-03-26T14:48:04Z"
-          },
-          "body": "Fixes #2440\r\n",
-          "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2441/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2441/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1
@@ -38919,6 +38883,12 @@
           "repo": "policyengine-uk-data"
         },
         {
+          "sha": "0ac74c22719d2e827d22b169865e25e7fbfea989",
+          "message": "Fix negative income values",
+          "date": "2025-12-18T12:09:50.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
           "sha": "249f1f44e3a1032f46bf1b330243193a6dcb2aeb",
           "message": "update",
           "date": "2025-10-15T15:03:00.000+01:00",
@@ -39055,12 +39025,6 @@
           "message": "Edit the UK income tax and NI reforms blog post (#2813)",
           "date": "2025-11-21T14:16:45.000Z",
           "repo": "policyengine-app"
-        },
-        {
-          "sha": "6a32ffd7104ed4ca1ab8a717cf8fd322e644ff77",
-          "message": "Merge pull request #2811 from PolicyEngine/change-income-tax",
-          "date": "2025-11-20T08:24:44.000Z",
-          "repo": "policyengine-app"
         }
       ]
     },
@@ -39074,7 +39038,7 @@
         "bio": null
       },
       "stats": {
-        "commits": 338,
+        "commits": 364,
         "prs": 96,
         "prs_merged": 69,
         "reviews": 66,
@@ -39091,7 +39055,7 @@
         "policyengine-us-data": 35,
         "crs-presentation-us": 14,
         "snap-district-map": 8,
-        "policyengine-us": 168,
+        "policyengine-us": 194,
         "policyengine-app-v2": 1
       },
       "monthlyPRs": [
@@ -39117,10 +39081,10 @@
         22,
         40,
         12,
-        57,
+        65,
         16,
         24,
-        73
+        91
       ],
       "prs": [
         {
@@ -39930,7 +39894,7 @@
           "milestone": null,
           "comments": 5,
           "created_at": "2025-12-16T15:09:12Z",
-          "updated_at": "2026-01-03T03:45:51Z",
+          "updated_at": "2026-01-05T16:31:52Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -39960,7 +39924,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 14,
+          "commits": 16,
           "review_comments": 15,
           "files": [
             {
@@ -39973,9 +39937,9 @@
             {
               "filename": "policyengine_us/parameters/gov/states/or/oha/healthier_oregon/eligibility/adult_income_limit.yaml",
               "status": "added",
-              "additions": 11,
+              "additions": 13,
               "deletions": 0,
-              "changes": 11
+              "changes": 13
             },
             {
               "filename": "policyengine_us/parameters/gov/states/or/oha/healthier_oregon/eligibility/aged_threshold.yaml",
@@ -39987,9 +39951,9 @@
             {
               "filename": "policyengine_us/parameters/gov/states/or/oha/healthier_oregon/eligibility/child_income_limit.yaml",
               "status": "added",
-              "additions": 11,
+              "additions": 13,
               "deletions": 0,
-              "changes": 11
+              "changes": 13
             },
             {
               "filename": "policyengine_us/parameters/gov/states/or/oha/healthier_oregon/eligibility/child_max_age.yaml",
@@ -40001,9 +39965,9 @@
             {
               "filename": "policyengine_us/parameters/gov/states/or/oha/healthier_oregon/eligibility/in_effect.yaml",
               "status": "added",
-              "additions": 14,
+              "additions": 16,
               "deletions": 0,
-              "changes": 14
+              "changes": 16
             },
             {
               "filename": "policyengine_us/parameters/gov/states/or/oha/healthier_oregon/eligibility/qualified_immigration_statuses.yaml",
@@ -40138,15 +40102,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 2,
+          "comments": 3,
           "created_at": "2025-12-15T21:02:04Z",
-          "updated_at": "2026-01-02T20:05:19Z",
-          "closed_at": null,
+          "updated_at": "2026-01-08T18:02:50Z",
+          "closed_at": "2026-01-08T18:02:24Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -40156,7 +40120,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6987",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6987.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6987.patch",
-            "merged_at": null
+            "merged_at": "2026-01-08T18:02:24Z"
           },
           "body": "Fixes #6364",
           "reactions": {
@@ -40175,7 +40139,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 27,
+          "commits": 30,
           "review_comments": 11,
           "files": [
             {
@@ -40188,37 +40152,37 @@
             {
               "filename": "policyengine_us/parameters/gov/states/co/hcpf/omnisalud/eligibility/child_max_age.yaml",
               "status": "added",
-              "additions": 13,
+              "additions": 15,
               "deletions": 0,
-              "changes": 13
+              "changes": 15
             },
             {
               "filename": "policyengine_us/parameters/gov/states/co/hcpf/omnisalud/eligibility/covers_daca.yaml",
               "status": "added",
-              "additions": 16,
+              "additions": 18,
               "deletions": 0,
-              "changes": 16
+              "changes": 18
             },
             {
               "filename": "policyengine_us/parameters/gov/states/co/hcpf/omnisalud/eligibility/covers_undocumented_children.yaml",
               "status": "added",
+              "additions": 18,
+              "deletions": 0,
+              "changes": 18
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/co/hcpf/omnisalud/eligibility/in_effect.yaml",
+              "status": "added",
               "additions": 16,
               "deletions": 0,
               "changes": 16
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/co/hcpf/omnisalud/eligibility/in_effect.yaml",
-              "status": "added",
-              "additions": 14,
-              "deletions": 0,
-              "changes": 14
-            },
-            {
               "filename": "policyengine_us/parameters/gov/states/co/hcpf/omnisalud/eligibility/income_limit.yaml",
               "status": "added",
-              "additions": 13,
+              "additions": 15,
               "deletions": 0,
-              "changes": 13
+              "changes": 15
             },
             {
               "filename": "policyengine_us/tests/policy/baseline/gov/states/co/hcpf/omnisalud/co_omnisalud.yaml",
@@ -40296,13 +40260,6 @@
               "additions": 1,
               "deletions": 0,
               "changes": 1
-            },
-            {
-              "filename": "uv.lock",
-              "status": "modified",
-              "additions": 59,
-              "deletions": 27,
-              "changes": 86
             }
           ]
         },
@@ -43073,7 +43030,7 @@
           "milestone": null,
           "comments": 3,
           "created_at": "2025-09-15T20:37:25Z",
-          "updated_at": "2026-01-03T03:43:23Z",
+          "updated_at": "2026-01-05T15:34:55Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -43103,7 +43060,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 20,
+          "commits": 21,
           "review_comments": 19,
           "files": [
             {
@@ -43235,9 +43192,16 @@
             {
               "filename": "policyengine_us/variables/gov/states/dc/dhcf/medicaid/costs/dc_medicaid_cost_if_enrolled.py",
               "status": "added",
-              "additions": 126,
+              "additions": 87,
               "deletions": 0,
-              "changes": 126
+              "changes": 87
+            },
+            {
+              "filename": "policyengine_us/variables/gov/states/dc/dhcf/medicaid/costs/dc_medicaid_group.py",
+              "status": "added",
+              "additions": 51,
+              "deletions": 0,
+              "changes": 51
             },
             {
               "filename": "policyengine_us/variables/gov/states/dc/dhcf/medicaid/eligibility/dc_medicaid_age_eligible.py",
@@ -44390,7 +44354,7 @@
           "milestone": null,
           "comments": 3,
           "created_at": "2025-09-15T20:37:25Z",
-          "updated_at": "2026-01-03T03:43:23Z",
+          "updated_at": "2026-01-05T15:34:55Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -49338,7 +49302,7 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": {
             "login": "daphnehanse11",
@@ -49387,8 +49351,8 @@
           "milestone": null,
           "comments": 0,
           "created_at": "2025-08-05T19:13:39Z",
-          "updated_at": "2025-08-11T14:15:53Z",
-          "closed_at": null,
+          "updated_at": "2026-01-08T18:02:26Z",
+          "closed_at": "2026-01-08T18:02:26Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -49418,7 +49382,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6365/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -49454,7 +49418,7 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": {
             "login": "daphnehanse11",
@@ -49503,8 +49467,8 @@
           "milestone": null,
           "comments": 0,
           "created_at": "2025-08-05T19:12:57Z",
-          "updated_at": "2025-08-11T14:16:05Z",
-          "closed_at": null,
+          "updated_at": "2026-01-08T18:02:26Z",
+          "closed_at": "2026-01-08T18:02:26Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -49534,7 +49498,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6364/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         }
       ],
@@ -49870,6 +49834,18 @@
           "repo": "ACA-Calc"
         },
         {
+          "sha": "b223cf2ffc98b4ccd20184e2c275ee7890b22b16",
+          "message": "Enhance Calculator functionality with URL sharing for AI explanations; implement caching for calculation results and AI responses",
+          "date": "2025-12-15T13:17:28.000-05:00",
+          "repo": "ACA-Calc"
+        },
+        {
+          "sha": "39da335c900896df14fb82dcbe4dc73e0735c643",
+          "message": "Start contribution schedule chart x-axis at 0% FPL instead of 100%",
+          "date": "2025-12-24T10:34:57.000-05:00",
+          "repo": "ACA-Calc"
+        },
+        {
           "sha": "7e929e083ac2991d9f50733fbf898c351a954806",
           "message": "Enhance Calculator UI with responsive form actions and share button; implement URL routing for page navigation",
           "date": "2025-12-15T10:16:32.000-05:00",
@@ -49906,18 +49882,6 @@
           "repo": "ACA-Calc"
         },
         {
-          "sha": "b223cf2ffc98b4ccd20184e2c275ee7890b22b16",
-          "message": "Enhance Calculator functionality with URL sharing for AI explanations; implement caching for calculation results and AI responses",
-          "date": "2025-12-15T13:17:28.000-05:00",
-          "repo": "ACA-Calc"
-        },
-        {
-          "sha": "39da335c900896df14fb82dcbe4dc73e0735c643",
-          "message": "Start contribution schedule chart x-axis at 0% FPL instead of 100%",
-          "date": "2025-12-24T10:34:57.000-05:00",
-          "repo": "ACA-Calc"
-        },
-        {
           "sha": "8df50a30909b2e465c162ee4d2deb0ee2cf2732a",
           "message": "Improve calculator performance and fix contribution schedule chart",
           "date": "2025-12-30T16:05:45.000-05:00",
@@ -49948,24 +49912,6 @@
           "repo": "ACA-Calc"
         },
         {
-          "sha": "47ba3867d57aa670017d73757f4d3ebb033c1699",
-          "message": "Remove deprecated analysis scripts and update .gitignore; add results documentation for UK Mansion Tax project",
-          "date": "2025-11-21T13:08:18.000-05:00",
-          "repo": "uk-mansion-tax"
-        },
-        {
-          "sha": "ae168e927ed6e1e2c982a97641f82fd418b85d63",
-          "message": "Add analysis pipeline and data handling for UK Mansion Tax project",
-          "date": "2025-11-21T12:56:34.000-05:00",
-          "repo": "uk-mansion-tax"
-        },
-        {
-          "sha": "1d00489e9dd4b51ccca658878035f0b5b1eafefa",
-          "message": "Streamline analysis: single script, data/ folder, fixed downloads",
-          "date": "2025-11-21T13:18:03.000-05:00",
-          "repo": "uk-mansion-tax"
-        },
-        {
           "sha": "8febb13c0e9b3e62710e56ad2bd59fc9b5d0a792",
           "message": "- Update download instructions in README for clarity.",
           "date": "2025-11-25T12:28:33.000-05:00",
@@ -49993,6 +49939,24 @@
           "sha": "b99458d85d48e539b9fe6c66a296a1b4099aefdf",
           "message": "updated data and readme",
           "date": "2025-11-25T17:48:45.000-05:00",
+          "repo": "uk-mansion-tax"
+        },
+        {
+          "sha": "47ba3867d57aa670017d73757f4d3ebb033c1699",
+          "message": "Remove deprecated analysis scripts and update .gitignore; add results documentation for UK Mansion Tax project",
+          "date": "2025-11-21T13:08:18.000-05:00",
+          "repo": "uk-mansion-tax"
+        },
+        {
+          "sha": "1d00489e9dd4b51ccca658878035f0b5b1eafefa",
+          "message": "Streamline analysis: single script, data/ folder, fixed downloads",
+          "date": "2025-11-21T13:18:03.000-05:00",
+          "repo": "uk-mansion-tax"
+        },
+        {
+          "sha": "ae168e927ed6e1e2c982a97641f82fd418b85d63",
+          "message": "Add analysis pipeline and data handling for UK Mansion Tax project",
+          "date": "2025-11-21T12:56:34.000-05:00",
           "repo": "uk-mansion-tax"
         },
         {
@@ -50233,12 +50197,12 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-31T23:36:32Z",
-          "updated_at": "2026-01-04T22:26:19Z",
+          "updated_at": "2026-01-05T20:19:22Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
-          "draft": true,
+          "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/7076",
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7076",
@@ -50246,7 +50210,7 @@
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7076.patch",
             "merged_at": null
           },
-          "body": "## Summary\n\nImplements Alaska Temporary Assistance Program (ATAP), Alaska's TANF program, covering income eligibility, deductions, and benefit calculations.\n\nCloses #7075\n\n---\n\n## Regulatory Authority\n\n- **Alaska Statutes**: [AS 47.27](https://www.akleg.gov/basis/statutes.asp#47.27) - Temporary Assistance\n- **Alaska Administrative Code**: [7 AAC 45](https://www.law.cornell.edu/regulations/alaska/title-7/part-3/chapter-45) - Public Assistance\n\n---\n\n## Income Eligibility Tests\n\n### 1. Gross Income Test (185% Standard)\n\nTotal nonexempt gross monthly income must not exceed 185% of the need standard.\n\n| Family Size | Adult-Included | Child-Only | Pregnant Woman |\n|-------------|----------------|------------|----------------|\n| 1           | -              | $956       | $1,089         |\n| 2           | $1,522         | $1,173     | -              |\n| 3           | $1,739         | $1,390     | -              |\n| 4           | $1,956         | $1,607     | -              |\n| 5           | $2,173         | -          | -              |\n| 6           | $2,390         | -          | -              |\n\n**Source**: [7 AAC 45.520](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.520)\n\n### 2. Net Income Test (Need Standard)\n\nCountable income (after deductions) must not exceed the need standard.\n\n| Family Size | Adult-Included | Child-Only | Pregnant Woman |\n|-------------|----------------|------------|----------------|\n| 1           | -              | $517       | $589           |\n| 2           | $823           | $634       | -              |\n| 3           | $940           | $751       | -              |\n| 4           | $1,057         | $868       | -              |\n| 5           | $1,174         | -          | -              |\n| 6           | $1,291         | -          | -              |\n\n**Source**: [7 AAC 45.520](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.520)\n\n### 3. Resource Test\n\n| Unit Type | Resource Limit |\n|-----------|----------------|\n| Standard  | $2,000         |\n| Elderly (60+) | $3,000     |\n\n**Source**: [AS 47.27.010](https://www.akleg.gov/basis/statutes.asp#47.27.010)\n\n---\n\n## Income Deductions & Exemptions\n\n### Work Incentive Deduction (7 AAC 45.480)\n\n**New Applicants** (not received ATAP in previous 4 months):\n- $90 flat deduction only\n\n**Continuing Recipients** (received ATAP within previous 4 months):\n\n| Tier | Months | Flat Deduction | Percentage Disregard |\n|------|--------|----------------|---------------------|\n| 1    | 1-12   | $150           | 33%                 |\n| 2    | 13-24  | $150           | 25%                 |\n| 3    | 25-36  | $150           | 20%                 |\n| 4    | 37-48  | $150           | 15%                 |\n| 5    | 49-60  | $150           | 10%                 |\n| 6    | 61+    | $150           | 0%                  |\n\n**Implementation Note**: Uses `is_tanf_enrolled` to distinguish new applicants ($90) from continuing recipients ($150 + 33%). Tier 1 rate is applied for continuing recipients as PolicyEngine cannot track tier progression across months.\n\n**Source**: [7 AAC 45.480](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.480)\n\n### Childcare Deduction (7 AAC 45.485)\n\n| Child Age | Maximum Monthly Disregard |\n|-----------|---------------------------|\n| Under 2   | $200 per child            |\n| 2 and older | $175 per child          |\n\n**Source**: [7 AAC 45.485](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.485)\n\n### Child Support Passthrough (7 AAC 45.400)\n\nRecipients may retain up to **$50** of monthly child support payments. Amounts above $50 are counted as unearned income.\n\n**Source**: [7 AAC 45.400](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.400)\n\n---\n\n## Benefit Calculation (7 AAC 45.525)\n\n**Formula**:\n```\nBenefit = floor((Need Standard - Countable Income) × (Max Payment for 2 ÷ Need Standard for 2))\n```\n\n**Maximum Payment Amounts**:\n\n| Unit Type | Base (1 child) | Per Additional Child |\n|-----------|----------------|---------------------|\n| One Caretaker | $821       | +$102               |\n| Child-Only    | $452       | +$102               |\n| Pregnant Woman | $514      | -                   |\n\n**Rules**:\n- Minimum payment: **$10** (payments below this are not issued)\n- Amounts are rounded down to the nearest dollar\n\n**Example** (Single parent with 2 children, $800/month earned income, continuing recipient):\n```\nGross income: $800 ≤ $1,739 (185% limit for size 3) ✓\nWork incentive: $150 flat + ($800-$150) × 33% = $364.50\nCountable earned: $800 - $364.50 = $435.50\nCountable income: $435.50 ≤ $940 (need standard) ✓\nBenefit: floor(($940 - $435.50) × ($821 ÷ $823)) = floor($503.27) = $503\n```\n\n**Source**: [7 AAC 45.525](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.525)\n\n---\n\n## Files Added\n\n### Parameters (29 files)\n```\npolicyengine_us/parameters/gov/states/ak/dpa/atap/\n├── income/\n│   ├── child_support_passthrough.yaml\n│   ├── deductions/\n│   │   ├── child_care_disregard.yaml\n│   │   ├── incapacitated_parent_care_disregard.yaml\n│   │   ├── initial_work_deduction.yaml\n│   │   ├── work_incentive_flat.yaml\n│   │   └── work_incentive_percent.yaml\n│   ├── gross_income_limit/\n│   │   ├── adult_included/\n│   │   │   ├── additional_person.yaml\n│   │   │   └── amount.yaml\n│   │   ├── child_only/\n│   │   │   ├── additional_child.yaml\n│   │   │   └── amount.yaml\n│   │   ├── incapacitated_parent/amount.yaml\n│   │   └── pregnant_woman/amount.yaml\n│   └── need_standard/\n│       ├── adult_included/\n│       │   ├── additional_person.yaml\n│       │   └── amount.yaml\n│       ├── child_only/\n│       │   ├── additional_child.yaml\n│       │   └── amount.yaml\n│       ├── incapacitated_parent/amount.yaml\n│       └── pregnant_woman/amount.yaml\n├── payment/\n│   ├── child_only/\n│   │   ├── additional_child.yaml\n│   │   └── base.yaml\n│   ├── incapacitated_parent.yaml\n│   ├── minimum.yaml\n│   ├── one_caretaker/\n│   │   ├── additional_child.yaml\n│   │   └── base.yaml\n│   ├── pregnant_woman.yaml\n│   └── two_parent_able/summer_reduction_rate.yaml\n└── resource_limit/\n    ├── elderly/\n    │   ├── age_threshold.yaml\n    │   └── amount.yaml\n    └── standard/amount.yaml\n```\n\n### Variables (15 files)\n```\npolicyengine_us/variables/gov/states/ak/dpa/atap/\n├── ak_atap.py\n├── ak_atap_gross_income_limit.py\n├── ak_atap_maximum_payment.py\n├── ak_atap_need_standard.py\n├── ak_atap_unit_type.py\n├── eligibility/\n│   ├── ak_atap_eligible.py\n│   ├── ak_atap_gross_income_eligible.py\n│   ├── ak_atap_net_income_eligible.py\n│   └── ak_atap_resources_eligible.py\n└── income/\n    ├── ak_atap_countable_income.py\n    ├── ak_atap_gross_income.py\n    ├── earned/\n    │   ├── ak_atap_childcare_deduction.py\n    │   ├── ak_atap_countable_earned_income.py\n    │   └── ak_atap_countable_earned_income_person.py\n    └── unearned/\n        └── ak_atap_countable_unearned_income.py\n```\n\n### Tests (13 files, 108 test cases)\n```\npolicyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/\n├── ak_atap.yaml\n├── ak_atap_childcare_deduction.yaml\n├── ak_atap_countable_earned_income.yaml\n├── ak_atap_countable_unearned_income.yaml\n├── ak_atap_eligible.yaml\n├── ak_atap_gross_income_eligible.yaml\n├── ak_atap_gross_income_limit.yaml\n├── ak_atap_maximum_payment.yaml\n├── ak_atap_need_standard.yaml\n├── ak_atap_net_income_eligible.yaml\n├── ak_atap_resources_eligible.yaml\n├── ak_atap_unit_type.yaml\n└── integration.yaml\n```\n\n---\n\n## Test Coverage Summary\n\n| Category | Test Count |\n|----------|------------|\n| Benefit calculation | 10 |\n| Childcare deduction | 9 |\n| Earned income | 9 |\n| Unearned income | 7 |\n| Eligibility | 8 |\n| Gross income eligibility | 6 |\n| Gross income limit | 7 |\n| Maximum payment | 11 |\n| Need standard | 7 |\n| Net income eligibility | 6 |\n| Resources eligibility | 10 |\n| Unit type | 11 |\n| Integration | 7 |\n| **Total** | **108** |\n\n---\n\n## Known Limitations\n\n1. **Work Incentive Tiers**: Uses Tier 1 (33% disregard) for continuing recipients as PolicyEngine cannot track months receiving ATAP\n2. **Time Limits**: Cannot simulate Alaska's 60-month lifetime limit due to single-period architecture\n3. **Incapacitated Parent**: Parameter files exist but logic not yet implemented in variables\n4. **Two-Parent Summer Reduction**: Parameter exists but not yet implemented (50% reduction in July-September)\n5. **Values from 2021**: Income standards and payment levels are based on 2021 values (subject to annual SSI COLA adjustments)\n\n---\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+          "body": "## Summary\n\nImplements Alaska Temporary Assistance Program (ATAP), Alaska's TANF program, covering income eligibility, deductions, and benefit calculations for **adult-included units only**.\n\nCloses #7075\n\n---\n\n## Alaska ATAP Income Rules\n\n### Regulatory Authority\n\n- **Alaska Statutes**: [AS 47.27](https://www.akleg.gov/basis/statutes.asp#47.27) - Temporary Assistance\n- **Alaska Administrative Code**: [7 AAC 45](https://www.law.cornell.edu/regulations/alaska/title-7/part-3/chapter-45) - Public Assistance\n- **Program Standards**: [TA-Standards.pdf](http://dpaweb.hss.state.ak.us/POLICY/PDF/TA-Standards.pdf)\n\n---\n\n### 1. INCOME ELIGIBILITY TESTS\n\n#### Gross Income Test (185% Standard)\n\nTotal nonexempt gross monthly income must not exceed 185% of the need standard.\n\nSource: [7 AAC 45.520](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.520)\n\n#### Net Income Test (Need Standard)\n\nCountable income (after deductions) must not exceed the need standard.\n\nSource: [7 AAC 45.520](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.520)\n\n#### Resource Test\n\n| Unit Type | Resource Limit |\n|-----------|----------------|\n| Standard  | $2,000         |\n| Elderly (60+) | $3,000     |\n\nSource: [7 AAC 45.280](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.280)\n\n---\n\n### 2. INCOME DEDUCTIONS & EXEMPTIONS\n\n#### A. Work Incentive Deduction\n\n**New Applicants** (not received ATAP in previous 4 months):\n- $90 flat deduction only\n\n**Continuing Recipients** (received ATAP within previous 4 months):\n- $150 flat deduction + 33% of remaining earnings\n\n**Implementation Note**: Uses `is_tanf_enrolled` to distinguish new applicants ($90) from continuing recipients ($150 + 33%). Tier 1 rate is applied for continuing recipients as PolicyEngine cannot track tier progression across months.\n\nSource: [7 AAC 45.480](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.480)\n\n#### B. Childcare Deduction\n\n| Child Age | Maximum Monthly Disregard |\n|-----------|---------------------------|\n| Under 2   | $200 per child            |\n| 2 and older | $175 per child          |\n\nSource: [7 AAC 45.485](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.485)\n\n#### C. Child Support Passthrough\n\nRecipients may retain up to **$50** of monthly child support payments.\n\nSource: [7 AAC 45.400](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.400)\n\n---\n\n### 3. INCOME STANDARDS BY FAMILY SIZE (2026)\n\n#### Adult-Included Units (One Caretaker + Children)\n\n| Family Size | 185% Standard | Need Standard | Max Payment |\n|-------------|---------------|---------------|-------------|\n| 2           | $3,529        | $1,908        | $821        |\n| 3           | $3,975        | $2,149        | $923        |\n| 4           | $4,417        | $2,388        | $1,025      |\n| 5           | $4,863        | $2,629        | $1,127      |\n| 6           | $5,309        | $2,870        | $1,229      |\n| 7           | $5,749        | $3,108        | $1,331      |\n| 8           | $6,199        | $3,351        | $1,433      |\n| 9+          | +$447         | +$242         | +$102       |\n\nSource: [TA-Standards.pdf](http://dpaweb.hss.state.ak.us/POLICY/PDF/TA-Standards.pdf)\n\n---\n\n### 4. BENEFIT CALCULATION\n\n#### Formula:\n```\nBenefit = (Need Standard − Countable Income) × (Max Payment ÷ Need Standard)\n```\n\nThe ratio (Max Payment / Need Standard) is the \"ratable reduction\" percentage, approximately 43% for 2026.\n\nSource: [7 AAC 45.525](https://www.law.cornell.edu/regulations/alaska/7-AAC-45.525)\n\n---\n\n## Test Coverage\n\n**96 test cases** across 13 test files covering:\n\n| Category | Tests | Key Scenarios |\n|----------|-------|---------------|\n| Eligibility | 8 | Combined eligibility checks |\n| Gross Income Test | 7 | 185% threshold, exact boundary |\n| Net Income Test | 7 | Need standard comparison |\n| Resource Test | 9 | Standard ($2,000) and elderly ($3,000) limits |\n| Earned Income | 13 | New vs continuing recipients, two earners |\n| Unearned Income | 7 | Child support passthrough |\n| Childcare Deduction | 10 | Age brackets (under 2, exactly 2, 2+) |\n| Need Standard | 7 | Family sizes 1-10, additional person calc |\n| Maximum Payment | 7 | Family sizes 1-11 |\n| Integration | 9 | Full pipeline with edge cases |\n\n**Edge cases tested:**\n- Income at exact 185% gross threshold\n- Gross income passes but net income fails\n- Two-parent household with both earners\n- Child age exactly 2 (childcare deduction boundary)\n- Family size 9 (first beyond table)\n\n---\n\n## Known Limitations (Not Modeled)\n\n### Unit Types Not Modeled\n1. **Child-only units** - Only adult-included is implemented\n2. **Pregnant woman only** - Not implemented\n3. **Two-parent incapacitated** - Both parents treated as able to work\n\n### Features Not Modeled\n4. **Minimum payment threshold ($10)** - Payments below $10 should not be issued per regulation\n5. **Shelter/utility reduction** - Regional heating utility standards, non-heating utility standards, and shelter allowances that reduce benefits for families with low shelter costs\n6. **Summer reduction for two-parent families** - Reduced payment during summer months\n7. **Income deeming** - Personal allowance deductions for stepparent, alien sponsor, or parent of minor parent\n8. **Work incentive tiers** - Uses Tier 1 (33% disregard) for all continuing recipients; cannot track months receiving ATAP\n9. **60-month lifetime limit** - Cannot simulate due to single-period architecture\n\n### Historical Values\n10. **2017-2022 need standard values** - Estimated via SSI COLA backwards calculation from 2023 authoritative values; not verified from official sources\n\n---\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7076/reactions",
             "total_count": 0,
@@ -50263,7 +50227,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 5,
+          "commits": 8,
           "review_comments": 0,
           "files": [
             {
@@ -50274,25 +50238,25 @@
               "changes": 4
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/child_support_deduction.yaml",
+              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/gross_income_limit_rate.yaml",
               "status": "added",
               "additions": 12,
               "deletions": 0,
               "changes": 12
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/deductions/child_care_disregard.yaml",
+              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/deductions/child_support.yaml",
+              "status": "added",
+              "additions": 12,
+              "deletions": 0,
+              "changes": 12
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/deductions/childcare.yaml",
               "status": "added",
               "additions": 21,
               "deletions": 0,
               "changes": 21
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/deductions/incapacitated_parent_care_disregard.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
             },
             {
               "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/deductions/initial_work_deduction.yaml",
@@ -50302,158 +50266,53 @@
               "changes": 12
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/deductions/work_incentive_flat.yaml",
+              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/work_incentive/flat.yaml",
               "status": "added",
               "additions": 12,
               "deletions": 0,
               "changes": 12
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/deductions/work_incentive_percent.yaml",
+              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/work_incentive/rate.yaml",
               "status": "added",
               "additions": 14,
               "deletions": 0,
               "changes": 14
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/gross_income_limit/adult_included/additional_person.yaml",
+              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/need_standard/additional_person.yaml",
               "status": "added",
-              "additions": 12,
+              "additions": 26,
               "deletions": 0,
-              "changes": 12
+              "changes": 26
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/gross_income_limit/adult_included/amount.yaml",
+              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/need_standard/amount.yaml",
               "status": "added",
-              "additions": 32,
+              "additions": 94,
               "deletions": 0,
-              "changes": 32
+              "changes": 94
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/gross_income_limit/child_only/additional_child.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/gross_income_limit/child_only/amount.yaml",
-              "status": "added",
-              "additions": 20,
-              "deletions": 0,
-              "changes": 20
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/gross_income_limit/incapacitated_parent/amount.yaml",
-              "status": "added",
-              "additions": 16,
-              "deletions": 0,
-              "changes": 16
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/gross_income_limit/pregnant_woman/amount.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/need_standard/adult_included/additional_person.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/need_standard/adult_included/amount.yaml",
-              "status": "added",
-              "additions": 32,
-              "deletions": 0,
-              "changes": 32
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/need_standard/child_only/additional_child.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/need_standard/child_only/amount.yaml",
-              "status": "added",
-              "additions": 20,
-              "deletions": 0,
-              "changes": 20
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/need_standard/incapacitated_parent/amount.yaml",
-              "status": "added",
-              "additions": 16,
-              "deletions": 0,
-              "changes": 16
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/income/need_standard/pregnant_woman/amount.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/payment/child_only/additional_child.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/payment/child_only/base.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/payment/incapacitated_parent.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/payment/minimum.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/payment/one_caretaker/additional_child.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/payment/one_caretaker/base.yaml",
+              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/need_standard/max_unit_size.yaml",
               "status": "added",
               "additions": 14,
               "deletions": 0,
               "changes": 14
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/payment/pregnant_woman.yaml",
+              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/payment/additional_child.yaml",
               "status": "added",
               "additions": 12,
               "deletions": 0,
               "changes": 12
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/payment/two_parent_able/summer_reduction_rate.yaml",
+              "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/payment/base.yaml",
               "status": "added",
-              "additions": 12,
+              "additions": 14,
               "deletions": 0,
-              "changes": 12
+              "changes": 14
             },
             {
               "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/resource_limit/elderly/age_threshold.yaml",
@@ -50475,6 +50334,111 @@
               "additions": 12,
               "deletions": 0,
               "changes": 12
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/ak_atap.yaml",
+              "status": "added",
+              "additions": 146,
+              "deletions": 0,
+              "changes": 146
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/ak_atap_childcare_deduction.yaml",
+              "status": "added",
+              "additions": 233,
+              "deletions": 0,
+              "changes": 233
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/ak_atap_countable_earned_income.yaml",
+              "status": "added",
+              "additions": 178,
+              "deletions": 0,
+              "changes": 178
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/ak_atap_countable_earned_income_person.yaml",
+              "status": "added",
+              "additions": 124,
+              "deletions": 0,
+              "changes": 124
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/ak_atap_countable_unearned_income.yaml",
+              "status": "added",
+              "additions": 150,
+              "deletions": 0,
+              "changes": 150
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/ak_atap_eligible.yaml",
+              "status": "added",
+              "additions": 177,
+              "deletions": 0,
+              "changes": 177
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/ak_atap_gross_income_eligible.yaml",
+              "status": "added",
+              "additions": 155,
+              "deletions": 0,
+              "changes": 155
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/ak_atap_gross_income_limit.yaml",
+              "status": "added",
+              "additions": 137,
+              "deletions": 0,
+              "changes": 137
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/ak_atap_maximum_payment.yaml",
+              "status": "added",
+              "additions": 168,
+              "deletions": 0,
+              "changes": 168
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/ak_atap_need_standard.yaml",
+              "status": "added",
+              "additions": 162,
+              "deletions": 0,
+              "changes": 162
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/ak_atap_net_income_eligible.yaml",
+              "status": "added",
+              "additions": 155,
+              "deletions": 0,
+              "changes": 155
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/ak_atap_resources_eligible.yaml",
+              "status": "added",
+              "additions": 190,
+              "deletions": 0,
+              "changes": 190
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/ak/dpa/atap/integration.yaml",
+              "status": "added",
+              "additions": 326,
+              "deletions": 0,
+              "changes": 326
+            },
+            {
+              "filename": "policyengine_us/variables/gov/states/ak/dpa/atap/ak_atap.py",
+              "status": "added",
+              "additions": 43,
+              "deletions": 0,
+              "changes": 43
+            },
+            {
+              "filename": "policyengine_us/variables/gov/states/ak/dpa/atap/ak_atap_gross_income_limit.py",
+              "status": "added",
+              "additions": 17,
+              "deletions": 0,
+              "changes": 17
             }
           ]
         },
@@ -53116,12 +53080,12 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-23T23:24:26Z",
-          "updated_at": "2025-12-25T20:38:54Z",
+          "updated_at": "2026-01-11T16:40:11Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
-          "draft": true,
+          "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/7039",
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7039",
@@ -53129,7 +53093,7 @@
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7039.patch",
             "merged_at": null
           },
-          "body": "## Summary\nCloses #7038\n\nImplements the New Mexico TANF program (officially called \"New Mexico Works\"), administered by the New Mexico Health Care Authority (HCA).\n\n## Regulatory Authority\n- [8.102 NMAC - Cash Assistance Programs](https://www.srca.nm.gov/parts/title08/08.102.0001.html)\n- [8.102.500 NMAC - Eligibility Policy](https://www.srca.nm.gov/parts/title08/08.102.0500.html)\n- [8.102.520 NMAC - Income](https://www.srca.nm.gov/parts/title08/08.102.0520.html)\n- [HCA New Mexico Works Information](https://www.hca.nm.gov/lookingforassistance/temporary_assistance_for_needy_families/)\n\n## Income Eligibility Tests\n\n### Gross Income Test\nGross income must be less than 85% of the Federal Poverty Guidelines for the benefit group size.\n> Source: [8.102.520.11 NMAC](https://www.srca.nm.gov/parts/title08/08.102.0520.html)\n\n### Net Income Test\nCountable net income must be less than the payment standard (standard of need) for the benefit group size.\n> Source: [8.102.520.11 NMAC](https://www.srca.nm.gov/parts/title08/08.102.0520.html)\n\n## Income Deductions & Exemptions\n\n### Work Incentive Deduction (Earned Income)\n| Family Type | Flat Deduction | Plus Percentage |\n|-------------|----------------|-----------------|\n| Single-parent families | $125 | + 50% of remainder |\n| Two-parent families | $225 per parent | + 50% of remainder |\n| Non-parent caretakers | $125 | + 50% of remainder |\n| Non-benefit group members | $125 | (flat only) |\n> Source: [8.102.520.12 NMAC](https://www.srca.nm.gov/parts/title08/08.102.0520.html)\n\n### Child Care Deduction\n| Child Age | Maximum Monthly Deduction |\n|-----------|---------------------------|\n| Under age 2 | $200 per child |\n| Age 2 and older | $175 per child |\n> Source: [8.102.520.12 NMAC](https://www.srca.nm.gov/parts/title08/08.102.0520.html)\n\n### Child Support Deduction\n| Component | Amount |\n|-----------|--------|\n| Disregard | $50 |\n| Passthrough (1 child) | $100 |\n| Passthrough (2+ children) | $200 |\n> Source: [8.102.520.10 NMAC](https://www.srca.nm.gov/parts/title08/08.102.0520.html), [HCA Child Support Announcement (Jan 2023)](https://www.hca.nm.gov/2023/01/10/human-services-department-to-pass-through-more-money-to-low-income-families/)\n\n## Income Standards\n\n| Benefit Group Size | Payment Standard |\n|-------------------|------------------|\n| 1 | $327 |\n| 2 | $439 |\n| 3 | $549 |\n| 4 | $663 |\n| 5 | $775 |\n| 6 | $887 |\n| 7 | $999 |\n| 8 | $1,134 |\n| Each additional | +$111 |\n\n> Source: [8.102.500.8(D)(4) NMAC](https://www.srca.nm.gov/parts/title08/08.102.0500.html), [HCA 23% Increase Announcement (Sept 2023)](https://www.hca.nm.gov/2023/09/01/state-announces-a-23-percent-increase-in-cash-assistance-for-low-income-new-mexico-families/)\n\n## Benefit Calculation\n```\nBenefit = Payment Standard - Countable Income\n\nWhere:\n  Countable Income = Countable Earned + Countable Unearned - Child Care Deduction\n  Countable Earned = max(Gross Earned - Work Incentive Deduction, 0)\n  Countable Unearned = max(Gross Unearned - Child Support Deduction, 0)\n```\n> Source: [8.102.500.8 NMAC](https://www.srca.nm.gov/parts/title08/08.102.0500.html)\n\n## Files Added\n\n### Parameters (27 files)\n```\ntanf/\n├── age_threshold/\n│   ├── high_school_student.yaml\n│   ├── minor_child.yaml\n│   └── special_education.yaml\n├── diversion/\n│   └── amount.yaml\n├── income/\n│   ├── deductions/\n│   │   ├── child_care/amount.yaml\n│   │   ├── child_support/\n│   │   │   ├── disregard.yaml\n│   │   │   └── passthrough.yaml\n│   │   └── work_incentive/\n│   │       ├── non_benefit_group/amount.yaml\n│   │       ├── other_member/amount.yaml\n│   │       ├── rate.yaml\n│   │       ├── single_parent/amount.yaml\n│   │       └── two_parent/amount.yaml\n│   ├── gross_limit/rate.yaml\n│   └── self_employment/mileage_rate.yaml\n├── payment_standard/\n│   ├── additional_person.yaml\n│   ├── amount.yaml\n│   └── max_unit_size.yaml\n├── resources/\n│   ├── liquid/amount.yaml\n│   └── non_liquid/amount.yaml\n├── sanctions/\n│   ├── first_level_rate.yaml\n│   └── second_level_rate.yaml\n├── school_clothing_allowance/\n│   ├── august.yaml\n│   └── january.yaml\n├── support_services/\n│   └── income_limit_rate.yaml\n└── transition_bonus/\n    ├── amount.yaml\n    ├── income_limit_rate.yaml\n    └── minimum_work_hours.yaml\n```\n\n### Variables (13 files)\n```\ntanf/\n├── eligibility/\n│   ├── nm_tanf_eligible.py\n│   ├── nm_tanf_gross_income_eligible.py\n│   └── nm_tanf_net_income_eligible.py\n├── income/\n│   ├── nm_tanf_child_care_deduction.py\n│   ├── nm_tanf_child_support_deduction.py\n│   ├── nm_tanf_countable_earned_income.py\n│   ├── nm_tanf_countable_income.py\n│   ├── nm_tanf_countable_unearned_income.py\n│   ├── nm_tanf_earned_income_deduction_person.py\n│   ├── nm_tanf_earned_income_deduction.py\n│   └── nm_tanf_gross_income.py\n├── nm_tanf_maximum_benefit.py\n└── nm_tanf.py\n```\n\n### Tests (11 files)\n```\ntanf/\n├── integration.yaml (13 cases)\n├── nm_tanf_child_care_deduction.yaml (14 cases)\n├── nm_tanf_countable_earned_income.yaml (5 cases)\n├── nm_tanf_countable_income.yaml (5 cases)\n├── nm_tanf_countable_unearned_income.yaml (15 cases)\n├── nm_tanf_earned_income_deduction.yaml (14 cases)\n├── nm_tanf_eligible.yaml (5 cases)\n├── nm_tanf_gross_income_eligible.yaml (12 cases)\n├── nm_tanf_maximum_benefit.yaml (11 cases)\n├── nm_tanf_net_income_eligible.yaml (12 cases)\n└── nm_tanf.yaml (16 cases)\n```\n\n## Test Coverage\n- **122 total test cases**\n- Unit tests for each variable\n- 13 integration tests covering realistic scenarios:\n  - Single-parent with 1-3 children\n  - Two-parent households\n  - Households with working teenagers\n  - Child care expense scenarios\n  - Child support income scenarios\n  - Edge cases (income at thresholds, large households)\n\n## Example Calculation\n**Case: Single parent with two children earning $1,000/month**\n```\nGross Income: $1,000/month\n85% FPL for size 3: $1,762/month → Gross income eligible ✓\n\nWork Incentive Deduction (single parent):\n  Step 1: $1,000 - $125 = $875\n  Step 2: $875 × 0.50 = $437.50\n  Total deduction: $562.50\n  Countable earned: $437.50\n\nPayment Standard (size 3): $549\nBenefit: $549 - $437.50 = $111.50/month\n```\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+          "body": "## Summary\nCloses #7038\n\nImplements the New Mexico TANF program (officially called \"New Mexico Works\"), administered by the New Mexico Health Care Authority (HCA).\n\n## Regulatory Authority\n- [NM TANF State Plan (2024-2026)](https://www.hca.nm.gov/wp-content/uploads/TANF-Final-State-Plan-2024-to-2026.pdf)\n- [8.102 NMAC - Cash Assistance Programs](https://www.srca.nm.gov/parts/title08/08.102.0001.html)\n- [8.102.500 NMAC - Eligibility Policy](https://www.srca.nm.gov/parts/title08/08.102.0500.html)\n- [8.102.520 NMAC - Income](https://www.srca.nm.gov/parts/title08/08.102.0520.html)\n\n## Income Eligibility Tests\n\n### Gross Income Test\nGross income must be at or below 85% of the Federal Poverty Guidelines for the benefit group size.\n> Source: [8.102.500.8(B) NMAC](https://www.srca.nm.gov/parts/title08/08.102.0500.html), [State Plan Section 9.8, p.20](https://www.hca.nm.gov/wp-content/uploads/TANF-Final-State-Plan-2024-to-2026.pdf#page=20)\n\n### Net Income Test\nCountable net income must be at or below the payment standard (standard of need) for the benefit group size.\n> Source: [8.102.520.11 NMAC](https://www.srca.nm.gov/parts/title08/08.102.0520.html)\n\n## Income Deductions & Exemptions\n\n### Work Incentive Deduction (Earned Income)\n| Family Type | Flat Deduction | Plus Percentage |\n|-------------|----------------|-----------------|\n| Single-parent families | $125 | + 50% of remainder |\n| Two-parent families | $225 per parent | + 50% of remainder |\n> Source: [8.102.520.12(C) NMAC](https://www.srca.nm.gov/parts/title08/08.102.0520.html), [State Plan Section 9.8, p.21](https://www.hca.nm.gov/wp-content/uploads/TANF-Final-State-Plan-2024-to-2026.pdf#page=21)\n\n### Child Care Deduction\n| Child Age | Maximum Monthly Deduction |\n|-----------|---------------------------|\n| Under age 2 | $200 per child |\n| Age 2 and older | $175 per child |\n> Source: [8.102.520.12(D) NMAC](https://www.srca.nm.gov/parts/title08/08.102.0520.html), [State Plan Section 9.8, p.21](https://www.hca.nm.gov/wp-content/uploads/TANF-Final-State-Plan-2024-to-2026.pdf#page=21)\n\n### Child Support Deduction\n| Component | Amount |\n|-----------|--------|\n| Disregard | $50 |\n| Passthrough (1 child) | $100 |\n| Passthrough (2+ children) | $200 |\n> Source: [8.102.520.10 NMAC](https://www.srca.nm.gov/parts/title08/08.102.0520.html)\n\n## Resource Limits\n\n| Resource Type | Limit |\n|---------------|-------|\n| Liquid resources | $1,500 |\n| Non-liquid resources | $2,000 |\n\n> Source: [8.102.510.8 NMAC](https://www.srca.nm.gov/parts/title08/08.102.0510.html), [State Plan Section 9.7, p.20](https://www.hca.nm.gov/wp-content/uploads/TANF-Final-State-Plan-2024-to-2026.pdf#page=20)\n\n## Payment Standards (Historical)\n\n| Benefit Group Size | Aug 2015 (7.5% adj) | Nov 2018 (adj removed) | Aug 2023 (23% increase) |\n|-------------------|---------------------|------------------------|-------------------------|\n| 1 | $244 | $266 | $327 |\n| 2 | $327 | $357 | $439 |\n| 3 | $409 | $447 | $549 |\n| 4 | $493 | $539 | $663 |\n| 5 | $576 | $630 | $775 |\n| 6 | $659 | $721 | $887 |\n| 7 | $743 | $812 | $999 |\n| 8 | $843 | $922 | $1,134 |\n| Each additional | +$83 | +$91 | +$111 |\n\n> Source: [8.102.500.8(D) NMAC](https://www.srca.nm.gov/parts/title08/08.102.0500.html), [State Plan p.19](https://www.hca.nm.gov/wp-content/uploads/TANF-Final-State-Plan-2024-to-2026.pdf#page=19)\n\n## Benefit Calculation\n```\nBenefit = Payment Standard - Countable Income\n\nWhere:\n  Countable Income = Countable Earned + Countable Unearned\n  Countable Earned = max(Gross Earned - Work Incentive - Child Care, 0)\n  Countable Unearned = max(Gross Unearned - Child Support Deduction, 0)\n```\n\n## File Structure\n\n### Variables\n```\nnm_works/\n├── eligibility/\n│   ├── nm_works_eligible.py\n│   ├── nm_works_gross_income_eligible.py\n│   ├── nm_works_net_income_eligible.py\n│   └── nm_works_resources_eligible.py\n├── income/\n│   ├── nm_works_gross_income.py\n│   ├── nm_works_countable_income.py\n│   ├── earned/\n│   │   ├── nm_works_countable_earned_income.py\n│   │   └── nm_works_earned_income_deduction_person.py\n│   ├── unearned/\n│   │   └── nm_works_countable_unearned_income.py\n│   └── deductions/\n│       ├── nm_works_childcare_deduction.py\n│       └── nm_works_child_support_deduction.py\n├── nm_works.py\n└── nm_works_maximum_benefit.py\n```\n\n### Parameters\n```\nnm_works/\n├── income/\n│   ├── gross_limit/rate.yaml (85% FPL)\n│   └── deductions/\n│       ├── work_incentive/ (single_parent, two_parent, rate)\n│       ├── childcare/amount.yaml (bracket by age)\n│       └── child_support/ (disregard, passthrough)\n├── payment_standard/\n│   ├── amount.yaml (by size, with history)\n│   ├── additional_person.yaml\n│   └── max_table_size.yaml\n└── resources/limit/ (liquid, non_liquid)\n```\n\n## Not Implemented\n\n- Extended age eligibility for special education (18-21)\n- Extended age eligibility for high school students (18-19)\n- Transition Bonus Program\n- Diversion Payment\n- Sanctions\n- Support Services\n- School Clothing Allowance\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7039/reactions",
             "total_count": 0,
@@ -53146,218 +53110,218 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 3,
+          "commits": 10,
           "review_comments": 0,
           "files": [
             {
               "filename": "changelog_entry.yaml",
               "status": "modified",
-              "additions": 4,
-              "deletions": 0,
-              "changes": 4
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/age_threshold/high_school_student.yaml",
+              "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/income/deductions/child_support/disregard.yaml",
               "status": "added",
               "additions": 12,
               "deletions": 0,
               "changes": 12
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/age_threshold/minor_child.yaml",
+              "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/income/deductions/child_support/passthrough.yaml",
               "status": "added",
-              "additions": 12,
+              "additions": 24,
               "deletions": 0,
-              "changes": 12
+              "changes": 24
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/age_threshold/special_education.yaml",
-              "status": "added",
-              "additions": 14,
-              "deletions": 0,
-              "changes": 14
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/diversion/amount.yaml",
-              "status": "added",
-              "additions": 21,
-              "deletions": 0,
-              "changes": 21
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/income/deductions/child_care/amount.yaml",
-              "status": "added",
-              "additions": 21,
-              "deletions": 0,
-              "changes": 21
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/income/deductions/child_support/disregard.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/income/deductions/child_support/passthrough.yaml",
+              "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/income/deductions/childcare/amount.yaml",
               "status": "added",
               "additions": 23,
               "deletions": 0,
               "changes": 23
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/income/deductions/work_incentive/non_benefit_group/amount.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/income/deductions/work_incentive/other_member/amount.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/income/deductions/work_incentive/rate.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/income/deductions/work_incentive/single_parent/amount.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/income/deductions/work_incentive/two_parent/amount.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/income/gross_limit/rate.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/income/self_employment/mileage_rate.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/payment_standard/additional_person.yaml",
+              "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/income/deductions/work_incentive/rate.yaml",
               "status": "added",
               "additions": 14,
               "deletions": 0,
               "changes": 14
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/payment_standard/amount.yaml",
-              "status": "added",
-              "additions": 52,
-              "deletions": 0,
-              "changes": 52
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/payment_standard/max_unit_size.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/resources/liquid/amount.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/resources/non_liquid/amount.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/sanctions/first_level_rate.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/sanctions/second_level_rate.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/school_clothing_allowance/august.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/school_clothing_allowance/january.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/support_services/income_limit_rate.yaml",
-              "status": "added",
-              "additions": 12,
-              "deletions": 0,
-              "changes": 12
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/transition_bonus/amount.yaml",
+              "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/income/deductions/work_incentive/single_parent/amount.yaml",
               "status": "added",
               "additions": 14,
               "deletions": 0,
               "changes": 14
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/transition_bonus/income_limit_rate.yaml",
+              "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/income/deductions/work_incentive/two_parent/amount.yaml",
               "status": "added",
-              "additions": 12,
+              "additions": 14,
               "deletions": 0,
-              "changes": 12
+              "changes": 14
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/nm/hca/tanf/transition_bonus/minimum_work_hours.yaml",
+              "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/income/gross_limit/rate.yaml",
               "status": "added",
-              "additions": 12,
+              "additions": 14,
               "deletions": 0,
-              "changes": 12
+              "changes": 14
             },
             {
-              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/tanf/integration.yaml",
+              "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/payment_standard/additional_person.yaml",
               "status": "added",
-              "additions": 571,
+              "additions": 22,
               "deletions": 0,
-              "changes": 571
+              "changes": 22
             },
             {
-              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/tanf/nm_tanf.yaml",
+              "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/payment_standard/amount.yaml",
               "status": "added",
-              "additions": 182,
+              "additions": 62,
               "deletions": 0,
-              "changes": 182
+              "changes": 62
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/payment_standard/max_table_size.yaml",
+              "status": "added",
+              "additions": 14,
+              "deletions": 0,
+              "changes": 14
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/resources/limit/liquid.yaml",
+              "status": "added",
+              "additions": 14,
+              "deletions": 0,
+              "changes": 14
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/resources/limit/non_liquid.yaml",
+              "status": "added",
+              "additions": 14,
+              "deletions": 0,
+              "changes": 14
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/nm_works/eligibility/nm_works_eligible.yaml",
+              "status": "added",
+              "additions": 53,
+              "deletions": 0,
+              "changes": 53
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/nm_works/eligibility/nm_works_gross_income_eligible.yaml",
+              "status": "added",
+              "additions": 123,
+              "deletions": 0,
+              "changes": 123
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/nm_works/eligibility/nm_works_net_income_eligible.yaml",
+              "status": "added",
+              "additions": 108,
+              "deletions": 0,
+              "changes": 108
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/nm_works/eligibility/nm_works_resources_eligible.yaml",
+              "status": "added",
+              "additions": 35,
+              "deletions": 0,
+              "changes": 35
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/nm_works/income/nm_works_child_support_deduction.yaml",
+              "status": "added",
+              "additions": 253,
+              "deletions": 0,
+              "changes": 253
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/nm_works/income/nm_works_childcare_deduction.yaml",
+              "status": "added",
+              "additions": 325,
+              "deletions": 0,
+              "changes": 325
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/nm_works/income/nm_works_countable_earned_income.yaml",
+              "status": "added",
+              "additions": 202,
+              "deletions": 0,
+              "changes": 202
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/nm_works/income/nm_works_countable_unearned_income.yaml",
+              "status": "added",
+              "additions": 101,
+              "deletions": 0,
+              "changes": 101
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/nm_works/income/nm_works_earned_income_deduction_person.yaml",
+              "status": "added",
+              "additions": 326,
+              "deletions": 0,
+              "changes": 326
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/nm_works/integration.yaml",
+              "status": "added",
+              "additions": 517,
+              "deletions": 0,
+              "changes": 517
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/nm_works/nm_works.yaml",
+              "status": "added",
+              "additions": 65,
+              "deletions": 0,
+              "changes": 65
+            },
+            {
+              "filename": "policyengine_us/tests/policy/baseline/gov/states/nm/hca/nm_works/nm_works_maximum_benefit.yaml",
+              "status": "added",
+              "additions": 44,
+              "deletions": 0,
+              "changes": 44
+            },
+            {
+              "filename": "policyengine_us/variables/gov/states/nm/hca/nm_works/eligibility/nm_works_eligible.py",
+              "status": "added",
+              "additions": 29,
+              "deletions": 0,
+              "changes": 29
+            },
+            {
+              "filename": "policyengine_us/variables/gov/states/nm/hca/nm_works/eligibility/nm_works_gross_income_eligible.py",
+              "status": "added",
+              "additions": 17,
+              "deletions": 0,
+              "changes": 17
+            },
+            {
+              "filename": "policyengine_us/variables/gov/states/nm/hca/nm_works/eligibility/nm_works_net_income_eligible.py",
+              "status": "added",
+              "additions": 17,
+              "deletions": 0,
+              "changes": 17
+            },
+            {
+              "filename": "policyengine_us/variables/gov/states/nm/hca/nm_works/eligibility/nm_works_resources_eligible.py",
+              "status": "added",
+              "additions": 20,
+              "deletions": 0,
+              "changes": 20
+            },
+            {
+              "filename": "policyengine_us/variables/gov/states/nm/hca/nm_works/income/deductions/nm_works_child_support_deduction.py",
+              "status": "added",
+              "additions": 30,
+              "deletions": 0,
+              "changes": 30
             }
           ]
         },
@@ -56709,7 +56673,7 @@
           "milestone": null,
           "comments": 5,
           "created_at": "2025-12-16T15:09:12Z",
-          "updated_at": "2026-01-03T03:45:51Z",
+          "updated_at": "2026-01-05T16:31:52Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -56773,15 +56737,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 2,
+          "comments": 3,
           "created_at": "2025-12-15T21:02:04Z",
-          "updated_at": "2026-01-02T20:05:19Z",
-          "closed_at": null,
+          "updated_at": "2026-01-08T18:02:50Z",
+          "closed_at": "2026-01-08T18:02:24Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -56791,7 +56755,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6987",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6987.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6987.patch",
-            "merged_at": null
+            "merged_at": "2026-01-08T18:02:24Z"
           },
           "body": "Fixes #6364",
           "reactions": {
@@ -58426,7 +58390,7 @@
           "milestone": null,
           "comments": 3,
           "created_at": "2025-09-15T20:37:25Z",
-          "updated_at": "2026-01-03T03:43:23Z",
+          "updated_at": "2026-01-05T15:34:55Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -62101,7 +62065,7 @@
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-31T13:46:01Z",
-          "updated_at": "2025-12-31T16:51:09Z",
+          "updated_at": "2026-01-08T16:35:05Z",
           "closed_at": null,
           "author_association": "CONTRIBUTOR",
           "type": null,
@@ -71094,7 +71058,7 @@
         "bio": null
       },
       "stats": {
-        "commits": 467,
+        "commits": 472,
         "prs": 155,
         "prs_merged": 122,
         "reviews": 95,
@@ -71109,10 +71073,10 @@
         "us-nc-sources": 3,
         "new-york-credit-comparison": 1,
         "policyengine-api": 14,
-        "policyengine-us": 299,
+        "policyengine-us": 300,
         "policyengine-api-v2": 13,
         "ri-ctc-calculator": 25,
-        "analysis-notebooks": 6
+        "analysis-notebooks": 10
       },
       "monthlyPRs": [
         15,
@@ -71140,7 +71104,7 @@
         84,
         32,
         52,
-        63
+        68
       ],
       "prs": [
         {
@@ -71181,14 +71145,14 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 3,
           "created_at": "2025-12-30T15:59:58Z",
-          "updated_at": "2025-12-30T17:03:33Z",
+          "updated_at": "2026-01-06T14:37:48Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
-          "draft": true,
+          "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/7065",
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065",
@@ -71213,16 +71177,9 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 8,
-          "review_comments": 0,
+          "commits": 11,
+          "review_comments": 3,
           "files": [
-            {
-              "filename": ".implementation_ks_2025_income_tax.md",
-              "status": "added",
-              "additions": 24,
-              "deletions": 0,
-              "changes": 24
-            },
             {
               "filename": "changelog_entry.yaml",
               "status": "modified",
@@ -71373,9 +71330,9 @@
             {
               "filename": "policyengine_us/tests/policy/baseline/gov/states/ks/tax/income/ks_2025_integration.yaml",
               "status": "added",
-              "additions": 491,
+              "additions": 502,
               "deletions": 0,
-              "changes": 491
+              "changes": 502
             },
             {
               "filename": "policyengine_us/tests/policy/baseline/gov/states/ks/tax/income/ks_fstc_sunset.yaml",
@@ -71401,9 +71358,9 @@
             {
               "filename": "uv.lock",
               "status": "modified",
-              "additions": 1,
-              "deletions": 1,
-              "changes": 2
+              "additions": 2,
+              "deletions": 2,
+              "changes": 4
             }
           ]
         },
@@ -71732,7 +71689,7 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-29T20:03:45Z",
-          "updated_at": "2025-12-29T22:20:02Z",
+          "updated_at": "2026-01-05T18:09:03Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -71762,7 +71719,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 1,
+          "commits": 2,
           "review_comments": 3,
           "files": [
             {
@@ -72587,7 +72544,7 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-29T15:34:11Z",
-          "updated_at": "2025-12-29T18:02:22Z",
+          "updated_at": "2026-01-05T15:12:25Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -72617,7 +72574,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 9,
+          "commits": 10,
           "review_comments": 0,
           "files": [
             {
@@ -73253,15 +73210,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-16T18:23:34Z",
-          "updated_at": "2026-01-04T23:41:35Z",
-          "closed_at": null,
+          "updated_at": "2026-01-05T21:26:03Z",
+          "closed_at": "2026-01-05T21:26:03Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -73271,7 +73228,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6997",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6997.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6997.patch",
-            "merged_at": null
+            "merged_at": "2026-01-05T21:26:03Z"
           },
           "body": "## Summary\n- Implements a reform to separate dependent children from Virginia's personal exemption\n- Allows policy analysis where dependent children can receive different exemption treatment than filers/spouses\n- Per Josh McCabe's request: Virginia stakeholders are interested in modeling fallback options that modify the dependent children portion of the personal exemption\n\n## Changes\n- Add contrib parameters under `gov/contrib/states/va/dependent_exemption/`:\n  - `in_effect.yaml` - enables/disables the reform\n  - `amount.yaml` - exemption amount per eligible dependent child\n  - `age_limit/in_effect.yaml` - whether to apply age limits\n  - `age_limit/threshold.yaml` - age threshold for eligibility\n  - `phaseout/rate.yaml` - phaseout rate per dollar of excess AGI\n  - `phaseout/threshold.yaml` - AGI phaseout thresholds by filing status\n\n- Create reform at `reforms/states/va/dependent_exemption/va_dependent_exemption_reform.py`:\n  - `va_eligible_dependents_count` - counts dependents eligible for the special exemption\n  - `va_dependent_exemption_maximum` - maximum exemption before phaseout\n  - `va_dependent_exemption_phaseout` - phaseout amount based on AGI\n  - `va_dependent_exemption` - final dependent exemption amount\n  - `va_older_dependents_count` - counts dependents not eligible for special exemption\n  - `va_personal_exemption` (modified) - separates filer/spouse exemptions from dependent exemptions\n\n- Register reform in `reforms/reforms.py`\n\n## Test plan\n- [x] 6 test cases covering:\n  - Age limit restrictions (under 18, under 13)\n  - Different exemption amounts for dependents vs filers\n  - AGI phaseout functionality\n  - Joint filing scenarios\n  - No age limit (all dependents eligible)\n- [x] All tests pass\n\n## References\n- Fixes #6996\n- Similar implementations: Delaware PR #6889, Rhode Island exemption reform\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
@@ -73290,7 +73247,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 1,
+          "commits": 2,
           "review_comments": 0,
           "files": [
             {
@@ -74085,7 +74042,7 @@
           "milestone": null,
           "comments": 4,
           "created_at": "2025-12-08T16:31:53Z",
-          "updated_at": "2026-01-04T23:50:54Z",
+          "updated_at": "2026-01-05T15:36:32Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -74965,15 +74922,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-01T22:47:27Z",
-          "updated_at": "2026-01-04T22:52:09Z",
-          "closed_at": null,
+          "updated_at": "2026-01-05T19:24:03Z",
+          "closed_at": "2026-01-05T19:24:03Z",
           "author_association": "CONTRIBUTOR",
           "type": null,
           "active_lock_reason": null,
@@ -74983,7 +74940,7 @@
             "html_url": "https://github.com/PolicyEngine/analysis-notebooks/pull/98",
             "diff_url": "https://github.com/PolicyEngine/analysis-notebooks/pull/98.diff",
             "patch_url": "https://github.com/PolicyEngine/analysis-notebooks/pull/98.patch",
-            "merged_at": null
+            "merged_at": "2026-01-05T19:24:03Z"
           },
           "body": "Fixes #97",
           "reactions": {
@@ -76245,7 +76202,7 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-29T15:34:11Z",
-          "updated_at": "2025-12-29T18:02:22Z",
+          "updated_at": "2026-01-05T15:12:25Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -78685,7 +78642,7 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": {
             "login": "DTrim99",
@@ -78734,8 +78691,8 @@
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-16T18:07:48Z",
-          "updated_at": "2025-12-16T18:09:04Z",
-          "closed_at": null,
+          "updated_at": "2026-01-05T21:26:04Z",
+          "closed_at": "2026-01-05T21:26:04Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -78765,7 +78722,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6996/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -79529,7 +79486,7 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": {
             "login": "DTrim99",
@@ -79578,8 +79535,8 @@
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-01T20:28:53Z",
-          "updated_at": "2025-12-11T14:50:28Z",
-          "closed_at": null,
+          "updated_at": "2026-01-05T19:24:04Z",
+          "closed_at": "2026-01-05T19:24:04Z",
           "author_association": "CONTRIBUTOR",
           "type": null,
           "active_lock_reason": null,
@@ -79609,7 +79566,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/analysis-notebooks/issues/97/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -122817,15 +122774,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 2,
           "created_at": "2025-12-16T12:24:22Z",
-          "updated_at": "2025-12-18T13:18:10Z",
-          "closed_at": null,
+          "updated_at": "2026-01-06T17:10:37Z",
+          "closed_at": "2026-01-06T17:10:36Z",
           "author_association": "NONE",
           "type": null,
           "active_lock_reason": null,
