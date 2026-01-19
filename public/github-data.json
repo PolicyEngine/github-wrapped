@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-12T06:13:12.470Z",
+  "fetchedAt": "2026-01-19T06:13:32.494Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -8260,7 +8260,7 @@
         "bio": "Co-founder and CEO of @PolicyEngine"
       },
       "stats": {
-        "commits": 2874,
+        "commits": 2901,
         "prs": 502,
         "prs_merged": 357,
         "reviews": 710,
@@ -10553,15 +10553,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 0,
+          "comments": 1,
           "created_at": "2025-12-03T22:40:45Z",
-          "updated_at": "2025-12-18T13:17:30Z",
-          "closed_at": null,
+          "updated_at": "2026-01-17T04:45:45Z",
+          "closed_at": "2026-01-17T04:45:44Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -10571,7 +10571,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-uk/pull/1439",
             "diff_url": "https://github.com/PolicyEngine/policyengine-uk/pull/1439.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-uk/pull/1439.patch",
-            "merged_at": null
+            "merged_at": "2026-01-17T04:45:44Z"
           },
           "body": "## Summary\n\n- Move stochastic variable generation from country package to data package\n- Variables now read pre-computed values from datasets for deterministic, reproducible calculations\n- `is_higher_earner` uses age as deterministic tie-breaker instead of random noise\n\n## Changes\n\n| Variable | Change |\n|----------|--------|\n| `would_claim_pc` | Remove formula, use `default_value = True` |\n| `would_claim_uc` | Remove formula, use `default_value = True` |\n| `would_claim_child_benefit` | Remove formula, use `default_value = True` |\n| `child_benefit_opts_out` | Remove formula, use `default_value = False` |\n| `would_evade_tv_licence_fee` | Remove formula, use `default_value = False` |\n| `household_owns_tv` | Remove formula, use `default_value = True` |\n| `main_residential_property_purchased_is_first_home` | Remove formula, use `default_value = False` |\n| `is_disabled_for_benefits` | Remove formula, use `default_value = False` |\n| `would_claim_marriage_allowance` | New variable for take-up decision |\n| `marriage_allowance` | Use `would_claim_marriage_allowance` instead of `random()` |\n| `attends_private_school` | Use pre-generated random draw from dataset |\n| `is_higher_earner` | Use age as deterministic tie-breaker |\n\n## Related PRs\n\n- policyengine-uk-data#246: Adds stochastic variable generation to data package\n\n## Test plan\n\n- [ ] CI passes\n- [ ] Manual testing with dataset confirms deterministic results\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
@@ -10590,7 +10590,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 3,
+          "commits": 12,
           "review_comments": 0,
           "files": [
             {
@@ -10599,6 +10599,34 @@
               "additions": 4,
               "deletions": 0,
               "changes": 4
+            },
+            {
+              "filename": "policyengine_uk/parameters/gov/social_security_scotland/scottish_child_payment/amount.yaml",
+              "status": "modified",
+              "additions": 2,
+              "deletions": 2,
+              "changes": 4
+            },
+            {
+              "filename": "policyengine_uk/parameters/gov/social_security_scotland/scottish_child_payment/max_age.yaml",
+              "status": "modified",
+              "additions": 2,
+              "deletions": 0,
+              "changes": 2
+            },
+            {
+              "filename": "policyengine_uk/tests/policy/baseline/gov/social_security_scotland/scottish_child_payment.yaml",
+              "status": "modified",
+              "additions": 71,
+              "deletions": 28,
+              "changes": 99
+            },
+            {
+              "filename": "policyengine_uk/tests/policy/baseline/gov/social_security_scotland/scottish_child_payment_baby_bonus.yaml",
+              "status": "removed",
+              "additions": 0,
+              "deletions": 274,
+              "changes": 274
             },
             {
               "filename": "policyengine_uk/tests/test_deterministic_variables.py",
@@ -10655,6 +10683,27 @@
               "additions": 5,
               "deletions": 11,
               "changes": 16
+            },
+            {
+              "filename": "policyengine_uk/variables/gov/social_security_scotland/is_scp_eligible.py",
+              "status": "added",
+              "additions": 74,
+              "deletions": 0,
+              "changes": 74
+            },
+            {
+              "filename": "policyengine_uk/variables/gov/social_security_scotland/scottish_child_payment.py",
+              "status": "modified",
+              "additions": 9,
+              "deletions": 107,
+              "changes": 116
+            },
+            {
+              "filename": "policyengine_uk/variables/gov/social_security_scotland/would_claim_scp.py",
+              "status": "added",
+              "additions": 19,
+              "deletions": 0,
+              "changes": 19
             },
             {
               "filename": "policyengine_uk/variables/household/consumption/main_residential_property_purchased_is_first_home.py",
@@ -20157,7 +20206,7 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-11-12T21:05:50Z",
-          "updated_at": "2025-12-18T13:17:55Z",
+          "updated_at": "2026-01-12T23:02:41Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -20187,7 +20236,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 2,
+          "commits": 3,
           "review_comments": 0,
           "files": [
             {
@@ -22937,9 +22986,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 4,
           "created_at": "2025-12-19T15:56:21Z",
-          "updated_at": "2025-12-21T23:00:00Z",
+          "updated_at": "2026-01-16T19:23:49Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -22952,7 +23001,7 @@
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7016.patch",
             "merged_at": null
           },
-          "body": "## Summary\nUpdates all Rhode Island income tax parameter references to cite the 2025 RI-1040 Instructions with specific page numbers. Adds 2025 parameter values where applicable and includes comprehensive 2025 tests.\n\n### Parameter updates:\n- Tax brackets: $79,900 (4.75%) and $181,650 (5.99%)\n- Exemption amount: $5,100\n- Phaseout threshold: $254,250\n- Phaseout increment: $7,250\n- Social security birth year threshold: 1959 (born on/before March 1, 1959)\n- Retirement income subtraction cap: $50,000 (increased from $20,000, effective 2024)\n\n### Tests added:\n- Standard deduction 2025 tests\n- Exemption phaseout 2025 tests  \n- Social security modification eligibility 2025 tests\n- Retirement income subtraction 2025 tests\n- Integration tests for 2025 tax brackets\n\n## Outstanding items (to revisit when official forms are released)\n1. **Property Tax Credit (RI-1040H)**: The 2025 form has not been released yet. Will update when available.\n2. **Railroad Retirement Benefits Subtraction**: Rhode Island allows a subtraction for Tier I and Tier II Railroad Retirement benefits. The `railroad_benefits` variable exists in the codebase but is not yet connected to RI AGI subtractions. Will implement when the relevant form schedule is finalized.\n\n## Test plan\n- [x] All 96 Rhode Island income tax tests pass\n- [x] Code formatted with `make format`\n\n## References\n- [2025 RI-1040 Instructions](https://tax.ri.gov/sites/g/files/xkgbur541/files/2024-12/2025%20RI-1040%20Instructions_4.pdf)\n- Fixes #7009\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+          "body": "## Summary\nUpdates all Rhode Island income tax parameter references to cite the 2025 RI-1040 Instructions with specific page numbers. Adds 2025 parameter values where applicable and includes comprehensive 2025 tests.\n\nFixes #7009\n\n### Parameter updates:\n- Tax brackets: $79,900 (4.75%) and $181,650 (5.99%)\n- Standard deduction (2025): $10,900 (single/separate), $21,800 (joint/widow), $16,350 (HOH)\n- Exemption amount: $5,100\n- Phaseout threshold: $254,250\n- Phaseout increment: $7,250\n- Social security birth year threshold: 1959 (born on/before March 1, 1959)\n- Retirement income subtraction cap: $50,000 (increased from $20,000, effective 2024)\n- **Social security income limits (2025)**: $107,000 (single/HOH/separate), $133,750 (joint/widow)\n- **Retirement income limits (2025)**: $107,000 (single/HOH/separate), $133,750 (joint/widow)\n\n### Bug fixes:\n- **SURVIVING_SPOUSE standard deduction**: Fixed to match JOINT values ($21,800) instead of incorrectly using SINGLE values ($10,900)\n\n### Property Tax Credit (RI-1040H) updates:\n- Maximum credit: $700 (up from $675)\n- Income thresholds updated for 2025:\n  - 1 person: $6,991 (4%), $10,481 (5%), $13,971 (6%), $40,731 (limit)\n  - 2+ persons: $6,991 (4%), $10,481 (5%), $17,461 (6%), $40,731 (limit)\n\n### AGI Modifications (RI Schedule M):\n- Added `ri_section_179_expense_add_back` input variable for 2025 (Line 2k - P.L. 119-21, H.R.1)\n  - Rhode Island limits Section 179 depreciation to $25,000; amounts beyond this limit must be added back\n  - Implemented as an input variable - users must manually enter the add-back amount\n- Updated references to 2025 RI Schedule M\n\n### Tests added:\n- Standard deduction 2025 tests\n- Exemption phaseout 2025 tests  \n- Social security modification eligibility 2025 tests\n- Retirement income subtraction 2025 tests\n- Integration tests for 2025 tax brackets\n\n## New 2025 features NOT modeled\n\nThe 2025 RI-1040 Instructions introduce **RI Schedule HR1 - Individual** for add-backs related to P.L. 119-21, H.R.1 (2025). These federal deductions are disallowed for Rhode Island purposes and must be added back to income:\n\n1. **Business interest expense deduction** [I.R.S. Code 163(j)] - RI disallows enhanced federal deductions\n2. **Section 174A Amortization Adjustment** for research and experimental expenditures - must be amortized for RI\n3. **Qualified sound recording production deduction** [I.R.S. Code 181]\n\nNote: **Section 179 depreciation add-back** [I.R.S. Code 179(b)] IS modeled as an input variable (`ri_section_179_expense_add_back`).\n\nThese primarily affect business income and pass-through entities, not typical W-2 wage earners.\n\n## Test plan\n- [x] All 166 Rhode Island income tax tests pass\n- [x] Code formatted with `make format`\n\n## References\n- [2025 RI-1040 Instructions (December 2025)](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf)\n- [2025 RI-1040H Property Tax Relief Claim](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2025%201040H_w.pdf)\n- [2025 RI Schedule M](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2025%20RI%20Schedule%20M_w.pdf)\n- [2025 Social Security Modification Worksheet](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/Social%20Security%20Worksheet_b.pdf)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7016/reactions",
             "total_count": 0,
@@ -31713,15 +31762,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 2,
+          "comments": 3,
           "created_at": "2025-12-18T19:09:26Z",
-          "updated_at": "2026-01-07T09:43:27Z",
-          "closed_at": null,
+          "updated_at": "2026-01-17T17:45:40Z",
+          "closed_at": "2026-01-17T17:45:39Z",
           "author_association": "CONTRIBUTOR",
           "type": null,
           "active_lock_reason": null,
@@ -31731,7 +31780,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-uk/pull/1462",
             "diff_url": "https://github.com/PolicyEngine/policyengine-uk/pull/1462.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-uk/pull/1462.patch",
-            "merged_at": null
+            "merged_at": "2026-01-17T17:45:39Z"
           },
           "body": "Applied sentence case formatting to all parameter label fields. Converted 141 parameter files while preserving proper names (Bank of England, Child Benefit, etc.) and acronyms (HMRC, VAT, NHS, etc.). Fixes #1461",
           "reactions": {
@@ -32717,7 +32766,7 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": {
             "login": "juaristi22",
@@ -32764,10 +32813,10 @@
             }
           ],
           "milestone": null,
-          "comments": 15,
+          "comments": 16,
           "created_at": "2025-07-15T12:49:35Z",
-          "updated_at": "2025-12-18T13:17:29Z",
-          "closed_at": null,
+          "updated_at": "2026-01-17T20:47:41Z",
+          "closed_at": "2026-01-17T20:47:41Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -39038,12 +39087,12 @@
         "bio": null
       },
       "stats": {
-        "commits": 364,
+        "commits": 372,
         "prs": 96,
         "prs_merged": 69,
-        "reviews": 66,
+        "reviews": 67,
         "issues": 96,
-        "repos": 15
+        "repos": 16
       },
       "repoCommits": {
         "ACA-Calc": 68,
@@ -39053,6 +39102,7 @@
         "acacalc": 1,
         "policyengine-app": 25,
         "policyengine-us-data": 35,
+        "scotland-mansion-tax": 8,
         "crs-presentation-us": 14,
         "snap-district-map": 8,
         "policyengine-us": 194,
@@ -39083,7 +39133,7 @@
         12,
         65,
         16,
-        24,
+        32,
         91
       ],
       "prs": [
@@ -43818,6 +43868,77 @@
       ],
       "reviews": [
         {
+          "url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/365",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/365/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/365/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/365/events",
+          "html_url": "https://github.com/PolicyEngine/policyengine-api-v2/pull/365",
+          "id": 3724306939,
+          "node_id": "PR_kwDONxBfL864nU3K",
+          "number": 365,
+          "title": "Update dependencies",
+          "user": {
+            "login": "policyengine[bot]",
+            "id": 239815650,
+            "node_id": "BOT_kgDODktL4g",
+            "avatar_url": "https://avatars.githubusercontent.com/u/88570531?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/policyengine%5Bbot%5D",
+            "html_url": "https://github.com/apps/policyengine",
+            "followers_url": "https://api.github.com/users/policyengine%5Bbot%5D/followers",
+            "following_url": "https://api.github.com/users/policyengine%5Bbot%5D/following{/other_user}",
+            "gists_url": "https://api.github.com/users/policyengine%5Bbot%5D/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/policyengine%5Bbot%5D/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/policyengine%5Bbot%5D/subscriptions",
+            "organizations_url": "https://api.github.com/users/policyengine%5Bbot%5D/orgs",
+            "repos_url": "https://api.github.com/users/policyengine%5Bbot%5D/repos",
+            "events_url": "https://api.github.com/users/policyengine%5Bbot%5D/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/policyengine%5Bbot%5D/received_events",
+            "type": "Bot",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [],
+          "state": "closed",
+          "locked": false,
+          "assignee": null,
+          "assignees": [],
+          "milestone": null,
+          "comments": 0,
+          "created_at": "2025-12-12T17:50:48Z",
+          "updated_at": "2026-01-12T20:21:55Z",
+          "closed_at": "2026-01-12T20:21:55Z",
+          "author_association": "NONE",
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/pulls/365",
+            "html_url": "https://github.com/PolicyEngine/policyengine-api-v2/pull/365",
+            "diff_url": "https://github.com/PolicyEngine/policyengine-api-v2/pull/365.diff",
+            "patch_url": "https://github.com/PolicyEngine/policyengine-api-v2/pull/365.patch",
+            "merged_at": "2026-01-12T20:21:55Z"
+          },
+          "body": "Automated dependency updates\n\nThis PR was automatically created by the dependency update workflow.\n\nLast updated: Fri Dec 12 17:50:47 UTC 2025",
+          "reactions": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/365/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/365/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null,
+          "score": 1
+        },
+        {
           "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6899",
           "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
           "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6899/labels{/name}",
@@ -45998,77 +46119,6 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/5992/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null,
-          "score": 1
-        },
-        {
-          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/5936",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/5936/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/5936/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/5936/events",
-          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/5936",
-          "id": 3043975610,
-          "node_id": "PR_kwDOFqFFMc6VK0dB",
-          "number": 5936,
-          "title": "Add CHIP Medicaid and ACA enrollment and spending values",
-          "user": {
-            "login": "daphnehanse11",
-            "id": 128793799,
-            "node_id": "U_kgDOB608xw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/128793799?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/daphnehanse11",
-            "html_url": "https://github.com/daphnehanse11",
-            "followers_url": "https://api.github.com/users/daphnehanse11/followers",
-            "following_url": "https://api.github.com/users/daphnehanse11/following{/other_user}",
-            "gists_url": "https://api.github.com/users/daphnehanse11/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/daphnehanse11/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/daphnehanse11/subscriptions",
-            "organizations_url": "https://api.github.com/users/daphnehanse11/orgs",
-            "repos_url": "https://api.github.com/users/daphnehanse11/repos",
-            "events_url": "https://api.github.com/users/daphnehanse11/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/daphnehanse11/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [],
-          "state": "closed",
-          "locked": false,
-          "assignee": null,
-          "assignees": [],
-          "milestone": null,
-          "comments": 1,
-          "created_at": "2025-05-06T20:50:08Z",
-          "updated_at": "2025-05-20T01:13:03Z",
-          "closed_at": "2025-05-20T01:12:49Z",
-          "author_association": "COLLABORATOR",
-          "type": null,
-          "active_lock_reason": null,
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/5936",
-            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/5936",
-            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/5936.diff",
-            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/5936.patch",
-            "merged_at": "2025-05-20T01:12:49Z"
-          },
-          "body": "fixes #5900 ",
-          "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/5936/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/5936/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1
@@ -50197,7 +50247,7 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-31T23:36:32Z",
-          "updated_at": "2026-01-05T20:19:22Z",
+          "updated_at": "2026-01-14T16:11:21Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -50227,7 +50277,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 8,
+          "commits": 10,
           "review_comments": 0,
           "files": [
             {
@@ -50289,9 +50339,9 @@
             {
               "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/need_standard/amount.yaml",
               "status": "added",
-              "additions": 94,
+              "additions": 96,
               "deletions": 0,
-              "changes": 94
+              "changes": 96
             },
             {
               "filename": "policyengine_us/parameters/gov/states/ak/dpa/atap/need_standard/max_unit_size.yaml",
@@ -50482,7 +50532,7 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-31T22:27:45Z",
-          "updated_at": "2026-01-04T15:14:42Z",
+          "updated_at": "2026-01-14T16:01:26Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -50495,7 +50545,7 @@
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7074.patch",
             "merged_at": null
           },
-          "body": "## Summary\n\nImplements North Dakota's Temporary Assistance for Needy Families (TANF) program.\n\nCloses #7073\n\n---\n\n## Regulatory Authority\n\n| Source | Citation |\n|--------|----------|\n| State Statute | [N.D. Century Code Chapter 50-09](https://ndlegis.gov/cencode/t50.html) |\n| State Administrative Code | [N.D.A.C. Chapter 75-02-01.2](https://ndlegis.gov/information/acdata/pdf/75-02-01.2.pdf) |\n| Policy Manual | [Service Chapter 400-19](https://nd.gov/dhs/policymanuals/40019/) |\n\n---\n\n## Income Eligibility Tests\n\n### Net Income Test\n\nCountable income must be **less than** the Standard of Need.\n\n**Source:** [Policy Manual 400-19-110-15](https://www.nd.gov/dhs/policymanuals/40019/400_19_110_15.htm)\n\n---\n\n## Income Deductions & Exemptions\n\n### 1. Standard Employment Expense Allowance\n\n**Formula:** Greater of **27%** of gross earned income OR **$180**\n\nApplied first to gross earned income before other deductions.\n\n**Source:** [Policy Manual 400-19-105-25](https://www.nd.gov/dhs/policymanuals/40019/400_19_105_25.htm)\n\n### 2. Time Limited Percentage (TLP) Disregard\n\n**Rate:** **50%** of remaining earned income (after Standard Employment Expense)\n\nApplied to earnings after the Standard Employment Expense deduction.\n\n> **Note:** TLP is actually a declining 12-month disregard cycle (50% → 35% → 25% → 0%). This implementation uses the initial 50% rate.\n\n**Source:** [Policy Manual 400-19-105-25](https://www.nd.gov/dhs/policymanuals/40019/400_19_105_25.htm)\n\n---\n\n## Income Standards\n\n### Standard of Need (Effective 2025-10-01)\n\nNorth Dakota uses a 2D lookup table based on the number of caretakers (0, 1, or 2) and children (0-10) in the household.\n\n| Caretakers | 0 children | 1 child | 2 children | 3 children | 4 children | 5 children |\n|:----------:|:----------:|:-------:|:----------:|:----------:|:----------:|:----------:|\n| 0 | $0 | $366 | $536 | $697 | $866 | $1,028 |\n| 1 | $523 | $739 | $962 | $1,175 | $1,393 | $1,612 |\n| 2 | $739 | $962 | $1,175 | $1,393 | $1,612 | $1,830 |\n\n**Historical Values:** Parameters include values effective 2015-10-01, 2023-08-01, 2024-10-01, and 2025-10-01.\n\n**Sources:**\n- [Policy Manual 400-19-110-05 Standard of Need Chart](https://www.nd.gov/dhs/policymanuals/40019/400_19_110_05.htm)\n- [Archive 2024-10-01 (Release 25.1)](https://www.nd.gov/dhs/policymanuals/40019/Archive%20Documents/2025/Release%2025.1/400_19_110_05.htm)\n- [Archive 2023-08-01 (ML 3869)](https://www.nd.gov/dhs/policymanuals/40019/Archive%20Documents/2024%20-%20ML%203869/400_19_110_05.htm)\n- [Archive 2015-10-01 (ML 3740)](https://www.nd.gov/dhs/policymanuals/40019/Archive%20Documents/2023%20-%20ML%203740/400_19_110_05.htm)\n\n---\n\n## Resource Limits\n\n| Household Size | Resource Limit |\n|:--------------:|:--------------:|\n| 1 person | $3,000 |\n| 2 persons | $6,000 |\n| Each additional | +$25 |\n\n**Source:** [Policy Manual 400-19-55-05-05 Asset Limits](https://www.nd.gov/dhs/policymanuals/40019/400_19_55_05_05.htm)\n\n---\n\n## Benefit Calculation\n\n### Formula\n\n```\nStandard Employment Expense = max(0.27 × Gross Earned, $180)\nTLP Disregard = 0.50 × (Gross Earned - Standard Employment Expense)\nCountable Earned Income = Gross Earned - Standard Employment Expense - TLP Disregard\nCountable Income = Countable Earned Income + Unearned Income\nBenefit = max(Standard of Need - Countable Income, 0)\n```\n\n**Source:** [Policy Manual 400-19-110-20 Benefit Calculation](https://www.nd.gov/dhs/policymanuals/40019/400_19_110_20.htm)\n\n### Example Calculation\n\n**Family of 3 (1 caretaker, 2 children) with $1,500/month earned income:**\n1. Gross earned income: $1,500\n2. Standard Employment Expense: max($1,500 × 0.27, $180) = $405\n3. After SEE: $1,500 - $405 = $1,095\n4. TLP disregard (50%): $1,095 × 0.50 = $547.50\n5. Countable earned income: $1,095 - $547.50 = $547.50\n6. Standard of Need (1 caretaker, 2 children): $962\n7. **Benefit: $962 - $547.50 = $414.50**\n\n---\n\n## Out of Scope\n\nThe following are not modeled in this implementation:\n\n### Benefit Rules\n- **$10 Minimum Benefit** – Benefits below $10 are not issued ([N.D.A.C. 75-02-01.2-43](https://www.law.cornell.edu/regulations/north-dakota/N-D-A-C-75-02-1.2-43))\n\n### Income Deductions\n- **Dependent Care Deduction** – Maximum deduction amounts vary by child age, tied to Child Care Assistance Program rates ([N.D.A.C. 75-02-01.2-53](https://www.law.cornell.edu/regulations/north-dakota/N-D-A-C-75-02-1.2-53))\n\n### Special Allowances\n- **$45 Out of Home Allowance** – Additional allowance for individuals placed outside the home ([Policy Manual 400-19-110-20](https://www.nd.gov/dhs/policymanuals/40019/400_19_110_20.htm))\n- **Kinship Care Maintenance Payment** – Additional payment for relative caregivers ([Policy Manual 400-19-110-20](https://www.nd.gov/dhs/policymanuals/40019/400_19_110_20.htm))\n\n### Time Limits\n- **60-Month Lifetime Limit** – Federal lifetime limit on TANF benefits ([42 U.S.C. § 608(a)(7)](https://www.law.cornell.edu/uscode/text/42/608))\n- **TLP Declining Disregard Cycle** – Full 12-month cycle (50% → 35% → 25% → 0%) not modeled; only initial 50% rate implemented ([Policy Manual 400-19-105-25](https://www.nd.gov/dhs/policymanuals/40019/400_19_105_25.htm))\n\n---\n\n## Files Added\n\n### Parameters (7 files)\n\n```\npolicyengine_us/parameters/gov/states/nd/dhs/tanf/\n├── benefit/\n│   ├── max_children.yaml\n│   └── standard_of_need.yaml\n├── income/\n│   └── deductions/\n│       ├── standard_employment_expense/\n│       │   ├── minimum.yaml\n│       │   └── rate.yaml\n│       └── time_limited_percentage/\n│           └── rate.yaml\n└── resources/\n    └── limit/\n        ├── base.yaml\n        └── increment.yaml\n```\n\n### Variables (9 files)\n\n```\npolicyengine_us/variables/gov/states/nd/dhs/tanf/\n├── nd_tanf.py\n├── nd_tanf_standard_of_need.py\n├── eligibility/\n│   ├── nd_tanf_eligible.py\n│   ├── nd_tanf_income_eligible.py\n│   └── nd_tanf_resources_eligible.py\n└── income/\n    ├── nd_tanf_countable_earned_income.py\n    ├── nd_tanf_countable_earned_income_person.py\n    ├── nd_tanf_countable_income.py\n    └── nd_tanf_countable_unearned_income.py\n```\n\n### Tests (8 files, 81 tests)\n\n```\npolicyengine_us/tests/policy/baseline/gov/states/nd/dhs/tanf/\n├── integration.yaml (26 tests)\n├── nd_tanf.yaml (6 tests)\n├── nd_tanf_countable_earned_income_person.yaml (9 tests)\n├── nd_tanf_countable_unearned_income.yaml (5 tests)\n├── nd_tanf_eligible.yaml (7 tests)\n├── nd_tanf_income_eligible.yaml (5 tests)\n├── nd_tanf_resources_eligible.yaml (10 tests)\n└── nd_tanf_standard_of_need.yaml (13 tests)\n```\n\n---\n\n## Test Coverage\n\n| Category | Count |\n|----------|:-----:|\n| Integration tests | 26 |\n| Unit tests | 55 |\n| **Total** | **81** |\n\n---\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+          "body": "## Summary\n\nImplements North Dakota's Temporary Assistance for Needy Families (TANF) program.\n\nCloses #7073\n\n---\n\n## Regulatory Authority\n\n| Source | Citation |\n|--------|----------|\n| State Statute | [N.D. Century Code Chapter 50-09](https://ndlegis.gov/cencode/t50.html) |\n| State Administrative Code | [N.D.A.C. Chapter 75-02-01.2](https://ndlegis.gov/information/acdata/pdf/75-02-01.2.pdf) |\n| Policy Manual | [Service Chapter 400-19](https://nd.gov/dhs/policymanuals/40019/) |\n\n---\n\n## Income Eligibility Tests\n\n### Net Income Test\n\nCountable income must be **less than** the Standard of Need.\n\n**Source:** [Policy Manual 400-19-110-15](https://www.nd.gov/dhs/policymanuals/40019/400_19_110_15.htm)\n\n---\n\n## Income Deductions & Exemptions\n\n### 1. Standard Employment Expense Allowance\n\n**Formula:** Greater of **27%** of gross earned income OR **$180**\n\nApplied first to gross earned income before other deductions.\n\n**Source:** [Policy Manual 400-19-105-25](https://www.nd.gov/dhs/policymanuals/40019/400_19_105_25.htm)\n\n### 2. Time Limited Percentage (TLP) Disregard\n\n**Declining Rate by Calendar Month:**\n\n| Months | TLP Rate |\n|:------:|:--------:|\n| 1-6 (Jan-Jun) | 50% |\n| 7-9 (Jul-Sep) | 35% |\n| 10-12 (Oct-Dec) | 25% |\n\nApplied to earnings after the Standard Employment Expense deduction.\n\n> **Note:** Uses calendar month as proxy for participation months. The disregard cycle resets each January. In actual ND TANF policy, TLP tracks cumulative participation months and ends after 12 months (0% disregard for month 13+).\n\n**Source:** [Policy Manual 400-19-105-25](https://www.nd.gov/dhs/policymanuals/40019/400_19_105_25.htm)\n\n---\n\n## Income Standards\n\n### Standard of Need (Effective 2025-10-01)\n\nNorth Dakota uses a 2D lookup table based on the number of caretakers (0, 1, or 2) and children (0-10) in the household.\n\n| Caretakers | 0 children | 1 child | 2 children | 3 children | 4 children | 5 children |\n|:----------:|:----------:|:-------:|:----------:|:----------:|:----------:|:----------:|\n| 0 | $0 | $366 | $536 | $697 | $866 | $1,028 |\n| 1 | $523 | $739 | $962 | $1,175 | $1,393 | $1,612 |\n| 2 | $739 | $962 | $1,175 | $1,393 | $1,612 | $1,830 |\n\n**Historical Values:** Parameters include values effective 2015-10-01, 2023-08-01, 2024-10-01, and 2025-10-01.\n\n**Sources:**\n- [Policy Manual 400-19-110-05 Standard of Need Chart](https://www.nd.gov/dhs/policymanuals/40019/400_19_110_05.htm)\n- [Archive 2024-10-01 (Release 25.1)](https://www.nd.gov/dhs/policymanuals/40019/Archive%20Documents/2025/Release%2025.1/400_19_110_05.htm)\n- [Archive 2023-08-01 (ML 3869)](https://www.nd.gov/dhs/policymanuals/40019/Archive%20Documents/2024%20-%20ML%203869/400_19_110_05.htm)\n- [Archive 2015-10-01 (ML 3740)](https://www.nd.gov/dhs/policymanuals/40019/Archive%20Documents/2023%20-%20ML%203740/400_19_110_05.htm)\n\n---\n\n## Resource Limits\n\n| Household Size | Resource Limit |\n|:--------------:|:--------------:|\n| 1 person | $3,000 |\n| 2 persons | $6,000 |\n| Each additional | +$25 |\n\n**Source:** [Policy Manual 400-19-55-05-05 Asset Limits](https://www.nd.gov/dhs/policymanuals/40019/400_19_55_05_05.htm)\n\n---\n\n## Benefit Calculation\n\n### Formula\n\n```\nStandard Employment Expense = max(0.27 × Gross Earned, $180)\nTLP Disregard = TLP_Rate(month) × (Gross Earned - Standard Employment Expense)\nCountable Earned Income = Gross Earned - Standard Employment Expense - TLP Disregard\nCountable Income = Countable Earned Income + Unearned Income\nBenefit = max(Standard of Need - Countable Income, 0)\n```\n\nWhere `TLP_Rate(month)` = 50% for months 1-6, 35% for months 7-9, 25% for months 10-12.\n\n**Source:** [Policy Manual 400-19-110-20 Benefit Calculation](https://www.nd.gov/dhs/policymanuals/40019/400_19_110_20.htm)\n\n### Example Calculation\n\n**Family of 3 (1 caretaker, 2 children) with $1,500/month earned income in January:**\n1. Gross earned income: $1,500\n2. Standard Employment Expense: max($1,500 × 0.27, $180) = $405\n3. After SEE: $1,500 - $405 = $1,095\n4. TLP disregard (50% for January): $1,095 × 0.50 = $547.50\n5. Countable earned income: $1,095 - $547.50 = $547.50\n6. Standard of Need (1 caretaker, 2 children): $962\n7. **Benefit: $962 - $547.50 = $414.50**\n\n---\n\n## Out of Scope\n\nThe following are not modeled in this implementation:\n\n### Benefit Rules\n- **$10 Minimum Benefit** – Benefits below $10 are not issued ([N.D.A.C. 75-02-01.2-43](https://www.law.cornell.edu/regulations/north-dakota/N-D-A-C-75-02-1.2-43))\n\n### Income Deductions\n- **Dependent Care Deduction** – Maximum deduction amounts vary by child age, tied to Child Care Assistance Program rates ([N.D.A.C. 75-02-01.2-53](https://www.law.cornell.edu/regulations/north-dakota/N-D-A-C-75-02-1.2-53))\n\n### Special Allowances\n- **$45 Out of Home Allowance** – Additional allowance for individuals placed outside the home ([Policy Manual 400-19-110-20](https://www.nd.gov/dhs/policymanuals/40019/400_19_110_20.htm))\n- **Kinship Care Maintenance Payment** – Additional payment for relative caregivers ([Policy Manual 400-19-110-20](https://www.nd.gov/dhs/policymanuals/40019/400_19_110_20.htm))\n\n### Time Limits\n- **60-Month Lifetime Limit** – Federal lifetime limit on TANF benefits ([42 U.S.C. § 608(a)(7)](https://www.law.cornell.edu/uscode/text/42/608))\n- **TLP Month 13+ (0% disregard)** – Calendar month proxy only covers months 1-12; cumulative participation tracking not modeled ([Policy Manual 400-19-105-25](https://www.nd.gov/dhs/policymanuals/40019/400_19_105_25.htm))\n\n---\n\n## Files Added\n\n### Parameters (7 files)\n\n```\npolicyengine_us/parameters/gov/states/nd/dhs/tanf/\n├── benefit/\n│   ├── max_children.yaml\n│   └── standard_of_need.yaml\n├── income/\n│   └── deductions/\n│       ├── standard_employment_expense/\n│       │   ├── minimum.yaml\n│       │   └── rate.yaml\n│       └── time_limited_percentage/\n│           └── rate.yaml\n└── resources/\n    └── limit/\n        ├── base.yaml\n        └── increment.yaml\n```\n\n### Variables (9 files)\n\n```\npolicyengine_us/variables/gov/states/nd/dhs/tanf/\n├── nd_tanf.py\n├── nd_tanf_standard_of_need.py\n├── eligibility/\n│   ├── nd_tanf_eligible.py\n│   ├── nd_tanf_income_eligible.py\n│   └── nd_tanf_resources_eligible.py\n└── income/\n    ├── nd_tanf_countable_earned_income.py\n    ├── nd_tanf_countable_earned_income_person.py\n    ├── nd_tanf_countable_income.py\n    └── nd_tanf_countable_unearned_income.py\n```\n\n### Tests (8 files, 82 tests)\n\n```\npolicyengine_us/tests/policy/baseline/gov/states/nd/dhs/tanf/\n├── integration.yaml (26 tests)\n├── nd_tanf.yaml (6 tests)\n├── nd_tanf_countable_earned_income_person.yaml (10 tests)\n├── nd_tanf_countable_unearned_income.yaml (5 tests)\n├── nd_tanf_eligible.yaml (7 tests)\n├── nd_tanf_income_eligible.yaml (5 tests)\n├── nd_tanf_resources_eligible.yaml (10 tests)\n└── nd_tanf_standard_of_need.yaml (13 tests)\n```\n\n---\n\n## Test Coverage\n\n| Category | Count |\n|----------|:-----:|\n| Integration tests | 26 |\n| Unit tests | 56 |\n| **Total** | **82** |\n\n---\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7074/reactions",
             "total_count": 0,
@@ -50512,7 +50562,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 13,
+          "commits": 15,
           "review_comments": 0,
           "files": [
             {
@@ -50532,9 +50582,9 @@
             {
               "filename": "policyengine_us/parameters/gov/states/nd/dhs/tanf/benefit/standard_of_need.yaml",
               "status": "added",
-              "additions": 186,
+              "additions": 190,
               "deletions": 0,
-              "changes": 186
+              "changes": 190
             },
             {
               "filename": "policyengine_us/parameters/gov/states/nd/dhs/tanf/income/deductions/standard_employment_expense/minimum.yaml",
@@ -50553,9 +50603,9 @@
             {
               "filename": "policyengine_us/parameters/gov/states/nd/dhs/tanf/income/deductions/time_limited_percentage/rate.yaml",
               "status": "added",
-              "additions": 20,
+              "additions": 36,
               "deletions": 0,
-              "changes": 20
+              "changes": 36
             },
             {
               "filename": "policyengine_us/parameters/gov/states/nd/dhs/tanf/resources/limit/base.yaml",
@@ -50588,9 +50638,9 @@
             {
               "filename": "policyengine_us/tests/policy/baseline/gov/states/nd/dhs/tanf/nd_tanf_countable_earned_income_person.yaml",
               "status": "added",
-              "additions": 114,
+              "additions": 136,
               "deletions": 0,
-              "changes": 114
+              "changes": 136
             },
             {
               "filename": "policyengine_us/tests/policy/baseline/gov/states/nd/dhs/tanf/nd_tanf_countable_unearned_income.yaml",
@@ -50658,9 +50708,9 @@
             {
               "filename": "policyengine_us/variables/gov/states/nd/dhs/tanf/income/nd_tanf_countable_earned_income_person.py",
               "status": "added",
-              "additions": 33,
+              "additions": 38,
               "deletions": 0,
-              "changes": 33
+              "changes": 38
             },
             {
               "filename": "policyengine_us/variables/gov/states/nd/dhs/tanf/income/nd_tanf_countable_income.py",
@@ -53080,7 +53130,7 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-23T23:24:26Z",
-          "updated_at": "2026-01-11T16:40:11Z",
+          "updated_at": "2026-01-14T15:36:45Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -53110,15 +53160,15 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 10,
+          "commits": 11,
           "review_comments": 0,
           "files": [
             {
               "filename": "changelog_entry.yaml",
               "status": "modified",
-              "additions": 1,
-              "deletions": 1,
-              "changes": 2
+              "additions": 4,
+              "deletions": 0,
+              "changes": 4
             },
             {
               "filename": "policyengine_us/parameters/gov/states/nm/hca/nm_works/income/deductions/child_support/disregard.yaml",
@@ -67093,15 +67143,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 3,
           "created_at": "2025-11-14T17:51:16Z",
-          "updated_at": "2025-11-25T00:07:35Z",
-          "closed_at": null,
+          "updated_at": "2026-01-17T19:23:39Z",
+          "closed_at": "2026-01-12T22:15:39Z",
           "author_association": "NONE",
           "type": null,
           "active_lock_reason": null,
@@ -68681,15 +68731,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 2,
           "created_at": "2025-12-18T18:58:47Z",
-          "updated_at": "2025-12-18T19:24:40Z",
-          "closed_at": null,
+          "updated_at": "2026-01-17T17:45:40Z",
+          "closed_at": "2026-01-17T17:45:40Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -68719,7 +68769,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1461/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -72827,9 +72877,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 4,
           "created_at": "2025-12-19T15:56:21Z",
-          "updated_at": "2025-12-21T23:00:00Z",
+          "updated_at": "2026-01-16T19:23:49Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -72842,7 +72892,7 @@
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7016.patch",
             "merged_at": null
           },
-          "body": "## Summary\nUpdates all Rhode Island income tax parameter references to cite the 2025 RI-1040 Instructions with specific page numbers. Adds 2025 parameter values where applicable and includes comprehensive 2025 tests.\n\n### Parameter updates:\n- Tax brackets: $79,900 (4.75%) and $181,650 (5.99%)\n- Exemption amount: $5,100\n- Phaseout threshold: $254,250\n- Phaseout increment: $7,250\n- Social security birth year threshold: 1959 (born on/before March 1, 1959)\n- Retirement income subtraction cap: $50,000 (increased from $20,000, effective 2024)\n\n### Tests added:\n- Standard deduction 2025 tests\n- Exemption phaseout 2025 tests  \n- Social security modification eligibility 2025 tests\n- Retirement income subtraction 2025 tests\n- Integration tests for 2025 tax brackets\n\n## Outstanding items (to revisit when official forms are released)\n1. **Property Tax Credit (RI-1040H)**: The 2025 form has not been released yet. Will update when available.\n2. **Railroad Retirement Benefits Subtraction**: Rhode Island allows a subtraction for Tier I and Tier II Railroad Retirement benefits. The `railroad_benefits` variable exists in the codebase but is not yet connected to RI AGI subtractions. Will implement when the relevant form schedule is finalized.\n\n## Test plan\n- [x] All 96 Rhode Island income tax tests pass\n- [x] Code formatted with `make format`\n\n## References\n- [2025 RI-1040 Instructions](https://tax.ri.gov/sites/g/files/xkgbur541/files/2024-12/2025%20RI-1040%20Instructions_4.pdf)\n- Fixes #7009\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+          "body": "## Summary\nUpdates all Rhode Island income tax parameter references to cite the 2025 RI-1040 Instructions with specific page numbers. Adds 2025 parameter values where applicable and includes comprehensive 2025 tests.\n\nFixes #7009\n\n### Parameter updates:\n- Tax brackets: $79,900 (4.75%) and $181,650 (5.99%)\n- Standard deduction (2025): $10,900 (single/separate), $21,800 (joint/widow), $16,350 (HOH)\n- Exemption amount: $5,100\n- Phaseout threshold: $254,250\n- Phaseout increment: $7,250\n- Social security birth year threshold: 1959 (born on/before March 1, 1959)\n- Retirement income subtraction cap: $50,000 (increased from $20,000, effective 2024)\n- **Social security income limits (2025)**: $107,000 (single/HOH/separate), $133,750 (joint/widow)\n- **Retirement income limits (2025)**: $107,000 (single/HOH/separate), $133,750 (joint/widow)\n\n### Bug fixes:\n- **SURVIVING_SPOUSE standard deduction**: Fixed to match JOINT values ($21,800) instead of incorrectly using SINGLE values ($10,900)\n\n### Property Tax Credit (RI-1040H) updates:\n- Maximum credit: $700 (up from $675)\n- Income thresholds updated for 2025:\n  - 1 person: $6,991 (4%), $10,481 (5%), $13,971 (6%), $40,731 (limit)\n  - 2+ persons: $6,991 (4%), $10,481 (5%), $17,461 (6%), $40,731 (limit)\n\n### AGI Modifications (RI Schedule M):\n- Added `ri_section_179_expense_add_back` input variable for 2025 (Line 2k - P.L. 119-21, H.R.1)\n  - Rhode Island limits Section 179 depreciation to $25,000; amounts beyond this limit must be added back\n  - Implemented as an input variable - users must manually enter the add-back amount\n- Updated references to 2025 RI Schedule M\n\n### Tests added:\n- Standard deduction 2025 tests\n- Exemption phaseout 2025 tests  \n- Social security modification eligibility 2025 tests\n- Retirement income subtraction 2025 tests\n- Integration tests for 2025 tax brackets\n\n## New 2025 features NOT modeled\n\nThe 2025 RI-1040 Instructions introduce **RI Schedule HR1 - Individual** for add-backs related to P.L. 119-21, H.R.1 (2025). These federal deductions are disallowed for Rhode Island purposes and must be added back to income:\n\n1. **Business interest expense deduction** [I.R.S. Code 163(j)] - RI disallows enhanced federal deductions\n2. **Section 174A Amortization Adjustment** for research and experimental expenditures - must be amortized for RI\n3. **Qualified sound recording production deduction** [I.R.S. Code 181]\n\nNote: **Section 179 depreciation add-back** [I.R.S. Code 179(b)] IS modeled as an input variable (`ri_section_179_expense_add_back`).\n\nThese primarily affect business income and pass-through entities, not typical W-2 wage earners.\n\n## Test plan\n- [x] All 166 Rhode Island income tax tests pass\n- [x] Code formatted with `make format`\n\n## References\n- [2025 RI-1040 Instructions (December 2025)](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-12/2025%201040R%20Instructions%20122025.pdf)\n- [2025 RI-1040H Property Tax Relief Claim](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2025%201040H_w.pdf)\n- [2025 RI Schedule M](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2025%20RI%20Schedule%20M_w.pdf)\n- [2025 Social Security Modification Worksheet](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/Social%20Security%20Worksheet_b.pdf)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7016/reactions",
             "total_count": 0,
@@ -72859,7 +72909,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 3,
+          "commits": 12,
           "review_comments": 1,
           "files": [
             {
@@ -72879,191 +72929,198 @@
             {
               "filename": "policyengine_us/parameters/gov/states/ri/tax/income/agi/additions/additions.yaml",
               "status": "modified",
-              "additions": 4,
-              "deletions": 2,
-              "changes": 6
+              "additions": 20,
+              "deletions": 12,
+              "changes": 32
             },
             {
               "filename": "policyengine_us/parameters/gov/states/ri/tax/income/agi/subtractions/social_security/limit/birth_year.yaml",
               "status": "modified",
-              "additions": 11,
-              "deletions": 9,
-              "changes": 20
+              "additions": 22,
+              "deletions": 19,
+              "changes": 41
             },
             {
               "filename": "policyengine_us/parameters/gov/states/ri/tax/income/agi/subtractions/social_security/limit/income.yaml",
               "status": "modified",
-              "additions": 8,
-              "deletions": 7,
-              "changes": 15
+              "additions": 22,
+              "deletions": 12,
+              "changes": 34
             },
             {
               "filename": "policyengine_us/parameters/gov/states/ri/tax/income/agi/subtractions/subtractions.yaml",
               "status": "modified",
-              "additions": 12,
-              "deletions": 10,
-              "changes": 22
+              "additions": 24,
+              "deletions": 20,
+              "changes": 44
             },
             {
               "filename": "policyengine_us/parameters/gov/states/ri/tax/income/agi/subtractions/taxable_retirement_income/cap.yaml",
+              "status": "modified",
+              "additions": 15,
+              "deletions": 12,
+              "changes": 27
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/agi/subtractions/taxable_retirement_income/income_limit.yaml",
+              "status": "modified",
+              "additions": 17,
+              "deletions": 8,
+              "changes": 25
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/agi/subtractions/tuition_saving_program_contributions/cap.yaml",
+              "status": "modified",
+              "additions": 8,
+              "deletions": 4,
+              "changes": 12
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/cdcc/rate.yaml",
               "status": "modified",
               "additions": 9,
               "deletions": 6,
               "changes": 15
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/agi/subtractions/taxable_retirement_income/income_limit.yaml",
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/child_tax_rebate/amount.yaml",
+              "status": "modified",
+              "additions": 11,
+              "deletions": 10,
+              "changes": 21
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/child_tax_rebate/limit/age.yaml",
+              "status": "modified",
+              "additions": 10,
+              "deletions": 9,
+              "changes": 19
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/child_tax_rebate/limit/child.yaml",
+              "status": "modified",
+              "additions": 10,
+              "deletions": 10,
+              "changes": 20
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/child_tax_rebate/limit/income.yaml",
               "status": "modified",
               "additions": 8,
               "deletions": 6,
               "changes": 14
             },
             {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/agi/subtractions/tuition_saving_program_contributions/cap.yaml",
-              "status": "modified",
-              "additions": 4,
-              "deletions": 2,
-              "changes": 6
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/cdcc/rate.yaml",
-              "status": "modified",
-              "additions": 2,
-              "deletions": 0,
-              "changes": 2
-            },
-            {
               "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/eitc/match.yaml",
               "status": "modified",
-              "additions": 4,
+              "additions": 5,
               "deletions": 2,
-              "changes": 6
+              "changes": 7
             },
             {
               "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/non_refundable.yaml",
               "status": "modified",
-              "additions": 2,
-              "deletions": 0,
-              "changes": 2
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/refundable.yaml",
-              "status": "modified",
-              "additions": 2,
-              "deletions": 0,
-              "changes": 2
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/deductions/standard/amount.yaml",
-              "status": "modified",
-              "additions": 2,
-              "deletions": 0,
-              "changes": 2
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/deductions/standard/phase_out/increment.yaml",
-              "status": "modified",
-              "additions": 3,
-              "deletions": 0,
-              "changes": 3
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/deductions/standard/phase_out/percentage.yaml",
-              "status": "modified",
-              "additions": 3,
-              "deletions": 1,
-              "changes": 4
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/deductions/standard/phase_out/start.yaml",
-              "status": "modified",
-              "additions": 4,
-              "deletions": 1,
-              "changes": 5
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/exemption/amount.yaml",
-              "status": "modified",
-              "additions": 8,
-              "deletions": 5,
-              "changes": 13
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/exemption/reduction/increment.yaml",
-              "status": "modified",
               "additions": 6,
-              "deletions": 3,
-              "changes": 9
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/exemption/reduction/rate.yaml",
-              "status": "modified",
-              "additions": 4,
-              "deletions": 2,
-              "changes": 6
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/exemption/reduction/start.yaml",
-              "status": "modified",
-              "additions": 8,
-              "deletions": 5,
-              "changes": 13
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/rate.yaml",
-              "status": "modified",
-              "additions": 6,
-              "deletions": 2,
-              "changes": 8
-            },
-            {
-              "filename": "policyengine_us/tests/policy/baseline/gov/states/ri/tax/income/agi/subtractions/social_security/ri_social_security_modification_eligible.yaml",
-              "status": "modified",
-              "additions": 56,
-              "deletions": 0,
-              "changes": 56
-            },
-            {
-              "filename": "policyengine_us/tests/policy/baseline/gov/states/ri/tax/income/agi/subtractions/taxable_retirement_income/ri_retirement_income_subtraction.yaml",
-              "status": "modified",
-              "additions": 41,
-              "deletions": 0,
-              "changes": 41
-            },
-            {
-              "filename": "policyengine_us/tests/policy/baseline/gov/states/ri/tax/income/deductions/standard/ri_standard_deduction.yaml",
-              "status": "modified",
-              "additions": 28,
-              "deletions": 0,
-              "changes": 28
-            },
-            {
-              "filename": "policyengine_us/tests/policy/baseline/gov/states/ri/tax/income/exemption/ri_exemptions.yaml",
-              "status": "modified",
-              "additions": 57,
-              "deletions": 0,
-              "changes": 57
-            },
-            {
-              "filename": "policyengine_us/tests/policy/baseline/gov/states/ri/tax/income/integration.yaml",
-              "status": "modified",
-              "additions": 51,
-              "deletions": 0,
-              "changes": 51
-            },
-            {
-              "filename": "policyengine_us/tests/policy/contrib/states/ri/exemption_reform_test.yaml",
-              "status": "modified",
-              "additions": 5,
-              "deletions": 5,
+              "deletions": 4,
               "changes": 10
             },
             {
-              "filename": "uv.lock",
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/property_tax/age_threshold.yaml",
+              "status": "modified",
+              "additions": 3,
+              "deletions": 2,
+              "changes": 5
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/property_tax/income_sources.yaml",
               "status": "modified",
               "additions": 1,
               "deletions": 1,
               "changes": 2
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/property_tax/max_amount.yaml",
+              "status": "modified",
+              "additions": 19,
+              "deletions": 16,
+              "changes": 35
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/property_tax/rate/multiple_people.yaml",
+              "status": "modified",
+              "additions": 9,
+              "deletions": 0,
+              "changes": 9
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/property_tax/rate/one_person.yaml",
+              "status": "modified",
+              "additions": 9,
+              "deletions": 0,
+              "changes": 9
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/property_tax/rate/rent.yaml",
+              "status": "modified",
+              "additions": 5,
+              "deletions": 1,
+              "changes": 6
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/credits/refundable.yaml",
+              "status": "modified",
+              "additions": 8,
+              "deletions": 6,
+              "changes": 14
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/deductions/standard/amount.yaml",
+              "status": "modified",
+              "additions": 14,
+              "deletions": 5,
+              "changes": 19
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/deductions/standard/phase_out/increment.yaml",
+              "status": "modified",
+              "additions": 16,
+              "deletions": 13,
+              "changes": 29
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/deductions/standard/phase_out/percentage.yaml",
+              "status": "modified",
+              "additions": 8,
+              "deletions": 3,
+              "changes": 11
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/deductions/standard/phase_out/start.yaml",
+              "status": "modified",
+              "additions": 14,
+              "deletions": 11,
+              "changes": 25
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/exemption/amount.yaml",
+              "status": "modified",
+              "additions": 19,
+              "deletions": 16,
+              "changes": 35
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/exemption/reduction/increment.yaml",
+              "status": "modified",
+              "additions": 17,
+              "deletions": 14,
+              "changes": 31
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ri/tax/income/exemption/reduction/rate.yaml",
+              "status": "modified",
+              "additions": 19,
+              "deletions": 15,
+              "changes": 34
             }
           ]
         },
@@ -74367,7 +74424,7 @@
           "created_at": "2025-12-04T21:40:59Z",
           "updated_at": "2025-12-09T11:24:30Z",
           "closed_at": "2025-12-09T11:24:30Z",
-          "author_association": "NONE",
+          "author_association": "CONTRIBUTOR",
           "type": null,
           "active_lock_reason": null,
           "draft": false,
@@ -81096,7 +81153,7 @@
           "created_at": "2025-11-05T21:53:08Z",
           "updated_at": "2025-11-06T17:11:56Z",
           "closed_at": "2025-11-06T17:11:56Z",
-          "author_association": "NONE",
+          "author_association": "CONTRIBUTOR",
           "type": null,
           "active_lock_reason": null,
           "sub_issues_summary": {
@@ -107067,7 +107124,17 @@
             "user_view_type": "public",
             "site_admin": false
           },
-          "labels": [],
+          "labels": [
+            {
+              "id": 8906508898,
+              "node_id": "LA_kwDOPIpjJM8AAAACEt6KYg",
+              "url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/labels/bug",
+              "name": "bug",
+              "color": "d73a4a",
+              "default": true,
+              "description": "Something isn't working"
+            }
+          ],
           "state": "open",
           "locked": false,
           "assignee": null,
@@ -107075,7 +107142,7 @@
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-25T01:46:35Z",
-          "updated_at": "2025-12-25T20:44:47Z",
+          "updated_at": "2026-01-13T02:56:32Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -107290,15 +107357,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 0,
+          "comments": 1,
           "created_at": "2025-12-05T08:19:11Z",
-          "updated_at": "2025-12-05T08:42:38Z",
-          "closed_at": null,
+          "updated_at": "2026-01-16T00:32:12Z",
+          "closed_at": "2026-01-16T00:32:12Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -107328,7 +107395,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/500/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -117006,7 +117073,7 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": {
             "login": "juaristi22",
@@ -117053,10 +117120,10 @@
             }
           ],
           "milestone": null,
-          "comments": 15,
+          "comments": 16,
           "created_at": "2025-07-15T12:49:35Z",
-          "updated_at": "2025-12-18T13:17:29Z",
-          "closed_at": null,
+          "updated_at": "2026-01-17T20:47:41Z",
+          "closed_at": "2026-01-17T20:47:41Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -122374,15 +122441,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 3,
           "created_at": "2025-11-14T17:51:16Z",
-          "updated_at": "2025-11-25T00:07:35Z",
-          "closed_at": null,
+          "updated_at": "2026-01-17T19:23:39Z",
+          "closed_at": "2026-01-12T22:15:39Z",
           "author_association": "NONE",
           "type": null,
           "active_lock_reason": null,
@@ -122411,7 +122478,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 7,
+          "commits": 10,
           "review_comments": 1,
           "files": [
             {
@@ -122429,18 +122496,32 @@
               "changes": 2
             },
             {
+              "filename": ".vscode/settings.json",
+              "status": "modified",
+              "additions": 4,
+              "deletions": 1,
+              "changes": 5
+            },
+            {
               "filename": "Makefile",
               "status": "modified",
-              "additions": 48,
+              "additions": 61,
               "deletions": 10,
-              "changes": 58
+              "changes": 71
             },
             {
               "filename": "README.md",
               "status": "modified",
-              "additions": 27,
+              "additions": 48,
               "deletions": 0,
-              "changes": 27
+              "changes": 48
+            },
+            {
+              "filename": "changelog_entry.yaml",
+              "status": "modified",
+              "additions": 6,
+              "deletions": 0,
+              "changes": 6
             },
             {
               "filename": "config/README.md",
@@ -122457,11 +122538,18 @@
               "changes": 26
             },
             {
+              "filename": "docker/docker-compose.external.yml",
+              "status": "added",
+              "additions": 17,
+              "deletions": 0,
+              "changes": 17
+            },
+            {
               "filename": "docker/docker-compose.yml",
               "status": "added",
-              "additions": 34,
+              "additions": 33,
               "deletions": 0,
-              "changes": 34
+              "changes": 33
             },
             {
               "filename": "docker/start.sh",
