@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-26T06:12:53.724Z",
+  "fetchedAt": "2026-02-02T06:29:14.122Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -12,7 +12,7 @@
         "github": "nikhilwoodruff",
         "name": "Nikhil Woodruff",
         "avatar": "https://avatars.githubusercontent.com/u/35577657?v=4",
-        "estimatedActivity": 638,
+        "estimatedActivity": 642,
         "aliases": [
           "nwoodruff-co"
         ],
@@ -30,8 +30,8 @@
         "policyengine-github-agent": 48,
         "policyengine-uk-event-2025": 38,
         "structural-reforms-demo": 6,
-        "policyengine-uk-data": 351,
         "policyengine-api-v2-alpha": 175,
+        "policyengine-uk-data": 351,
         "L0": 5,
         "CLAUDE.md": 2,
         "uk-local-areas-dashboard": 2,
@@ -8201,39 +8201,27 @@
           "repo": "structural-reforms-demo"
         },
         {
-          "sha": "9a5012cc2556f6cefd425345f649dafa391af166",
-          "message": "Changelog",
-          "date": "2025-09-09T11:40:40.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "4846c03bcc0714be70f89f346649158b4c8bf9b2",
-          "message": "Fix bug",
-          "date": "2025-09-09T11:40:06.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "827d9de493b14d1f68fea394c4a9156fd451d140",
-          "message": "Merge pull request #247 from PolicyEngine/fix-fuel-spending-zeroing",
-          "date": "2025-12-07T09:17:22.000Z",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "64f846750ababde18d9e3a52cb8e59e410e86c01",
-          "message": "Update package version",
-          "date": "2025-12-04T17:51:23.000Z",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "7c9a1f370ca1ee8e5e9b267f599f7c91e5097ef6",
-          "message": "Update package version",
-          "date": "2025-12-07T09:17:41.000Z",
-          "repo": "policyengine-uk-data"
-        },
-        {
           "sha": "9c43f0c557412ea2d3b668c502d0e2c60169bb57",
           "message": "Fix deploy: update Cloud Run with new image after build",
           "date": "2025-12-10T10:48:33.000Z",
+          "repo": "policyengine-api-v2-alpha"
+        },
+        {
+          "sha": "bbe5ee096eec33070a54767f79e319f82de26ced",
+          "message": "Remove domain mapping in tf",
+          "date": "2025-12-10T14:06:17.000Z",
+          "repo": "policyengine-api-v2-alpha"
+        },
+        {
+          "sha": "d37159e7fbbfdbd0b3489ad9c65049f4016380f1",
+          "message": "Ignore image changes in terraform (gcloud handles deploys)",
+          "date": "2025-12-10T11:07:15.000Z",
+          "repo": "policyengine-api-v2-alpha"
+        },
+        {
+          "sha": "fdb7d4170146aa907d3ec275e5896389833bb9f4",
+          "message": "Add custom domain mapping for v2.api.policyengine.org",
+          "date": "2025-12-10T11:45:46.000Z",
           "repo": "policyengine-api-v2-alpha"
         },
         {
@@ -8243,9 +8231,21 @@
           "repo": "policyengine-api-v2-alpha"
         },
         {
-          "sha": "d37159e7fbbfdbd0b3489ad9c65049f4016380f1",
-          "message": "Ignore image changes in terraform (gcloud handles deploys)",
-          "date": "2025-12-10T11:07:15.000Z",
+          "sha": "08f847d84186d25c847eea9c0a5bc1a303bed1fb",
+          "message": "Add improvements",
+          "date": "2025-12-10T22:11:45.000Z",
+          "repo": "policyengine-api-v2-alpha"
+        },
+        {
+          "sha": "52c05638c26637ffbd306ad765ea02c51583a577",
+          "message": "Update aggregates and change-aggregates locations",
+          "date": "2025-12-10T22:55:41.000Z",
+          "repo": "policyengine-api-v2-alpha"
+        },
+        {
+          "sha": "85529ebdfc1cb7600e02d3e5a7e4c69dce109365",
+          "message": "Add users and reports",
+          "date": "2025-12-10T22:52:47.000Z",
           "repo": "policyengine-api-v2-alpha"
         }
       ]
@@ -8255,7 +8255,7 @@
         "github": "MaxGhenis",
         "name": "Max Ghenis",
         "avatar": "https://avatars.githubusercontent.com/u/6076111?v=4",
-        "estimatedActivity": 549,
+        "estimatedActivity": 548,
         "aliases": [],
         "bio": "Co-founder and CEO of @PolicyEngine"
       },
@@ -17545,7 +17545,7 @@
         "commits": 2149,
         "prs": 428,
         "prs_merged": 389,
-        "reviews": 445,
+        "reviews": 447,
         "issues": 479,
         "repos": 26
       },
@@ -22347,9 +22347,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 3,
+          "comments": 5,
           "created_at": "2025-12-30T15:59:58Z",
-          "updated_at": "2026-01-06T14:37:48Z",
+          "updated_at": "2026-02-01T22:52:38Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -22452,6 +22452,77 @@
           "score": 1
         },
         {
+          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7061",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7061/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7061/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7061/events",
+          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7061",
+          "id": 3768275957,
+          "node_id": "PR_kwDOFqFFMc663utu",
+          "number": 7061,
+          "title": "Update Oklahoma 2025 Individual Income Tax Model",
+          "user": {
+            "login": "DTrim99",
+            "id": 178813244,
+            "node_id": "U_kgDOCqh5PA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/178813244?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/DTrim99",
+            "html_url": "https://github.com/DTrim99",
+            "followers_url": "https://api.github.com/users/DTrim99/followers",
+            "following_url": "https://api.github.com/users/DTrim99/following{/other_user}",
+            "gists_url": "https://api.github.com/users/DTrim99/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/DTrim99/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/DTrim99/subscriptions",
+            "organizations_url": "https://api.github.com/users/DTrim99/orgs",
+            "repos_url": "https://api.github.com/users/DTrim99/repos",
+            "events_url": "https://api.github.com/users/DTrim99/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/DTrim99/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [],
+          "state": "closed",
+          "locked": false,
+          "assignee": null,
+          "assignees": [],
+          "milestone": null,
+          "comments": 2,
+          "created_at": "2025-12-29T20:25:12Z",
+          "updated_at": "2026-02-01T23:13:49Z",
+          "closed_at": "2026-02-01T23:13:23Z",
+          "author_association": "COLLABORATOR",
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/7061",
+            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7061",
+            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7061.diff",
+            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7061.patch",
+            "merged_at": "2026-02-01T23:13:23Z"
+          },
+          "body": "## Summary\n\nUpdates the Oklahoma individual income tax implementation for tax year 2025.\n\nFixes #7060\n\n## Key Changes\n\n- **Pension Subtraction Limit (CRITICAL)**: Update from $10,000 to $20,000 effective 2024 per [HB 2020](https://www.okhouse.gov/posts/news-20230324_4)\n- **2025 References**: Add 2025 form references to all 29 Oklahoma tax parameter files\n- **Tests**: Add 2025 test cases including pension subtraction verification\n\n## Parameter Files to Update\n\n### Critical Value Change\n- [ ] `pension_limit.yaml` - Update to $20,000 for 2024+\n\n### Reference Updates (29 files)\n- [ ] Tax rate files (5 files)\n- [ ] Deduction files (2 files)\n- [ ] Exemption files (3 files)\n- [ ] AGI subtraction files (4 files)\n- [ ] EITC files (1 file)\n- [ ] Child/CDCC credit files (3 files)\n- [ ] Property tax credit files (4 files)\n- [ ] Sales tax credit files (4 files)\n- [ ] Credit list files (2 files)\n- [ ] Misc files (1 file)\n\n## Status\n- [ ] Documentation collected\n- [ ] Parameters updated\n- [ ] Tests written\n- [ ] CI passing\n\n## Reference Documents\n- [2025 Form 511-NR-Pkt](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/511-NR-Pkt.pdf)\n- [2025 Form 511-Pkt](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/511-Pkt.pdf)\n- [2025 Form 538-H](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/538-H.pdf)\n- [2025 Form 538-S](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/538-S.pdf)\n- [2025 Form 511-EIC](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/511-EIC.pdf)\n\n---\n*This is a draft PR. Implementation work is in progress.*\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+          "reactions": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7061/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7061/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null,
+          "score": 1
+        },
+        {
           "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7059",
           "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
           "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7059/labels{/name}",
@@ -22484,15 +22555,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 3,
           "created_at": "2025-12-29T20:03:45Z",
-          "updated_at": "2026-01-05T18:09:03Z",
-          "closed_at": null,
+          "updated_at": "2026-01-29T23:19:16Z",
+          "closed_at": "2026-01-29T23:18:46Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -22502,7 +22573,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7059",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7059.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7059.patch",
-            "merged_at": null
+            "merged_at": "2026-01-29T23:18:46Z"
           },
           "body": "## Summary\n\nUpdate the Virginia individual income tax model for tax year 2025 based on the 2025 Form 760 Instructions.\n\n### Parameter Updates (21 files)\n- Added 2025 Form 760 references with page numbers to all parameter files\n- Updated rebate parameter with 2024 values ($200/$400) and 2025 values ($0)\n\n### Tests Added\n- Standard deduction: $8,750 single, $17,500 joint, $8,750 separate\n- Refundable EITC: 20% match rate\n- Non-refundable EITC: 20% match rate\n- Military benefit subtraction: $40,000 limit for 2025\n- Age deduction: Full amount and phase-out tests\n- Exemptions: Personal ($930) and aged/blind ($800) unchanged\n- Rebate: 2024 ($200/$400) and 2025 ($0)\n\n### Key 2025 Values\n| Parameter | 2025 Value |\n|-----------|------------|\n| Standard Deduction (Single) | $8,750 |\n| Standard Deduction (Joint) | $17,500 |\n| Personal Exemption | $930 |\n| Aged/Blind Exemption | $800 |\n| EITC Match Rate | 20% |\n| Military Benefit Subtraction Limit | $40,000 |\n| Age Deduction Maximum | $12,000 |\n| Rebate | $0 (discontinued) |\n\n## References\n- [2025 Virginia Form 760 Instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf)\n- [House Bill 1600 (2025 Appropriations Act)](https://legiscan.com/VA/text/HB1600/id/3262750/Virginia-2025-HB1600-Chaptered.pdf)\n\nFixes #7056\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
@@ -22589,6 +22660,77 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7058/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null,
+          "score": 1
+        },
+        {
+          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7055",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7055/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7055/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7055/events",
+          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7055",
+          "id": 3767697687,
+          "node_id": "PR_kwDOFqFFMc661z9w",
+          "number": 7055,
+          "title": "Update Colorado 2025 Individual Income Tax Model",
+          "user": {
+            "login": "DTrim99",
+            "id": 178813244,
+            "node_id": "U_kgDOCqh5PA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/178813244?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/DTrim99",
+            "html_url": "https://github.com/DTrim99",
+            "followers_url": "https://api.github.com/users/DTrim99/followers",
+            "following_url": "https://api.github.com/users/DTrim99/following{/other_user}",
+            "gists_url": "https://api.github.com/users/DTrim99/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/DTrim99/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/DTrim99/subscriptions",
+            "organizations_url": "https://api.github.com/users/DTrim99/orgs",
+            "repos_url": "https://api.github.com/users/DTrim99/repos",
+            "events_url": "https://api.github.com/users/DTrim99/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/DTrim99/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [],
+          "state": "closed",
+          "locked": false,
+          "assignee": null,
+          "assignees": [],
+          "milestone": null,
+          "comments": 2,
+          "created_at": "2025-12-29T15:34:11Z",
+          "updated_at": "2026-02-01T23:24:48Z",
+          "closed_at": "2026-02-01T23:24:33Z",
+          "author_association": "COLLABORATOR",
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/7055",
+            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7055",
+            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7055.diff",
+            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7055.patch",
+            "merged_at": "2026-02-01T23:24:33Z"
+          },
+          "body": "## Summary\n\nImplements #7054 - Updates Colorado income tax parameters and tests for tax year 2025.\n\n### Changes\n- Update parameter values for 2025 (sales tax refund amounts, EITC match, CTC, Family Affordability Credit)\n- Add 2025 references to all relevant parameter files\n- Create new 2025 integration tests\n\n### Primary Source\n[2025 Colorado Individual Income Tax Filing Guide (Book 104)](https://tax.colorado.gov/sites/tax/files/documents/Book104_2025.pdf)\n\n## Test plan\n- [ ] Verify all parameter values match 2025 documentation\n- [ ] Run existing Colorado tax tests\n- [ ] Add new 2025-specific integration tests\n- [ ] Ensure CI passes\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+          "reactions": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7055/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7055/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1
@@ -23549,15 +23691,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 5,
           "created_at": "2025-12-16T15:09:12Z",
-          "updated_at": "2026-01-22T23:57:15Z",
-          "closed_at": null,
+          "updated_at": "2026-02-01T23:33:13Z",
+          "closed_at": "2026-02-01T23:33:05Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -23567,7 +23709,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6995",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6995.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6995.patch",
-            "merged_at": null
+            "merged_at": "2026-02-01T23:33:05Z"
           },
           "body": "Fixes #6366",
           "reactions": {
@@ -24009,148 +24151,6 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6978/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null,
-          "score": 1
-        },
-        {
-          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6971",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6971/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6971/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6971/events",
-          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6971",
-          "id": 3727798833,
-          "node_id": "PR_kwDOFqFFMc64yRKg",
-          "number": 6971,
-          "title": "Add Arkansas Transitional Employment Assistance (TEA)",
-          "user": {
-            "login": "hua7450",
-            "id": 113824411,
-            "node_id": "U_kgDOBsjSmw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/113824411?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/hua7450",
-            "html_url": "https://github.com/hua7450",
-            "followers_url": "https://api.github.com/users/hua7450/followers",
-            "following_url": "https://api.github.com/users/hua7450/following{/other_user}",
-            "gists_url": "https://api.github.com/users/hua7450/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/hua7450/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/hua7450/subscriptions",
-            "organizations_url": "https://api.github.com/users/hua7450/orgs",
-            "repos_url": "https://api.github.com/users/hua7450/repos",
-            "events_url": "https://api.github.com/users/hua7450/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/hua7450/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [],
-          "state": "closed",
-          "locked": false,
-          "assignee": null,
-          "assignees": [],
-          "milestone": null,
-          "comments": 3,
-          "created_at": "2025-12-14T18:07:21Z",
-          "updated_at": "2025-12-28T22:18:31Z",
-          "closed_at": "2025-12-28T22:18:08Z",
-          "author_association": "COLLABORATOR",
-          "type": null,
-          "active_lock_reason": null,
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/6971",
-            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6971",
-            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6971.diff",
-            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6971.patch",
-            "merged_at": "2025-12-28T22:18:08Z"
-          },
-          "body": "## Summary\n\nImplements Arkansas Transitional Employment Assistance (TEA) program.\n\nCloses #6970\n\n---\n\n## Arkansas TEA Income Rules\n\n### Regulatory Authority\n- **TEA Policy Manual** (effective 01/01/2023): https://humanservices.arkansas.gov/wp-content/uploads/TEA_MANUAL-10.1.24.pdf\n- **208.00.13 Ark. Code R. Section 001** (TEA Program State Plan)\n- **016.20.98-041 Ark. Code R.** (TEA Policy 2352-2362, Work Expense/Incentive Deductions)\n\n---\n\n### 1. INCOME ELIGIBILITY TEST\n\n#### Net Income Test (Section 2101, 2353.1)\n- **Limit:** $513/month (applies to ALL family sizes, effective 01/01/2023)\n- Countable income (after deductions) must be at or below $513\n\nSource: [TEA Manual Section 2101, page 13](https://humanservices.arkansas.gov/wp-content/uploads/TEA_MANUAL-10.1.24.pdf#page=13)\n\n---\n\n### 2. INCOME DEDUCTIONS & EXEMPTIONS (Section 2352)\n\n#### A. Work Expense Deduction (Initial & Ongoing)\n\n| Deduction | Rate |\n|-----------|------|\n| Work-related expense | 20% of gross earned income |\n\n#### B. Work Incentive Deduction (Ongoing Recipients Only)\n\n| Deduction | Rate |\n|-----------|------|\n| Work incentive | 60% of remaining earned income after work expense |\n\n**Note:** Initial applicants receive only the 20% work expense deduction. Ongoing recipients receive both 20% work expense + 60% work incentive.\n\nSource: [TEA Manual Section 2352, page 89](https://humanservices.arkansas.gov/wp-content/uploads/TEA_MANUAL-10.1.24.pdf#page=89)\n\n---\n\n### 3. PAYMENT STANDARDS BY FAMILY SIZE (Section 2361)\n\n| Family Size | Payment Standard |\n|-------------|-----------------|\n| 1 | $81 |\n| 2 | $162 |\n| 3 | $204 |\n| 4 | $247 |\n| 5 | $286 |\n| 6 | $331 |\n| 7 | $373 |\n| 8 | $415 |\n| 9+ | $457 |\n\nSource: [TEA Manual Section 2361, page 92](https://humanservices.arkansas.gov/wp-content/uploads/TEA_MANUAL-10.1.24.pdf#page=92)\n\n---\n\n### 4. RESOURCE LIMIT\n\n| Limit | Amount |\n|-------|--------|\n| Maximum countable resources | $3,000 |\n\n**Exempt resources:** Homestead, one operable motor vehicle, household and personal goods, income-producing property, IDA/escrow accounts.\n\nSource: [TEA Manual Section 2101, page 13](https://humanservices.arkansas.gov/wp-content/uploads/TEA_MANUAL-10.1.24.pdf#page=13)\n\n---\n\n### 5. BENEFIT CALCULATION (Section 2362)\n\n#### Countable Income Calculation:\n- **Initial applicants:** `(Gross Earned × 0.80) + Gross Unearned`\n- **Ongoing recipients:** `(Gross Earned × 0.80 × 0.40) + Gross Unearned`\n\n#### Benefit Formula:\n- **If gross income < $1,026:** `Benefit = max(Payment Standard − Countable Income, 0)`\n- **If gross income ≥ $1,026:** `Benefit = Payment Standard × 0.5` (no subtraction)\n\nThe $1,026 trigger (effective 01/01/2023) causes a 50% reduction when gross income exceeds this threshold.\n\nSource: [TEA Manual Section 2362, page 93](https://humanservices.arkansas.gov/wp-content/uploads/TEA_MANUAL-10.1.24.pdf#page=93)\n\n---\n\n### 6. OTHER REQUIREMENTS\n\n- **Immigration status:** Must have at least one U.S. citizen or qualified immigrant in the household\n- **Time limits:** 12 months (state), 60 months (federal) - effective 04/01/2024\n\n---\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
-          "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6971/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6971/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null,
-          "score": 1
-        },
-        {
-          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6969",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6969/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6969/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6969/events",
-          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6969",
-          "id": 3727549884,
-          "node_id": "PR_kwDOFqFFMc64xhLN",
-          "number": 6969,
-          "title": "Fix MA income tax to allow STCG losses to offset LTCG in Part C",
-          "user": {
-            "login": "policyengine[bot]",
-            "id": 239815650,
-            "node_id": "BOT_kgDODktL4g",
-            "avatar_url": "https://avatars.githubusercontent.com/u/88570531?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/policyengine%5Bbot%5D",
-            "html_url": "https://github.com/apps/policyengine",
-            "followers_url": "https://api.github.com/users/policyengine%5Bbot%5D/followers",
-            "following_url": "https://api.github.com/users/policyengine%5Bbot%5D/following{/other_user}",
-            "gists_url": "https://api.github.com/users/policyengine%5Bbot%5D/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/policyengine%5Bbot%5D/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/policyengine%5Bbot%5D/subscriptions",
-            "organizations_url": "https://api.github.com/users/policyengine%5Bbot%5D/orgs",
-            "repos_url": "https://api.github.com/users/policyengine%5Bbot%5D/repos",
-            "events_url": "https://api.github.com/users/policyengine%5Bbot%5D/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/policyengine%5Bbot%5D/received_events",
-            "type": "Bot",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [],
-          "state": "closed",
-          "locked": false,
-          "assignee": null,
-          "assignees": [],
-          "milestone": null,
-          "comments": 1,
-          "created_at": "2025-12-14T15:07:49Z",
-          "updated_at": "2025-12-15T23:24:31Z",
-          "closed_at": "2025-12-15T23:24:21Z",
-          "author_association": "NONE",
-          "type": null,
-          "active_lock_reason": null,
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/6969",
-            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6969",
-            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6969.diff",
-            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6969.patch",
-            "merged_at": "2025-12-15T23:24:21Z"
-          },
-          "body": "## Summary\nFixes Massachusetts income tax calculation to allow short-term capital losses to offset long-term capital gains in Part C, per MA Schedule B line 22.\n\n## Changes\n- Updated `ma_part_c_gross_income.py` to apply STCG losses against LTCG before taxation\n- Added integration test to verify the fix\n\n## Test Case\n- Filing: MA joint 2024\n- Short-term capital gains: -$9,670,468 (loss)\n- Long-term capital gains: +$4,900,962 (gain)\n- **Result**: $0 MA Part C tax (previously $398,145)\n\n## References\n- [MA Schedule B Instructions](https://www.mass.gov/doc/2024-schedule-b-interest-dividends-and-certain-capital-gains-and-losses/download) - Line 22: Short-term losses applied against long-term gains\n- [MA General Laws Chapter 62 Section 2](https://www.mass.gov/info-details/mass-general-laws-c62-ss-2) - Part C income definition\n\nFixes #6968\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
-          "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6969/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6969/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1
@@ -24676,15 +24676,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-19T20:49:50Z",
-          "updated_at": "2025-12-19T20:49:50Z",
-          "closed_at": null,
+          "updated_at": "2026-02-01T18:13:27Z",
+          "closed_at": "2026-02-01T18:13:26Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -24699,7 +24699,7 @@
             "blocking": 0,
             "total_blocking": 0
           },
-          "body": "## Summary\n\nThe Rhode Island retirement income subtraction incorrectly applies a single $20,000 cap to the combined pension income of both spouses, instead of a $20,000 cap per person. This results in joint filers receiving only $20,000 in subtraction instead of up to $40,000.\n\n## Root Cause\n\nIn `/policyengine_us/variables/gov/states/ri/tax/income/agi/subtractions/taxable_retirement_income/ri_retirement_income_subtraction.py`:\n\n```python\ndef formula(tax_unit, period, parameters):\n    person = tax_unit.members\n    taxable_pension = person(\"taxable_pension_income\", period)\n    head_or_spouse = person(\"is_tax_unit_head_or_spouse\", period)\n    p = parameters(\n        period\n    ).gov.states.ri.tax.income.agi.subtractions.taxable_retirement_income\n    total_taxable_pension = tax_unit.sum(taxable_pension * head_or_spouse)\n    return min_(total_taxable_pension, p.cap)  # BUG: Single cap for entire tax unit\n```\n\nThe code sums both spouses' pension income first, then applies a single $20,000 cap. But RI law applies the cap **per person**.\n\n## Legal Reference\n\nFrom the [Rhode Island Retirement Income Tax Guide](https://tax.ri.gov/sites/g/files/xkgbur541/files/2024-03/PUB_2024-01_retirement_income_guide.pdf):\n\n> \"This modification continues to be applied on an **individual basis**, meaning that **joint filers may qualify for a combined total of up to $40,000** (if both spouses qualify).\"\n\nRIGL § 44-30-12(c)(9) provides for the retirement income modification.\n\n## Example (from policyengine-taxsim issue #670)\n\n**Input:**\n- MFJ, both age 75\n- Person 1 pension: $42,767\n- Person 2 pension: $42,767\n- Total pension: $85,534\n- Gross Social Security: $15,323\n\n**PE calculates (wrong):**\n- Pension subtraction: min($85,534, $20,000) = $20,000\n- SS subtraction: $13,025\n- Total subtractions: $33,025\n- RI Modified AGI: $65,570\n- RI Tax: $1,295\n\n**TaxAct (correct):**\n- Pension subtraction: min($42,767, $20,000) + min($42,767, $20,000) = $40,000\n- SS subtraction: $13,024\n- Total subtractions: $53,024\n- RI Modified AGI: $45,569\n- RI Tax: $545\n\n## Files to Fix\n\n`/policyengine_us/variables/gov/states/ri/tax/income/agi/subtractions/taxable_retirement_income/ri_retirement_income_subtraction.py`\n\n## Suggested Fix\n\nChange from:\n```python\ntotal_taxable_pension = tax_unit.sum(taxable_pension * head_or_spouse)\nreturn min_(total_taxable_pension, p.cap)\n```\n\nTo:\n```python\ncapped_per_person = min_(taxable_pension, p.cap) * head_or_spouse\nreturn tax_unit.sum(capped_per_person)\n```\n\n## Integration Test\n\n```yaml\n- name: RI retirement income subtraction applied per person for joint filers\n  period: 2024\n  absolute_error_margin: 1\n  input:\n    people:\n      person1:\n        age: 75\n        social_security_retirement: 7661.52\n        taxable_private_pension_income: 42766.67\n        taxable_interest_income: 18.58\n        is_tax_unit_head: true\n      person2:\n        age: 75\n        social_security_retirement: 7661.52\n        taxable_private_pension_income: 42766.67\n        taxable_interest_income: 18.58\n        is_tax_unit_spouse: true\n    tax_units:\n      tax_unit:\n        members: [person1, person2]\n    spm_units:\n      spm_unit:\n        members: [person1, person2]\n    households:\n      household:\n        members: [person1, person2]\n        state_fips: 44\n  output:\n    ri_retirement_income_subtraction: 40000  # $20K per person, not $20K total\n    ri_agi: 45569\n    ri_income_tax: 545\n```\n\n## Related Issues\n\n- policyengine-taxsim#670: RI joint 2024 elderly 85Kpensions 15Kgssi",
+          "body": "## Summary\n\nThe Rhode Island retirement income subtraction incorrectly applies a single $20,000 cap to the combined pension income of both spouses, instead of a $20,000 cap per person. This results in joint filers receiving only $20,000 in subtraction instead of up to $40,000.\n\n## Root Cause\n\nIn `/policyengine_us/variables/gov/states/ri/tax/income/agi/subtractions/taxable_retirement_income/ri_retirement_income_subtraction.py`:\n\n```python\ndef formula(tax_unit, period, parameters):\n    person = tax_unit.members\n    taxable_pension = person(\"taxable_pension_income\", period)\n    head_or_spouse = person(\"is_tax_unit_head_or_spouse\", period)\n    p = parameters(\n        period\n    ).gov.states.ri.tax.income.agi.subtractions.taxable_retirement_income\n    total_taxable_pension = tax_unit.sum(taxable_pension * head_or_spouse)\n    return min_(total_taxable_pension, p.cap)  # BUG: Single cap for entire tax unit\n```\n\nThe code sums both spouses' pension income first, then applies a single $20,000 cap. But RI law applies the cap **per person**.\n\n## Legal Reference\n\nFrom the [Rhode Island Retirement Income Tax Guide](https://tax.ri.gov/sites/g/files/xkgbur541/files/2024-03/PUB_2024-01_retirement_income_guide.pdf):\n\n> \"This modification continues to be applied on an **individual basis**, meaning that **joint filers may qualify for a combined total of up to $40,000** (if both spouses qualify).\"\n\nRIGL § 44-30-12(c)(9) provides for the retirement income modification.\n\n## Example (from policyengine-taxsim issue #670)\n\n**Input:**\n- MFJ, both age 75\n- Person 1 pension: $42,767\n- Person 2 pension: $42,767\n- Total pension: $85,534\n- Gross Social Security: $15,323\n\n**PE calculates (wrong):**\n- Pension subtraction: min($85,534, $20,000) = $20,000\n- SS subtraction: $13,025\n- Total subtractions: $33,025\n- RI Modified AGI: $65,570\n- RI Tax: $1,295\n\n**TaxAct (correct):**\n- Pension subtraction: min($42,767, $20,000) + min($42,767, $20,000) = $40,000\n- SS subtraction: $13,024\n- Total subtractions: $53,024\n- RI Modified AGI: $45,569\n- RI Tax: $545\n\n## Files to Fix\n\n`/policyengine_us/variables/gov/states/ri/tax/income/agi/subtractions/taxable_retirement_income/ri_retirement_income_subtraction.py`\n\n## Suggested Fix\n\nChange from:\n```python\ntotal_taxable_pension = tax_unit.sum(taxable_pension * head_or_spouse)\nreturn min_(total_taxable_pension, p.cap)\n```\n\nTo:\n```python\ncapped_per_person = min_(taxable_pension, p.cap) * head_or_spouse\nreturn tax_unit.sum(capped_per_person)\n```\n\n## Integration Test\n\n```yaml\n- name: RI retirement income subtraction applied per person for joint filers\n  period: 2024\n  absolute_error_margin: 1\n  input:\n    people:\n      person1:\n        age: 75\n        social_security_retirement: 7661.52\n        taxable_private_pension_income: 42766.67\n        taxable_interest_income: 18.58\n        is_tax_unit_head: true\n      person2:\n        age: 75\n        social_security_retirement: 7661.52\n        taxable_private_pension_income: 42766.67\n        taxable_interest_income: 18.58\n        is_tax_unit_spouse: true\n    tax_units:\n      tax_unit:\n        members: [person1, person2]\n    spm_units:\n      spm_unit:\n        members: [person1, person2]\n    households:\n      household:\n        members: [person1, person2]\n        state_fips: 44\n  output:\n    ri_retirement_income_subtraction: 40000  # $20K per person, not $20K total\n    ri_agi: 45569\n    ri_income_tax: 545\n```\n\n## Related Issues\n\n- PolicyEngine/policyengine-taxsim#670: RI joint 2024 elderly 85Kpensions 15Kgssi",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7022/reactions",
             "total_count": 0,
@@ -24714,7 +24714,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7022/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -24750,15 +24750,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-19T16:49:12Z",
-          "updated_at": "2025-12-19T16:49:12Z",
-          "closed_at": null,
+          "updated_at": "2026-02-01T23:59:57Z",
+          "closed_at": "2026-02-01T23:59:57Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -24773,7 +24773,7 @@
             "blocking": 0,
             "total_blocking": 0
           },
-          "body": "## Summary\n\nThe CT Social Security benefit adjustment incorrectly uses `gross_ss * 0.85` for Line E of the worksheet, but should use the actual federal taxable Social Security amount (`tax_unit_taxable_social_security`).\n\n## Root Cause\n\nIn `/policyengine_us/variables/gov/states/ct/tax/income/subtractions/ct_social_security_benefit_adjustment.py`, lines 37-40:\n\n```python\n# Part E (Line 18 from federal social security worksheet)\ngross_ss = tax_unit(\"tax_unit_social_security\", period)\nadjusted_gross_social_security = (\n    gross_ss * p_irs.rate.additional.excess  # BUG: Always uses 85% of gross\n)\n```\n\nThe CT worksheet instructions state Line E should be:\n> \"Taxable amount of Social Security benefits reported on your 2024 federal Social Security Benefits Worksheet, Line 18\"\n\nThis is the **actual federal taxable SS amount**, not simply 85% of gross SS. The 85% is a maximum cap, but the actual taxable amount can be lower depending on combined income.\n\n## Legal Reference\n\n[CT-1040 Instructions, Social Security Benefit Adjustment Worksheet](https://portal.ct.gov/-/media/DRS/Forms/2024/Income/CT-1040-Instructions_1224.pdf):\n\n> **Line E**: Taxable amount of Social Security benefits reported on your 2024 federal Social Security Benefits Worksheet, Line 18\n\n## Example (from policyengine-taxsim issue #671)\n\n**Input:**\n- MFJ, both age 75\n- Gross Social Security: $93,438\n- Taxable pensions: $56,950\n- Federal AGI: $113,669\n- Federal Taxable SS: $56,719\n\n**PE calculates (wrong):**\n- Line E: $93,438 × 0.85 = $79,422\n- CT SS Adjustment: $79,422 - $17,917 = $61,505\n- CT AGI: $113,669 - $61,505 - $31,323 = $20,841\n- CT Tax: $0\n\n**TaxAct (correct):**\n- Line E: $56,719 (actual federal taxable SS)\n- CT SS Adjustment: $56,719 - $17,917 = $38,802\n- CT AGI: $113,669 - $38,802 - $31,323 = $43,544\n- CT Tax: $332\n\n## Files to Fix\n\n`/policyengine_us/variables/gov/states/ct/tax/income/subtractions/ct_social_security_benefit_adjustment.py`\n\n## Suggested Fix\n\nChange lines 37-40 from:\n```python\n# Part E (Line 18 from federal social security worksheet)\ngross_ss = tax_unit(\"tax_unit_social_security\", period)\nadjusted_gross_social_security = (\n    gross_ss * p_irs.rate.additional.excess\n)\n```\n\nTo:\n```python\n# Part E (Line 18 from federal social security worksheet)\nadjusted_gross_social_security = tax_unit(\n    \"tax_unit_taxable_social_security\", period\n)\n```\n\n## Integration Test\n\n```yaml\n- name: CT Social Security adjustment uses actual federal taxable SS\n  period: 2024\n  absolute_error_margin: 1\n  input:\n    people:\n      person1:\n        age: 75\n        social_security_retirement: 46718.91\n        taxable_private_pension_income: 28475.02\n        is_tax_unit_head: true\n      person2:\n        age: 75\n        social_security_retirement: 46718.91\n        taxable_private_pension_income: 28475.02\n        is_tax_unit_spouse: true\n    tax_units:\n      tax_unit:\n        members: [person1, person2]\n    spm_units:\n      spm_unit:\n        members: [person1, person2]\n    households:\n      household:\n        members: [person1, person2]\n        state_fips: 9\n  output:\n    ct_social_security_benefit_adjustment: 38802  # Not 61505\n    ct_agi: 43544  # Not 20841\n    ct_income_tax: 332  # Not 0\n```\n\n## Related Issues\n\n- policyengine-taxsim#671: CT joint elderly",
+          "body": "## Summary\n\nThe CT Social Security benefit adjustment incorrectly uses `gross_ss * 0.85` for Line E of the worksheet, but should use the actual federal taxable Social Security amount (`tax_unit_taxable_social_security`).\n\n## Root Cause\n\nIn `/policyengine_us/variables/gov/states/ct/tax/income/subtractions/ct_social_security_benefit_adjustment.py`, lines 37-40:\n\n```python\n# Part E (Line 18 from federal social security worksheet)\ngross_ss = tax_unit(\"tax_unit_social_security\", period)\nadjusted_gross_social_security = (\n    gross_ss * p_irs.rate.additional.excess  # BUG: Always uses 85% of gross\n)\n```\n\nThe CT worksheet instructions state Line E should be:\n> \"Taxable amount of Social Security benefits reported on your 2024 federal Social Security Benefits Worksheet, Line 18\"\n\nThis is the **actual federal taxable SS amount**, not simply 85% of gross SS. The 85% is a maximum cap, but the actual taxable amount can be lower depending on combined income.\n\n## Legal Reference\n\n[CT-1040 Instructions, Social Security Benefit Adjustment Worksheet](https://portal.ct.gov/-/media/DRS/Forms/2024/Income/CT-1040-Instructions_1224.pdf):\n\n> **Line E**: Taxable amount of Social Security benefits reported on your 2024 federal Social Security Benefits Worksheet, Line 18\n\n## Example (from policyengine-taxsim issue #671)\n\n**Input:**\n- MFJ, both age 75\n- Gross Social Security: $93,438\n- Taxable pensions: $56,950\n- Federal AGI: $113,669\n- Federal Taxable SS: $56,719\n\n**PE calculates (wrong):**\n- Line E: $93,438 × 0.85 = $79,422\n- CT SS Adjustment: $79,422 - $17,917 = $61,505\n- CT AGI: $113,669 - $61,505 - $31,323 = $20,841\n- CT Tax: $0\n\n**TaxAct (correct):**\n- Line E: $56,719 (actual federal taxable SS)\n- CT SS Adjustment: $56,719 - $17,917 = $38,802\n- CT AGI: $113,669 - $38,802 - $31,323 = $43,544\n- CT Tax: $332\n\n## Files to Fix\n\n`/policyengine_us/variables/gov/states/ct/tax/income/subtractions/ct_social_security_benefit_adjustment.py`\n\n## Suggested Fix\n\nChange lines 37-40 from:\n```python\n# Part E (Line 18 from federal social security worksheet)\ngross_ss = tax_unit(\"tax_unit_social_security\", period)\nadjusted_gross_social_security = (\n    gross_ss * p_irs.rate.additional.excess\n)\n```\n\nTo:\n```python\n# Part E (Line 18 from federal social security worksheet)\nadjusted_gross_social_security = tax_unit(\n    \"tax_unit_taxable_social_security\", period\n)\n```\n\n## Integration Test\n\n```yaml\n- name: CT Social Security adjustment uses actual federal taxable SS\n  period: 2024\n  absolute_error_margin: 1\n  input:\n    people:\n      person1:\n        age: 75\n        social_security_retirement: 46718.91\n        taxable_private_pension_income: 28475.02\n        is_tax_unit_head: true\n      person2:\n        age: 75\n        social_security_retirement: 46718.91\n        taxable_private_pension_income: 28475.02\n        is_tax_unit_spouse: true\n    tax_units:\n      tax_unit:\n        members: [person1, person2]\n    spm_units:\n      spm_unit:\n        members: [person1, person2]\n    households:\n      household:\n        members: [person1, person2]\n        state_fips: 9\n  output:\n    ct_social_security_benefit_adjustment: 38802  # Not 61505\n    ct_agi: 43544  # Not 20841\n    ct_income_tax: 332  # Not 0\n```\n\n## Related Issues\n\n- PolicyEngine/policyengine-taxsim#671: CT joint elderly",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7019/reactions",
             "total_count": 0,
@@ -24788,7 +24788,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7019/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -24898,15 +24898,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-19T15:58:35Z",
-          "updated_at": "2025-12-19T15:58:35Z",
-          "closed_at": null,
+          "updated_at": "2026-02-02T01:02:59Z",
+          "closed_at": "2026-02-02T01:02:58Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -24921,7 +24921,7 @@
             "blocking": 0,
             "total_blocking": 0
           },
-          "body": "## Summary\n\nPolicyEngine's New Jersey gross income calculation incorrectly includes net losses from income categories like capital gains and S-corp income. Under NJ's unique \"same category rule\" (N.J.S. 54A:5-1), if any of the 16 income categories has a net loss, that loss must be **disregarded** (treated as $0) - it cannot offset income from other categories.\n\n## Root Cause\n\nIn `/policyengine_us/variables/gov/states/nj/tax/income/adjusted_gross_income/nj_gross_income.py`:\n\n```python\nclass nj_gross_income(Variable):\n    adds = \"gov.states.nj.tax.income.gross_income_sources\"\n```\n\nThe `gross_income_sources.yaml` includes:\n- `long_term_capital_gains`\n- `short_term_capital_gains`\n- `partnership_s_corp_income`\n\nThese are added directly without applying NJ's rule that net losses in any category must be disregarded.\n\n## Legal Reference\n\n**N.J.S. 54A:5-1** defines 16 separate categories of gross income:\n- Category (a): Salaries, wages, tips\n- Category (c): Net gains from disposition of property (capital gains)\n- Category (e): Interest\n- Category (f): Dividends\n- Category (k): Distributive share of partnership income\n- Category (p): Net pro rata share of S corporation income\n- etc.\n\n**The \"Same Category Rule\"**: Losses within one category can offset gains in that same category, but a **net loss in any category is disregarded** when computing total NJ gross income. Losses cannot:\n- Offset income from other categories\n- Be carried forward to future years\n\nFrom the [NJ Division of Taxation](https://www.nj.gov/treasury/taxation/njit9.shtml):\n> \"You can deduct federal passive losses in full in the year incurred against any gain within the **same category** of income\"\n\n## Example (from policyengine-taxsim issue #673)\n\n**Input:**\n- MFJ, ages 54 and 54\n- Wages: $136,639\n- Interest: $343\n- Dividends: $1,661\n- Short-term capital losses: -$237,873\n- Long-term capital losses: -$2,252\n- S-corp losses: -$29,134\n\n**PE calculates:**\n- NJ Gross Income: **-$133,628** (incorrectly includes full losses)\n- NJ AGI: $3,011\n- NJ Tax: $0\n\n**TaxAct (correct) calculates:**\n- NJ Gross Income: **$138,673** (losses disregarded per same category rule)\n  - Wages: $136,639\n  - Interest: $343\n  - Dividends: $1,661\n  - Capital gains: $0 (net loss → disregarded)\n  - S-corp: $0 (net loss → disregarded)\n  - Other: $30\n- NJ Tax: **$4,776**\n\n## Files to Fix\n\n1. **`policyengine_us/variables/gov/states/nj/tax/income/adjusted_gross_income/nj_gross_income.py`**\n   - Restructure to calculate each NJ income category separately\n   - Apply `max_(0, category_total)` to each category before summing\n\n2. **New variables needed** for NJ income categories:\n   - `nj_category_c_income` (capital gains - net of losses, capped at 0)\n   - `nj_category_k_income` (partnership income - net, capped at 0)\n   - `nj_category_p_income` (S-corp income - net, capped at 0)\n   - etc.\n\n## Suggested Fix\n\n```python\nclass nj_gross_income(Variable):\n    value_type = float\n    entity = Person\n    label = \"New Jersey gross income\"\n    unit = USD\n    definition_period = YEAR\n    defined_for = StateCode.NJ\n\n    def formula(person, period, parameters):\n        # Category (a): Wages - always positive\n        cat_a = person(\"employment_income\", period)\n        \n        # Category (c): Net gains from disposition of property\n        # Net loss is disregarded (capped at 0)\n        cat_c = max_(0, \n            person(\"short_term_capital_gains\", period) +\n            person(\"long_term_capital_gains\", period)\n        )\n        \n        # Category (e): Interest\n        cat_e = person(\"taxable_interest_income\", period)\n        \n        # Category (f): Dividends\n        cat_f = person(\"dividend_income\", period)\n        \n        # Category (k): Partnership income - net loss disregarded\n        # Category (p): S-corp income - net loss disregarded\n        cat_k_p = max_(0, person(\"partnership_s_corp_income\", period))\n        \n        # ... other categories ...\n        \n        # Sum all categories (each already capped at 0 if net loss)\n        return cat_a + cat_c + cat_e + cat_f + cat_k_p + ...\n```\n\n## Integration Test\n\n```yaml\n- name: NJ same category rule - capital and S-corp losses disregarded\n  period: 2024\n  absolute_error_margin: 1\n  input:\n    people:\n      person1:\n        age: 54\n        employment_income: 0\n        qualified_dividend_income: 830.69\n        long_term_capital_gains: -1126.16\n        short_term_capital_gains: -118936.69\n        partnership_s_corp_income: -14566.96\n        taxable_interest_income: 171.53\n        is_tax_unit_head: true\n      person2:\n        age: 54\n        employment_income: 136639.06\n        qualified_dividend_income: 830.69\n        long_term_capital_gains: -1126.16\n        short_term_capital_gains: -118936.69\n        partnership_s_corp_income: -14566.96\n        taxable_interest_income: 171.53\n        is_tax_unit_spouse: true\n    tax_units:\n      tax_unit:\n        members: [person1, person2]\n    spm_units:\n      spm_unit:\n        members: [person1, person2]\n    households:\n      household:\n        members: [person1, person2]\n        state_fips: 34\n  output:\n    nj_gross_income: 138673  # Losses disregarded per same category rule\n    nj_income_tax: 4776\n```\n\n## Related Issues\n\n- policyengine-taxsim#673: NJ joint 2024 -21Kpsemp 136Kswages 1Kdividends -23Kstcg -2Kltcg",
+          "body": "## Summary\n\nPolicyEngine's New Jersey gross income calculation incorrectly includes net losses from income categories like capital gains and S-corp income. Under NJ's unique \"same category rule\" (N.J.S. 54A:5-1), if any of the 16 income categories has a net loss, that loss must be **disregarded** (treated as $0) - it cannot offset income from other categories.\n\n## Root Cause\n\nIn `/policyengine_us/variables/gov/states/nj/tax/income/adjusted_gross_income/nj_gross_income.py`:\n\n```python\nclass nj_gross_income(Variable):\n    adds = \"gov.states.nj.tax.income.gross_income_sources\"\n```\n\nThe `gross_income_sources.yaml` includes:\n- `long_term_capital_gains`\n- `short_term_capital_gains`\n- `partnership_s_corp_income`\n\nThese are added directly without applying NJ's rule that net losses in any category must be disregarded.\n\n## Legal Reference\n\n**N.J.S. 54A:5-1** defines 16 separate categories of gross income:\n- Category (a): Salaries, wages, tips\n- Category (c): Net gains from disposition of property (capital gains)\n- Category (e): Interest\n- Category (f): Dividends\n- Category (k): Distributive share of partnership income\n- Category (p): Net pro rata share of S corporation income\n- etc.\n\n**The \"Same Category Rule\"**: Losses within one category can offset gains in that same category, but a **net loss in any category is disregarded** when computing total NJ gross income. Losses cannot:\n- Offset income from other categories\n- Be carried forward to future years\n\nFrom the [NJ Division of Taxation](https://www.nj.gov/treasury/taxation/njit9.shtml):\n> \"You can deduct federal passive losses in full in the year incurred against any gain within the **same category** of income\"\n\n## Example (from policyengine-taxsim issue #673)\n\n**Input:**\n- MFJ, ages 54 and 54\n- Wages: $136,639\n- Interest: $343\n- Dividends: $1,661\n- Short-term capital losses: -$237,873\n- Long-term capital losses: -$2,252\n- S-corp losses: -$29,134\n\n**PE calculates:**\n- NJ Gross Income: **-$133,628** (incorrectly includes full losses)\n- NJ AGI: $3,011\n- NJ Tax: $0\n\n**TaxAct (correct) calculates:**\n- NJ Gross Income: **$138,673** (losses disregarded per same category rule)\n  - Wages: $136,639\n  - Interest: $343\n  - Dividends: $1,661\n  - Capital gains: $0 (net loss → disregarded)\n  - S-corp: $0 (net loss → disregarded)\n  - Other: $30\n- NJ Tax: **$4,776**\n\n## Files to Fix\n\n1. **`policyengine_us/variables/gov/states/nj/tax/income/adjusted_gross_income/nj_gross_income.py`**\n   - Restructure to calculate each NJ income category separately\n   - Apply `max_(0, category_total)` to each category before summing\n\n2. **New variables needed** for NJ income categories:\n   - `nj_category_c_income` (capital gains - net of losses, capped at 0)\n   - `nj_category_k_income` (partnership income - net, capped at 0)\n   - `nj_category_p_income` (S-corp income - net, capped at 0)\n   - etc.\n\n## Suggested Fix\n\n```python\nclass nj_gross_income(Variable):\n    value_type = float\n    entity = Person\n    label = \"New Jersey gross income\"\n    unit = USD\n    definition_period = YEAR\n    defined_for = StateCode.NJ\n\n    def formula(person, period, parameters):\n        # Category (a): Wages - always positive\n        cat_a = person(\"employment_income\", period)\n        \n        # Category (c): Net gains from disposition of property\n        # Net loss is disregarded (capped at 0)\n        cat_c = max_(0, \n            person(\"short_term_capital_gains\", period) +\n            person(\"long_term_capital_gains\", period)\n        )\n        \n        # Category (e): Interest\n        cat_e = person(\"taxable_interest_income\", period)\n        \n        # Category (f): Dividends\n        cat_f = person(\"dividend_income\", period)\n        \n        # Category (k): Partnership income - net loss disregarded\n        # Category (p): S-corp income - net loss disregarded\n        cat_k_p = max_(0, person(\"partnership_s_corp_income\", period))\n        \n        # ... other categories ...\n        \n        # Sum all categories (each already capped at 0 if net loss)\n        return cat_a + cat_c + cat_e + cat_f + cat_k_p + ...\n```\n\n## Integration Test\n\n```yaml\n- name: NJ same category rule - capital and S-corp losses disregarded\n  period: 2024\n  absolute_error_margin: 1\n  input:\n    people:\n      person1:\n        age: 54\n        employment_income: 0\n        qualified_dividend_income: 830.69\n        long_term_capital_gains: -1126.16\n        short_term_capital_gains: -118936.69\n        partnership_s_corp_income: -14566.96\n        taxable_interest_income: 171.53\n        is_tax_unit_head: true\n      person2:\n        age: 54\n        employment_income: 136639.06\n        qualified_dividend_income: 830.69\n        long_term_capital_gains: -1126.16\n        short_term_capital_gains: -118936.69\n        partnership_s_corp_income: -14566.96\n        taxable_interest_income: 171.53\n        is_tax_unit_spouse: true\n    tax_units:\n      tax_unit:\n        members: [person1, person2]\n    spm_units:\n      spm_unit:\n        members: [person1, person2]\n    households:\n      household:\n        members: [person1, person2]\n        state_fips: 34\n  output:\n    nj_gross_income: 138673  # Losses disregarded per same category rule\n    nj_income_tax: 4776\n```\n\n## Related Issues\n\n- PolicyEngine/policyengine-taxsim#673: NJ joint 2024 -21Kpsemp 136Kswages 1Kdividends -23Kstcg -2Kltcg",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7017/reactions",
             "total_count": 0,
@@ -24936,7 +24936,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7017/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -24977,9 +24977,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 0,
+          "comments": 1,
           "created_at": "2025-12-19T15:32:20Z",
-          "updated_at": "2025-12-19T15:32:20Z",
+          "updated_at": "2026-01-31T12:41:02Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -24995,7 +24995,7 @@
             "blocking": 0,
             "total_blocking": 0
           },
-          "body": "## Summary\n\nPolicyEngine does not include partnership/S-corp losses in adjusted gross income. The `irs_gross_income` variable caps all income sources at 0 (line 19: `max_(0, ...)`), and `loss_ald` only handles self-employment and capital losses—not partnership/S-corp losses. Additionally, the Section 461(l) excess business loss limitation is not implemented.\n\n## Root Cause\n\n### 1. S-corp losses ignored in gross income\n\nIn `policyengine_us/variables/gov/irs/income/taxable_income/adjusted_gross_income/irs_gross_income/irs_gross_income.py`:\n\n```python\ndef formula(person, period, parameters):\n    sources = parameters(period).gov.irs.gross_income.sources\n    total = 0\n    not_dependent = ~person(\"is_tax_unit_dependent\", period)\n    for source in sources:\n        # Add positive values only - losses are deducted later.\n        total += not_dependent * max_(0, add(person, period, [source]))  # <-- caps at 0\n    return total\n```\n\n### 2. S-corp losses not deducted in loss_ald\n\nIn `policyengine_us/variables/gov/irs/income/taxable_income/adjusted_gross_income/above_the_line_deductions/loss_ald.py`:\n\n```python\ndef formula(tax_unit, period, parameters):\n    # Only handles self_employment_income - NOT partnership_s_corp_income\n    indiv_se_loss = max_(0, -person(\"self_employment_income\", period))\n    self_employment_loss = tax_unit.sum(indiv_se_loss)\n    limited_capital_loss = tax_unit(\"limited_capital_loss\", period)\n    return min_(max_loss, self_employment_loss + limited_capital_loss)\n```\n\n### 3. Section 461(l) not implemented\n\nIRC §461(l) limits excess business losses for noncorporate taxpayers. For 2024:\n- **Single/Other**: $305,000\n- **MFJ**: $610,000\n\nLosses exceeding this threshold become NOL carryforwards.\n\n## Legal Reference\n\n[26 U.S.C. §461(l)](https://www.law.cornell.edu/uscode/text/26/461):\n\n> **(1) Limitation** — In the case of a taxpayer other than a corporation, any excess business loss of the taxpayer for the taxable year shall not be allowed.\n>\n> **(3) Excess business loss** — The term \"excess business loss\" means the excess (if any) of—\n> - (i) the aggregate deductions attributable to trades or businesses... over\n> - (ii) the sum of aggregate gross income/gain from trades or businesses, plus $250,000 ($500,000 MFJ, indexed for inflation)\n\n## Example (from policyengine-taxsim issue #674)\n\n**Input:**\n- MFJ, ages 26 and 27\n- Spouse wages: $82,813\n- S-corp loss: -$838,974\n- Capital losses: -$224,839\n- Interest: $20\n\n**PE calculates:**\n- Federal AGI: $79,833 (S-corp loss completely ignored)\n- Only $3,000 capital loss deducted\n\n**TaxAct (correct) calculates:**\n- S-corp loss on Schedule E: -$838,974\n- Form 461 limitation: $610,000 threshold\n- Excess business loss add-back: +$228,974\n- Federal AGI: **-$530,137**\n\n## Files to Fix\n\n1. `policyengine_us/variables/gov/irs/income/taxable_income/adjusted_gross_income/above_the_line_deductions/loss_ald.py`\n   - Add `partnership_s_corp_income` losses to the deduction\n\n2. New file needed for Section 461(l):\n   - `policyengine_us/variables/gov/irs/income/taxable_income/adjusted_gross_income/excess_business_loss_limitation.py`\n   - Implement Form 461 calculation\n\n3. New parameters needed:\n   - `policyengine_us/parameters/gov/irs/ald/loss/excess_business_loss_threshold.yaml`\n   - 2024: $305,000 (single) / $610,000 (MFJ)\n\n## Suggested Fix\n\n### Step 1: Add S-corp losses to loss_ald.py\n\n```python\ndef formula(tax_unit, period, parameters):\n    filing_status = tax_unit(\"filing_status\", period)\n    max_loss = parameters(period).gov.irs.ald.loss.max[filing_status]\n    person = tax_unit.members\n    \n    # Self-employment losses\n    indiv_se_loss = max_(0, -person(\"self_employment_income\", period))\n    self_employment_loss = tax_unit.sum(indiv_se_loss)\n    \n    # Partnership/S-corp losses (NEW)\n    indiv_scorp_loss = max_(0, -person(\"partnership_s_corp_income\", period))\n    partnership_s_corp_loss = tax_unit.sum(indiv_scorp_loss)\n    \n    # Capital losses\n    limited_capital_loss = tax_unit(\"limited_capital_loss\", period)\n    \n    # Apply Section 461(l) limitation to business losses\n    total_business_loss = self_employment_loss + partnership_s_corp_loss\n    excess_business_loss_threshold = parameters(period).gov.irs.ald.loss.excess_business_loss_threshold[filing_status]\n    limited_business_loss = min_(total_business_loss, excess_business_loss_threshold)\n    \n    return min_(max_loss, limited_business_loss + limited_capital_loss)\n```\n\n### Step 2: Add threshold parameter\n\n```yaml\n# excess_business_loss_threshold.yaml\ndescription: Section 461(l) excess business loss threshold for noncorporate taxpayers.\nmetadata:\n  reference:\n    - title: 26 U.S.C. §461(l)(3)(A)(ii)(II)\n      href: https://www.law.cornell.edu/uscode/text/26/461\n    - title: Form 461 Instructions\n      href: https://www.irs.gov/pub/irs-pdf/i461.pdf\n  unit: currency-USD\n  period: year\n  label: Excess business loss threshold\nSINGLE:\n  2021-01-01: 262000\n  2022-01-01: 270000\n  2023-01-01: 289000\n  2024-01-01: 305000\nJOINT:\n  2021-01-01: 524000\n  2022-01-01: 540000\n  2023-01-01: 578000\n  2024-01-01: 610000\n# Other filing statuses use single amount\n```\n\n## Integration Test\n\n```yaml\n- name: S-corp loss with Section 461(l) limitation\n  period: 2024\n  absolute_error_margin: 1\n  input:\n    people:\n      person1:\n        age: 26\n        partnership_s_corp_income: -419487\n        short_term_capital_gains: -111233\n        long_term_capital_gains: -1187\n        taxable_interest_income: 10\n        is_tax_unit_head: true\n      person2:\n        age: 27\n        employment_income: 82813\n        partnership_s_corp_income: -419487\n        short_term_capital_gains: -111233\n        long_term_capital_gains: -1187\n        taxable_interest_income: 10\n        is_tax_unit_spouse: true\n    tax_units:\n      tax_unit:\n        members: [person1, person2]\n    spm_units:\n      spm_unit:\n        members: [person1, person2]\n    households:\n      household:\n        members: [person1, person2]\n        state_fips: 44\n  output:\n    adjusted_gross_income: -530137  # Negative AGI after 461(l) limitation\n```\n\n## Related Issues\n\n- policyengine-taxsim#674: RI joint 82Kpwages -838K psemp",
+          "body": "## Summary\n\nPolicyEngine does not include partnership/S-corp losses in adjusted gross income. The `irs_gross_income` variable caps all income sources at 0 (line 19: `max_(0, ...)`), and `loss_ald` only handles self-employment and capital losses—not partnership/S-corp losses. Additionally, the Section 461(l) excess business loss limitation is not implemented.\n\n## Root Cause\n\n### 1. S-corp losses ignored in gross income\n\nIn `policyengine_us/variables/gov/irs/income/taxable_income/adjusted_gross_income/irs_gross_income/irs_gross_income.py`:\n\n```python\ndef formula(person, period, parameters):\n    sources = parameters(period).gov.irs.gross_income.sources\n    total = 0\n    not_dependent = ~person(\"is_tax_unit_dependent\", period)\n    for source in sources:\n        # Add positive values only - losses are deducted later.\n        total += not_dependent * max_(0, add(person, period, [source]))  # <-- caps at 0\n    return total\n```\n\n### 2. S-corp losses not deducted in loss_ald\n\nIn `policyengine_us/variables/gov/irs/income/taxable_income/adjusted_gross_income/above_the_line_deductions/loss_ald.py`:\n\n```python\ndef formula(tax_unit, period, parameters):\n    # Only handles self_employment_income - NOT partnership_s_corp_income\n    indiv_se_loss = max_(0, -person(\"self_employment_income\", period))\n    self_employment_loss = tax_unit.sum(indiv_se_loss)\n    limited_capital_loss = tax_unit(\"limited_capital_loss\", period)\n    return min_(max_loss, self_employment_loss + limited_capital_loss)\n```\n\n### 3. Section 461(l) not implemented\n\nIRC §461(l) limits excess business losses for noncorporate taxpayers. For 2024:\n- **Single/Other**: $305,000\n- **MFJ**: $610,000\n\nLosses exceeding this threshold become NOL carryforwards.\n\n## Legal Reference\n\n[26 U.S.C. §461(l)](https://www.law.cornell.edu/uscode/text/26/461):\n\n> **(1) Limitation** — In the case of a taxpayer other than a corporation, any excess business loss of the taxpayer for the taxable year shall not be allowed.\n>\n> **(3) Excess business loss** — The term \"excess business loss\" means the excess (if any) of—\n> - (i) the aggregate deductions attributable to trades or businesses... over\n> - (ii) the sum of aggregate gross income/gain from trades or businesses, plus $250,000 ($500,000 MFJ, indexed for inflation)\n\n## Example (from policyengine-taxsim issue #674)\n\n**Input:**\n- MFJ, ages 26 and 27\n- Spouse wages: $82,813\n- S-corp loss: -$838,974\n- Capital losses: -$224,839\n- Interest: $20\n\n**PE calculates:**\n- Federal AGI: $79,833 (S-corp loss completely ignored)\n- Only $3,000 capital loss deducted\n\n**TaxAct (correct) calculates:**\n- S-corp loss on Schedule E: -$838,974\n- Form 461 limitation: $610,000 threshold\n- Excess business loss add-back: +$228,974\n- Federal AGI: **-$530,137**\n\n## Files to Fix\n\n1. `policyengine_us/variables/gov/irs/income/taxable_income/adjusted_gross_income/above_the_line_deductions/loss_ald.py`\n   - Add `partnership_s_corp_income` losses to the deduction\n\n2. New file needed for Section 461(l):\n   - `policyengine_us/variables/gov/irs/income/taxable_income/adjusted_gross_income/excess_business_loss_limitation.py`\n   - Implement Form 461 calculation\n\n3. New parameters needed:\n   - `policyengine_us/parameters/gov/irs/ald/loss/excess_business_loss_threshold.yaml`\n   - 2024: $305,000 (single) / $610,000 (MFJ)\n\n## Suggested Fix\n\n### Step 1: Add S-corp losses to loss_ald.py\n\n```python\ndef formula(tax_unit, period, parameters):\n    filing_status = tax_unit(\"filing_status\", period)\n    max_loss = parameters(period).gov.irs.ald.loss.max[filing_status]\n    person = tax_unit.members\n    \n    # Self-employment losses\n    indiv_se_loss = max_(0, -person(\"self_employment_income\", period))\n    self_employment_loss = tax_unit.sum(indiv_se_loss)\n    \n    # Partnership/S-corp losses (NEW)\n    indiv_scorp_loss = max_(0, -person(\"partnership_s_corp_income\", period))\n    partnership_s_corp_loss = tax_unit.sum(indiv_scorp_loss)\n    \n    # Capital losses\n    limited_capital_loss = tax_unit(\"limited_capital_loss\", period)\n    \n    # Apply Section 461(l) limitation to business losses\n    total_business_loss = self_employment_loss + partnership_s_corp_loss\n    excess_business_loss_threshold = parameters(period).gov.irs.ald.loss.excess_business_loss_threshold[filing_status]\n    limited_business_loss = min_(total_business_loss, excess_business_loss_threshold)\n    \n    return min_(max_loss, limited_business_loss + limited_capital_loss)\n```\n\n### Step 2: Add threshold parameter\n\n```yaml\n# excess_business_loss_threshold.yaml\ndescription: Section 461(l) excess business loss threshold for noncorporate taxpayers.\nmetadata:\n  reference:\n    - title: 26 U.S.C. §461(l)(3)(A)(ii)(II)\n      href: https://www.law.cornell.edu/uscode/text/26/461\n    - title: Form 461 Instructions\n      href: https://www.irs.gov/pub/irs-pdf/i461.pdf\n  unit: currency-USD\n  period: year\n  label: Excess business loss threshold\nSINGLE:\n  2021-01-01: 262000\n  2022-01-01: 270000\n  2023-01-01: 289000\n  2024-01-01: 305000\nJOINT:\n  2021-01-01: 524000\n  2022-01-01: 540000\n  2023-01-01: 578000\n  2024-01-01: 610000\n# Other filing statuses use single amount\n```\n\n## Integration Test\n\n```yaml\n- name: S-corp loss with Section 461(l) limitation\n  period: 2024\n  absolute_error_margin: 1\n  input:\n    people:\n      person1:\n        age: 26\n        partnership_s_corp_income: -419487\n        short_term_capital_gains: -111233\n        long_term_capital_gains: -1187\n        taxable_interest_income: 10\n        is_tax_unit_head: true\n      person2:\n        age: 27\n        employment_income: 82813\n        partnership_s_corp_income: -419487\n        short_term_capital_gains: -111233\n        long_term_capital_gains: -1187\n        taxable_interest_income: 10\n        is_tax_unit_spouse: true\n    tax_units:\n      tax_unit:\n        members: [person1, person2]\n    spm_units:\n      spm_unit:\n        members: [person1, person2]\n    households:\n      household:\n        members: [person1, person2]\n        state_fips: 44\n  output:\n    adjusted_gross_income: -530137  # Negative AGI after 461(l) limitation\n```\n\n## Related Issues\n\n- PolicyEngine/policyengine-taxsim#674: RI joint 82Kpwages -838K psemp",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7015/reactions",
             "total_count": 0,
@@ -26050,15 +26050,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 2,
           "created_at": "2025-12-14T14:50:42Z",
-          "updated_at": "2025-12-14T14:59:26Z",
-          "closed_at": null,
+          "updated_at": "2026-02-01T21:54:47Z",
+          "closed_at": "2026-02-01T21:54:47Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -26073,7 +26073,7 @@
             "blocking": 0,
             "total_blocking": 0
           },
-          "body": "## Summary\n\nMississippi income tax calculation allows unlimited capital losses to offset ordinary income, instead of using the federal $3,000 capital loss limit. This results in $0 tax when there should be ~$17,136 tax.\n\n## Root Cause\n\n`policyengine_us/parameters/gov/states/ms/tax/income/income_sources.yaml` includes `capital_gains` which is the raw sum of `short_term_capital_gains + long_term_capital_gains` without applying the federal capital loss limitation.\n\nMS Form 80-105 Line 40 (\"Capital gain (loss)\") flows from federal Schedule D, which already has the $3,000 loss limit applied. PE should use the loss-limited amount.\n\n## Test Case\n\n- Filing: MS joint 2024\n- Interest income: $404,179\n- Short-term capital gains: -$9,670,468\n- Long-term capital gains: +$4,900,962\n- Net capital loss: -$4,769,506 (limited to -$3,000 federally)\n\n**Expected (per TaxAct Form 80-105):**\n- MS AGI per spouse: ~$200,589\n- MS Tax: $17,136\n\n**Actual (PE):**\n- MS AGI: $0 (because unlimited -$4.77M loss offsets $404K interest)\n- MS Tax: $0\n\n## Files to Fix\n\n1. Create new person-level variable `loss_limited_capital_gains` that allocates `loss_limited_net_capital_gains` (TaxUnit) proportionally to persons\n2. Update `policyengine_us/parameters/gov/states/ms/tax/income/income_sources.yaml` to use `loss_limited_capital_gains` instead of `capital_gains`\n\n## Suggested Implementation\n\n```python\n# New file: policyengine_us/variables/household/income/person/capital_gains/loss_limited_capital_gains.py\nfrom policyengine_us.model_api import *\n\nclass loss_limited_capital_gains(Variable):\n    value_type = float\n    entity = Person\n    label = \"Loss-limited capital gains (person's share)\"\n    unit = USD\n    definition_period = YEAR\n\n    def formula(person, period, parameters):\n        # Get person's raw capital gains\n        person_capital_gains = person(\"capital_gains\", period)\n        \n        # Get tax unit totals\n        tax_unit_capital_gains = person.tax_unit.sum(person_capital_gains)\n        tax_unit_loss_limited = person.tax_unit(\"loss_limited_net_capital_gains\", period)\n        \n        # If no capital gains, return 0\n        # If gains (positive), return person's share unchanged\n        # If losses, allocate the loss-limited amount proportionally\n        is_loss = tax_unit_capital_gains < 0\n        \n        # For losses: allocate loss_limited amount proportionally\n        proportion = where(\n            tax_unit_capital_gains != 0,\n            person_capital_gains / tax_unit_capital_gains,\n            0\n        )\n        \n        return where(\n            is_loss,\n            tax_unit_loss_limited * proportion,\n            person_capital_gains\n        )\n```\n\nThen update `income_sources.yaml`:\n```yaml\n# Change capital_gains to loss_limited_capital_gains\n- loss_limited_capital_gains  # Was: capital_gains\n```\n\n## Integration Test\n\n```yaml\n- name: MS joint with capital losses should use federal $3,000 limit\n  absolute_error_margin: 100\n  period: 2024\n  input:\n    people:\n      person1:\n        age: 40\n        short_term_capital_gains: -4835234\n        long_term_capital_gains: 2450480.75\n        taxable_interest_income: 202089.485\n        is_tax_unit_head: true\n      person2:\n        age: 40\n        short_term_capital_gains: -4835234\n        long_term_capital_gains: 2450480.75\n        taxable_interest_income: 202089.485\n        is_tax_unit_spouse: true\n    tax_units:\n      tax_unit:\n        members: [person1, person2]\n    spm_units:\n      spm_unit:\n        members: [person1, person2]\n    households:\n      household:\n        members: [person1, person2]\n        state_fips: 28\n  output:\n    ms_income_tax: 17136  # From TaxAct Form 80-105\n```\n\n## References\n\n- [MS Form 80-105 Instructions](https://www.dor.ms.gov/sites/default/files/Forms/Individual/80100241.pdf) - Line 40: \"Capital gain (loss) (attach Federal Schedule D)\"\n- [Federal Schedule D](https://www.irs.gov/pub/irs-pdf/f1040sd.pdf) - Line 21 limits capital losses to $3,000\n- Related TAXSIM issue: https://github.com/PolicyEngine/policyengine-taxsim/issues/617\n\n## Note\n\nThis fix may affect other states that use `capital_gains` in their income sources. Review needed for: any state that starts from federal AGI or uses federal Schedule D amounts should use `loss_limited_capital_gains` instead of `capital_gains`.",
+          "body": "## Summary\n\nMississippi income tax calculation allows unlimited capital losses to offset ordinary income, instead of using the federal $3,000 capital loss limit. This results in $0 tax when there should be ~$17,136 tax.\n\n## Root Cause\n\n`policyengine_us/parameters/gov/states/ms/tax/income/income_sources.yaml` includes `capital_gains` which is the raw sum of `short_term_capital_gains + long_term_capital_gains` without applying the federal capital loss limitation.\n\nMS Form 80-105 Line 40 (\"Capital gain (loss)\") flows from federal Schedule D, which already has the $3,000 loss limit applied. PE should use the loss-limited amount.\n\n## Test Case\n\n- Filing: MS joint 2024\n- Interest income: $404,179\n- Short-term capital gains: -$9,670,468\n- Long-term capital gains: +$4,900,962\n- Net capital loss: -$4,769,506 (limited to -$3,000 federally)\n\n**Expected (per TaxAct Form 80-105):**\n- MS AGI per spouse: ~$200,589\n- MS Tax: $17,136\n\n**Actual (PE):**\n- MS AGI: $0 (because unlimited -$4.77M loss offsets $404K interest)\n- MS Tax: $0\n\n## Files to Fix\n\n1. Create new person-level variable `loss_limited_capital_gains` that allocates `loss_limited_net_capital_gains` (TaxUnit) proportionally to persons\n2. Update `policyengine_us/parameters/gov/states/ms/tax/income/income_sources.yaml` to use `loss_limited_capital_gains` instead of `capital_gains`\n\n## Suggested Implementation\n\n```python\n# New file: policyengine_us/variables/household/income/person/capital_gains/loss_limited_capital_gains.py\nfrom policyengine_us.model_api import *\n\nclass loss_limited_capital_gains(Variable):\n    value_type = float\n    entity = Person\n    label = \"Loss-limited capital gains (person's share)\"\n    unit = USD\n    definition_period = YEAR\n\n    def formula(person, period, parameters):\n        # Get person's raw capital gains\n        person_capital_gains = person(\"capital_gains\", period)\n        \n        # Get tax unit totals\n        tax_unit_capital_gains = person.tax_unit.sum(person_capital_gains)\n        tax_unit_loss_limited = person.tax_unit(\"loss_limited_net_capital_gains\", period)\n        \n        # If no capital gains, return 0\n        # If gains (positive), return person's share unchanged\n        # If losses, allocate the loss-limited amount proportionally\n        is_loss = tax_unit_capital_gains < 0\n        \n        # For losses: allocate loss_limited amount proportionally\n        proportion = where(\n            tax_unit_capital_gains != 0,\n            person_capital_gains / tax_unit_capital_gains,\n            0\n        )\n        \n        return where(\n            is_loss,\n            tax_unit_loss_limited * proportion,\n            person_capital_gains\n        )\n```\n\nThen update `income_sources.yaml`:\n```yaml\n# Change capital_gains to loss_limited_capital_gains\n- loss_limited_capital_gains  # Was: capital_gains\n```\n\n## Integration Test\n\n```yaml\n- name: MS joint with capital losses should use federal $3,000 limit\n  absolute_error_margin: 100\n  period: 2024\n  input:\n    people:\n      person1:\n        age: 40\n        short_term_capital_gains: -4835234\n        long_term_capital_gains: 2450480.75\n        taxable_interest_income: 202089.485\n        is_tax_unit_head: true\n      person2:\n        age: 40\n        short_term_capital_gains: -4835234\n        long_term_capital_gains: 2450480.75\n        taxable_interest_income: 202089.485\n        is_tax_unit_spouse: true\n    tax_units:\n      tax_unit:\n        members: [person1, person2]\n    spm_units:\n      spm_unit:\n        members: [person1, person2]\n    households:\n      household:\n        members: [person1, person2]\n        state_fips: 28\n  output:\n    ms_income_tax: 17136  # From TaxAct Form 80-105\n```\n\n## References\n\n- [MS Form 80-105 Instructions](https://www.dor.ms.gov/sites/default/files/Forms/Individual/80100241.pdf) - Line 40: \"Capital gain (loss) (attach Federal Schedule D)\"\n- [Federal Schedule D](https://www.irs.gov/pub/irs-pdf/f1040sd.pdf) - Line 21 limits capital losses to $3,000\n- Related TAXSIM issue: https://github.com/PolicyEngine/policyengine-taxsim/issues/617\n\n## Note\n\nThis fix may affect other states that use `capital_gains` in their income sources. Review needed for: any state that starts from federal AGI or uses federal Schedule D amounts should use `loss_limited_capital_gains` instead of `capital_gains`.\n\n## Related Issues\n\n- PolicyEngine/policyengine-taxsim#617: MS 2024 joint 4900Kltcg -9670Kstcg",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6964/reactions",
             "total_count": 0,
@@ -26088,7 +26088,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6964/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -27070,7 +27070,7 @@
         "github": "vahid-ahmadi",
         "name": "Vahid Ahmadi",
         "avatar": "https://avatars.githubusercontent.com/u/57112303?v=4",
-        "estimatedActivity": 106,
+        "estimatedActivity": 102,
         "aliases": [],
         "bio": "Research Associate @PolicyEngine"
       },
@@ -38578,39 +38578,111 @@
           "repo": "policyengine-uk-event-2025"
         },
         {
-          "sha": "69094a65e2dce56fed4bfb718ae3d3a430b8d91b",
-          "message": "Merge pull request #257 from PolicyEngine/fix-vat-expected-impact",
-          "date": "2025-12-19T14:41:40.000Z",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "78a52c57a20b17278ad35b62dfc9b2f155c76502",
-          "message": "Widen VAT reform test tolerance to 10bn",
-          "date": "2025-12-19T15:11:02.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "e3051024c10ea37611c9365b5f1a0c28b970616b",
-          "message": "Add changelog entry",
-          "date": "2025-12-19T14:52:03.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "08a1f5650b864e1a85b3ff60a8088f27db4fd061",
-          "message": "Fix VAT reform expected impact for production dataset",
-          "date": "2025-12-19T14:50:20.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "b8a1d83dc7b316b2da6c60d939b77706ae7cde42",
-          "message": "Update package version",
-          "date": "2025-12-19T14:41:58.000Z",
+          "sha": "1da94a40b9231d56179e19debc4e796479a03715",
+          "message": "Fix unrealistic SDLT charges causing 224% tax rates in first income decile (#256)",
+          "date": "2025-12-19T11:21:16.000Z",
           "repo": "policyengine-uk-data"
         },
         {
           "sha": "33e6ec3220a2003f13697b6b1edb18c36a76a890",
           "message": "Local authority documentation (#58)",
           "date": "2025-01-23T21:11:37.000Z",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "75db657cfcaf236905f4f5e72df02d5081b216dc",
+          "message": "add comments",
+          "date": "2025-05-08T14:46:58.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "450cc2457e68e68d2396d1a9f58ee4660bcc1f78",
+          "message": "update rates",
+          "date": "2025-05-08T14:27:28.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "ad66e97f86db57fc623df5a04a572bc5d21fe995",
+          "message": "update code with extended hours",
+          "date": "2025-05-08T14:13:19.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "b4a158c94ca036dfb05e13ef569c45b86aee8c56",
+          "message": "edit take up rates",
+          "date": "2025-05-07T14:22:40.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "4cc61a85390c6a5c63b695a7e66ae497cb3d6814",
+          "message": "make format",
+          "date": "2025-05-07T13:06:41.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "c8a38591abce653fce1e3be77e23b2a743bb025f",
+          "message": "change year to 2024",
+          "date": "2025-05-07T13:05:17.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "d9797da247be47fe72092e10afd09ab0217b0e89",
+          "message": "edit targets",
+          "date": "2025-05-07T13:00:42.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "34d408bc3c541aac1b0795e6c72f431e28bb0160",
+          "message": "edit rates",
+          "date": "2025-05-07T12:15:40.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "fed78d87cd7cb5a58c0235c93963753a7dd9fd38",
+          "message": "test for zero take up rate",
+          "date": "2025-05-07T12:02:56.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "e322deaad23bc35051753d86c935459125ea3dde",
+          "message": "Edit tfc target",
+          "date": "2025-05-07T10:29:16.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "a785f83a2d9c9619443dbf7dfeffa28f3785e2ad",
+          "message": "Move take up rates to enhanced frs",
+          "date": "2025-05-06T16:50:42.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "46eeed68aa20626c432c6e0fceddeeefb8090664",
+          "message": "Add changelog",
+          "date": "2025-05-06T15:05:44.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "76b2c6cabcd6e7048607e7eeb5d1f6005e090327",
+          "message": "make format",
+          "date": "2025-05-06T14:49:54.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "67217bdcecc380082fb96333b349b32c9e5f541e",
+          "message": "Update take up rates",
+          "date": "2025-05-06T14:49:16.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "21b16651d6bac93d1a28e6bc4835845d4141c823",
+          "message": "Edit test file",
+          "date": "2025-05-06T13:04:37.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "3e74066d1724000baec18aee598589eec99a1329",
+          "message": "Add childcare test",
+          "date": "2025-05-06T12:51:32.000+01:00",
           "repo": "policyengine-uk-data"
         },
         {
@@ -38722,150 +38794,6 @@
           "repo": "policyengine-uk-data"
         },
         {
-          "sha": "75db657cfcaf236905f4f5e72df02d5081b216dc",
-          "message": "add comments",
-          "date": "2025-05-08T14:46:58.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "450cc2457e68e68d2396d1a9f58ee4660bcc1f78",
-          "message": "update rates",
-          "date": "2025-05-08T14:27:28.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "ad66e97f86db57fc623df5a04a572bc5d21fe995",
-          "message": "update code with extended hours",
-          "date": "2025-05-08T14:13:19.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "b4a158c94ca036dfb05e13ef569c45b86aee8c56",
-          "message": "edit take up rates",
-          "date": "2025-05-07T14:22:40.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "4cc61a85390c6a5c63b695a7e66ae497cb3d6814",
-          "message": "make format",
-          "date": "2025-05-07T13:06:41.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "c8a38591abce653fce1e3be77e23b2a743bb025f",
-          "message": "change year to 2024",
-          "date": "2025-05-07T13:05:17.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "d9797da247be47fe72092e10afd09ab0217b0e89",
-          "message": "edit targets",
-          "date": "2025-05-07T13:00:42.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "34d408bc3c541aac1b0795e6c72f431e28bb0160",
-          "message": "edit rates",
-          "date": "2025-05-07T12:15:40.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "fed78d87cd7cb5a58c0235c93963753a7dd9fd38",
-          "message": "test for zero take up rate",
-          "date": "2025-05-07T12:02:56.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "e322deaad23bc35051753d86c935459125ea3dde",
-          "message": "Edit tfc target",
-          "date": "2025-05-07T10:29:16.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "a785f83a2d9c9619443dbf7dfeffa28f3785e2ad",
-          "message": "Move take up rates to enhanced frs",
-          "date": "2025-05-06T16:50:42.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "46eeed68aa20626c432c6e0fceddeeefb8090664",
-          "message": "Add changelog",
-          "date": "2025-05-06T15:05:44.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "76b2c6cabcd6e7048607e7eeb5d1f6005e090327",
-          "message": "make format",
-          "date": "2025-05-06T14:49:54.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "67217bdcecc380082fb96333b349b32c9e5f541e",
-          "message": "Update take up rates",
-          "date": "2025-05-06T14:49:16.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "21b16651d6bac93d1a28e6bc4835845d4141c823",
-          "message": "Edit test file",
-          "date": "2025-05-06T13:04:37.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "3e74066d1724000baec18aee598589eec99a1329",
-          "message": "Add childcare test",
-          "date": "2025-05-06T12:51:32.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "33bc04b2fb5237b4b2ce21d62502f303c0a46f8f",
-          "message": "Merge pull request #180 from PolicyEngine/revert-179-fix-github-pages-404-clean",
-          "date": "2025-08-05T12:19:25.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "808a3f7512ab585bf2a31afaa381840c027a7310",
-          "message": "Revert \"Add index.html to fix GitHub Pages 404 error\"",
-          "date": "2025-08-05T12:19:14.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "63a6541ab838ff7afe3d4c9b6147ad4454ff6e4e",
-          "message": "Merge pull request #182 from PolicyEngine/revert-181-index-file",
-          "date": "2025-08-05T12:49:44.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "a3a203da46869034e3373bef3235590a009e1ccc",
-          "message": "Revert \"Add index file in doc folder\"",
-          "date": "2025-08-05T12:49:30.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "a876bc8c94ba78c86d4ec6d7f7ed196462d32541",
-          "message": "Merge pull request #179 from PolicyEngine/fix-github-pages-404-clean",
-          "date": "2025-08-05T12:15:02.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "0dfd4b72674b19061d24b805562f1672c1af87ea",
-          "message": "add changelog",
-          "date": "2025-08-05T11:49:38.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "7fcacbf4e36db940fc3a055c5d6afa6e3c6f6fd6",
-          "message": "Add index.html to fix GitHub Pages 404 error",
-          "date": "2025-08-05T11:47:24.000+01:00",
-          "repo": "policyengine-uk-data"
-        },
-        {
-          "sha": "2293bd13a1ff651f94802ffeb553d90dafb63387",
-          "message": "Update package version",
-          "date": "2025-08-05T11:15:20.000Z",
-          "repo": "policyengine-uk-data"
-        },
-        {
           "sha": "d4491a8fb6c575b776b1bb7838f3f75f67738892",
           "message": "Merge pull request #181 from PolicyEngine/index-file",
           "date": "2025-08-05T12:46:54.000+01:00",
@@ -38890,15 +38818,51 @@
           "repo": "policyengine-uk-data"
         },
         {
-          "sha": "4b6fe866bbfeb4e97b4161f4e3cf6a3f72e7c872",
-          "message": "Add calibration for number of vehicles (#243)",
-          "date": "2025-12-03T17:01:47.000Z",
+          "sha": "63a6541ab838ff7afe3d4c9b6147ad4454ff6e4e",
+          "message": "Merge pull request #182 from PolicyEngine/revert-181-index-file",
+          "date": "2025-08-05T12:49:44.000+01:00",
           "repo": "policyengine-uk-data"
         },
         {
-          "sha": "dcf8ee7ee393ade8e91ba79a65482cd80c2add06",
+          "sha": "a3a203da46869034e3373bef3235590a009e1ccc",
+          "message": "Revert \"Add index file in doc folder\"",
+          "date": "2025-08-05T12:49:30.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "2293bd13a1ff651f94802ffeb553d90dafb63387",
           "message": "Update package version",
-          "date": "2025-11-20T13:08:25.000Z",
+          "date": "2025-08-05T11:15:20.000Z",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "a876bc8c94ba78c86d4ec6d7f7ed196462d32541",
+          "message": "Merge pull request #179 from PolicyEngine/fix-github-pages-404-clean",
+          "date": "2025-08-05T12:15:02.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "0dfd4b72674b19061d24b805562f1672c1af87ea",
+          "message": "add changelog",
+          "date": "2025-08-05T11:49:38.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "7fcacbf4e36db940fc3a055c5d6afa6e3c6f6fd6",
+          "message": "Add index.html to fix GitHub Pages 404 error",
+          "date": "2025-08-05T11:47:24.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "33bc04b2fb5237b4b2ce21d62502f303c0a46f8f",
+          "message": "Merge pull request #180 from PolicyEngine/revert-179-fix-github-pages-404-clean",
+          "date": "2025-08-05T12:19:25.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "808a3f7512ab585bf2a31afaa381840c027a7310",
+          "message": "Revert \"Add index.html to fix GitHub Pages 404 error\"",
+          "date": "2025-08-05T12:19:14.000+01:00",
           "repo": "policyengine-uk-data"
         },
         {
@@ -38926,9 +38890,45 @@
           "repo": "policyengine-uk-data"
         },
         {
-          "sha": "1da94a40b9231d56179e19debc4e796479a03715",
-          "message": "Fix unrealistic SDLT charges causing 224% tax rates in first income decile (#256)",
-          "date": "2025-12-19T11:21:16.000Z",
+          "sha": "dcf8ee7ee393ade8e91ba79a65482cd80c2add06",
+          "message": "Update package version",
+          "date": "2025-11-20T13:08:25.000Z",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "4b6fe866bbfeb4e97b4161f4e3cf6a3f72e7c872",
+          "message": "Add calibration for number of vehicles (#243)",
+          "date": "2025-12-03T17:01:47.000Z",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "69094a65e2dce56fed4bfb718ae3d3a430b8d91b",
+          "message": "Merge pull request #257 from PolicyEngine/fix-vat-expected-impact",
+          "date": "2025-12-19T14:41:40.000Z",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "78a52c57a20b17278ad35b62dfc9b2f155c76502",
+          "message": "Widen VAT reform test tolerance to 10bn",
+          "date": "2025-12-19T15:11:02.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "e3051024c10ea37611c9365b5f1a0c28b970616b",
+          "message": "Add changelog entry",
+          "date": "2025-12-19T14:52:03.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "08a1f5650b864e1a85b3ff60a8088f27db4fd061",
+          "message": "Fix VAT reform expected impact for production dataset",
+          "date": "2025-12-19T14:50:20.000+01:00",
+          "repo": "policyengine-uk-data"
+        },
+        {
+          "sha": "b8a1d83dc7b316b2da6c60d939b77706ae7cde42",
+          "message": "Update package version",
+          "date": "2025-12-19T14:41:58.000Z",
           "repo": "policyengine-uk-data"
         },
         {
@@ -39087,7 +39087,7 @@
         "bio": null
       },
       "stats": {
-        "commits": 372,
+        "commits": 385,
         "prs": 96,
         "prs_merged": 69,
         "reviews": 67,
@@ -39105,7 +39105,7 @@
         "scotland-mansion-tax": 8,
         "crs-presentation-us": 14,
         "snap-district-map": 8,
-        "policyengine-us": 194,
+        "policyengine-us": 207,
         "policyengine-app-v2": 1
       },
       "monthlyPRs": [
@@ -39134,7 +39134,7 @@
         65,
         16,
         32,
-        91
+        104
       ],
       "prs": [
         {
@@ -39937,15 +39937,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 5,
           "created_at": "2025-12-16T15:09:12Z",
-          "updated_at": "2026-01-22T23:57:15Z",
-          "closed_at": null,
+          "updated_at": "2026-02-01T23:33:13Z",
+          "closed_at": "2026-02-01T23:33:05Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -39955,7 +39955,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6995",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6995.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6995.patch",
-            "merged_at": null
+            "merged_at": "2026-02-01T23:33:05Z"
           },
           "body": "Fixes #6366",
           "reactions": {
@@ -49243,7 +49243,7 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": {
             "login": "daphnehanse11",
@@ -49292,8 +49292,8 @@
           "milestone": null,
           "comments": 0,
           "created_at": "2025-08-05T19:14:42Z",
-          "updated_at": "2025-09-15T14:12:02Z",
-          "closed_at": null,
+          "updated_at": "2026-02-01T23:33:06Z",
+          "closed_at": "2026-02-01T23:33:06Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -49323,7 +49323,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6366/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -49783,6 +49783,18 @@
           "repo": "ACA-Calc"
         },
         {
+          "sha": "bf68487406a254ffd2095de0269e4a2721d0a80c",
+          "message": "Refactor HouseholdExplorer styles, update loading message, and enhance Calculator logic",
+          "date": "2025-12-12T16:39:28.000-05:00",
+          "repo": "ACA-Calc"
+        },
+        {
+          "sha": "3582ab38d2cd5c5363d4124a735e57a96fbbf214",
+          "message": "Move Explain with AI button above chart with teal styling",
+          "date": "2025-12-12T11:56:11.000-05:00",
+          "repo": "ACA-Calc"
+        },
+        {
           "sha": "7f4836213b23b2b65bcdb2de44ae8e7148080093",
           "message": "Fix AI explanation for childless households and improve UI",
           "date": "2025-12-12T11:48:24.000-05:00",
@@ -49795,21 +49807,9 @@
           "repo": "ACA-Calc"
         },
         {
-          "sha": "3582ab38d2cd5c5363d4124a735e57a96fbbf214",
-          "message": "Move Explain with AI button above chart with teal styling",
-          "date": "2025-12-12T11:56:11.000-05:00",
-          "repo": "ACA-Calc"
-        },
-        {
-          "sha": "e7703a03323996c0ff923247a7035c3a45f7f8a7",
-          "message": "Update Explain with AI styling to use teal theme",
-          "date": "2025-12-12T13:43:57.000-05:00",
-          "repo": "ACA-Calc"
-        },
-        {
-          "sha": "bf68487406a254ffd2095de0269e4a2721d0a80c",
-          "message": "Refactor HouseholdExplorer styles, update loading message, and enhance Calculator logic",
-          "date": "2025-12-12T16:39:28.000-05:00",
+          "sha": "14be5476280b533f435af263bc4c32532fe36ee4",
+          "message": "Randomize Calculator defaults on page load",
+          "date": "2025-12-12T10:37:38.000-05:00",
           "repo": "ACA-Calc"
         },
         {
@@ -49879,15 +49879,21 @@
           "repo": "ACA-Calc"
         },
         {
-          "sha": "14be5476280b533f435af263bc4c32532fe36ee4",
-          "message": "Randomize Calculator defaults on page load",
-          "date": "2025-12-12T10:37:38.000-05:00",
-          "repo": "ACA-Calc"
-        },
-        {
           "sha": "2110a0bdd6803ecfee2742f3b33d216b3dca9378",
           "message": "Add Medicare eligibility warning for ages 65+",
           "date": "2025-12-12T10:38:17.000-05:00",
+          "repo": "ACA-Calc"
+        },
+        {
+          "sha": "e7703a03323996c0ff923247a7035c3a45f7f8a7",
+          "message": "Update Explain with AI styling to use teal theme",
+          "date": "2025-12-12T13:43:57.000-05:00",
+          "repo": "ACA-Calc"
+        },
+        {
+          "sha": "7e929e083ac2991d9f50733fbf898c351a954806",
+          "message": "Enhance Calculator UI with responsive form actions and share button; implement URL routing for page navigation",
+          "date": "2025-12-15T10:16:32.000-05:00",
           "repo": "ACA-Calc"
         },
         {
@@ -49903,9 +49909,21 @@
           "repo": "ACA-Calc"
         },
         {
-          "sha": "7e929e083ac2991d9f50733fbf898c351a954806",
-          "message": "Enhance Calculator UI with responsive form actions and share button; implement URL routing for page navigation",
-          "date": "2025-12-15T10:16:32.000-05:00",
+          "sha": "77257310d1d9cd52c20636fdb3655e54690ccc00",
+          "message": "Update README links to new calculator URL and set baseline for contribution data to 0% FPL",
+          "date": "2025-12-30T14:27:46.000-05:00",
+          "repo": "ACA-Calc"
+        },
+        {
+          "sha": "8df50a30909b2e465c162ee4d2deb0ee2cf2732a",
+          "message": "Improve calculator performance and fix contribution schedule chart",
+          "date": "2025-12-30T16:05:45.000-05:00",
+          "repo": "ACA-Calc"
+        },
+        {
+          "sha": "aceb5ee64a58d246b5d3f56b88b2b4722de6e105",
+          "message": "Update dependencies: add anthropic, upgrade policyengine-us",
+          "date": "2025-12-30T16:07:17.000-05:00",
           "repo": "ACA-Calc"
         },
         {
@@ -49915,9 +49933,15 @@
           "repo": "ACA-Calc"
         },
         {
-          "sha": "67395a0922c865b7423739a4529ea94b12eeeabf",
-          "message": "Add missing dependencies to Dockerfile",
-          "date": "2025-12-31T13:32:44.000-05:00",
+          "sha": "46fad40df87b51c1690bfa0a369d94bc51018ebd",
+          "message": "Add toggleable line controls to chart",
+          "date": "2025-12-31T15:20:01.000-05:00",
+          "repo": "ACA-Calc"
+        },
+        {
+          "sha": "876ac15306bdaee8a6970bc12de5abfa8775e8f8",
+          "message": "Fix cache key to include reform flags",
+          "date": "2025-12-31T15:12:31.000-05:00",
           "repo": "ACA-Calc"
         },
         {
@@ -49939,34 +49963,28 @@
           "repo": "ACA-Calc"
         },
         {
-          "sha": "8df50a30909b2e465c162ee4d2deb0ee2cf2732a",
-          "message": "Improve calculator performance and fix contribution schedule chart",
-          "date": "2025-12-30T16:05:45.000-05:00",
+          "sha": "67395a0922c865b7423739a4529ea94b12eeeabf",
+          "message": "Add missing dependencies to Dockerfile",
+          "date": "2025-12-31T13:32:44.000-05:00",
           "repo": "ACA-Calc"
         },
         {
-          "sha": "aceb5ee64a58d246b5d3f56b88b2b4722de6e105",
-          "message": "Update dependencies: add anthropic, upgrade policyengine-us",
-          "date": "2025-12-30T16:07:17.000-05:00",
-          "repo": "ACA-Calc"
+          "sha": "47ba3867d57aa670017d73757f4d3ebb033c1699",
+          "message": "Remove deprecated analysis scripts and update .gitignore; add results documentation for UK Mansion Tax project",
+          "date": "2025-11-21T13:08:18.000-05:00",
+          "repo": "uk-mansion-tax"
         },
         {
-          "sha": "77257310d1d9cd52c20636fdb3655e54690ccc00",
-          "message": "Update README links to new calculator URL and set baseline for contribution data to 0% FPL",
-          "date": "2025-12-30T14:27:46.000-05:00",
-          "repo": "ACA-Calc"
+          "sha": "ae168e927ed6e1e2c982a97641f82fd418b85d63",
+          "message": "Add analysis pipeline and data handling for UK Mansion Tax project",
+          "date": "2025-11-21T12:56:34.000-05:00",
+          "repo": "uk-mansion-tax"
         },
         {
-          "sha": "876ac15306bdaee8a6970bc12de5abfa8775e8f8",
-          "message": "Fix cache key to include reform flags",
-          "date": "2025-12-31T15:12:31.000-05:00",
-          "repo": "ACA-Calc"
-        },
-        {
-          "sha": "46fad40df87b51c1690bfa0a369d94bc51018ebd",
-          "message": "Add toggleable line controls to chart",
-          "date": "2025-12-31T15:20:01.000-05:00",
-          "repo": "ACA-Calc"
+          "sha": "1d00489e9dd4b51ccca658878035f0b5b1eafefa",
+          "message": "Streamline analysis: single script, data/ folder, fixed downloads",
+          "date": "2025-11-21T13:18:03.000-05:00",
+          "repo": "uk-mansion-tax"
         },
         {
           "sha": "8febb13c0e9b3e62710e56ad2bd59fc9b5d0a792",
@@ -49999,39 +50017,9 @@
           "repo": "uk-mansion-tax"
         },
         {
-          "sha": "47ba3867d57aa670017d73757f4d3ebb033c1699",
-          "message": "Remove deprecated analysis scripts and update .gitignore; add results documentation for UK Mansion Tax project",
-          "date": "2025-11-21T13:08:18.000-05:00",
-          "repo": "uk-mansion-tax"
-        },
-        {
-          "sha": "1d00489e9dd4b51ccca658878035f0b5b1eafefa",
-          "message": "Streamline analysis: single script, data/ folder, fixed downloads",
-          "date": "2025-11-21T13:18:03.000-05:00",
-          "repo": "uk-mansion-tax"
-        },
-        {
-          "sha": "ae168e927ed6e1e2c982a97641f82fd418b85d63",
-          "message": "Add analysis pipeline and data handling for UK Mansion Tax project",
-          "date": "2025-11-21T12:56:34.000-05:00",
-          "repo": "uk-mansion-tax"
-        },
-        {
           "sha": "8ad28dec51b0c22eb77a51b8fe438c6564f35845",
           "message": "Initial commit",
           "date": "2025-07-28T16:38:38.000-04:00",
-          "repo": "state-medicaid-dashboard"
-        },
-        {
-          "sha": "a10bbfe1884c65dbf6eb8a7b69da7ba1c4f1eb90",
-          "message": "app",
-          "date": "2025-07-28T16:40:08.000-04:00",
-          "repo": "state-medicaid-dashboard"
-        },
-        {
-          "sha": "80ed337f3cb12b13ad5ecd17c8bf96d28359ded1",
-          "message": "yeah",
-          "date": "2025-07-28T16:53:47.000-04:00",
           "repo": "state-medicaid-dashboard"
         },
         {
@@ -50047,6 +50035,18 @@
           "repo": "state-medicaid-dashboard"
         },
         {
+          "sha": "a10bbfe1884c65dbf6eb8a7b69da7ba1c4f1eb90",
+          "message": "app",
+          "date": "2025-07-28T16:40:08.000-04:00",
+          "repo": "state-medicaid-dashboard"
+        },
+        {
+          "sha": "80ed337f3cb12b13ad5ecd17c8bf96d28359ded1",
+          "message": "yeah",
+          "date": "2025-07-28T16:53:47.000-04:00",
+          "repo": "state-medicaid-dashboard"
+        },
+        {
           "sha": "8944fab4d526db7f1e23d46bb5a0d86c68a8e9c0",
           "message": "push",
           "date": "2025-07-28T16:58:23.000-04:00",
@@ -50059,15 +50059,15 @@
           "repo": "state-medicaid-dashboard"
         },
         {
-          "sha": "64249ae59988711a2a41b7b9f2a5a16545582c99",
-          "message": "Fix pie chart labels: conditional SNAP display and prevent overlapping",
-          "date": "2025-08-08T13:17:30.000-04:00",
-          "repo": "state-medicaid-dashboard"
-        },
-        {
           "sha": "96579600be7fa4de7f2dc05da5fad712ce87e5f0",
           "message": "pie chart fix",
           "date": "2025-08-08T11:03:56.000-04:00",
+          "repo": "state-medicaid-dashboard"
+        },
+        {
+          "sha": "64249ae59988711a2a41b7b9f2a5a16545582c99",
+          "message": "Fix pie chart labels: conditional SNAP display and prevent overlapping",
+          "date": "2025-08-08T13:17:30.000-04:00",
           "repo": "state-medicaid-dashboard"
         },
         {
@@ -56794,15 +56794,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 5,
           "created_at": "2025-12-16T15:09:12Z",
-          "updated_at": "2026-01-22T23:57:15Z",
-          "closed_at": null,
+          "updated_at": "2026-02-01T23:33:13Z",
+          "closed_at": "2026-02-01T23:33:05Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -56812,7 +56812,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6995",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6995.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6995.patch",
-            "merged_at": null
+            "merged_at": "2026-02-01T23:33:05Z"
           },
           "body": "Fixes #6366",
           "reactions": {
@@ -61930,9 +61930,9 @@
         103,
         96,
         47,
-        147,
-        67,
-        10,
+        146,
+        70,
+        8,
         22,
         72
       ],
@@ -70516,15 +70516,15 @@
           "repo": "household-api-analytics"
         },
         {
-          "sha": "bd1488c4760b11842573b38e4886d4be0ba7b5e4",
-          "message": "feat: Add endpoint to filter parameter-values by parameter_id and policy_id",
-          "date": "2025-12-26T22:41:21.000+04:00",
-          "repo": "policyengine-api-v2-alpha"
-        },
-        {
           "sha": "7c545d2ca8caf39e568b4b8808efff17812a2838",
           "message": "feat: Apply indexing to parameter-values (#50)",
           "date": "2025-12-30T02:16:57.000+04:00",
+          "repo": "policyengine-api-v2-alpha"
+        },
+        {
+          "sha": "bd1488c4760b11842573b38e4886d4be0ba7b5e4",
+          "message": "feat: Add endpoint to filter parameter-values by parameter_id and policy_id",
+          "date": "2025-12-26T22:41:21.000+04:00",
           "repo": "policyengine-api-v2-alpha"
         },
         {
@@ -71115,7 +71115,7 @@
         "bio": null
       },
       "stats": {
-        "commits": 475,
+        "commits": 500,
         "prs": 155,
         "prs_merged": 122,
         "reviews": 95,
@@ -71130,7 +71130,7 @@
         "us-nc-sources": 3,
         "new-york-credit-comparison": 1,
         "policyengine-api": 14,
-        "policyengine-us": 303,
+        "policyengine-us": 328,
         "policyengine-api-v2": 13,
         "ri-ctc-calculator": 25,
         "analysis-notebooks": 10
@@ -71161,7 +71161,7 @@
         84,
         32,
         52,
-        71
+        96
       ],
       "prs": [
         {
@@ -71202,9 +71202,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 3,
+          "comments": 5,
           "created_at": "2025-12-30T15:59:58Z",
-          "updated_at": "2026-01-06T14:37:48Z",
+          "updated_at": "2026-02-01T22:52:38Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -71234,7 +71234,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 11,
+          "commits": 12,
           "review_comments": 3,
           "files": [
             {
@@ -71415,9 +71415,9 @@
             {
               "filename": "uv.lock",
               "status": "modified",
-              "additions": 2,
-              "deletions": 2,
-              "changes": 4
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2
             }
           ]
         },
@@ -71454,15 +71454,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 2,
           "created_at": "2025-12-29T20:25:12Z",
-          "updated_at": "2025-12-30T15:20:38Z",
-          "closed_at": null,
+          "updated_at": "2026-02-01T23:13:49Z",
+          "closed_at": "2026-02-01T23:13:23Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -71472,7 +71472,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7061",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7061.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7061.patch",
-            "merged_at": null
+            "merged_at": "2026-02-01T23:13:23Z"
           },
           "body": "## Summary\n\nUpdates the Oklahoma individual income tax implementation for tax year 2025.\n\nFixes #7060\n\n## Key Changes\n\n- **Pension Subtraction Limit (CRITICAL)**: Update from $10,000 to $20,000 effective 2024 per [HB 2020](https://www.okhouse.gov/posts/news-20230324_4)\n- **2025 References**: Add 2025 form references to all 29 Oklahoma tax parameter files\n- **Tests**: Add 2025 test cases including pension subtraction verification\n\n## Parameter Files to Update\n\n### Critical Value Change\n- [ ] `pension_limit.yaml` - Update to $20,000 for 2024+\n\n### Reference Updates (29 files)\n- [ ] Tax rate files (5 files)\n- [ ] Deduction files (2 files)\n- [ ] Exemption files (3 files)\n- [ ] AGI subtraction files (4 files)\n- [ ] EITC files (1 file)\n- [ ] Child/CDCC credit files (3 files)\n- [ ] Property tax credit files (4 files)\n- [ ] Sales tax credit files (4 files)\n- [ ] Credit list files (2 files)\n- [ ] Misc files (1 file)\n\n## Status\n- [ ] Documentation collected\n- [ ] Parameters updated\n- [ ] Tests written\n- [ ] CI passing\n\n## Reference Documents\n- [2025 Form 511-NR-Pkt](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/511-NR-Pkt.pdf)\n- [2025 Form 511-Pkt](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/511-Pkt.pdf)\n- [2025 Form 538-H](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/538-H.pdf)\n- [2025 Form 538-S](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/538-S.pdf)\n- [2025 Form 511-EIC](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/511-EIC.pdf)\n\n---\n*This is a draft PR. Implementation work is in progress.*\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
@@ -71491,7 +71491,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 15,
+          "commits": 16,
           "review_comments": 0,
           "files": [
             {
@@ -71739,15 +71739,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 3,
           "created_at": "2025-12-29T20:03:45Z",
-          "updated_at": "2026-01-05T18:09:03Z",
-          "closed_at": null,
+          "updated_at": "2026-01-29T23:19:16Z",
+          "closed_at": "2026-01-29T23:18:46Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -71757,7 +71757,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7059",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7059.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7059.patch",
-            "merged_at": null
+            "merged_at": "2026-01-29T23:18:46Z"
           },
           "body": "## Summary\n\nUpdate the Virginia individual income tax model for tax year 2025 based on the 2025 Form 760 Instructions.\n\n### Parameter Updates (21 files)\n- Added 2025 Form 760 references with page numbers to all parameter files\n- Updated rebate parameter with 2024 values ($200/$400) and 2025 values ($0)\n\n### Tests Added\n- Standard deduction: $8,750 single, $17,500 joint, $8,750 separate\n- Refundable EITC: 20% match rate\n- Non-refundable EITC: 20% match rate\n- Military benefit subtraction: $40,000 limit for 2025\n- Age deduction: Full amount and phase-out tests\n- Exemptions: Personal ($930) and aged/blind ($800) unchanged\n- Rebate: 2024 ($200/$400) and 2025 ($0)\n\n### Key 2025 Values\n| Parameter | 2025 Value |\n|-----------|------------|\n| Standard Deduction (Single) | $8,750 |\n| Standard Deduction (Joint) | $17,500 |\n| Personal Exemption | $930 |\n| Aged/Blind Exemption | $800 |\n| EITC Match Rate | 20% |\n| Military Benefit Subtraction Limit | $40,000 |\n| Age Deduction Maximum | $12,000 |\n| Rebate | $0 (discontinued) |\n\n## References\n- [2025 Virginia Form 760 Instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf)\n- [House Bill 1600 (2025 Appropriations Act)](https://legiscan.com/VA/text/HB1600/id/3262750/Virginia-2025-HB1600-Chaptered.pdf)\n\nFixes #7056\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
@@ -71776,7 +71776,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 2,
+          "commits": 3,
           "review_comments": 3,
           "files": [
             {
@@ -71810,9 +71810,9 @@
             {
               "filename": "policyengine_us/parameters/gov/states/va/tax/income/deductions/itemized/applicable_amount.yaml",
               "status": "modified",
-              "additions": 3,
+              "additions": 8,
               "deletions": 1,
-              "changes": 4
+              "changes": 9
             },
             {
               "filename": "policyengine_us/parameters/gov/states/va/tax/income/deductions/standard.yaml",
@@ -71859,9 +71859,9 @@
             {
               "filename": "policyengine_us/parameters/gov/states/va/tax/income/rebate/amount.yaml",
               "status": "modified",
-              "additions": 13,
+              "additions": 8,
               "deletions": 3,
-              "changes": 16
+              "changes": 11
             },
             {
               "filename": "policyengine_us/parameters/gov/states/va/tax/income/subtractions/age_deduction/age_minimum.yaml",
@@ -72594,15 +72594,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 2,
           "created_at": "2025-12-29T15:34:11Z",
-          "updated_at": "2026-01-05T15:12:25Z",
-          "closed_at": null,
+          "updated_at": "2026-02-01T23:24:48Z",
+          "closed_at": "2026-02-01T23:24:33Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -72612,7 +72612,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7055",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7055.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7055.patch",
-            "merged_at": null
+            "merged_at": "2026-02-01T23:24:33Z"
           },
           "body": "## Summary\n\nImplements #7054 - Updates Colorado income tax parameters and tests for tax year 2025.\n\n### Changes\n- Update parameter values for 2025 (sales tax refund amounts, EITC match, CTC, Family Affordability Credit)\n- Add 2025 references to all relevant parameter files\n- Create new 2025 integration tests\n\n### Primary Source\n[2025 Colorado Individual Income Tax Filing Guide (Book 104)](https://tax.colorado.gov/sites/tax/files/documents/Book104_2025.pdf)\n\n## Test plan\n- [ ] Verify all parameter values match 2025 documentation\n- [ ] Run existing Colorado tax tests\n- [ ] Add new 2025-specific integration tests\n- [ ] Ensure CI passes\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
@@ -72631,16 +72631,9 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 10,
+          "commits": 11,
           "review_comments": 0,
           "files": [
-            {
-              "filename": ".implementation_co_2025_income_tax.md",
-              "status": "added",
-              "additions": 5,
-              "deletions": 0,
-              "changes": 5
-            },
             {
               "filename": "changelog_entry.yaml",
               "status": "modified",
@@ -72843,6 +72836,13 @@
               "additions": 2,
               "deletions": 0,
               "changes": 2
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/co/tax/income/credits/family_affordability/amount.yaml",
+              "status": "modified",
+              "additions": 3,
+              "deletions": 0,
+              "changes": 3
             }
           ]
         },
@@ -76046,15 +76046,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 2,
           "created_at": "2025-12-29T20:25:12Z",
-          "updated_at": "2025-12-30T15:20:38Z",
-          "closed_at": null,
+          "updated_at": "2026-02-01T23:13:49Z",
+          "closed_at": "2026-02-01T23:13:23Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -76064,7 +76064,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7061",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7061.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7061.patch",
-            "merged_at": null
+            "merged_at": "2026-02-01T23:13:23Z"
           },
           "body": "## Summary\n\nUpdates the Oklahoma individual income tax implementation for tax year 2025.\n\nFixes #7060\n\n## Key Changes\n\n- **Pension Subtraction Limit (CRITICAL)**: Update from $10,000 to $20,000 effective 2024 per [HB 2020](https://www.okhouse.gov/posts/news-20230324_4)\n- **2025 References**: Add 2025 form references to all 29 Oklahoma tax parameter files\n- **Tests**: Add 2025 test cases including pension subtraction verification\n\n## Parameter Files to Update\n\n### Critical Value Change\n- [ ] `pension_limit.yaml` - Update to $20,000 for 2024+\n\n### Reference Updates (29 files)\n- [ ] Tax rate files (5 files)\n- [ ] Deduction files (2 files)\n- [ ] Exemption files (3 files)\n- [ ] AGI subtraction files (4 files)\n- [ ] EITC files (1 file)\n- [ ] Child/CDCC credit files (3 files)\n- [ ] Property tax credit files (4 files)\n- [ ] Sales tax credit files (4 files)\n- [ ] Credit list files (2 files)\n- [ ] Misc files (1 file)\n\n## Status\n- [ ] Documentation collected\n- [ ] Parameters updated\n- [ ] Tests written\n- [ ] CI passing\n\n## Reference Documents\n- [2025 Form 511-NR-Pkt](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/511-NR-Pkt.pdf)\n- [2025 Form 511-Pkt](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/511-Pkt.pdf)\n- [2025 Form 538-H](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/538-H.pdf)\n- [2025 Form 538-S](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/538-S.pdf)\n- [2025 Form 511-EIC](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/511-EIC.pdf)\n\n---\n*This is a draft PR. Implementation work is in progress.*\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
@@ -76259,15 +76259,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 2,
           "created_at": "2025-12-29T15:34:11Z",
-          "updated_at": "2026-01-05T15:12:25Z",
-          "closed_at": null,
+          "updated_at": "2026-02-01T23:24:48Z",
+          "closed_at": "2026-02-01T23:24:33Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -76277,7 +76277,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7055",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7055.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7055.patch",
-            "merged_at": null
+            "merged_at": "2026-02-01T23:24:33Z"
           },
           "body": "## Summary\n\nImplements #7054 - Updates Colorado income tax parameters and tests for tax year 2025.\n\n### Changes\n- Update parameter values for 2025 (sales tax refund amounts, EITC match, CTC, Family Affordability Credit)\n- Add 2025 references to all relevant parameter files\n- Create new 2025 integration tests\n\n### Primary Source\n[2025 Colorado Individual Income Tax Filing Guide (Book 104)](https://tax.colorado.gov/sites/tax/files/documents/Book104_2025.pdf)\n\n## Test plan\n- [ ] Verify all parameter values match 2025 documentation\n- [ ] Run existing Colorado tax tests\n- [ ] Add new 2025-specific integration tests\n- [ ] Ensure CI passes\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
@@ -78252,15 +78252,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 2,
           "created_at": "2025-12-29T20:22:53Z",
-          "updated_at": "2025-12-29T20:39:22Z",
-          "closed_at": null,
+          "updated_at": "2026-02-01T23:13:24Z",
+          "closed_at": "2026-02-01T23:13:24Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -78290,7 +78290,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7060/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -89929,9 +89929,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 2,
+          "comments": 3,
           "created_at": "2025-08-27T18:47:46Z",
-          "updated_at": "2025-08-29T12:49:34Z",
+          "updated_at": "2026-01-29T15:46:58Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -90146,15 +90146,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 0,
+          "comments": 1,
           "created_at": "2025-08-18T14:17:50Z",
-          "updated_at": "2025-08-18T14:17:50Z",
-          "closed_at": null,
+          "updated_at": "2026-01-29T15:35:18Z",
+          "closed_at": "2026-01-29T15:35:18Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -90184,7 +90184,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/432/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         }
       ],
