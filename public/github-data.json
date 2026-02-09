@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-02T06:29:14.122Z",
+  "fetchedAt": "2026-02-09T06:31:02.547Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -4983,7 +4983,7 @@
           "milestone": null,
           "comments": 0,
           "created_at": "2025-07-28T09:34:59Z",
-          "updated_at": "2026-01-22T15:57:46Z",
+          "updated_at": "2026-02-05T08:42:03Z",
           "closed_at": "2026-01-22T15:57:46Z",
           "author_association": "COLLABORATOR",
           "type": null,
@@ -8260,10 +8260,10 @@
         "bio": "Co-founder and CEO of @PolicyEngine"
       },
       "stats": {
-        "commits": 2901,
+        "commits": 2902,
         "prs": 502,
         "prs_merged": 357,
-        "reviews": 711,
+        "reviews": 714,
         "issues": 609,
         "repos": 74
       },
@@ -11782,15 +11782,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-03T22:19:42Z",
-          "updated_at": "2026-01-22T15:19:20Z",
-          "closed_at": null,
+          "updated_at": "2026-02-07T00:24:04Z",
+          "closed_at": "2026-02-07T00:24:04Z",
           "author_association": "CONTRIBUTOR",
           "type": null,
           "active_lock_reason": null,
@@ -11800,9 +11800,9 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us-data/pull/451",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us-data/pull/451.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us-data/pull/451.patch",
-            "merged_at": null
+            "merged_at": "2026-02-07T00:24:04Z"
           },
-          "body": "## Summary\r\n\r\nThis PR moves ALL random number generation from policyengine-us into the dataset generation in policyengine-us-data. The country package is now a purely deterministic rules engine.\r\n\r\n**⚠️ MERGE ORDER: This PR must be merged BEFORE the companion [policyengine-us PR #6635**](https://github.com/PolicyEngine/policyengine-us/pull/6635)\r\n\r\n## Changes\r\n\r\n### New take-up rate parameters\r\nAdded YAML parameter files in `policyengine_us_data/parameters/take_up/`:\r\n- snap.yaml (0.82)\r\n- medicaid.yaml (0.93)\r\n- aca.yaml (0.672)\r\n- eitc.yaml (0.65/0.86/0.85 by children)\r\n- dc_ptc.yaml (0.32)\r\n- head_start.yaml (0.40/0.30)\r\n- early_head_start.yaml (0.09)\r\n\r\n### CPS dataset generation\r\n- Load take-up rates from YAML parameter files\r\n- Generate all stochastic boolean take-up decisions\r\n- Use seeded RNG (seed=100) for full reproducibility\r\n- Changed from seed variables to boolean decisions\r\n\r\n### Stochastic variables generated\r\n\r\n**Take-up decisions (boolean):**\r\n- takes_up_snap_if_eligible\r\n- takes_up_aca_if_eligible\r\n- takes_up_medicaid_if_eligible\r\n- takes_up_eitc (already boolean, now uses YAML rates)\r\n- takes_up_dc_ptc (already boolean, now uses YAML rates)\r\n- takes_up_head_start_if_eligible\r\n- takes_up_early_head_start_if_eligible\r\n\r\n## Trade-offs\r\n\r\n**IMPORTANT**: Take-up rates can no longer be adjusted dynamically via policy reforms or in the web app. They are fixed in the microdata at generation time. This is an acceptable trade-off for the cleaner architecture of keeping the country package purely deterministic.\r\n\r\nTo adjust take-up rates for analysis, the microdata must be regenerated with updated parameter values.\r\n\r\n## Related PRs\r\n\r\n- policyengine-us: #6635\r\n- Follows same pattern as UK: PolicyEngine/policyengine-uk-data#203, PolicyEngine/policyengine-uk#1355\r\n\r\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\r\n\r\nCo-Authored-By: Claude <noreply@anthropic.com>",
+          "body": "## Summary\n\nMove ALL random number generation from policyengine-us into dataset generation, making the country package a purely deterministic rules engine. Adds name-based seeding for order-independent reproducibility and covers all 10 stochastic programs.\n\n**MERGE ORDER: This PR must be merged BEFORE PolicyEngine/policyengine-us#7326**\n\n## Background\n\nThis PR and its companion (policyengine-us#7326) supersede the earlier policyengine-us#6635, which was built against an older data package design (shared-seed RNG, no WIC draws, no SSI, uniform Medicaid rate). Rather than rebasing that branch through months of conflicts, we started fresh on current main to incorporate name-based seeding, state-specific Medicaid, and Section 1931 deprivation rules in one shot.\n\n## Changes\n\n### Name-based seeding\n- Ported _stable_string_hash from policyengine-core to utils/randomness.py\n- Each variable gets its own RNG via seeded_rng(variable_name), making results independent of generation order\n- seeded_rng supports an optional salt parameter for per-subgroup streams (e.g., congressional districts), while the unsalted default remains distinct from any salted variant\n\n### State-specific Medicaid takeup rates\n- Replaced uniform 93% rate with per-state rates (53% Utah to 99% Colorado/DC/Indiana)\n- 51 jurisdictions (50 states + DC) from MACPAC enrollment targets\n\n### New variables generated\n- meets_ssi_resource_test (bool, rate=0.4)\n- wic_takeup_draw (float [0,1))\n- wic_nutritional_risk_draw (float [0,1))\n\n### Existing variables updated\n- EITC, DC PTC, SNAP, ACA, Medicaid, Head Start, Early Head Start now use per-variable seeded RNG\n\n## Related PRs\n- policyengine-us companion: PolicyEngine/policyengine-us#7326\n- Supersedes: PolicyEngine/policyengine-us#6635 (closed), PolicyEngine/policyengine-us#7317 (fixes #7316)\n- UK pattern: PolicyEngine/policyengine-uk-data#203, PolicyEngine/policyengine-uk#1355\n\n## Test plan\n- [x] pytest passes for stochastic variable tests\n- [x] Verified takeup rates match YAML parameters (~0.672 for ACA, etc.)\n- [x] Name-based seeding produces identical results across runs\n- [x] Salt parameter produces distinct but reproducible streams",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/451/reactions",
             "total_count": 0,
@@ -11819,29 +11819,29 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 4,
-          "review_comments": 4,
+          "commits": 8,
+          "review_comments": 2,
           "files": [
             {
               "filename": "changelog_entry.yaml",
               "status": "modified",
-              "additions": 4,
+              "additions": 11,
               "deletions": 0,
-              "changes": 4
+              "changes": 11
             },
             {
               "filename": "policyengine_us_data/datasets/cps/cps.py",
               "status": "modified",
-              "additions": 48,
-              "deletions": 9,
-              "changes": 57
+              "additions": 89,
+              "deletions": 14,
+              "changes": 103
             },
             {
               "filename": "policyengine_us_data/parameters/__init__.py",
               "status": "added",
-              "additions": 56,
+              "additions": 72,
               "deletions": 0,
-              "changes": 56
+              "changes": 72
             },
             {
               "filename": "policyengine_us_data/parameters/take_up/aca.yaml",
@@ -11881,9 +11881,9 @@
             {
               "filename": "policyengine_us_data/parameters/take_up/medicaid.yaml",
               "status": "added",
-              "additions": 10,
+              "additions": 64,
               "deletions": 0,
-              "changes": 10
+              "changes": 64
             },
             {
               "filename": "policyengine_us_data/parameters/take_up/snap.yaml",
@@ -11893,11 +11893,39 @@
               "changes": 9
             },
             {
+              "filename": "policyengine_us_data/parameters/take_up/ssi_pass_rate.yaml",
+              "status": "added",
+              "additions": 10,
+              "deletions": 0,
+              "changes": 10
+            },
+            {
+              "filename": "policyengine_us_data/parameters/take_up/wic_nutritional_risk.yaml",
+              "status": "added",
+              "additions": 13,
+              "deletions": 0,
+              "changes": 13
+            },
+            {
+              "filename": "policyengine_us_data/parameters/take_up/wic_takeup.yaml",
+              "status": "added",
+              "additions": 33,
+              "deletions": 0,
+              "changes": 33
+            },
+            {
               "filename": "policyengine_us_data/tests/test_stochastic_variables.py",
               "status": "added",
-              "additions": 110,
+              "additions": 154,
               "deletions": 0,
-              "changes": 110
+              "changes": 154
+            },
+            {
+              "filename": "policyengine_us_data/utils/randomness.py",
+              "status": "added",
+              "additions": 30,
+              "deletions": 0,
+              "changes": 30
             }
           ]
         },
@@ -12272,6 +12300,77 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/crfb-tob-impacts/issues/57/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null,
+          "score": 1
+        },
+        {
+          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7010",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7010/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7010/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7010/events",
+          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7010",
+          "id": 3745361884,
+          "node_id": "PR_kwDOFqFFMc65tg2F",
+          "number": 7010,
+          "title": "Fix Head of Household eligibility for qualifying relatives",
+          "user": {
+            "login": "PavelMakarchuk",
+            "id": 110687043,
+            "node_id": "U_kgDOBpjzQw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/110687043?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/PavelMakarchuk",
+            "html_url": "https://github.com/PavelMakarchuk",
+            "followers_url": "https://api.github.com/users/PavelMakarchuk/followers",
+            "following_url": "https://api.github.com/users/PavelMakarchuk/following{/other_user}",
+            "gists_url": "https://api.github.com/users/PavelMakarchuk/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/PavelMakarchuk/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/PavelMakarchuk/subscriptions",
+            "organizations_url": "https://api.github.com/users/PavelMakarchuk/orgs",
+            "repos_url": "https://api.github.com/users/PavelMakarchuk/repos",
+            "events_url": "https://api.github.com/users/PavelMakarchuk/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/PavelMakarchuk/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [],
+          "state": "closed",
+          "locked": false,
+          "assignee": null,
+          "assignees": [],
+          "milestone": null,
+          "comments": 1,
+          "created_at": "2025-12-19T00:07:07Z",
+          "updated_at": "2026-02-03T04:40:19Z",
+          "closed_at": "2026-02-03T04:40:07Z",
+          "author_association": "COLLABORATOR",
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/7010",
+            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7010",
+            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7010.diff",
+            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7010.patch",
+            "merged_at": "2026-02-03T04:40:07Z"
+          },
+          "body": "## Summary\n\nFixes #6994\n\nThis PR adds support for qualifying relatives in Head of Household filing status determination. Previously, only qualifying children (age-based) were considered, causing parents with 19+ year old non-student dependents to be incorrectly denied HOH status.\n\n### Changes:\n- **`is_qualifying_child_dependent`** (new): Pure age test - under 19, or under 24 if full-time student\n- **`is_qualifying_relative_dependent`** (new): Income test for those who fail age test but have gross income below the uprated personal exemption threshold (~$5,005 for 2024)\n- **`dependent_gross_income`** (new): Calculates gross income for dependents (mirrors irs_gross_income but for dependents only)\n- **`is_child_dependent`** (updated): Now combines all three pathways - qualifying child OR qualifying relative OR permanently disabled\n- **`head_of_household_eligible`** (simplified): Since `is_child_dependent` now includes qualifying relatives, no separate check needed\n\n### Technical notes:\n- The qualifying relative gross income limit uses the 2017 personal exemption ($4,050) with IRS uprating applied, continuing the pre-TCJA threshold\n- Permanently disabled individuals are exempt from the age test per IRC 152(c)(3)(B), so they qualify as child dependents (not qualifying relatives)\n\n## Test plan\n- [x] Unit tests for `is_qualifying_child_dependent` (5 tests)\n- [x] Unit tests for `is_qualifying_relative_dependent` (7 tests)\n- [x] Unit tests for `is_child_dependent` (8 tests)\n- [x] Unit tests for `dependent_gross_income` (3 tests)\n- [x] Integration tests for `head_of_household_eligible` (6 tests)\n- [x] All 169 demographic tests pass\n- [ ] CI passes\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+          "reactions": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7010/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7010/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1
@@ -12669,6 +12768,77 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1442/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null,
+          "score": 1
+        },
+        {
+          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/451",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/451/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/451/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/451/events",
+          "html_url": "https://github.com/PolicyEngine/policyengine-us-data/pull/451",
+          "id": 3692120217,
+          "node_id": "PR_kwDOMjECoM627w88",
+          "number": 451,
+          "title": "Move all randomness to data package for deterministic country package",
+          "user": {
+            "login": "MaxGhenis",
+            "id": 6076111,
+            "node_id": "MDQ6VXNlcjYwNzYxMTE=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6076111?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/MaxGhenis",
+            "html_url": "https://github.com/MaxGhenis",
+            "followers_url": "https://api.github.com/users/MaxGhenis/followers",
+            "following_url": "https://api.github.com/users/MaxGhenis/following{/other_user}",
+            "gists_url": "https://api.github.com/users/MaxGhenis/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/MaxGhenis/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/MaxGhenis/subscriptions",
+            "organizations_url": "https://api.github.com/users/MaxGhenis/orgs",
+            "repos_url": "https://api.github.com/users/MaxGhenis/repos",
+            "events_url": "https://api.github.com/users/MaxGhenis/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/MaxGhenis/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [],
+          "state": "closed",
+          "locked": false,
+          "assignee": null,
+          "assignees": [],
+          "milestone": null,
+          "comments": 1,
+          "created_at": "2025-12-03T22:19:42Z",
+          "updated_at": "2026-02-07T00:24:04Z",
+          "closed_at": "2026-02-07T00:24:04Z",
+          "author_association": "CONTRIBUTOR",
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/pulls/451",
+            "html_url": "https://github.com/PolicyEngine/policyengine-us-data/pull/451",
+            "diff_url": "https://github.com/PolicyEngine/policyengine-us-data/pull/451.diff",
+            "patch_url": "https://github.com/PolicyEngine/policyengine-us-data/pull/451.patch",
+            "merged_at": "2026-02-07T00:24:04Z"
+          },
+          "body": "## Summary\n\nMove ALL random number generation from policyengine-us into dataset generation, making the country package a purely deterministic rules engine. Adds name-based seeding for order-independent reproducibility and covers all 10 stochastic programs.\n\n**MERGE ORDER: This PR must be merged BEFORE PolicyEngine/policyengine-us#7326**\n\n## Background\n\nThis PR and its companion (policyengine-us#7326) supersede the earlier policyengine-us#6635, which was built against an older data package design (shared-seed RNG, no WIC draws, no SSI, uniform Medicaid rate). Rather than rebasing that branch through months of conflicts, we started fresh on current main to incorporate name-based seeding, state-specific Medicaid, and Section 1931 deprivation rules in one shot.\n\n## Changes\n\n### Name-based seeding\n- Ported _stable_string_hash from policyengine-core to utils/randomness.py\n- Each variable gets its own RNG via seeded_rng(variable_name), making results independent of generation order\n- seeded_rng supports an optional salt parameter for per-subgroup streams (e.g., congressional districts), while the unsalted default remains distinct from any salted variant\n\n### State-specific Medicaid takeup rates\n- Replaced uniform 93% rate with per-state rates (53% Utah to 99% Colorado/DC/Indiana)\n- 51 jurisdictions (50 states + DC) from MACPAC enrollment targets\n\n### New variables generated\n- meets_ssi_resource_test (bool, rate=0.4)\n- wic_takeup_draw (float [0,1))\n- wic_nutritional_risk_draw (float [0,1))\n\n### Existing variables updated\n- EITC, DC PTC, SNAP, ACA, Medicaid, Head Start, Early Head Start now use per-variable seeded RNG\n\n## Related PRs\n- policyengine-us companion: PolicyEngine/policyengine-us#7326\n- Supersedes: PolicyEngine/policyengine-us#6635 (closed), PolicyEngine/policyengine-us#7317 (fixes #7316)\n- UK pattern: PolicyEngine/policyengine-uk-data#203, PolicyEngine/policyengine-uk#1355\n\n## Test plan\n- [x] pytest passes for stochastic variable tests\n- [x] Verified takeup rates match YAML parameters (~0.672 for ACA, etc.)\n- [x] Name-based seeding produces identical results across runs\n- [x] Salt parameter produces distinct but reproducible streams",
+          "reactions": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/451/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/451/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1
@@ -14354,148 +14524,6 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microdf/issues/267/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null,
-          "score": 1
-        },
-        {
-          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6871",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6871/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6871/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6871/events",
-          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6871",
-          "id": 3668317741,
-          "node_id": "PR_kwDOFqFFMc61sUjL",
-          "number": 6871,
-          "title": "Fix Utah EITC reform",
-          "user": {
-            "login": "DTrim99",
-            "id": 178813244,
-            "node_id": "U_kgDOCqh5PA",
-            "avatar_url": "https://avatars.githubusercontent.com/u/178813244?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/DTrim99",
-            "html_url": "https://github.com/DTrim99",
-            "followers_url": "https://api.github.com/users/DTrim99/followers",
-            "following_url": "https://api.github.com/users/DTrim99/following{/other_user}",
-            "gists_url": "https://api.github.com/users/DTrim99/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/DTrim99/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/DTrim99/subscriptions",
-            "organizations_url": "https://api.github.com/users/DTrim99/orgs",
-            "repos_url": "https://api.github.com/users/DTrim99/repos",
-            "events_url": "https://api.github.com/users/DTrim99/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/DTrim99/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [],
-          "state": "closed",
-          "locked": false,
-          "assignee": null,
-          "assignees": [],
-          "milestone": null,
-          "comments": 0,
-          "created_at": "2025-11-26T16:56:15Z",
-          "updated_at": "2025-11-26T17:50:16Z",
-          "closed_at": "2025-11-26T17:50:16Z",
-          "author_association": "COLLABORATOR",
-          "type": null,
-          "active_lock_reason": null,
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/6871",
-            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6871",
-            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6871.diff",
-            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6871.patch",
-            "merged_at": "2025-11-26T17:50:16Z"
-          },
-          "body": "Fixes #6870",
-          "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6871/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6871/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null,
-          "score": 1
-        },
-        {
-          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6852",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6852/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6852/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6852/events",
-          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6852",
-          "id": 3655622091,
-          "node_id": "PR_kwDOFqFFMc61B-XQ",
-          "number": 6852,
-          "title": "Adjust Colorado Care Worker credit parameter file names",
-          "user": {
-            "login": "PavelMakarchuk",
-            "id": 110687043,
-            "node_id": "U_kgDOBpjzQw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/110687043?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/PavelMakarchuk",
-            "html_url": "https://github.com/PavelMakarchuk",
-            "followers_url": "https://api.github.com/users/PavelMakarchuk/followers",
-            "following_url": "https://api.github.com/users/PavelMakarchuk/following{/other_user}",
-            "gists_url": "https://api.github.com/users/PavelMakarchuk/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/PavelMakarchuk/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/PavelMakarchuk/subscriptions",
-            "organizations_url": "https://api.github.com/users/PavelMakarchuk/orgs",
-            "repos_url": "https://api.github.com/users/PavelMakarchuk/repos",
-            "events_url": "https://api.github.com/users/PavelMakarchuk/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/PavelMakarchuk/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [],
-          "state": "closed",
-          "locked": false,
-          "assignee": null,
-          "assignees": [],
-          "milestone": null,
-          "comments": 1,
-          "created_at": "2025-11-23T07:50:48Z",
-          "updated_at": "2025-11-25T11:02:42Z",
-          "closed_at": "2025-11-25T11:02:29Z",
-          "author_association": "COLLABORATOR",
-          "type": null,
-          "active_lock_reason": null,
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/6852",
-            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6852",
-            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6852.diff",
-            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6852.patch",
-            "merged_at": "2025-11-25T11:02:28Z"
-          },
-          "body": "Fixes #6851",
-          "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6852/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6852/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1
@@ -18328,15 +18356,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-19T00:07:07Z",
-          "updated_at": "2025-12-19T14:40:44Z",
-          "closed_at": null,
+          "updated_at": "2026-02-03T04:40:19Z",
+          "closed_at": "2026-02-03T04:40:07Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -18346,7 +18374,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7010",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7010.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7010.patch",
-            "merged_at": null
+            "merged_at": "2026-02-03T04:40:07Z"
           },
           "body": "## Summary\n\nFixes #6994\n\nThis PR adds support for qualifying relatives in Head of Household filing status determination. Previously, only qualifying children (age-based) were considered, causing parents with 19+ year old non-student dependents to be incorrectly denied HOH status.\n\n### Changes:\n- **`is_qualifying_child_dependent`** (new): Pure age test - under 19, or under 24 if full-time student\n- **`is_qualifying_relative_dependent`** (new): Income test for those who fail age test but have gross income below the uprated personal exemption threshold (~$5,005 for 2024)\n- **`dependent_gross_income`** (new): Calculates gross income for dependents (mirrors irs_gross_income but for dependents only)\n- **`is_child_dependent`** (updated): Now combines all three pathways - qualifying child OR qualifying relative OR permanently disabled\n- **`head_of_household_eligible`** (simplified): Since `is_child_dependent` now includes qualifying relatives, no separate check needed\n\n### Technical notes:\n- The qualifying relative gross income limit uses the 2017 personal exemption ($4,050) with IRS uprating applied, continuing the pre-TCJA threshold\n- Permanently disabled individuals are exempt from the age test per IRC 152(c)(3)(B), so they qualify as child dependents (not qualifying relatives)\n\n## Test plan\n- [x] Unit tests for `is_qualifying_child_dependent` (5 tests)\n- [x] Unit tests for `is_qualifying_relative_dependent` (7 tests)\n- [x] Unit tests for `is_child_dependent` (8 tests)\n- [x] Unit tests for `dependent_gross_income` (3 tests)\n- [x] Integration tests for `head_of_household_eligible` (6 tests)\n- [x] All 169 demographic tests pass\n- [ ] CI passes\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
@@ -18365,7 +18393,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 5,
+          "commits": 13,
           "review_comments": 0,
           "files": [
             {
@@ -18374,6 +18402,20 @@
               "additions": 9,
               "deletions": 0,
               "changes": 9
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/irs/income/exemption/amount.yaml",
+              "status": "modified",
+              "additions": 80,
+              "deletions": 18,
+              "changes": 98
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/irs/income/exemption/suspended.yaml",
+              "status": "added",
+              "additions": 14,
+              "deletions": 0,
+              "changes": 14
             },
             {
               "filename": "policyengine_us/reforms/states/ny/wftc/ny_working_families_tax_credit.py",
@@ -18448,9 +18490,9 @@
             {
               "filename": "policyengine_us/tests/policy/baseline/household/demographic/person/is_qualifying_relative_dependent.yaml",
               "status": "added",
-              "additions": 162,
+              "additions": 163,
               "deletions": 0,
-              "changes": 162
+              "changes": 163
             },
             {
               "filename": "policyengine_us/tests/policy/baseline/household/demographic/tax_unit/filing_status.yaml",
@@ -18462,9 +18504,9 @@
             {
               "filename": "policyengine_us/tests/policy/baseline/household/demographic/tax_unit/head_of_household_eligible.yaml",
               "status": "modified",
-              "additions": 103,
+              "additions": 127,
               "deletions": 6,
-              "changes": 109
+              "changes": 133
             },
             {
               "filename": "policyengine_us/variables/gov/irs/credits/earned_income/eitc_child_count.py",
@@ -18476,9 +18518,23 @@
             {
               "filename": "policyengine_us/variables/gov/irs/income/dependent_gross_income.py",
               "status": "added",
-              "additions": 37,
+              "additions": 36,
               "deletions": 0,
-              "changes": 37
+              "changes": 36
+            },
+            {
+              "filename": "policyengine_us/variables/gov/irs/income/taxable_income/exemptions/exemptions.py",
+              "status": "modified",
+              "additions": 2,
+              "deletions": 1,
+              "changes": 3
+            },
+            {
+              "filename": "policyengine_us/variables/gov/irs/tax_unit_is_filer.py",
+              "status": "modified",
+              "additions": 2,
+              "deletions": 1,
+              "changes": 3
             },
             {
               "filename": "policyengine_us/variables/gov/states/ca/tax/income/alternative_minimum_tax/exemption/ca_amt_exemption.py",
@@ -18546,23 +18602,9 @@
             {
               "filename": "policyengine_us/variables/household/demographic/person/is_qualifying_relative_dependent.py",
               "status": "added",
-              "additions": 58,
+              "additions": 39,
               "deletions": 0,
-              "changes": 58
-            },
-            {
-              "filename": "policyengine_us/variables/household/demographic/tax_unit/head_of_household_eligible.py",
-              "status": "modified",
-              "additions": 4,
-              "deletions": 2,
-              "changes": 6
-            },
-            {
-              "filename": "uv.lock",
-              "status": "modified",
-              "additions": 1,
-              "deletions": 1,
-              "changes": 2
+              "changes": 39
             }
           ]
         },
@@ -25120,7 +25162,7 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": {
             "login": "PavelMakarchuk",
@@ -25169,8 +25211,8 @@
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-16T13:56:35Z",
-          "updated_at": "2025-12-18T22:08:16Z",
-          "closed_at": null,
+          "updated_at": "2026-02-03T04:40:08Z",
+          "closed_at": "2026-02-03T04:40:08Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -25200,7 +25242,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6994/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -58303,9 +58345,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 2,
           "created_at": "2025-09-24T17:18:09Z",
-          "updated_at": "2025-12-18T13:17:53Z",
+          "updated_at": "2026-02-02T13:58:28Z",
           "closed_at": null,
           "author_association": "NONE",
           "type": null,
@@ -70070,7 +70112,7 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": {
             "login": "anth-volk",
@@ -70117,10 +70159,10 @@
             }
           ],
           "milestone": null,
-          "comments": 0,
+          "comments": 1,
           "created_at": "2025-12-12T12:37:03Z",
-          "updated_at": "2025-12-12T12:37:06Z",
-          "closed_at": null,
+          "updated_at": "2026-02-06T22:08:11Z",
+          "closed_at": "2026-02-06T22:08:10Z",
           "author_association": "CONTRIBUTOR",
           "type": null,
           "active_lock_reason": null,
@@ -70150,7 +70192,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine.py/issues/200/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
@@ -85647,15 +85689,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-03T22:19:42Z",
-          "updated_at": "2026-01-22T15:19:20Z",
-          "closed_at": null,
+          "updated_at": "2026-02-07T00:24:04Z",
+          "closed_at": "2026-02-07T00:24:04Z",
           "author_association": "CONTRIBUTOR",
           "type": null,
           "active_lock_reason": null,
@@ -85665,9 +85707,9 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us-data/pull/451",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us-data/pull/451.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us-data/pull/451.patch",
-            "merged_at": null
+            "merged_at": "2026-02-07T00:24:04Z"
           },
-          "body": "## Summary\r\n\r\nThis PR moves ALL random number generation from policyengine-us into the dataset generation in policyengine-us-data. The country package is now a purely deterministic rules engine.\r\n\r\n**⚠️ MERGE ORDER: This PR must be merged BEFORE the companion [policyengine-us PR #6635**](https://github.com/PolicyEngine/policyengine-us/pull/6635)\r\n\r\n## Changes\r\n\r\n### New take-up rate parameters\r\nAdded YAML parameter files in `policyengine_us_data/parameters/take_up/`:\r\n- snap.yaml (0.82)\r\n- medicaid.yaml (0.93)\r\n- aca.yaml (0.672)\r\n- eitc.yaml (0.65/0.86/0.85 by children)\r\n- dc_ptc.yaml (0.32)\r\n- head_start.yaml (0.40/0.30)\r\n- early_head_start.yaml (0.09)\r\n\r\n### CPS dataset generation\r\n- Load take-up rates from YAML parameter files\r\n- Generate all stochastic boolean take-up decisions\r\n- Use seeded RNG (seed=100) for full reproducibility\r\n- Changed from seed variables to boolean decisions\r\n\r\n### Stochastic variables generated\r\n\r\n**Take-up decisions (boolean):**\r\n- takes_up_snap_if_eligible\r\n- takes_up_aca_if_eligible\r\n- takes_up_medicaid_if_eligible\r\n- takes_up_eitc (already boolean, now uses YAML rates)\r\n- takes_up_dc_ptc (already boolean, now uses YAML rates)\r\n- takes_up_head_start_if_eligible\r\n- takes_up_early_head_start_if_eligible\r\n\r\n## Trade-offs\r\n\r\n**IMPORTANT**: Take-up rates can no longer be adjusted dynamically via policy reforms or in the web app. They are fixed in the microdata at generation time. This is an acceptable trade-off for the cleaner architecture of keeping the country package purely deterministic.\r\n\r\nTo adjust take-up rates for analysis, the microdata must be regenerated with updated parameter values.\r\n\r\n## Related PRs\r\n\r\n- policyengine-us: #6635\r\n- Follows same pattern as UK: PolicyEngine/policyengine-uk-data#203, PolicyEngine/policyengine-uk#1355\r\n\r\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\r\n\r\nCo-Authored-By: Claude <noreply@anthropic.com>",
+          "body": "## Summary\n\nMove ALL random number generation from policyengine-us into dataset generation, making the country package a purely deterministic rules engine. Adds name-based seeding for order-independent reproducibility and covers all 10 stochastic programs.\n\n**MERGE ORDER: This PR must be merged BEFORE PolicyEngine/policyengine-us#7326**\n\n## Background\n\nThis PR and its companion (policyengine-us#7326) supersede the earlier policyengine-us#6635, which was built against an older data package design (shared-seed RNG, no WIC draws, no SSI, uniform Medicaid rate). Rather than rebasing that branch through months of conflicts, we started fresh on current main to incorporate name-based seeding, state-specific Medicaid, and Section 1931 deprivation rules in one shot.\n\n## Changes\n\n### Name-based seeding\n- Ported _stable_string_hash from policyengine-core to utils/randomness.py\n- Each variable gets its own RNG via seeded_rng(variable_name), making results independent of generation order\n- seeded_rng supports an optional salt parameter for per-subgroup streams (e.g., congressional districts), while the unsalted default remains distinct from any salted variant\n\n### State-specific Medicaid takeup rates\n- Replaced uniform 93% rate with per-state rates (53% Utah to 99% Colorado/DC/Indiana)\n- 51 jurisdictions (50 states + DC) from MACPAC enrollment targets\n\n### New variables generated\n- meets_ssi_resource_test (bool, rate=0.4)\n- wic_takeup_draw (float [0,1))\n- wic_nutritional_risk_draw (float [0,1))\n\n### Existing variables updated\n- EITC, DC PTC, SNAP, ACA, Medicaid, Head Start, Early Head Start now use per-variable seeded RNG\n\n## Related PRs\n- policyengine-us companion: PolicyEngine/policyengine-us#7326\n- Supersedes: PolicyEngine/policyengine-us#6635 (closed), PolicyEngine/policyengine-us#7317 (fixes #7316)\n- UK pattern: PolicyEngine/policyengine-uk-data#203, PolicyEngine/policyengine-uk#1355\n\n## Test plan\n- [x] pytest passes for stochastic variable tests\n- [x] Verified takeup rates match YAML parameters (~0.672 for ACA, etc.)\n- [x] Name-based seeding produces identical results across runs\n- [x] Salt parameter produces distinct but reproducible streams",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/451/reactions",
             "total_count": 0,
@@ -107216,15 +107258,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-17T20:28:43Z",
-          "updated_at": "2025-12-17T20:28:43Z",
-          "closed_at": null,
+          "updated_at": "2026-02-06T17:08:16Z",
+          "closed_at": "2026-02-06T17:08:16Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -107254,7 +107296,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/531/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "score": 1
         },
         {
