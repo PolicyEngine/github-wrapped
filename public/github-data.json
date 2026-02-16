@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-09T06:31:02.547Z",
+  "fetchedAt": "2026-02-16T06:30:07.647Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -5414,6 +5414,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/534/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -5488,6 +5489,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-github-agent/issues/23/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -5562,6 +5564,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2-alpha/issues/12/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -5636,6 +5639,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2-alpha/issues/11/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -5710,6 +5714,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-github-agent/issues/17/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -5784,6 +5789,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2-alpha/issues/6/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -5858,6 +5864,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-github-agent/issues/15/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -5932,6 +5939,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2-alpha/issues/5/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6006,6 +6014,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1454/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6080,6 +6089,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2-alpha/issues/4/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6154,6 +6164,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2-alpha/issues/3/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6228,6 +6239,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2-alpha/issues/1/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6302,6 +6314,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-github-agent/issues/13/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6376,6 +6389,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-github-agent/issues/11/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6450,6 +6464,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-core/issues/413/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6524,6 +6539,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-github-agent/issues/9/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6598,6 +6614,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-github-agent/issues/7/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6672,6 +6689,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1447/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6746,6 +6764,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1446/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6820,6 +6839,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-github-agent/issues/3/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6894,6 +6914,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-github-agent/issues/2/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -6968,6 +6989,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-github-agent/issues/1/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -7042,6 +7064,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-event-2025/issues/15/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -7158,6 +7181,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-event-2025/issues/14/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -7232,6 +7256,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1369/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -7306,6 +7331,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-data/issues/210/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -7380,6 +7406,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1366/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -7454,6 +7481,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1363/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -7528,6 +7556,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-data/issues/209/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -7644,6 +7673,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1360/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -8261,11 +8291,11 @@
       },
       "stats": {
         "commits": 2902,
-        "prs": 502,
+        "prs": 501,
         "prs_merged": 357,
         "reviews": 714,
         "issues": 609,
-        "repos": 74
+        "repos": 73
       },
       "repoCommits": {
         "obbba-household-explorer": 18,
@@ -8316,7 +8346,7 @@
         19,
         84,
         108,
-        68
+        67
       ],
       "monthlyCommits": [
         25,
@@ -8751,291 +8781,6 @@
               "additions": 107,
               "deletions": 17,
               "changes": 124
-            }
-          ]
-        },
-        {
-          "url": "https://api.github.com/repos/PolicyEngine/statsmodels-sgd/issues/3",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/statsmodels-sgd",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/statsmodels-sgd/issues/3/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/statsmodels-sgd/issues/3/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/statsmodels-sgd/issues/3/events",
-          "html_url": "https://github.com/PolicyEngine/statsmodels-sgd/pull/3",
-          "id": 3737865842,
-          "node_id": "PR_kwDOM-joKs65UOp-",
-          "number": 3,
-          "title": "Academic paper improvements: DP logit, citations, data validation defense",
-          "user": {
-            "login": "MaxGhenis",
-            "id": 6076111,
-            "node_id": "MDQ6VXNlcjYwNzYxMTE=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/6076111?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/MaxGhenis",
-            "html_url": "https://github.com/MaxGhenis",
-            "followers_url": "https://api.github.com/users/MaxGhenis/followers",
-            "following_url": "https://api.github.com/users/MaxGhenis/following{/other_user}",
-            "gists_url": "https://api.github.com/users/MaxGhenis/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/MaxGhenis/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/MaxGhenis/subscriptions",
-            "organizations_url": "https://api.github.com/users/MaxGhenis/orgs",
-            "repos_url": "https://api.github.com/users/MaxGhenis/repos",
-            "events_url": "https://api.github.com/users/MaxGhenis/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/MaxGhenis/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [],
-          "state": "open",
-          "locked": false,
-          "assignee": null,
-          "assignees": [],
-          "milestone": null,
-          "comments": 0,
-          "created_at": "2025-12-17T08:25:31Z",
-          "updated_at": "2025-12-17T08:25:31Z",
-          "closed_at": null,
-          "author_association": "CONTRIBUTOR",
-          "type": null,
-          "active_lock_reason": null,
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/statsmodels-sgd/pulls/3",
-            "html_url": "https://github.com/PolicyEngine/statsmodels-sgd/pull/3",
-            "diff_url": "https://github.com/PolicyEngine/statsmodels-sgd/pull/3.diff",
-            "patch_url": "https://github.com/PolicyEngine/statsmodels-sgd/pull/3.patch",
-            "merged_at": null
-          },
-          "body": "## Summary\n\nThis PR improves the academic paper and codebase for statsmodels-sgd:\n\n### Code Improvements\n- **Add DP Logit model** with full standard error support\n- **Improve standard error calibration** - achieve ~95% CI coverage\n- **Fix Python 3.14 compatibility** - pin to <3.14 until torch supports it\n- **Add comprehensive tests** for confidence intervals and SE calibration\n\n### Paper Improvements\n- **Add citations** for all falsifiable claims using MyST format\n- **Add methodological defense** of synthetic data approach:\n  - Explains why ground truth is required for validation\n  - Cites precedent in statistical methods literature\n  - Distinguishes validation (requires synthetic) from illustration (can use real)\n- **Add CPS earnings illustration** (Section 7):\n  - Generate CPS-like synthetic microdata with realistic Mincer parameters\n  - Compare non-private OLS vs DP regression at ε≈5 and ε≈1\n  - Visualize coefficient comparison with confidence intervals\n\n### Test Results\n- All 31 tests passing\n- Coverage at 62% (improved from previous)\n\n## Test plan\n- [x] Run pytest - all tests pass\n- [x] Verify citations render correctly in MyST format\n- [x] Notebook cells added for CPS illustration\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
-          "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/statsmodels-sgd/issues/3/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/statsmodels-sgd/issues/3/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null,
-          "score": 1,
-          "commits": 6,
-          "review_comments": 0,
-          "files": [
-            {
-              "filename": ".claude/agents/replication-verifier.md",
-              "status": "added",
-              "additions": 204,
-              "deletions": 0,
-              "changes": 204
-            },
-            {
-              "filename": ".python-version",
-              "status": "added",
-              "additions": 1,
-              "deletions": 0,
-              "changes": 1
-            },
-            {
-              "filename": "CLAUDE.md",
-              "status": "added",
-              "additions": 254,
-              "deletions": 0,
-              "changes": 254
-            },
-            {
-              "filename": "IMPROVEMENTS_SUMMARY.md",
-              "status": "added",
-              "additions": 70,
-              "deletions": 0,
-              "changes": 70
-            },
-            {
-              "filename": "JOURNAL_TARGETS.md",
-              "status": "added",
-              "additions": 112,
-              "deletions": 0,
-              "changes": 112
-            },
-            {
-              "filename": "REFEREE_REPORTS_SIMULATION.md",
-              "status": "added",
-              "additions": 152,
-              "deletions": 0,
-              "changes": 152
-            },
-            {
-              "filename": "REPLICATION_REPORT.md",
-              "status": "added",
-              "additions": 146,
-              "deletions": 0,
-              "changes": 146
-            },
-            {
-              "filename": "docs/_config.yml",
-              "status": "added",
-              "additions": 66,
-              "deletions": 0,
-              "changes": 66
-            },
-            {
-              "filename": "docs/_toc.yml",
-              "status": "added",
-              "additions": 50,
-              "deletions": 0,
-              "changes": 50
-            },
-            {
-              "filename": "docs/chapters/background.md",
-              "status": "added",
-              "additions": 152,
-              "deletions": 0,
-              "changes": 152
-            },
-            {
-              "filename": "docs/chapters/related_work.md",
-              "status": "added",
-              "additions": 247,
-              "deletions": 0,
-              "changes": 247
-            },
-            {
-              "filename": "docs/intro.md",
-              "status": "added",
-              "additions": 98,
-              "deletions": 0,
-              "changes": 98
-            },
-            {
-              "filename": "docs/myst.yml",
-              "status": "added",
-              "additions": 85,
-              "deletions": 0,
-              "changes": 85
-            },
-            {
-              "filename": "docs/references.bib",
-              "status": "added",
-              "additions": 248,
-              "deletions": 0,
-              "changes": 248
-            },
-            {
-              "filename": "docs/references.md",
-              "status": "added",
-              "additions": 5,
-              "deletions": 0,
-              "changes": 5
-            },
-            {
-              "filename": "docs/simulations/privacy_utility.ipynb",
-              "status": "added",
-              "additions": 509,
-              "deletions": 0,
-              "changes": 509
-            },
-            {
-              "filename": "paper.md",
-              "status": "added",
-              "additions": 246,
-              "deletions": 0,
-              "changes": 246
-            },
-            {
-              "filename": "poetry.lock",
-              "status": "removed",
-              "additions": 0,
-              "deletions": 101,
-              "changes": 101
-            },
-            {
-              "filename": "pyproject.toml",
-              "status": "modified",
-              "additions": 98,
-              "deletions": 35,
-              "changes": 133
-            },
-            {
-              "filename": "statsmodels_sgd/api.py",
-              "status": "modified",
-              "additions": 5,
-              "deletions": 2,
-              "changes": 7
-            },
-            {
-              "filename": "statsmodels_sgd/base_model.py",
-              "status": "modified",
-              "additions": 131,
-              "deletions": 35,
-              "changes": 166
-            },
-            {
-              "filename": "statsmodels_sgd/privacy/__init__.py",
-              "status": "added",
-              "additions": 30,
-              "deletions": 0,
-              "changes": 30
-            },
-            {
-              "filename": "statsmodels_sgd/privacy/accounting.py",
-              "status": "added",
-              "additions": 321,
-              "deletions": 0,
-              "changes": 321
-            },
-            {
-              "filename": "statsmodels_sgd/privacy/mechanisms.py",
-              "status": "added",
-              "additions": 182,
-              "deletions": 0,
-              "changes": 182
-            },
-            {
-              "filename": "statsmodels_sgd/regression/discrete_model.py",
-              "status": "modified",
-              "additions": 1,
-              "deletions": 1,
-              "changes": 2
-            },
-            {
-              "filename": "statsmodels_sgd/regression/linear_model.py",
-              "status": "modified",
-              "additions": 239,
-              "deletions": 45,
-              "changes": 284
-            },
-            {
-              "filename": "statsmodels_sgd/regression/logit_dp.py",
-              "status": "added",
-              "additions": 280,
-              "deletions": 0,
-              "changes": 280
-            },
-            {
-              "filename": "statsmodels_sgd/tests/test_ols.py",
-              "status": "modified",
-              "additions": 6,
-              "deletions": 2,
-              "changes": 8
-            },
-            {
-              "filename": "statsmodels_sgd/tools.py",
-              "status": "modified",
-              "additions": 1,
-              "deletions": 1,
-              "changes": 2
-            },
-            {
-              "filename": "tests/privacy/test_privacy_accounting.py",
-              "status": "added",
-              "additions": 290,
-              "deletions": 0,
-              "changes": 290
             }
           ]
         },
@@ -11586,12 +11331,12 @@
           ]
         },
         {
-          "url": "https://api.github.com/repos/PolicyEngine/ai-growth-research/issues/17",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/ai-growth-research",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/ai-growth-research/issues/17/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/ai-growth-research/issues/17/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/ai-growth-research/issues/17/events",
-          "html_url": "https://github.com/PolicyEngine/ai-growth-research/pull/17",
+          "url": "https://api.github.com/repos/PolicyEngine/ai-inequality/issues/17",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/ai-inequality",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/ai-inequality/issues/17/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/ai-inequality/issues/17/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/ai-inequality/issues/17/events",
+          "html_url": "https://github.com/PolicyEngine/ai-inequality/pull/17",
           "id": 3692122115,
           "node_id": "PR_kwDOP_khvM627xW_",
           "number": 17,
@@ -11632,15 +11377,15 @@
           "active_lock_reason": null,
           "draft": false,
           "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/ai-growth-research/pulls/17",
-            "html_url": "https://github.com/PolicyEngine/ai-growth-research/pull/17",
-            "diff_url": "https://github.com/PolicyEngine/ai-growth-research/pull/17.diff",
-            "patch_url": "https://github.com/PolicyEngine/ai-growth-research/pull/17.patch",
+            "url": "https://api.github.com/repos/PolicyEngine/ai-inequality/pulls/17",
+            "html_url": "https://github.com/PolicyEngine/ai-inequality/pull/17",
+            "diff_url": "https://github.com/PolicyEngine/ai-inequality/pull/17.diff",
+            "patch_url": "https://github.com/PolicyEngine/ai-inequality/pull/17.patch",
             "merged_at": "2025-12-03T22:23:10Z"
           },
           "body": "## Summary\n\nUpdate Node.js to 24.x (Active LTS - Krypton).\n\n## Test plan\n\n- [ ] CI passes\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/ai-growth-research/issues/17/reactions",
+            "url": "https://api.github.com/repos/PolicyEngine/ai-inequality/issues/17/reactions",
             "total_count": 0,
             "+1": 0,
             "-1": 0,
@@ -11651,7 +11396,7 @@
             "rocket": 0,
             "eyes": 0
           },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/ai-growth-research/issues/17/timeline",
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/ai-inequality/issues/17/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
@@ -12015,6 +11760,95 @@
               "additions": 4,
               "deletions": 0,
               "changes": 4
+            }
+          ]
+        },
+        {
+          "url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2820",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-app",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2820/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2820/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2820/events",
+          "html_url": "https://github.com/PolicyEngine/policyengine-app/pull/2820",
+          "id": 3692110816,
+          "node_id": "PR_kwDOIS8n6s627u5I",
+          "number": 2820,
+          "title": "Update Node.js from 22 to 24 LTS",
+          "user": {
+            "login": "MaxGhenis",
+            "id": 6076111,
+            "node_id": "MDQ6VXNlcjYwNzYxMTE=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6076111?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/MaxGhenis",
+            "html_url": "https://github.com/MaxGhenis",
+            "followers_url": "https://api.github.com/users/MaxGhenis/followers",
+            "following_url": "https://api.github.com/users/MaxGhenis/following{/other_user}",
+            "gists_url": "https://api.github.com/users/MaxGhenis/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/MaxGhenis/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/MaxGhenis/subscriptions",
+            "organizations_url": "https://api.github.com/users/MaxGhenis/orgs",
+            "repos_url": "https://api.github.com/users/MaxGhenis/repos",
+            "events_url": "https://api.github.com/users/MaxGhenis/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/MaxGhenis/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [],
+          "state": "closed",
+          "locked": false,
+          "assignee": null,
+          "assignees": [],
+          "milestone": null,
+          "comments": 1,
+          "created_at": "2025-12-03T22:16:06Z",
+          "updated_at": "2025-12-03T22:21:27Z",
+          "closed_at": "2025-12-03T22:21:25Z",
+          "author_association": "CONTRIBUTOR",
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-app/pulls/2820",
+            "html_url": "https://github.com/PolicyEngine/policyengine-app/pull/2820",
+            "diff_url": "https://github.com/PolicyEngine/policyengine-app/pull/2820.diff",
+            "patch_url": "https://github.com/PolicyEngine/policyengine-app/pull/2820.patch",
+            "merged_at": "2025-12-03T22:21:25Z"
+          },
+          "body": "## Summary\n\nUpdate Node.js from 22.x to 24.x in CI workflows (pr.yml and push.yml).\n\n- Node.js 24 is now the Active LTS version (Krypton)\n- Node.js 22 moved to Maintenance LTS\n\n## Test plan\n\n- [ ] CI passes with Node.js 24\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+          "reactions": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2820/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2820/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null,
+          "score": 1,
+          "commits": 1,
+          "review_comments": 0,
+          "files": [
+            {
+              "filename": ".github/workflows/pr.yml",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2
+            },
+            {
+              "filename": ".github/workflows/push.yml",
+              "status": "modified",
+              "additions": 1,
+              "deletions": 1,
+              "changes": 2
             }
           ]
         }
@@ -14602,6 +14436,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-taxsim/issues/662/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -14676,6 +14511,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6913/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -14750,6 +14586,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/495/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -14824,6 +14661,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-core/issues/410/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -14898,6 +14736,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1437/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -14972,6 +14811,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1436/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -15088,6 +14928,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/givecalc/issues/70/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -15162,6 +15003,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1431/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -15236,6 +15078,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1429/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -15310,6 +15153,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/ri-ctc-calculator/issues/24/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -15394,6 +15238,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/givecalc/issues/64/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -15478,6 +15323,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/givecalc/issues/63/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -15562,6 +15408,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/givecalc/issues/62/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -15646,6 +15493,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/givecalc/issues/61/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -15730,6 +15578,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/givecalc/issues/60/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -15814,6 +15663,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/givecalc/issues/59/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -15888,6 +15738,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/givecalc/issues/58/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -15962,6 +15813,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/492/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -16078,6 +15930,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/ri-ctc-calculator/issues/22/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -16152,6 +16005,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/givecalc/issues/57/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -16268,6 +16122,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/givecalc/issues/56/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -16342,6 +16197,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/givecalc/issues/53/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -16416,6 +16272,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/ri-ctc-calculator/issues/20/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -16490,6 +16347,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1425/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -16564,6 +16422,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/uk-autumn-budget-lifecycle/issues/17/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -16638,6 +16497,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1422/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -16722,6 +16582,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-data/issues/238/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -16796,6 +16657,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1419/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -16880,6 +16742,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-data/issues/237/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -16954,6 +16817,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1417/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -17570,12 +17434,12 @@
         "bio": null
       },
       "stats": {
-        "commits": 2149,
+        "commits": 2150,
         "prs": 428,
         "prs_merged": 389,
         "reviews": 447,
         "issues": 479,
-        "repos": 26
+        "repos": 27
       },
       "repoCommits": {
         "obbba-household-explorer": 47,
@@ -17590,10 +17454,11 @@
         "us-nc-sources": 5,
         "new-york-credit-comparison": 8,
         "policyengine-api": 87,
+        "ai-webinar-slides": 1,
         "dc-office-comparison": 3,
         "dependent_exemptions_impact": 2,
         "us-household-demo": 9,
-        "policyengine-us": 543
+        "policyengine-us": 542
       },
       "monthlyPRs": [
         41,
@@ -17610,18 +17475,18 @@
         14
       ],
       "monthlyCommits": [
-        74,
-        78,
-        111,
-        84,
-        55,
+        29,
         30,
-        54,
-        7,
-        146,
+        39,
+        27,
+        55,
+        36,
+        162,
+        42,
+        205,
         123,
         74,
-        164
+        178
       ],
       "prs": [
         {
@@ -18917,7 +18782,7 @@
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-11T01:32:25Z",
-          "updated_at": "2026-01-04T17:48:02Z",
+          "updated_at": "2026-02-13T22:14:59Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -18947,7 +18812,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 3,
+          "commits": 4,
           "review_comments": 0,
           "files": [
             {
@@ -18963,13 +18828,6 @@
               "additions": 35,
               "deletions": 0,
               "changes": 35
-            },
-            {
-              "filename": "CLAUDE.md",
-              "status": "added",
-              "additions": 174,
-              "deletions": 0,
-              "changes": 174
             },
             {
               "filename": "issue_analysis/README.md",
@@ -19236,7 +19094,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": false,
+          "locked": true,
           "assignee": null,
           "assignees": [],
           "milestone": null,
@@ -21657,7 +21515,7 @@
           },
           "labels": [],
           "state": "open",
-          "locked": false,
+          "locked": true,
           "assignee": null,
           "assignees": [],
           "milestone": null,
@@ -21837,7 +21695,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": false,
+          "locked": true,
           "assignee": null,
           "assignees": [],
           "milestone": null,
@@ -21968,7 +21826,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": false,
+          "locked": true,
           "assignee": null,
           "assignees": [],
           "milestone": null,
@@ -22389,9 +22247,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 5,
+          "comments": 7,
           "created_at": "2025-12-30T15:59:58Z",
-          "updated_at": "2026-02-01T22:52:38Z",
+          "updated_at": "2026-02-12T17:38:20Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -24271,6 +24129,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/crfb-tob-impacts/issues/60/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -24345,6 +24204,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/crfb-tob-impacts/issues/59/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -24419,6 +24279,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/analysis-notebooks/issues/105/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -24493,6 +24354,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/analysis-notebooks/issues/104/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -24567,6 +24429,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/analysis-notebooks/issues/103/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -24683,6 +24546,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/crfb-tob-impacts/issues/56/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -24757,6 +24621,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7022/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -24831,6 +24696,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7019/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -24905,6 +24771,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7018/timeline",
           "performed_via_github_app": null,
           "state_reason": "not_planned",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -24979,6 +24846,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7017/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25053,6 +24921,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7015/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25127,6 +24996,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6998/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25243,6 +25113,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6994/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25317,6 +25188,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6991/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25391,6 +25263,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6986/timeline",
           "performed_via_github_app": null,
           "state_reason": "not_planned",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25465,6 +25338,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6984/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25539,6 +25413,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6981/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25613,6 +25488,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6980/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25648,15 +25524,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-15T01:36:31Z",
-          "updated_at": "2025-12-15T01:36:31Z",
-          "closed_at": null,
+          "updated_at": "2026-02-16T00:14:15Z",
+          "closed_at": "2026-02-16T00:14:15Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -25686,7 +25562,8 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6979/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25761,6 +25638,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6977/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25835,6 +25713,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6975/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25909,6 +25788,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6973/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -25983,6 +25863,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6968/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -26057,6 +25938,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6965/timeline",
           "performed_via_github_app": null,
           "state_reason": "not_planned",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -26131,6 +26013,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6964/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -26205,6 +26088,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-taxsim/issues/665/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -26279,6 +26163,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6961/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -26353,6 +26238,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6959/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -26427,6 +26313,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6958/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -26501,6 +26388,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6956/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -35003,6 +34891,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-data/issues/236/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -35138,6 +35027,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/337/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -35273,6 +35163,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2771/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -35389,6 +35280,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2767/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -35505,6 +35397,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2758/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -35621,6 +35514,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1343/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -35737,6 +35631,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2748/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -35853,6 +35748,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1333/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -35969,6 +35865,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-data/issues/186/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -36104,6 +36001,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2741/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -36239,6 +36137,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1328/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -36355,6 +36254,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/uk-vatlab/issues/12/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -36471,6 +36371,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/uk-vatlab/issues/4/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -36587,6 +36488,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1268/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -36703,6 +36605,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1234/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -36819,6 +36722,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6229/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -36966,6 +36870,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2660/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -37092,6 +36997,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2654/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -37239,6 +37145,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2619/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -37355,6 +37262,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/uk-public-services-imputation/issues/8/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -37471,6 +37379,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/uk-public-services-imputation/issues/5/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -37587,6 +37496,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/uk-public-services-imputation/issues/2/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -37713,6 +37623,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1146/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -37829,6 +37740,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1143/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -37945,6 +37857,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1141/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -38061,6 +37974,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/structural-reforms-demo/issues/2/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -38177,6 +38091,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1134/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -38303,6 +38218,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1123/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -38387,6 +38303,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2547/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -38513,6 +38430,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2541/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -46288,6 +46206,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7066/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -46404,6 +46323,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7004/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -46520,6 +46440,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7003/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -46636,6 +46557,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/509/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -46710,6 +46632,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/358/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -46826,6 +46749,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6910/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -46942,6 +46866,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/454/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -47058,6 +46983,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6893/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -47174,6 +47100,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6892/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -47290,6 +47217,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/461/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -47406,6 +47334,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/445/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -47522,6 +47451,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6846/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -47638,6 +47568,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6840/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -47754,6 +47685,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6809/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -47870,6 +47802,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2806/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -47986,6 +47919,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6745/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -48112,6 +48046,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6732/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -48228,6 +48163,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6683/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -48344,6 +48280,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6656/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -48470,6 +48407,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6629/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -48596,6 +48534,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6624/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -48712,6 +48651,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/ACA-Calc/issues/4/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -48828,6 +48768,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/ACA-Calc/issues/2/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -48944,6 +48885,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2764/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -49060,6 +49002,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2762/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -49134,6 +49077,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/pulse/issues/1/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -49250,6 +49194,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2724/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -49366,6 +49311,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6366/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -49482,6 +49428,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6365/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -49598,6 +49545,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6364/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -50217,7 +50165,7 @@
         "commits": 688,
         "prs": 168,
         "prs_merged": 126,
-        "reviews": 76,
+        "reviews": 77,
         "issues": 132,
         "repos": 5
       },
@@ -56520,6 +56468,77 @@
       ],
       "reviews": [
         {
+          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/events",
+          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065",
+          "id": 3770617564,
+          "node_id": "PR_kwDOFqFFMc66_i2_",
+          "number": 7065,
+          "title": "Update Kansas 2025 Individual Income Tax Model",
+          "user": {
+            "login": "DTrim99",
+            "id": 178813244,
+            "node_id": "U_kgDOCqh5PA",
+            "avatar_url": "https://avatars.githubusercontent.com/u/178813244?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/DTrim99",
+            "html_url": "https://github.com/DTrim99",
+            "followers_url": "https://api.github.com/users/DTrim99/followers",
+            "following_url": "https://api.github.com/users/DTrim99/following{/other_user}",
+            "gists_url": "https://api.github.com/users/DTrim99/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/DTrim99/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/DTrim99/subscriptions",
+            "organizations_url": "https://api.github.com/users/DTrim99/orgs",
+            "repos_url": "https://api.github.com/users/DTrim99/repos",
+            "events_url": "https://api.github.com/users/DTrim99/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/DTrim99/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [],
+          "state": "open",
+          "locked": false,
+          "assignee": null,
+          "assignees": [],
+          "milestone": null,
+          "comments": 7,
+          "created_at": "2025-12-30T15:59:58Z",
+          "updated_at": "2026-02-12T17:38:20Z",
+          "closed_at": null,
+          "author_association": "COLLABORATOR",
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/7065",
+            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065",
+            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065.diff",
+            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065.patch",
+            "merged_at": null
+          },
+          "body": "## Summary\n\nWork in progress implementation of Kansas 2025 individual income tax updates.\n\nFixes #7064\n\n### Key Changes\n\n- **Disabled Veteran Exemption**: Update from $2,250 to $2,320 for 2025\n- **2025 References**: Add ip25.pdf references to all Kansas income tax parameters\n- **Food Sales Tax Credit Sunset**: Implement sunset (returns $0 for 2025+)\n- **Pregnancy Resource Act Credit (K-94)**: New credit - 70% of charitable contributions to eligible organizations\n- **Integration Tests**: Add 2025-specific tests\n\n## Status\n\n- [ ] Documentation collected\n- [ ] Parameters updated\n- [ ] Variables implemented\n- [ ] Tests written\n- [ ] CI passing\n\n## Reference Documents\n\n- [2025 Kansas Individual Income Tax Booklet (ip25.pdf)](https://www.ksrevenue.gov/pdf/ip25.pdf)\n- [Pregnancy Resource Credit](https://www.ksrevenue.gov/prtaxcredits-pregnancy.html)\n- [K.S.A. 79-32,309](https://www.ksrevenue.gov/prtaxcredits-pregnancy.html) - Pregnancy Resource Act\n\n---\n*This is a draft PR created for early visibility. Implementation work is in progress.*",
+          "reactions": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null,
+          "score": 1
+        },
+        {
           "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7031",
           "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
           "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7031/labels{/name}",
@@ -58347,12 +58366,12 @@
           "milestone": null,
           "comments": 2,
           "created_at": "2025-09-24T17:18:09Z",
-          "updated_at": "2026-02-02T13:58:28Z",
+          "updated_at": "2026-02-16T05:54:09Z",
           "closed_at": null,
           "author_association": "NONE",
           "type": null,
           "active_lock_reason": null,
-          "draft": true,
+          "draft": false,
           "pull_request": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/6596",
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6596",
@@ -58360,7 +58379,7 @@
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6596.patch",
             "merged_at": null
           },
-          "body": "Fixes https://github.com/PolicyEngine/policyengine-us/issues/6397",
+          "body": "## Summary\n\nImplements Montana Temporary Assistance for Needy Families (TANF) program.\n\nCloses #6397\n\n---\n\n## Montana TANF Income Rules\n\n### Regulatory Authority\n- **MT DPHHS TANF Manual** (Chapters 001-705)\n- **Montana Administrative Rules** (ARM 37.78.xxx)\n- **TANF State Plan** ([Income Standards, p.10](https://dphhs.mt.gov/assets/hcsd/TANF/TANFStatePlan.pdf#page=10))\n\n---\n\n### 1. Income Eligibility Tests\n\n#### Gross Monthly Income (GMI) Test\n- **Limit:** Net Income Standard x 1.85\n- **Definition:** Total gross earned + unearned income of all assistance unit members\n\nSource: [TANF 001 Monthly Income Standards](https://dphhs.mt.gov/assets/hcsd/tanfmanual/TANF001.pdf)\n\n#### Benefit Standard Test\n- **Limit:** 30% of FPG for the assistance unit size\n- **Definition:** Countable income (after all disregards/deductions) must be below the benefit standard\n\nSource: [TANF State Plan - Income Standards, p.10](https://dphhs.mt.gov/assets/hcsd/TANF/TANFStatePlan.pdf#page=10)\n\n#### Payment Standard Test\n- **Limit:** 35% of FPG for the assistance unit size\n- **Definition:** Countable income must be below the payment standard\n\nSource: [TANF State Plan - Income Standards, p.10](https://dphhs.mt.gov/assets/hcsd/TANF/TANFStatePlan.pdf#page=10)\n\n---\n\n### 2. Income Deductions & Exemptions\n\n#### A. Work-Related Expense Deduction\n- **Amount:** $200/month flat deduction from gross earned income per person\n\nSource: [TANF 602-1 Income Disregards](https://dphhs.mt.gov/assets/hcsd/tanfmanual/tanf602-1jan012018.pdf), [ARM 37.78.406(2)(a)](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.406)\n\n#### B. Earned Income Disregard\n- **Amount:** 25% of remaining earned income (after work expense deduction)\n\nSource: [TANF 602-1 Income Disregards](https://dphhs.mt.gov/assets/hcsd/tanfmanual/tanf602-1jan012018.pdf), [ARM 37.78.406(2)(b)](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.406)\n\n#### C. Dependent Care Deduction\n- **Amount:** Up to $200/month per eligible dependent child or incapacitated adult\n\nSource: [TANF 602-1 Income Disregards](https://dphhs.mt.gov/assets/hcsd/tanfmanual/tanf602-1jan012018.pdf), [ARM 37.78.406(2)](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.406)\n\n#### D. Child Support Obligation Deduction\n- **Amount:** Legally-binding child support paid to non-household members is subtracted from countable income\n\nSource: [TANF 602-1 Income Disregards (step d)](https://dphhs.mt.gov/assets/hcsd/tanfmanual/tanf602-1jan012018.pdf)\n\n---\n\n### 3. Income Standards (FPG-Based)\n\nAll standards are derived from the Federal Poverty Guidelines for the assistance unit size:\n\n| Standard | Formula |\n|----------|---------|\n| Payment Standard | FPG x 0.35 |\n| Benefit Standard | FPG x 0.30 |\n| Net Income Standard | Benefit Standard / 0.785 |\n| Gross Income Standard | Net Income Standard x 1.85 |\n\nSource: [TANF State Plan - Income Standards, p.10](https://dphhs.mt.gov/assets/hcsd/TANF/TANFStatePlan.pdf#page=10), [TANF 001 Monthly Income Standards](https://dphhs.mt.gov/assets/hcsd/tanfmanual/TANF001.pdf)\n\n---\n\n### 4. Benefit Calculation\n\n#### Formula:\n```\nBenefit = Payment Standard - Countable Income\n```\n\nWhere **Countable Income** =\n```\nmax(Countable Earned Income + Gross Unearned Income - Dependent Care Deduction - Child Support Expense, 0)\n```\n\nAnd **Countable Earned Income** (per person) =\n```\n(Gross Earned Income - $200 work expense) - 25% of remainder\n```\n\n#### Calculation Steps:\n1. Determine gross earned income per person\n2. Subtract $200 work-related expense deduction\n3. Subtract 25% earned income disregard from remainder\n4. Sum across assistance unit members = Countable Earned Income\n5. Add gross unearned income\n6. Subtract dependent care deduction\n7. Subtract child support obligation\n8. Subtract countable income from Payment Standard = **Benefit**\n\nSource: [ARM 37.78.420](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.420), [TANF 602-1 Income Disregards](https://dphhs.mt.gov/assets/hcsd/tanfmanual/tanf602-1jan012018.pdf)\n\n---\n\n### 5. Additional Program Rules\n\n#### Work Requirements\n\n| Household Type | Required Hours/Week |\n|----------------|-------------------|\n| Single parent, youngest child < 6 | 27 |\n| Single parent, youngest child >= 6 | 33 |\n| Two-parent household (each able parent) | 33 |\n\n- Incapacitated parents are excluded from the two-parent determination (treated as single-parent for hours)\n- Disabled persons and eligible children are exempt from work requirements\n\nSource: [TANF 705-1 Participation Hours](https://dphhs.mt.gov/assets/hcsd/tanfmanual/TANF705.1.pdf)\n\n#### Resource Limit\n- **Limit:** $3,000\n\nSource: [ARM 37.78.401](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.401), [TANF 402-1 Countable and Excluded Resources](https://dphhs.mt.gov/assets/hcsd/tanfmanual/TANF4021May012021.pdf)\n\n#### Assistance Unit Exclusions\n- Persons receiving SSI are excluded ([ARM 37.78.220](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.220))\n- Persons in foster care are excluded ([ARM 37.78.208](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.206))\n\n#### Immigration Status\n- Qualified noncitizen statuses accepted: Refugee, Asylee, Deportation Withheld, Paroled 1+ Year, Conditional Entrant, Legal Permanent Resident, Cuban/Haitian Entrant\n\nSource: [ARM 37.78.220](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.220)\n\n---\n\n### 6. Known Limitation: FPG Year Not Pinned\n\nThe income standards in this implementation are derived from the **current period's FPG**. However, Montana's [TANF 001 manual](https://dphhs.mt.gov/assets/hcsd/tanfmanual/TANF001.pdf) (effective July 2025) shows all cash assistance standards are still based on the **2023 FPL** — they have not updated to 2024 or 2025 FPL. This means the implementation will overstate standards for simulation periods after 2023 (e.g., payment standard of ~$439 for AU=1 in 2024 vs actual $425).\n\nPinning the FPG lookup to the 2023 year will be addressed in a follow-up PR. See [#6824](https://github.com/PolicyEngine/policyengine-us/issues/6824) for full details and historical timeline.",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6596/reactions",
             "total_count": 0,
@@ -58661,77 +58680,6 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1
-        },
-        {
-          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6489",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6489/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6489/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6489/events",
-          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6489",
-          "id": 3376109576,
-          "node_id": "PR_kwDOFqFFMc6mdd6Y",
-          "number": 6489,
-          "title": "Add maximum payment variable for NC SCCA",
-          "user": {
-            "login": "hua7450",
-            "id": 113824411,
-            "node_id": "U_kgDOBsjSmw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/113824411?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/hua7450",
-            "html_url": "https://github.com/hua7450",
-            "followers_url": "https://api.github.com/users/hua7450/followers",
-            "following_url": "https://api.github.com/users/hua7450/following{/other_user}",
-            "gists_url": "https://api.github.com/users/hua7450/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/hua7450/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/hua7450/subscriptions",
-            "organizations_url": "https://api.github.com/users/hua7450/orgs",
-            "repos_url": "https://api.github.com/users/hua7450/repos",
-            "events_url": "https://api.github.com/users/hua7450/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/hua7450/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [],
-          "state": "closed",
-          "locked": false,
-          "assignee": null,
-          "assignees": [],
-          "milestone": null,
-          "comments": 3,
-          "created_at": "2025-09-02T13:43:24Z",
-          "updated_at": "2025-09-04T09:30:04Z",
-          "closed_at": "2025-09-04T09:29:53Z",
-          "author_association": "COLLABORATOR",
-          "type": null,
-          "active_lock_reason": null,
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/6489",
-            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6489",
-            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6489.diff",
-            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6489.patch",
-            "merged_at": "2025-09-04T09:29:53Z"
-          },
-          "body": "Fixes #6456",
-          "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6489/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6489/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null,
-          "score": 1
         }
       ],
       "issues": [
@@ -58817,6 +58765,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7075/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -58891,6 +58840,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7073/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -58965,6 +58915,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7070/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -59049,6 +59000,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7068/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -59133,6 +59085,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7062/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -59217,6 +59170,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7052/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -59301,6 +59255,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7047/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -59385,6 +59340,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7045/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -59469,6 +59425,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7043/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -59553,6 +59510,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7040/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -59637,6 +59595,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7038/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -59721,6 +59680,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7037/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -59795,6 +59755,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7034/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -59869,6 +59830,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7033/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -59943,6 +59905,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-claude/issues/37/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -60059,6 +60022,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-claude/issues/36/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -60133,6 +60097,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7030/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -60249,6 +60214,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7028/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -60323,6 +60289,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7026/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -60397,6 +60364,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7025/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -60513,6 +60481,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7024/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -60587,6 +60556,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7023/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -60661,6 +60631,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-claude/issues/35/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -60735,6 +60706,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7014/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -60809,6 +60781,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7013/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -60883,6 +60856,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7012/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -60999,6 +60973,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7000/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -61083,6 +61058,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6970/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -61199,6 +61175,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6962/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -61315,6 +61292,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6950/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -61330,6 +61308,426 @@
           "message": "minor",
           "date": "2025-05-30T20:11:21.000-04:00",
           "repo": "policyengine-app"
+        },
+        {
+          "sha": "6b5a38a81540683b15d77cb60dac7e5503a0ef1f",
+          "message": "Merge pull request #6963 from hua7450/hua7450/issue6962",
+          "date": "2025-12-18T10:54:22.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "dc31365a5b9f9500199616fcfc8ca89fbdf07fc6",
+          "message": "Merge branch 'main' into hua7450/issue6962",
+          "date": "2025-12-18T10:35:23.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "81914bc8500dd6527b0d3255b675db9357a8885a",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into hua7450/issue6962",
+          "date": "2025-12-17T12:20:23.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "536b451a2428badcd343410400277090cad0d344",
+          "message": "7 batches in structural other",
+          "date": "2025-12-17T12:19:53.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "5c74fcb0def9e410de4f15f2e984661b401c6337",
+          "message": "states has its own check",
+          "date": "2025-12-17T12:02:51.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "43577e5659053a524a4ac6ef706134615c5cd2e5",
+          "message": "uv upgrade",
+          "date": "2025-12-16T00:22:20.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "97e6d4ad966126961880fb25afe750edf6b689cc",
+          "message": "Experiment: Faster CI timing",
+          "date": "2025-12-16T00:21:51.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "7fd44e0961871ea192907ed6082f010ab8862bba",
+          "message": "uv",
+          "date": "2025-12-15T10:51:06.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "9cb85c1017dd0b13fc0ff48e9549a88c218e240a",
+          "message": "uv lock",
+          "date": "2025-12-13T18:26:21.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "12bf8dbae2ea5143e01ca5dd6088154156babb02",
+          "message": "contrib: 6 memory-balanced batches",
+          "date": "2025-12-12T22:50:12.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "9fe8ddbd6dd259d64ab9b677a8ca90a980ab90da",
+          "message": "contrib: 2 batches, crfb last",
+          "date": "2025-12-12T21:25:19.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "357e38189cf0dd1d070a05188281a45bd7951293",
+          "message": "consolidate contrib to 1 batch",
+          "date": "2025-12-12T20:58:04.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "5e22ebe7d0f045edf9fb9a37256cb6a915eb6873",
+          "message": "move crfb back",
+          "date": "2025-12-12T20:27:06.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "3de6ff16ece1276b50038ea137f7cfd601b6ff6b",
+          "message": "NY out",
+          "date": "2025-12-12T19:48:16.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "d14ecaa38b7610adb16bf4dfe8af78c4b6c5d1eb",
+          "message": "update",
+          "date": "2025-12-12T19:24:35.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "820b243f9f6af3aa83f2b697ea08eb7cfffe8230",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us",
+          "date": "2025-12-12T19:24:18.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "e543d44d21657e710faa00c16ed2d2016e65b672",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us",
+          "date": "2025-12-12T12:50:53.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "41ed364ed6c88c5a131f00ae32e4dcc4c19d6979",
+          "message": "Update PolicyEngine US",
+          "date": "2025-12-18T15:55:36.000Z",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "b348c65ce5d2be4cd370da78bf290b159d6b67c8",
+          "message": "uv",
+          "date": "2025-12-19T13:03:44.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "c49d40f6ecddb57c22e83c8b91d61f4e67fdc2c3",
+          "message": "Merge branch 'main' of https://github.com/PolicyEngine/policyengine-us into oh-tanf-simple",
+          "date": "2025-12-19T13:03:27.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "d64d9eb7b466c04959e0e1fbc343b390e7a98b47",
+          "message": "add test cases.",
+          "date": "2025-12-19T13:03:12.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "5de401cfbd9bd96ee1c598c8d18f7a21f77bcd13",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into oh-tanf-simple",
+          "date": "2025-12-13T03:03:04.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "387efc87697e961104f91a4856dfec045bcdc883",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into oh-tanf-simple",
+          "date": "2025-12-02T14:45:48.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "f31b1659613cbd473a645157231b60d9f5a49be5",
+          "message": "more adjustments",
+          "date": "2025-12-02T14:45:01.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "caced4613edbda7e59fb2e0771f2b09dd17f69c1",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into oh-tanf-simple",
+          "date": "2025-11-11T11:35:02.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "331e4f6fc480c0f909d784dbffee826c032fbc49",
+          "message": "update parameters",
+          "date": "2025-11-11T11:34:53.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "e5d11ace0b9e9138ab2034fe69781295e3dce132",
+          "message": "Update Ohio OWF payment standards and rename parameter",
+          "date": "2025-11-11T11:04:23.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "f3ab119a3644d26f1ce91f8c5238631c809a1926",
+          "message": "add test cases",
+          "date": "2025-11-11T09:52:22.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "b26603e21eb53b5b09579fd03ae957e235fb5126",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into oh-tanf-simple",
+          "date": "2025-11-11T09:29:18.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "14db3899d953e520e0092e2286ca015df91b71cd",
+          "message": "minor",
+          "date": "2025-11-11T09:29:08.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "3203c1f4f0a40bc69d56cdb80ce051af1f386c61",
+          "message": "delete unused files",
+          "date": "2025-11-10T14:47:10.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "2eb698c19b536b3e9403a18fc582765a35c20893",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into oh-tanf-simple",
+          "date": "2025-11-10T14:35:47.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "2f06d4d7ddf9a655fae9a578f3188ccbb4117506",
+          "message": "Rename OH TANF to OH OWF and add initial eligibility test",
+          "date": "2025-11-05T17:17:58.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "78f646b0a6c2943e3a6485430436707e32f7e6ba",
+          "message": "Refactor OH TANF structure and simplify income aggregation",
+          "date": "2025-11-04T17:48:09.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "42ed87cf1ea4b6cff636cb13806dbe68e448b91e",
+          "message": "Fix Ohio TANF period mismatch and remove orphaned parameter",
+          "date": "2025-11-04T17:33:50.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "c176f814158a0dd33cc03eb1e860c2cc659dba8d",
+          "message": "Add comprehensive unit tests with edge cases for Ohio TANF",
+          "date": "2025-11-04T17:20:27.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "6db81efcffb83d990893c6f9f5df4a0513ca7960",
+          "message": "Fix OH TANF countable income calculation to properly handle monthly disregards",
+          "date": "2025-11-04T17:14:15.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "0569e0bd2bda9db78a0bdfa3ebc91711c2addf64",
+          "message": "Add changelog entry for Ohio TANF implementation",
+          "date": "2025-11-04T17:08:34.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "ae16656568db9f7d4f73544e04872bc362704b9b",
+          "message": "Merge implementation from rules-engineer agent",
+          "date": "2025-11-04T17:05:38.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "55ac9741226c138448043be913edb05ba06d5a7e",
+          "message": "Implement Ohio TANF (Ohio Works First) following Rules Engineer Agent requirements",
+          "date": "2025-11-04T17:04:07.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "a06562b7aab5e7a01995fcbc7e06f0d0d3d9ff0a",
+          "message": "Add comprehensive integration tests for Ohio TANF (Ohio Works First)",
+          "date": "2025-11-04T16:41:15.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "0f97ba8c654406b13206528e5168acd21c089f99",
+          "message": "Initial commit for Ohio TANF implementation",
+          "date": "2025-11-04T16:11:54.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "b0e1680da2ab869f6960f1657c84b293b7ce11a8",
+          "message": "uv",
+          "date": "2025-12-19T12:16:38.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "ea3768ad7e49b0a369495c3fbc73c1085745dde6",
+          "message": "changelog",
+          "date": "2025-12-19T11:54:44.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "c5b64424ea72b1d6223aec475ada0aac53b5cf7f",
+          "message": "add 2024 benefit amount",
+          "date": "2025-12-19T11:54:34.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "bf9a04e369361543e8d0bbaca876d47ba06b8ca5",
+          "message": "Merge branch 'main' of https://github.com/PolicyEngine/policyengine-us into hua7450/issue6776",
+          "date": "2025-12-19T11:43:40.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "7245f20eae9b5a5a3e2dcb4fab98f582f61a08a5",
+          "message": "add formula for teen parent",
+          "date": "2025-12-19T11:43:18.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "2eeeaa9a2b872987f5eac7f10a38996e4d29eccd",
+          "message": "changes",
+          "date": "2025-12-16T22:06:54.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "109efd8148dbed6146144dccf79119ed6af16924",
+          "message": "Add kindergarten eligibility comment to PFAE age check",
+          "date": "2025-12-16T12:21:13.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "75696f21b46e886fca57eaf08dcc73bb28a1550d",
+          "message": "rename variable.",
+          "date": "2025-12-16T11:57:51.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "b96aabc8f5257b19eedb53ec75c657734f56a1bd",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into hua7450/issue6776",
+          "date": "2025-12-16T11:41:14.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "7b63a357bcc7697f5eecad357b344ed987d3bd1e",
+          "message": "rename",
+          "date": "2025-12-16T11:41:05.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "463f0e231c94332a1c1a1bdcffea88d53e43813c",
+          "message": "add more risk factor variables",
+          "date": "2025-12-16T11:19:47.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "b4b542e813e2f3b489fbc1972fc2d718b90f53ce",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into hua7450/issue6776",
+          "date": "2025-12-16T03:13:47.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "543aafd75c2bfa2ee9f22f2d88b32939158792ac",
+          "message": "a lot of changes",
+          "date": "2025-12-16T03:13:34.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "098f76a7291e66afb63a63ac1bf2fb535a91eb2e",
+          "message": "Refine PFA/PFAE eligibility model based on research",
+          "date": "2025-12-15T00:53:21.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "65dc1c17f17be9334471059a62a6a6cc92c4a6ea",
+          "message": "draft",
+          "date": "2025-12-15T00:04:58.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "248e0f5b3981a38d2109785bf504a707759dd2bb",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us",
+          "date": "2025-12-13T01:04:23.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "5615decc7e3faf2eb8ce69f8b4183bc7608f1e01",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into indiana-tanf-implementation",
+          "date": "2025-12-13T02:11:25.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "82e76a39aeea8c421c45ff095ee9d31cf2409964",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into indiana-tanf-implementation",
+          "date": "2025-12-08T17:43:58.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "0fbac30e96bb6688f41588cf3becb54211448822",
+          "message": "minor",
+          "date": "2025-12-08T17:43:41.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "5e97ffddd5ed13eb436c22f21dd0ba0327ea260b",
+          "message": "Remove auto-generated documentation files",
+          "date": "2025-11-26T00:25:35.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "63f3ed0cbdfea73a1f16828344475e3e9dc72caf",
+          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into indiana-tanf-implementation",
+          "date": "2025-11-25T22:38:28.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "581bed57745c12412334e7c61c7a64aed636be9c",
+          "message": "Refactor Indiana TANF income calculations and improve code structure",
+          "date": "2025-11-25T22:38:22.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "11e4df6d69defc9d34440ab2d02e5826474d88cf",
+          "message": "Add Indiana TANF resources eligibility check",
+          "date": "2025-11-23T20:20:31.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "323379afade27aecf900378d770223e6c17ebdc6",
+          "message": "fix",
+          "date": "2025-11-23T19:22:55.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "aafaaa86c183d6ee9bb83b8558867bf1b319dce7",
+          "message": "Fix Indiana TANF implementation issues",
+          "date": "2025-11-23T15:39:05.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "c973a3395b80815c2754e8be105a885015f0f4c4",
+          "message": "Fix Indiana TANF integration issues",
+          "date": "2025-11-23T15:13:07.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "67bd29336e5139f3d5b47dea094d57b64489ff95",
+          "message": "Add Indiana TANF implementation with zero hard-coded values",
+          "date": "2025-11-23T15:09:04.000-05:00",
+          "repo": "policyengine-us"
+        },
+        {
+          "sha": "d15d1f4bd592a1d1e16afcd8376abe86dacd77fd",
+          "message": "Initial setup for Indiana TANF implementation",
+          "date": "2025-11-23T14:39:40.000-05:00",
+          "repo": "policyengine-us"
         },
         {
           "sha": "d7cee52c9bc39dd6333f12d645f51d9839d3a4cf",
@@ -61497,426 +61895,6 @@
           "sha": "12249529085c9ea702511b26acd0cf76d19b76a6",
           "message": "Fix il_bcc_insurance_eligible to use receives_medicaid",
           "date": "2025-12-10T17:23:41.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "441b10c7b6a4e82792643562fb6e5b393520b8be",
-          "message": "uv lock upgrade",
-          "date": "2025-12-10T15:24:39.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "6106c9f6b3ff2010b96d17e72df730e23b3d4a62",
-          "message": "update",
-          "date": "2025-12-09T16:03:14.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "6fb8abe5bbd9048cc1a27275fd9767f477d8c8c3",
-          "message": "Fix IL qualified noncitizen status parameters and TANF immigration eligibility",
-          "date": "2025-12-09T15:23:57.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "b429a48cb33d162e9292c61a8bd92d95791a85a9",
-          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into hua7450/issue6904",
-          "date": "2025-12-08T23:07:56.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "4ae34c3fdffa6ea03169ff7939572f80cb814b03",
-          "message": "adjustments",
-          "date": "2025-12-08T23:07:41.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "a7d2a5e5f940326d963be2767d28ec54a3a2ef9c",
-          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into pa-tanf-simple",
-          "date": "2025-12-08T18:26:09.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "96815d485c2dd2eff7e303c0e71f879a70f05ba1",
-          "message": "adjustments",
-          "date": "2025-12-08T18:25:52.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "6c711a1fe8b9a3ed2d35256ab87fe0345f6fd2bf",
-          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into integration/mo-tanf-2025-11-23",
-          "date": "2025-12-08T16:57:51.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "c5a237adc9c0d283473616dd48a2356f1f8d65c1",
-          "message": "adjustments",
-          "date": "2025-12-08T16:57:47.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "3bf9e06e57619f6b367adeff78c1814c36f0cc5c",
-          "message": "minor",
-          "date": "2025-12-08T16:25:55.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "4fd02d551844239cbc15bffa577786eda92ac4e3",
-          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into integration/wi-tanf-20251123",
-          "date": "2025-12-08T16:24:38.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "0577264024407ec786dd34ab3113c028a88a053a",
-          "message": "add integration tests",
-          "date": "2025-12-08T16:24:14.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "f78b5d7f24cb0f7727ab96d47e18c1ff2be8cb7c",
-          "message": "Update PolicyEngine US",
-          "date": "2025-12-05T22:06:05.000Z",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "5bd53c5e640991953a303229c8dc73f16d745388",
-          "message": "Merge pull request #6883 from hua7450/hua7450/issue6782",
-          "date": "2025-12-05T17:05:40.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "d4f3d20fa386d527ab38002ded76aa0b657f21b3",
-          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into hua7450/issue6782",
-          "date": "2025-12-05T16:51:25.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "a6003f517fef318427dc48ed912fc4df78a54cdb",
-          "message": "minor",
-          "date": "2025-12-05T16:51:20.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "9ad06cb6fadad90665eebee39b98140ba8f607ed",
-          "message": "Update PolicyEngine US",
-          "date": "2025-12-05T21:40:28.000Z",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "792cd12506fe4ca71b6e1fb1045654ce4d4f4978",
-          "message": "Merge pull request #6882 from hua7450/hua7450/issue6786",
-          "date": "2025-12-05T16:40:02.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "e02fb74bfb440dbf1bb0660d7eab5f39d77d192c",
-          "message": "Update PolicyEngine US",
-          "date": "2025-12-05T21:39:46.000Z",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "9f52524dc4773e6c7914342b37d9e383c087a580",
-          "message": "Merge pull request #6881 from hua7450/hua7450/issue6785",
-          "date": "2025-12-05T16:39:20.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "5ded6934e26f656cb067fcef93d3e97de4070572",
-          "message": "add reference",
-          "date": "2025-12-05T16:01:34.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "c1133a6b9a357f4e6c189882d325b026c5ac33c9",
-          "message": "minor",
-          "date": "2025-12-04T13:09:51.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "aff9767d1502983374470fcc22c6526180b6f1ab",
-          "message": "minor",
-          "date": "2025-12-04T13:03:28.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "92498f3f32c914196d1807cc2aa17d1f8a0436b4",
-          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into hua7450/issue6904",
-          "date": "2025-12-04T13:01:33.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "328ff17c78286fe3557c4fd5fe9949c110c14a0b",
-          "message": "add test file",
-          "date": "2025-12-04T13:01:25.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "c8341480bee7cd4d4f6478e294e797ff74f0c4a1",
-          "message": "add new variable",
-          "date": "2025-12-04T12:53:03.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "ce22862dfd256a06820f012f17c96a76d3cb1416",
-          "message": "draft",
-          "date": "2025-12-04T11:09:36.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "262b29b8a79baab3747df95363c6ee6f34cb9829",
-          "message": "WIC eligibility formula missing demographic category check (#6896)",
-          "date": "2025-12-03T17:12:51.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "3474bb0c4f65fa609330cf97234b95419bf64fee",
-          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into hua7450/issue6782",
-          "date": "2025-12-02T17:37:12.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "e9993a3925f29c82c7fccaaeed4c8fe8d8f7639a",
-          "message": "minor",
-          "date": "2025-12-02T17:37:07.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "4c4b07d652eb852f9e884668feb6163da920d3e1",
-          "message": "Medicaid Presumptive Eligibility (pregnancy)",
-          "date": "2025-12-02T17:29:04.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "362988a9f047d611f5d6a8b56a9f46ec362cda48",
-          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into hua7450/issue6785",
-          "date": "2025-12-02T17:09:46.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "c3f2b81ff649c8c451163da0d7cecaddcfe88b22",
-          "message": "adjustments",
-          "date": "2025-12-02T17:09:41.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "a45b2e27d345c37f8e291f19bacf732f30f56003",
-          "message": "Merge branch 'master' of https://github.com/PolicyEngine/policyengine-us into integration/mo-tanf-2025-11-23",
-          "date": "2025-12-01T21:22:32.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "eec380fdaf80704e6201127d985482209f992c0d",
-          "message": "adjustments",
-          "date": "2025-12-01T21:22:01.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "6fe65a805ad50b6d2aa48a7f9f7c582067bf1e1c",
-          "message": "Illinois Family Planning Program",
-          "date": "2025-12-01T16:29:44.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "6676a0f9e63ec353b1840da8e3bbfc69343dce46",
-          "message": "Medicaid Presumptive Eligibility (pregnancy)",
-          "date": "2025-12-01T15:22:25.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "003a28144b257a1f0822cbafac86ab47dd63db7f",
-          "message": "Illinois Breast and Cervical Cancer Program (IBCCP)",
-          "date": "2025-12-01T13:56:48.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "4542dac8398d9080873c6060b849b002ccbcd406",
-          "message": "Illinois Health Benefits for Workers with Disabilities (Medicaid buy-in) (#6841)",
-          "date": "2025-11-26T13:22:01.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "f17bd87a17203a4969747c3aac1830a773725c57",
-          "message": "Remove old wi_tanf test files",
-          "date": "2025-11-26T09:49:02.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "894e173c7c5c09540ad9f3fe0ecf8e6e52552233",
-          "message": "Add README files for Wisconsin DCF parameters",
-          "date": "2025-11-26T00:26:45.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "2906d2ff4b6a3e09ff3c1608ae1db9802c6b74b6",
-          "message": "Remove auto-generated documentation files",
-          "date": "2025-11-26T00:23:21.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "8e32c70eba50d4e272cad6ff4777905c76f029cc",
-          "message": "Rename Wisconsin TANF to Wisconsin Works (W-2) with improvements",
-          "date": "2025-11-26T00:17:42.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "741027d8aa8c4ac0b56b5d5a7296b2ea57d269d0",
-          "message": "Fix Wisconsin TANF tests and clean up references",
-          "date": "2025-11-24T01:00:01.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "c127d233ad670a17d97e70b2c1105a62d8fbca7b",
-          "message": "Add changelog entry for Wisconsin TANF implementation",
-          "date": "2025-11-24T00:23:57.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "51dcb55b5568a7374bad26adeb941af0c6b1b592",
-          "message": "Fix basic integration issues",
-          "date": "2025-11-24T00:12:20.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "317147f5a6aef0fbe23be4cb640f5fccf3d28d6d",
-          "message": "Add Wisconsin TANF (W-2) variables and update parameters",
-          "date": "2025-11-24T00:06:18.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "2e4f36261e3d8959a1806bc7fb8c3898fe230972",
-          "message": "Add Wisconsin TANF (W-2) parameters",
-          "date": "2025-11-23T23:58:36.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "0363685b78bc829c96f673be41d3718c6912132e",
-          "message": "Add Wisconsin TANF tests from test-creator agent",
-          "date": "2025-11-24T00:07:49.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "660f2f25e4e6278ec110fb95e1828f77c0c5aa23",
-          "message": "Add documentation for Wisconsin TANF (W-2) implementation",
-          "date": "2025-11-23T23:54:44.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "fdc1ed13f1beb0044bfa849e762d5b519a6551cb",
-          "message": "Initial commit for Wisconsin TANF (W-2) implementation",
-          "date": "2025-11-23T23:38:57.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "e9495ac64f1798550cdf60c5819ab1710dc0cc0a",
-          "message": "Adjust SNAP student ineligibility formula (#6735)",
-          "date": "2025-11-25T06:22:11.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "8271754bd694320cf0d5c967afd3bd30aadcadb7",
-          "message": "Add Missouri TANF implementation with complete test suite",
-          "date": "2025-11-23T22:49:21.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "da8b05b4ec69fd5df7cbe21633b44c08088973ea",
-          "message": "Update changelog for Missouri TANF implementation",
-          "date": "2025-11-23T21:37:29.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "1ba4e1830a76576da9b78c38d37d1483f47772f3",
-          "message": "Merge tests from test-creator agent",
-          "date": "2025-11-23T21:31:18.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "eb0d1906bb9a680b6c0a8835820d7c47f05f5e15",
-          "message": "Add comprehensive unit and integration tests for Missouri TANF",
-          "date": "2025-11-23T21:25:23.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "457cbc4b5f7a09719e3674829a3aab0849eb6df3",
-          "message": "Initial commit for Missouri TANF implementation",
-          "date": "2025-11-23T20:31:08.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "6edb9e7d19caec27ae5b76b6d8b0e3b9c093a3dc",
-          "message": "SSI spousal deeming uses wrong FBR: couples lose /month when deeming applies (#6843)",
-          "date": "2025-11-21T18:46:34.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "fac98f87070fb3ee0457df72d3091f9ccaec70ae",
-          "message": "minor",
-          "date": "2025-11-12T15:54:29.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "8921f879b4b1838a74a1ce2e3ddf57b7755256f6",
-          "message": "Document income limit formula relationship to payment standards",
-          "date": "2025-11-12T15:38:11.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "cde108f5cab7fd0b02eadcdbfec1d4fc14b817fd",
-          "message": "Add historical resource limit and document income limit formula",
-          "date": "2025-11-12T15:37:50.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "a4804f8380f43cdf03a9517065c1373d7c4a7027",
-          "message": "Clean up parameter files and restructure to match PA/OH patterns",
-          "date": "2025-11-12T15:06:39.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "aaf7a267a4d04165c4e0b3d8121b96005f19d75b",
-          "message": "Refactor earned income disregard to match OH/PA pattern",
-          "date": "2025-11-12T14:13:27.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "3e7a6f84059aa5ea4b6a3fb2d049d9d0bf0def49",
-          "message": "Refactor WA TANF to follow PA TANF and OH OWF patterns",
-          "date": "2025-11-11T18:59:15.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "32e30995e15f0392c297f92e2a0870aa9569f093",
-          "message": "Refactor PA TANF countable income to use adds pattern",
-          "date": "2025-11-11T17:39:49.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "c45b004f928c96e63a030b04d025e80f44e465ab",
-          "message": "Fix WA TANF implementation issues",
-          "date": "2025-11-11T13:09:56.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "b1ae26a191d862413d35326e95e00242f4572609",
-          "message": "Add comprehensive unit tests for Washington TANF variables",
-          "date": "2025-11-11T12:30:29.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "f1ed26bcd9a04808f60d2c8e6b5d0ef2340f45c2",
-          "message": "Fix parameter structure for WA TANF scale parameters",
-          "date": "2025-11-11T12:20:02.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "5342f12d1bc8082a7bd86bc98037015730723e01",
-          "message": "Fix entity-level mismatches in WA TANF integration tests",
-          "date": "2025-11-11T12:16:45.000-05:00",
-          "repo": "policyengine-us"
-        },
-        {
-          "sha": "2ce8249a4d40dcfa94e0caa4a60083f78f0673b4",
-          "message": "Merge implementation and tests from rules-engineer agent",
-          "date": "2025-11-11T12:13:38.000-05:00",
           "repo": "policyengine-us"
         }
       ]
@@ -68227,6 +68205,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine.py/issues/205/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -68301,6 +68280,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2-alpha/issues/58/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -68375,6 +68355,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2-alpha/issues/49/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -68449,6 +68430,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2-alpha/issues/48/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -68523,6 +68505,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2-alpha/issues/17/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -68597,6 +68580,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/539/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -68671,6 +68655,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api/issues/3018/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -68745,6 +68730,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/535/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -68819,6 +68805,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk/issues/1461/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -68893,6 +68880,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/530/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -68967,6 +68955,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/528/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69041,6 +69030,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/526/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69115,6 +69105,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine.py/issues/203/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69189,6 +69180,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/524/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69263,6 +69255,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/380/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69337,6 +69330,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/378/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69411,6 +69405,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/376/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69485,6 +69480,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/520/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69559,6 +69555,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/374/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69633,6 +69630,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/372/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69707,6 +69705,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/370/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69781,6 +69780,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/517/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69855,6 +69855,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/368/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -69929,6 +69930,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/366/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -70003,6 +70005,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api/issues/2989/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -70077,6 +70080,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/363/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -70193,6 +70197,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine.py/issues/200/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -70309,6 +70314,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api/issues/2979/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -70425,6 +70431,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/513/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -70541,6 +70548,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/511/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -71244,9 +71252,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 5,
+          "comments": 7,
           "created_at": "2025-12-30T15:59:58Z",
-          "updated_at": "2026-02-01T22:52:38Z",
+          "updated_at": "2026-02-12T17:38:20Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -71276,15 +71284,15 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 12,
+          "commits": 14,
           "review_comments": 3,
           "files": [
             {
               "filename": "changelog_entry.yaml",
               "status": "modified",
-              "additions": 10,
+              "additions": 8,
               "deletions": 0,
-              "changes": 10
+              "changes": 8
             },
             {
               "filename": "policyengine_us/parameters/gov/states/ks/tax/income/agi/subtractions/oasdi/agi_limit.yaml",
@@ -71317,37 +71325,23 @@
             {
               "filename": "policyengine_us/parameters/gov/states/ks/tax/income/credits/food_sales_tax/amount.yaml",
               "status": "modified",
-              "additions": 7,
-              "deletions": 2,
-              "changes": 9
+              "additions": 4,
+              "deletions": 1,
+              "changes": 5
+            },
+            {
+              "filename": "policyengine_us/parameters/gov/states/ks/tax/income/credits/nonrefundable_after_eitc.yaml",
+              "status": "modified",
+              "additions": 3,
+              "deletions": 0,
+              "changes": 3
             },
             {
               "filename": "policyengine_us/parameters/gov/states/ks/tax/income/credits/nonrefundable_before_eitc.yaml",
               "status": "modified",
-              "additions": 7,
+              "additions": 2,
               "deletions": 0,
-              "changes": 7
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ks/tax/income/credits/pregnancy_resource_act/org_cap.yaml",
-              "status": "added",
-              "additions": 15,
-              "deletions": 0,
-              "changes": 15
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ks/tax/income/credits/pregnancy_resource_act/rate.yaml",
-              "status": "added",
-              "additions": 16,
-              "deletions": 0,
-              "changes": 16
-            },
-            {
-              "filename": "policyengine_us/parameters/gov/states/ks/tax/income/credits/pregnancy_resource_act/statewide_cap.yaml",
-              "status": "added",
-              "additions": 15,
-              "deletions": 0,
-              "changes": 15
+              "changes": 2
             },
             {
               "filename": "policyengine_us/parameters/gov/states/ks/tax/income/deductions/standard/base_amount.yaml",
@@ -71439,20 +71433,6 @@
               "additions": 158,
               "deletions": 0,
               "changes": 158
-            },
-            {
-              "filename": "policyengine_us/tests/policy/baseline/gov/states/ks/tax/income/ks_pregnancy_resource_act_credit.yaml",
-              "status": "added",
-              "additions": 123,
-              "deletions": 0,
-              "changes": 123
-            },
-            {
-              "filename": "policyengine_us/variables/gov/states/ks/tax/income/credits/ks_pregnancy_resource_act_credit.py",
-              "status": "added",
-              "additions": 35,
-              "deletions": 0,
-              "changes": 35
             },
             {
               "filename": "uv.lock",
@@ -78152,9 +78132,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 2,
+          "comments": 4,
           "created_at": "2025-08-25T15:12:02Z",
-          "updated_at": "2025-12-18T13:17:53Z",
+          "updated_at": "2026-02-11T18:39:31Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -78259,6 +78239,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7064/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -78333,6 +78314,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7060/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -78407,6 +78389,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7056/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -78481,6 +78464,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7054/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -78597,6 +78581,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7009/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -78713,6 +78698,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/analysis-notebooks/issues/101/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -78829,6 +78815,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6996/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -78945,6 +78932,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/analysis-notebooks/issues/99/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -79019,6 +79007,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6989/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -79093,6 +79082,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6988/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -79209,6 +79199,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6920/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -79325,6 +79316,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6915/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -79441,6 +79433,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6900/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -79557,6 +79550,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6888/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -79673,6 +79667,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/analysis-notebooks/issues/97/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -79789,6 +79784,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6870/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -79905,6 +79901,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/ri-ctc-calculator/issues/18/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -80021,6 +80018,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/crfb-tob-impacts/issues/48/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -80095,6 +80093,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/analysis-notebooks/issues/95/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -80211,6 +80210,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/ri-ctc-calculator/issues/16/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -80327,6 +80327,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6838/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -80462,6 +80463,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6833/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -80578,6 +80580,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6828/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -80694,6 +80697,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6822/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -80810,6 +80814,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/ri-ctc-calculator/issues/14/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -80926,6 +80931,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/ri-ctc-calculator/issues/12/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -81000,6 +81006,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/analysis-notebooks/issues/91/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -81116,6 +81123,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/ri-ctc-calculator/issues/10/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -81232,6 +81240,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/395/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -81348,6 +81357,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2807/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -87926,6 +87936,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7020/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88000,6 +88011,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/spm-calculator/issues/3/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88074,6 +88086,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-core/issues/418/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88148,6 +88161,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-core/issues/417/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88222,6 +88236,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/459/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88296,6 +88311,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/spm-calculator/issues/1/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88370,6 +88386,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6937/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88444,6 +88461,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6925/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88518,6 +88536,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/458/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88592,6 +88611,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6916/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88666,6 +88686,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-core/issues/412/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88740,6 +88761,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6890/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88814,6 +88836,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-core/issues/405/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88888,6 +88911,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microdf/issues/265/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -88962,6 +88986,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microdf/issues/264/timeline",
           "performed_via_github_app": null,
           "state_reason": "not_planned",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -89046,6 +89071,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-core/issues/404/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -89120,6 +89146,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/444/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -89194,6 +89221,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/134/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -89310,6 +89338,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/133/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -89384,6 +89413,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-core/issues/400/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -89467,6 +89497,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-core/issues/398/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -89541,6 +89572,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/L0/issues/33/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -89657,6 +89689,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/110/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -89731,6 +89764,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/L0/issues/30/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -89805,6 +89839,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6472/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -89921,6 +89956,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6457/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -90005,6 +90041,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/435/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -90079,6 +90116,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-data/issues/24/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -90153,6 +90191,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6423/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -90227,6 +90266,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/432/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -93964,6 +94004,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-sources/issues/38/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -94080,6 +94121,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-sources/issues/34/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -94196,6 +94238,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-sources/issues/31/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -94312,6 +94355,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-sources/issues/30/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -94428,6 +94472,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-sources/issues/29/timeline",
           "performed_via_github_app": null,
           "state_reason": "reopened",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -94544,6 +94589,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-sources/issues/22/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -94618,6 +94664,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-sources/issues/17/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -94692,6 +94739,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-sources/issues/11/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -98245,6 +98293,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/obbba-household-by-household/issues/107/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -98319,6 +98368,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/obbba-household-by-household/issues/106/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -98402,6 +98452,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/obbba-household-by-household/issues/105/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -98518,6 +98569,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/378/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -98634,6 +98686,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/377/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -98717,6 +98770,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-congressional-districts/issues/37/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -98819,6 +98873,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/345/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -98893,6 +98948,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/obbba-household-by-household/issues/6/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -98967,6 +99023,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/obbba-household-by-household/issues/3/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -99083,6 +99140,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/obbba-household-by-household/issues/2/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -99166,6 +99224,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microcalibrate/issues/2/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -99282,6 +99341,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-congressional-districts/issues/13/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -99398,6 +99458,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-congressional-districts/issues/12/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -99472,6 +99533,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-data/issues/118/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -99588,6 +99650,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6089/timeline",
           "performed_via_github_app": null,
           "state_reason": "not_planned",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -99714,6 +99777,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6086/timeline",
           "performed_via_github_app": null,
           "state_reason": "not_planned",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -99830,6 +99894,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6084/timeline",
           "performed_via_github_app": null,
           "state_reason": "not_planned",
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -107223,6 +107288,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/537/timeline",
           "performed_via_github_app": null,
           "state_reason": "reopened",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -107297,6 +107363,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/531/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -107371,6 +107438,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/516/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -107445,6 +107513,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/500/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -107561,6 +107630,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/498/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -107635,6 +107705,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/482/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -107751,6 +107822,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/463/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -107825,6 +107897,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/417/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -107860,15 +107933,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 0,
+          "comments": 1,
           "created_at": "2025-11-11T18:11:42Z",
-          "updated_at": "2025-11-11T18:12:09Z",
-          "closed_at": null,
+          "updated_at": "2026-02-10T20:21:00Z",
+          "closed_at": "2026-02-10T20:21:00Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -107898,7 +107971,8 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/401/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "not_planned",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -107973,6 +108047,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/383/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -108047,6 +108122,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/381/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -108163,6 +108239,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/380/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -108237,6 +108314,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/375/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -108312,6 +108390,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/367/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -108428,6 +108507,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/366/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -108512,6 +108592,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/358/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -108629,6 +108710,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/296/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -108704,6 +108786,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/295/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -108778,6 +108861,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/217/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -108852,6 +108936,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/209/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -108968,6 +109053,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/125/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -109084,6 +109170,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/110/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -109200,6 +109287,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/82/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -109316,6 +109404,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/60/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -109432,6 +109521,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/59/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -109548,6 +109638,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/58/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -109664,6 +109755,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/57/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -109780,6 +109872,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/issues/37/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -109896,6 +109989,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/267/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -109970,6 +110064,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api-v2/issues/214/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -111227,6 +111322,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-sources/issues/27/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -111301,6 +111397,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-sources/issues/14/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -111375,6 +111472,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-sources/issues/13/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -111449,6 +111547,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/us-sources/issues/12/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -118982,6 +119081,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/153/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -119056,6 +119156,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/152/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -119172,6 +119273,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/150/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -119288,6 +119390,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/147/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -119405,6 +119508,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/143/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -119479,6 +119583,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/141/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -119596,6 +119701,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/140/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -119670,6 +119776,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/137/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -119786,6 +119893,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/136/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -119860,6 +119968,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/132/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -119934,6 +120043,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/128/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -120050,6 +120160,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/125/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -120166,6 +120277,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/124/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -120283,6 +120395,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/123/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -120399,6 +120512,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/122/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -120516,6 +120630,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/119/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -120632,6 +120747,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/118/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -120748,6 +120864,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/117/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -120864,6 +120981,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/116/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -120980,6 +121098,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/115/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -121054,6 +121173,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/114/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -121170,6 +121290,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microimpute/issues/112/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -121244,6 +121365,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microcalibrate/issues/86/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -121318,6 +121440,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-data/issues/22/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -121392,6 +121515,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-core/issues/394/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -121466,6 +121590,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-data/issues/21/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -121582,6 +121707,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-data/issues/20/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -121656,6 +121782,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-data/issues/19/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -121730,6 +121857,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/L0/issues/23/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         },
         {
@@ -121804,6 +121932,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microcalibrate/issues/84/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         }
       ],
@@ -126946,6 +127075,7 @@
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-api/issues/2590/timeline",
           "performed_via_github_app": null,
           "state_reason": "completed",
+          "pinned_comment": null,
           "score": 1
         }
       ],
