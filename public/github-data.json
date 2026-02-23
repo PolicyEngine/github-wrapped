@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-16T06:30:07.647Z",
+  "fetchedAt": "2026-02-23T06:30:41.129Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -12,7 +12,7 @@
         "github": "nikhilwoodruff",
         "name": "Nikhil Woodruff",
         "avatar": "https://avatars.githubusercontent.com/u/35577657?v=4",
-        "estimatedActivity": 642,
+        "estimatedActivity": 645,
         "aliases": [
           "nwoodruff-co"
         ],
@@ -7967,114 +7967,6 @@
           "repo": "policyengine-github-agent"
         },
         {
-          "sha": "fa0425e0a7d8a71fbb1fa19e9fa2c5080b456ccb",
-          "message": "Fix asset path handling for production builds",
-          "date": "2025-11-02T15:06:37.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "8bf7e3e83e28f284d4dd22d17f629fff586cec17",
-          "message": "Add slide to tech slides",
-          "date": "2025-11-02T16:49:15.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "a4e937f7ef9dae5ab17d50e9b2b7130c29b28ccb",
-          "message": "Reformat data output slide to match presentation style",
-          "date": "2025-11-02T16:29:24.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "bb9d5a74024b727baaf7b5cd2c865ec2256d57cd",
-          "message": "Prevent F key fullscreen on microcalibrate dashboard slide",
-          "date": "2025-11-02T15:20:52.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "3534d3eae913595e21b5b737fbbd2ad2236e05f9",
-          "message": "Merge pull request #13 from PolicyEngine/local-area-presentation",
-          "date": "2025-11-02T15:00:10.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "21be7f6622fc550c9381f61a0aa624b43213fee1",
-          "message": "Merge branch 'main' into local-area-presentation",
-          "date": "2025-11-02T14:59:50.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "282e80f49e0deb494bc104160f3b49e3d5c2e7e9",
-          "message": "Fix end slide",
-          "date": "2025-11-02T14:59:29.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "5a3c6db3527b3be746cc4162b71a153d8da6e1e8",
-          "message": "Add constituency map improvements",
-          "date": "2025-11-02T14:57:46.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "da137e1e61360ce931a395578455ad9c8ee38e89",
-          "message": "Add slide improvements",
-          "date": "2025-11-02T14:38:51.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "665f9dbe5e480555a3220b8a6866532b7dfb5d77",
-          "message": "Add v0",
-          "date": "2025-11-02T13:51:48.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "ab03dc094e41ba1181db79f5060eb31af1c0348f",
-          "message": "Fix bug in slide footer",
-          "date": "2025-11-02T13:39:11.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "9186cab442470a4fb47457f5487354df42059240",
-          "message": "Add data format slide before microcalibrate dashboard",
-          "date": "2025-11-02T16:25:08.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "a62f0c72bfa70721b55ae732d84d68e427fbf065",
-          "message": "Remove live demo coming up text",
-          "date": "2025-11-03T16:08:46.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "884fe85542b8e5809ffa23958ae9d6c04c818c05",
-          "message": "Add report",
-          "date": "2025-11-01T15:21:18.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "5b9de40b86b9d80d0dde42a37a16cd342ae4bb89",
-          "message": "Add positioning fix",
-          "date": "2025-11-01T16:13:39.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "2be6610c92e6bf477b774d1cd3129acd06aa5444",
-          "message": "Add modular Next.js slides app with event agenda",
-          "date": "2025-11-01T16:10:21.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "f6a2b5c014ce4c05e893c3c559dff58492799513",
-          "message": "Organise",
-          "date": "2025-11-01T15:22:36.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "22896bf944c7c0e8df84a892144624f7504213ae",
-          "message": "Improve agenda styling for items without slides",
-          "date": "2025-11-01T16:12:10.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
           "sha": "14c25acbf11a1c97597e6276943d953ad94de78f",
           "message": "Merge pull request #1 from PolicyEngine/fix-logo-paths-and-agenda",
           "date": "2025-11-01T16:17:40.000Z",
@@ -8090,6 +7982,12 @@
           "sha": "f58e65766b1efd5fb792e469db2b1077a7a73da0",
           "message": "Fix logo paths with basePath utility for GitHub Pages deployment",
           "date": "2025-11-01T16:22:37.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "884fe85542b8e5809ffa23958ae9d6c04c818c05",
+          "message": "Add report",
+          "date": "2025-11-01T15:21:18.000Z",
           "repo": "policyengine-uk-event-2025"
         },
         {
@@ -8195,6 +8093,108 @@
           "repo": "policyengine-uk-event-2025"
         },
         {
+          "sha": "22896bf944c7c0e8df84a892144624f7504213ae",
+          "message": "Improve agenda styling for items without slides",
+          "date": "2025-11-01T16:12:10.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "2be6610c92e6bf477b774d1cd3129acd06aa5444",
+          "message": "Add modular Next.js slides app with event agenda",
+          "date": "2025-11-01T16:10:21.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "f6a2b5c014ce4c05e893c3c559dff58492799513",
+          "message": "Organise",
+          "date": "2025-11-01T15:22:36.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "5b9de40b86b9d80d0dde42a37a16cd342ae4bb89",
+          "message": "Add positioning fix",
+          "date": "2025-11-01T16:13:39.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "a62f0c72bfa70721b55ae732d84d68e427fbf065",
+          "message": "Remove live demo coming up text",
+          "date": "2025-11-03T16:08:46.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "9186cab442470a4fb47457f5487354df42059240",
+          "message": "Add data format slide before microcalibrate dashboard",
+          "date": "2025-11-02T16:25:08.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "bb9d5a74024b727baaf7b5cd2c865ec2256d57cd",
+          "message": "Prevent F key fullscreen on microcalibrate dashboard slide",
+          "date": "2025-11-02T15:20:52.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "3534d3eae913595e21b5b737fbbd2ad2236e05f9",
+          "message": "Merge pull request #13 from PolicyEngine/local-area-presentation",
+          "date": "2025-11-02T15:00:10.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "21be7f6622fc550c9381f61a0aa624b43213fee1",
+          "message": "Merge branch 'main' into local-area-presentation",
+          "date": "2025-11-02T14:59:50.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "282e80f49e0deb494bc104160f3b49e3d5c2e7e9",
+          "message": "Fix end slide",
+          "date": "2025-11-02T14:59:29.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "5a3c6db3527b3be746cc4162b71a153d8da6e1e8",
+          "message": "Add constituency map improvements",
+          "date": "2025-11-02T14:57:46.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "da137e1e61360ce931a395578455ad9c8ee38e89",
+          "message": "Add slide improvements",
+          "date": "2025-11-02T14:38:51.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "665f9dbe5e480555a3220b8a6866532b7dfb5d77",
+          "message": "Add v0",
+          "date": "2025-11-02T13:51:48.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "ab03dc094e41ba1181db79f5060eb31af1c0348f",
+          "message": "Fix bug in slide footer",
+          "date": "2025-11-02T13:39:11.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "fa0425e0a7d8a71fbb1fa19e9fa2c5080b456ccb",
+          "message": "Fix asset path handling for production builds",
+          "date": "2025-11-02T15:06:37.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "8bf7e3e83e28f284d4dd22d17f629fff586cec17",
+          "message": "Add slide to tech slides",
+          "date": "2025-11-02T16:49:15.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "a4e937f7ef9dae5ab17d50e9b2b7130c29b28ccb",
+          "message": "Reformat data output slide to match presentation style",
+          "date": "2025-11-02T16:29:24.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
           "sha": "77e042e11981926376ff0696ed5995036b207aa7",
           "message": "Add changes",
           "date": "2025-05-29T11:47:49.000+01:00",
@@ -8285,23 +8285,22 @@
         "github": "MaxGhenis",
         "name": "Max Ghenis",
         "avatar": "https://avatars.githubusercontent.com/u/6076111?v=4",
-        "estimatedActivity": 548,
+        "estimatedActivity": 545,
         "aliases": [],
         "bio": "Co-founder and CEO of @PolicyEngine"
       },
       "stats": {
-        "commits": 2902,
-        "prs": 501,
-        "prs_merged": 357,
+        "commits": 2899,
+        "prs": 500,
+        "prs_merged": 356,
         "reviews": 714,
         "issues": 609,
-        "repos": 73
+        "repos": 72
       },
       "repoCommits": {
         "obbba-household-explorer": 18,
         "uk-salary-sacrifice-analysis": 17,
         "halloween-2025": 17,
-        "policybench": 3,
         "child-poverty-impact-dashboard": 1,
         "perf-2025": 4,
         "policyengine-snapscreener-validation": 8,
@@ -8330,13 +8329,13 @@
         "policyengine-canada": 4,
         "policyengine-nz": 13,
         "pe-compile": 6,
-        "policyengine-us-data": 127,
+        "policyengine-us-data": 130,
         "policyengine-app": 278,
         "policyengine-data": 2
       },
       "monthlyPRs": [
         5,
-        7,
+        6,
         4,
         4,
         17,
@@ -8350,12 +8349,12 @@
       ],
       "monthlyCommits": [
         25,
-        28,
+        25,
         31,
         27,
         30,
         33,
-        158,
+        161,
         218,
         50,
         78,
@@ -17135,24 +17134,6 @@
           "repo": "halloween-2025"
         },
         {
-          "sha": "6fd5196e25c3e767b33adaeee8e709535d2e4e10",
-          "message": "Merge pull request #1 from MaxGhenis/main",
-          "date": "2025-02-17T23:34:42.000-05:00",
-          "repo": "policybench"
-        },
-        {
-          "sha": "d1a6630a1615648150df3a33325275ec78de6a0e",
-          "message": "Initial version",
-          "date": "2025-02-15T21:02:40.000-05:00",
-          "repo": "policybench"
-        },
-        {
-          "sha": "df6e5dd0051aaa6352925449e0df817ca386f5b4",
-          "message": "Initial commit",
-          "date": "2025-02-15T19:53:00.000-05:00",
-          "repo": "policybench"
-        },
-        {
           "sha": "5640ba889996a13a0f1d7ebe57c56d8c24bb4e35",
           "message": "Redesign frontend with PolicyEngine design system (#1)",
           "date": "2025-12-19T21:54:23.000-08:00",
@@ -17421,6 +17402,24 @@
           "message": "Update Node.js to 24 LTS (#4)",
           "date": "2025-12-03T17:23:16.000-05:00",
           "repo": "congressional-district-mock"
+        },
+        {
+          "sha": "94ff212473d77afa9dda74092d60a324cf7e7419",
+          "message": "Remove PolicyEngine logo (will be embedded in app-v2)",
+          "date": "2025-11-27T07:58:52.000-05:00",
+          "repo": "spm-calculator"
+        },
+        {
+          "sha": "06a2a23307bb7b8e7c340b1c9f5ec17d8f03d9ce",
+          "message": "Clarify CE data lag and income year application",
+          "date": "2025-11-27T07:57:49.000-05:00",
+          "repo": "spm-calculator"
+        },
+        {
+          "sha": "915d58eaf1e38048aaa0f084ef44c0b7028900d9",
+          "message": "Fix comparison bar scaling and add CE Survey year breakdown",
+          "date": "2025-11-27T07:56:39.000-05:00",
+          "repo": "spm-calculator"
         }
       ]
     },
@@ -17437,7 +17436,7 @@
         "commits": 2150,
         "prs": 428,
         "prs_merged": 389,
-        "reviews": 447,
+        "reviews": 448,
         "issues": 479,
         "repos": 27
       },
@@ -18780,9 +18779,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 0,
+          "comments": 1,
           "created_at": "2025-12-11T01:32:25Z",
-          "updated_at": "2026-02-13T22:14:59Z",
+          "updated_at": "2026-02-19T03:10:52Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -22242,15 +22241,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 7,
+          "comments": 9,
           "created_at": "2025-12-30T15:59:58Z",
-          "updated_at": "2026-02-12T17:38:20Z",
-          "closed_at": null,
+          "updated_at": "2026-02-16T21:05:21Z",
+          "closed_at": "2026-02-16T21:05:05Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -22260,9 +22259,9 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065.patch",
-            "merged_at": null
+            "merged_at": "2026-02-16T21:05:05Z"
           },
-          "body": "## Summary\n\nWork in progress implementation of Kansas 2025 individual income tax updates.\n\nFixes #7064\n\n### Key Changes\n\n- **Disabled Veteran Exemption**: Update from $2,250 to $2,320 for 2025\n- **2025 References**: Add ip25.pdf references to all Kansas income tax parameters\n- **Food Sales Tax Credit Sunset**: Implement sunset (returns $0 for 2025+)\n- **Pregnancy Resource Act Credit (K-94)**: New credit - 70% of charitable contributions to eligible organizations\n- **Integration Tests**: Add 2025-specific tests\n\n## Status\n\n- [ ] Documentation collected\n- [ ] Parameters updated\n- [ ] Variables implemented\n- [ ] Tests written\n- [ ] CI passing\n\n## Reference Documents\n\n- [2025 Kansas Individual Income Tax Booklet (ip25.pdf)](https://www.ksrevenue.gov/pdf/ip25.pdf)\n- [Pregnancy Resource Credit](https://www.ksrevenue.gov/prtaxcredits-pregnancy.html)\n- [K.S.A. 79-32,309](https://www.ksrevenue.gov/prtaxcredits-pregnancy.html) - Pregnancy Resource Act\n\n---\n*This is a draft PR created for early visibility. Implementation work is in progress.*",
+          "body": "## Summary\n\nWork in progress implementation of Kansas 2025 individual income tax updates.\n\nFixes #7064\n\n### Key Changes\n\n- **Disabled Veteran Exemption**: Update from $2,250 to $2,320 for 2025\n- **2025 References**: Add ip25.pdf references to all Kansas income tax parameters\n- **Food Sales Tax Credit Sunset**: Implement sunset (returns $0 for 2025+)\n- **Integration Tests**: Add 2025-specific tests\n\n## Status\n\n- [ ] Documentation collected\n- [ ] Parameters updated\n- [ ] Variables implemented\n- [ ] Tests written\n- [ ] CI passing\n\n## Reference Documents\n\n- [2025 Kansas Individual Income Tax Booklet (ip25.pdf)](https://www.ksrevenue.gov/pdf/ip25.pdf)\n- [HB 2106 (2022) - Food Sales Tax Phase-out](https://kslegislature.gov/li_2022/b2021_22/measures/hb2106/)\n\n---\n*This is a draft PR created for early visibility. Implementation work is in progress.*",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/reactions",
             "total_count": 0,
@@ -25749,15 +25748,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 2,
           "created_at": "2025-12-14T19:48:25Z",
-          "updated_at": "2025-12-14T20:23:47Z",
-          "closed_at": null,
+          "updated_at": "2026-02-19T02:17:57Z",
+          "closed_at": "2026-02-19T02:17:57Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -25787,7 +25786,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6973/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "pinned_comment": null,
           "score": 1
         },
@@ -38436,72 +38435,6 @@
       ],
       "commits": [
         {
-          "sha": "5c20adfe9fd869a0df59e4e072edced0cecf5c1c",
-          "message": "plot",
-          "date": "2025-11-02T18:19:42.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "88e83fdfd38d09e2425869798279d345df5b7f1b",
-          "message": "plot",
-          "date": "2025-11-02T18:18:43.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "ba121d6e2562dd7d9448b192059ece24d2a4f9a7",
-          "message": "scope",
-          "date": "2025-11-02T19:32:04.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "fb759b899d555771a413a1fe517f5cdbc07466f3",
-          "message": "graph",
-          "date": "2025-11-02T19:02:18.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "2a029ec7322fd5d41ac861bd5c98ca02a6a5bef6",
-          "message": "scope",
-          "date": "2025-11-02T17:50:52.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "79eefa920186155b79169a0c8ab08b2ee955b5d4",
-          "message": "scope",
-          "date": "2025-11-02T17:46:53.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "4547d62fb0049064cc4237911a5f4d27683fa71b",
-          "message": "Fix merge conflict markers in DataMethodologySlide",
-          "date": "2025-11-02T18:05:45.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "c860ad8ee72691ae4d9996771ec3b6fc3b808c39",
-          "message": "scope",
-          "date": "2025-11-02T18:00:10.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "f7663b5b4947732cd980e78161fa8e4d2a0bc6d5",
-          "message": "carbon",
-          "date": "2025-11-02T13:00:15.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "5a2cfb1016f7035b489a1feac2f376f262cee04b",
-          "message": "add dashbaord",
-          "date": "2025-11-02T14:16:43.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "ca78bd7dcdf42943870c7df799703df741cae417",
-          "message": "word",
-          "date": "2025-11-02T14:18:16.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
           "sha": "87a5eca15fe6fb2ac7898dde7ab3e175f816ba25",
           "message": "Merge pull request #3 from PolicyEngine/add-vat",
           "date": "2025-11-01T18:46:44.000Z",
@@ -38535,6 +38468,72 @@
           "sha": "9762780dd8d99a3dc85fef6d69c19a335313c435",
           "message": "edit names",
           "date": "2025-11-01T17:02:06.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "f7663b5b4947732cd980e78161fa8e4d2a0bc6d5",
+          "message": "carbon",
+          "date": "2025-11-02T13:00:15.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "5a2cfb1016f7035b489a1feac2f376f262cee04b",
+          "message": "add dashbaord",
+          "date": "2025-11-02T14:16:43.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "ca78bd7dcdf42943870c7df799703df741cae417",
+          "message": "word",
+          "date": "2025-11-02T14:18:16.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "c860ad8ee72691ae4d9996771ec3b6fc3b808c39",
+          "message": "scope",
+          "date": "2025-11-02T18:00:10.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "4547d62fb0049064cc4237911a5f4d27683fa71b",
+          "message": "Fix merge conflict markers in DataMethodologySlide",
+          "date": "2025-11-02T18:05:45.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "79eefa920186155b79169a0c8ab08b2ee955b5d4",
+          "message": "scope",
+          "date": "2025-11-02T17:46:53.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "2a029ec7322fd5d41ac861bd5c98ca02a6a5bef6",
+          "message": "scope",
+          "date": "2025-11-02T17:50:52.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "fb759b899d555771a413a1fe517f5cdbc07466f3",
+          "message": "graph",
+          "date": "2025-11-02T19:02:18.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "ba121d6e2562dd7d9448b192059ece24d2a4f9a7",
+          "message": "scope",
+          "date": "2025-11-02T19:32:04.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "5c20adfe9fd869a0df59e4e072edced0cecf5c1c",
+          "message": "plot",
+          "date": "2025-11-02T18:19:42.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "88e83fdfd38d09e2425869798279d345df5b7f1b",
+          "message": "plot",
+          "date": "2025-11-02T18:18:43.000Z",
           "repo": "policyengine-uk-event-2025"
         },
         {
@@ -39502,7 +39501,7 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-18T17:36:39Z",
-          "updated_at": "2025-12-18T19:44:03Z",
+          "updated_at": "2026-02-19T18:00:54Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -50165,7 +50164,7 @@
         "commits": 688,
         "prs": 168,
         "prs_merged": 126,
-        "reviews": 77,
+        "reviews": 78,
         "issues": 132,
         "repos": 5
       },
@@ -56500,15 +56499,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 7,
+          "comments": 9,
           "created_at": "2025-12-30T15:59:58Z",
-          "updated_at": "2026-02-12T17:38:20Z",
-          "closed_at": null,
+          "updated_at": "2026-02-16T21:05:21Z",
+          "closed_at": "2026-02-16T21:05:05Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -56518,9 +56517,9 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065.patch",
-            "merged_at": null
+            "merged_at": "2026-02-16T21:05:05Z"
           },
-          "body": "## Summary\n\nWork in progress implementation of Kansas 2025 individual income tax updates.\n\nFixes #7064\n\n### Key Changes\n\n- **Disabled Veteran Exemption**: Update from $2,250 to $2,320 for 2025\n- **2025 References**: Add ip25.pdf references to all Kansas income tax parameters\n- **Food Sales Tax Credit Sunset**: Implement sunset (returns $0 for 2025+)\n- **Pregnancy Resource Act Credit (K-94)**: New credit - 70% of charitable contributions to eligible organizations\n- **Integration Tests**: Add 2025-specific tests\n\n## Status\n\n- [ ] Documentation collected\n- [ ] Parameters updated\n- [ ] Variables implemented\n- [ ] Tests written\n- [ ] CI passing\n\n## Reference Documents\n\n- [2025 Kansas Individual Income Tax Booklet (ip25.pdf)](https://www.ksrevenue.gov/pdf/ip25.pdf)\n- [Pregnancy Resource Credit](https://www.ksrevenue.gov/prtaxcredits-pregnancy.html)\n- [K.S.A. 79-32,309](https://www.ksrevenue.gov/prtaxcredits-pregnancy.html) - Pregnancy Resource Act\n\n---\n*This is a draft PR created for early visibility. Implementation work is in progress.*",
+          "body": "## Summary\n\nWork in progress implementation of Kansas 2025 individual income tax updates.\n\nFixes #7064\n\n### Key Changes\n\n- **Disabled Veteran Exemption**: Update from $2,250 to $2,320 for 2025\n- **2025 References**: Add ip25.pdf references to all Kansas income tax parameters\n- **Food Sales Tax Credit Sunset**: Implement sunset (returns $0 for 2025+)\n- **Integration Tests**: Add 2025-specific tests\n\n## Status\n\n- [ ] Documentation collected\n- [ ] Parameters updated\n- [ ] Variables implemented\n- [ ] Tests written\n- [ ] CI passing\n\n## Reference Documents\n\n- [2025 Kansas Individual Income Tax Booklet (ip25.pdf)](https://www.ksrevenue.gov/pdf/ip25.pdf)\n- [HB 2106 (2022) - Food Sales Tax Phase-out](https://kslegislature.gov/li_2022/b2021_22/measures/hb2106/)\n\n---\n*This is a draft PR created for early visibility. Implementation work is in progress.*",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/reactions",
             "total_count": 0,
@@ -58256,6 +58255,77 @@
           "score": 1
         },
         {
+          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6618",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6618/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6618/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6618/events",
+          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6618",
+          "id": 3474709725,
+          "node_id": "PR_kwDOFqFFMc6rnk8x",
+          "number": 6618,
+          "title": "Account for the usage of the low income tax tables when computing taxable income for the Arkansas additional tax credit for qualified individuals",
+          "user": {
+            "login": "PavelMakarchuk",
+            "id": 110687043,
+            "node_id": "U_kgDOBpjzQw",
+            "avatar_url": "https://avatars.githubusercontent.com/u/110687043?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/PavelMakarchuk",
+            "html_url": "https://github.com/PavelMakarchuk",
+            "followers_url": "https://api.github.com/users/PavelMakarchuk/followers",
+            "following_url": "https://api.github.com/users/PavelMakarchuk/following{/other_user}",
+            "gists_url": "https://api.github.com/users/PavelMakarchuk/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/PavelMakarchuk/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/PavelMakarchuk/subscriptions",
+            "organizations_url": "https://api.github.com/users/PavelMakarchuk/orgs",
+            "repos_url": "https://api.github.com/users/PavelMakarchuk/repos",
+            "events_url": "https://api.github.com/users/PavelMakarchuk/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/PavelMakarchuk/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [],
+          "state": "closed",
+          "locked": false,
+          "assignee": null,
+          "assignees": [],
+          "milestone": null,
+          "comments": 1,
+          "created_at": "2025-10-01T18:49:59Z",
+          "updated_at": "2026-02-19T00:48:52Z",
+          "closed_at": "2026-02-19T00:48:11Z",
+          "author_association": "COLLABORATOR",
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/6618",
+            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6618",
+            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6618.diff",
+            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6618.patch",
+            "merged_at": "2026-02-19T00:48:11Z"
+          },
+          "body": "Fixes #6617",
+          "reactions": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6618/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6618/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null,
+          "score": 1
+        },
+        {
           "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6604",
           "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
           "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6604/labels{/name}",
@@ -58359,16 +58429,16 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 2,
+          "comments": 3,
           "created_at": "2025-09-24T17:18:09Z",
-          "updated_at": "2026-02-16T05:54:09Z",
-          "closed_at": null,
-          "author_association": "NONE",
+          "updated_at": "2026-02-16T14:53:08Z",
+          "closed_at": "2026-02-16T14:52:27Z",
+          "author_association": "CONTRIBUTOR",
           "type": null,
           "active_lock_reason": null,
           "draft": false,
@@ -58377,7 +58447,7 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6596",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6596.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6596.patch",
-            "merged_at": null
+            "merged_at": "2026-02-16T14:52:27Z"
           },
           "body": "## Summary\n\nImplements Montana Temporary Assistance for Needy Families (TANF) program.\n\nCloses #6397\n\n---\n\n## Montana TANF Income Rules\n\n### Regulatory Authority\n- **MT DPHHS TANF Manual** (Chapters 001-705)\n- **Montana Administrative Rules** (ARM 37.78.xxx)\n- **TANF State Plan** ([Income Standards, p.10](https://dphhs.mt.gov/assets/hcsd/TANF/TANFStatePlan.pdf#page=10))\n\n---\n\n### 1. Income Eligibility Tests\n\n#### Gross Monthly Income (GMI) Test\n- **Limit:** Net Income Standard x 1.85\n- **Definition:** Total gross earned + unearned income of all assistance unit members\n\nSource: [TANF 001 Monthly Income Standards](https://dphhs.mt.gov/assets/hcsd/tanfmanual/TANF001.pdf)\n\n#### Benefit Standard Test\n- **Limit:** 30% of FPG for the assistance unit size\n- **Definition:** Countable income (after all disregards/deductions) must be below the benefit standard\n\nSource: [TANF State Plan - Income Standards, p.10](https://dphhs.mt.gov/assets/hcsd/TANF/TANFStatePlan.pdf#page=10)\n\n#### Payment Standard Test\n- **Limit:** 35% of FPG for the assistance unit size\n- **Definition:** Countable income must be below the payment standard\n\nSource: [TANF State Plan - Income Standards, p.10](https://dphhs.mt.gov/assets/hcsd/TANF/TANFStatePlan.pdf#page=10)\n\n---\n\n### 2. Income Deductions & Exemptions\n\n#### A. Work-Related Expense Deduction\n- **Amount:** $200/month flat deduction from gross earned income per person\n\nSource: [TANF 602-1 Income Disregards](https://dphhs.mt.gov/assets/hcsd/tanfmanual/tanf602-1jan012018.pdf), [ARM 37.78.406(2)(a)](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.406)\n\n#### B. Earned Income Disregard\n- **Amount:** 25% of remaining earned income (after work expense deduction)\n\nSource: [TANF 602-1 Income Disregards](https://dphhs.mt.gov/assets/hcsd/tanfmanual/tanf602-1jan012018.pdf), [ARM 37.78.406(2)(b)](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.406)\n\n#### C. Dependent Care Deduction\n- **Amount:** Up to $200/month per eligible dependent child or incapacitated adult\n\nSource: [TANF 602-1 Income Disregards](https://dphhs.mt.gov/assets/hcsd/tanfmanual/tanf602-1jan012018.pdf), [ARM 37.78.406(2)](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.406)\n\n#### D. Child Support Obligation Deduction\n- **Amount:** Legally-binding child support paid to non-household members is subtracted from countable income\n\nSource: [TANF 602-1 Income Disregards (step d)](https://dphhs.mt.gov/assets/hcsd/tanfmanual/tanf602-1jan012018.pdf)\n\n---\n\n### 3. Income Standards (FPG-Based)\n\nAll standards are derived from the Federal Poverty Guidelines for the assistance unit size:\n\n| Standard | Formula |\n|----------|---------|\n| Payment Standard | FPG x 0.35 |\n| Benefit Standard | FPG x 0.30 |\n| Net Income Standard | Benefit Standard / 0.785 |\n| Gross Income Standard | Net Income Standard x 1.85 |\n\nSource: [TANF State Plan - Income Standards, p.10](https://dphhs.mt.gov/assets/hcsd/TANF/TANFStatePlan.pdf#page=10), [TANF 001 Monthly Income Standards](https://dphhs.mt.gov/assets/hcsd/tanfmanual/TANF001.pdf)\n\n---\n\n### 4. Benefit Calculation\n\n#### Formula:\n```\nBenefit = Payment Standard - Countable Income\n```\n\nWhere **Countable Income** =\n```\nmax(Countable Earned Income + Gross Unearned Income - Dependent Care Deduction - Child Support Expense, 0)\n```\n\nAnd **Countable Earned Income** (per person) =\n```\n(Gross Earned Income - $200 work expense) - 25% of remainder\n```\n\n#### Calculation Steps:\n1. Determine gross earned income per person\n2. Subtract $200 work-related expense deduction\n3. Subtract 25% earned income disregard from remainder\n4. Sum across assistance unit members = Countable Earned Income\n5. Add gross unearned income\n6. Subtract dependent care deduction\n7. Subtract child support obligation\n8. Subtract countable income from Payment Standard = **Benefit**\n\nSource: [ARM 37.78.420](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.420), [TANF 602-1 Income Disregards](https://dphhs.mt.gov/assets/hcsd/tanfmanual/tanf602-1jan012018.pdf)\n\n---\n\n### 5. Additional Program Rules\n\n#### Work Requirements\n\n| Household Type | Required Hours/Week |\n|----------------|-------------------|\n| Single parent, youngest child < 6 | 27 |\n| Single parent, youngest child >= 6 | 33 |\n| Two-parent household (each able parent) | 33 |\n\n- Incapacitated parents are excluded from the two-parent determination (treated as single-parent for hours)\n- Disabled persons and eligible children are exempt from work requirements\n\nSource: [TANF 705-1 Participation Hours](https://dphhs.mt.gov/assets/hcsd/tanfmanual/TANF705.1.pdf)\n\n#### Resource Limit\n- **Limit:** $3,000\n\nSource: [ARM 37.78.401](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.401), [TANF 402-1 Countable and Excluded Resources](https://dphhs.mt.gov/assets/hcsd/tanfmanual/TANF4021May012021.pdf)\n\n#### Assistance Unit Exclusions\n- Persons receiving SSI are excluded ([ARM 37.78.220](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.220))\n- Persons in foster care are excluded ([ARM 37.78.208](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.206))\n\n#### Immigration Status\n- Qualified noncitizen statuses accepted: Refugee, Asylee, Deportation Withheld, Paroled 1+ Year, Conditional Entrant, Legal Permanent Resident, Cuban/Haitian Entrant\n\nSource: [ARM 37.78.220](https://www.law.cornell.edu/regulations/montana/Mont-Admin-r-37.78.220)\n\n---\n\n### 6. Known Limitation: FPG Year Not Pinned\n\nThe income standards in this implementation are derived from the **current period's FPG**. However, Montana's [TANF 001 manual](https://dphhs.mt.gov/assets/hcsd/tanfmanual/TANF001.pdf) (effective July 2025) shows all cash assistance standards are still based on the **2023 FPL** — they have not updated to 2024 or 2025 FPL. This means the implementation will overstate standards for simulation periods after 2023 (e.g., payment standard of ~$439 for AU=1 in 2024 vs actual $425).\n\nPinning the FPG lookup to the 2023 year will be addressed in a follow-up PR. See [#6824](https://github.com/PolicyEngine/policyengine-us/issues/6824) for full details and historical timeline.",
           "reactions": {
@@ -58606,77 +58676,6 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6541/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null,
-          "score": 1
-        },
-        {
-          "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6526",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6526/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6526/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6526/events",
-          "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6526",
-          "id": 3403403626,
-          "node_id": "PR_kwDOFqFFMc6n3jt3",
-          "number": 6526,
-          "title": "SNAP Prorated Income Adjustment",
-          "user": {
-            "login": "hua7450",
-            "id": 113824411,
-            "node_id": "U_kgDOBsjSmw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/113824411?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/hua7450",
-            "html_url": "https://github.com/hua7450",
-            "followers_url": "https://api.github.com/users/hua7450/followers",
-            "following_url": "https://api.github.com/users/hua7450/following{/other_user}",
-            "gists_url": "https://api.github.com/users/hua7450/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/hua7450/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/hua7450/subscriptions",
-            "organizations_url": "https://api.github.com/users/hua7450/orgs",
-            "repos_url": "https://api.github.com/users/hua7450/repos",
-            "events_url": "https://api.github.com/users/hua7450/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/hua7450/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [],
-          "state": "open",
-          "locked": false,
-          "assignee": null,
-          "assignees": [],
-          "milestone": null,
-          "comments": 1,
-          "created_at": "2025-09-10T18:07:48Z",
-          "updated_at": "2026-01-05T00:20:35Z",
-          "closed_at": null,
-          "author_association": "COLLABORATOR",
-          "type": null,
-          "active_lock_reason": null,
-          "draft": true,
-          "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/pulls/6526",
-            "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/6526",
-            "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/6526.diff",
-            "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/6526.patch",
-            "merged_at": null
-          },
-          "body": "Fixes #6531 ",
-          "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6526/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6526/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1
@@ -71165,7 +71164,7 @@
         "bio": null
       },
       "stats": {
-        "commits": 500,
+        "commits": 509,
         "prs": 155,
         "prs_merged": 122,
         "reviews": 95,
@@ -71180,7 +71179,7 @@
         "us-nc-sources": 3,
         "new-york-credit-comparison": 1,
         "policyengine-api": 14,
-        "policyengine-us": 328,
+        "policyengine-us": 337,
         "policyengine-api-v2": 13,
         "ri-ctc-calculator": 25,
         "analysis-notebooks": 10
@@ -71211,7 +71210,7 @@
         84,
         32,
         52,
-        96
+        105
       ],
       "prs": [
         {
@@ -71247,15 +71246,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 7,
+          "comments": 9,
           "created_at": "2025-12-30T15:59:58Z",
-          "updated_at": "2026-02-12T17:38:20Z",
-          "closed_at": null,
+          "updated_at": "2026-02-16T21:05:21Z",
+          "closed_at": "2026-02-16T21:05:05Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -71265,9 +71264,9 @@
             "html_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065",
             "diff_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065.diff",
             "patch_url": "https://github.com/PolicyEngine/policyengine-us/pull/7065.patch",
-            "merged_at": null
+            "merged_at": "2026-02-16T21:05:05Z"
           },
-          "body": "## Summary\n\nWork in progress implementation of Kansas 2025 individual income tax updates.\n\nFixes #7064\n\n### Key Changes\n\n- **Disabled Veteran Exemption**: Update from $2,250 to $2,320 for 2025\n- **2025 References**: Add ip25.pdf references to all Kansas income tax parameters\n- **Food Sales Tax Credit Sunset**: Implement sunset (returns $0 for 2025+)\n- **Pregnancy Resource Act Credit (K-94)**: New credit - 70% of charitable contributions to eligible organizations\n- **Integration Tests**: Add 2025-specific tests\n\n## Status\n\n- [ ] Documentation collected\n- [ ] Parameters updated\n- [ ] Variables implemented\n- [ ] Tests written\n- [ ] CI passing\n\n## Reference Documents\n\n- [2025 Kansas Individual Income Tax Booklet (ip25.pdf)](https://www.ksrevenue.gov/pdf/ip25.pdf)\n- [Pregnancy Resource Credit](https://www.ksrevenue.gov/prtaxcredits-pregnancy.html)\n- [K.S.A. 79-32,309](https://www.ksrevenue.gov/prtaxcredits-pregnancy.html) - Pregnancy Resource Act\n\n---\n*This is a draft PR created for early visibility. Implementation work is in progress.*",
+          "body": "## Summary\n\nWork in progress implementation of Kansas 2025 individual income tax updates.\n\nFixes #7064\n\n### Key Changes\n\n- **Disabled Veteran Exemption**: Update from $2,250 to $2,320 for 2025\n- **2025 References**: Add ip25.pdf references to all Kansas income tax parameters\n- **Food Sales Tax Credit Sunset**: Implement sunset (returns $0 for 2025+)\n- **Integration Tests**: Add 2025-specific tests\n\n## Status\n\n- [ ] Documentation collected\n- [ ] Parameters updated\n- [ ] Variables implemented\n- [ ] Tests written\n- [ ] CI passing\n\n## Reference Documents\n\n- [2025 Kansas Individual Income Tax Booklet (ip25.pdf)](https://www.ksrevenue.gov/pdf/ip25.pdf)\n- [HB 2106 (2022) - Food Sales Tax Phase-out](https://kslegislature.gov/li_2022/b2021_22/measures/hb2106/)\n\n---\n*This is a draft PR created for early visibility. Implementation work is in progress.*",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7065/reactions",
             "total_count": 0,
@@ -71284,7 +71283,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 14,
+          "commits": 15,
           "review_comments": 3,
           "files": [
             {
@@ -74126,9 +74125,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 4,
+          "comments": 5,
           "created_at": "2025-12-08T16:31:53Z",
-          "updated_at": "2026-01-05T15:36:32Z",
+          "updated_at": "2026-02-19T22:03:41Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -74158,7 +74157,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 11,
+          "commits": 12,
           "review_comments": 4,
           "files": [
             {
@@ -74178,16 +74177,16 @@
             {
               "filename": "policyengine_us/tests/policy/baseline/gov/states/ny/tax/income/ny_supplemental_tax.yaml",
               "status": "modified",
-              "additions": 22,
+              "additions": 78,
               "deletions": 8,
-              "changes": 30
+              "changes": 86
             },
             {
               "filename": "policyengine_us/variables/gov/states/ny/tax/income/ny_supplemental_tax.py",
               "status": "modified",
-              "additions": 23,
+              "additions": 27,
               "deletions": 12,
-              "changes": 35
+              "changes": 39
             }
           ]
         },
@@ -78132,9 +78131,9 @@
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 4,
+          "comments": 9,
           "created_at": "2025-08-25T15:12:02Z",
-          "updated_at": "2026-02-11T18:39:31Z",
+          "updated_at": "2026-02-19T21:01:37Z",
           "closed_at": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -78200,15 +78199,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-30T15:57:18Z",
-          "updated_at": "2025-12-30T16:02:33Z",
-          "closed_at": null,
+          "updated_at": "2026-02-16T21:05:06Z",
+          "closed_at": "2026-02-16T21:05:06Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -78238,7 +78237,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7064/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "pinned_comment": null,
           "score": 1
         },
@@ -78425,15 +78424,15 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-29T15:32:11Z",
-          "updated_at": "2025-12-29T15:32:11Z",
-          "closed_at": null,
+          "updated_at": "2026-02-17T14:29:18Z",
+          "closed_at": "2026-02-17T14:29:18Z",
           "author_association": "COLLABORATOR",
           "type": null,
           "active_lock_reason": null,
@@ -78463,7 +78462,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7054/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "pinned_comment": null,
           "score": 1
         },
@@ -90290,6 +90289,18 @@
           "repo": "spm-calculator"
         },
         {
+          "sha": "87af82387ff46e1bc7b2b4e1491486461b7dba77",
+          "message": "Merge pull request #24 from PolicyEngine/ben-last-minute",
+          "date": "2025-11-02T21:55:03.000-05:00",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "8e58c99e98ad446f94b3afed5eedbaff3464a2cc",
+          "message": "slide 11",
+          "date": "2025-11-02T21:53:26.000-05:00",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
           "sha": "b6074389333ee95b26773f9fdc238617b3cbd7a1",
           "message": "Merge pull request #23 from PolicyEngine/ben-last-minute",
           "date": "2025-11-02T21:28:41.000-05:00",
@@ -90305,18 +90316,6 @@
           "sha": "37992e4e082d4c01e1e90d81792cb0fd21bbcf6e",
           "message": "A slide 10. Still needs work",
           "date": "2025-11-02T21:13:24.000-05:00",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "87af82387ff46e1bc7b2b4e1491486461b7dba77",
-          "message": "Merge pull request #24 from PolicyEngine/ben-last-minute",
-          "date": "2025-11-02T21:55:03.000-05:00",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "8e58c99e98ad446f94b3afed5eedbaff3464a2cc",
-          "message": "slide 11",
-          "date": "2025-11-02T21:53:26.000-05:00",
           "repo": "policyengine-uk-event-2025"
         },
         {
@@ -107323,15 +107322,25 @@
             "user_view_type": "public",
             "site_admin": false
           },
-          "labels": [],
+          "labels": [
+            {
+              "id": 10231731106,
+              "node_id": "LA_kwDOPIpjJM8AAAACYdvTog",
+              "url": "https://api.github.com/repos/PolicyEngine/policyengine-app-v2/labels/released",
+              "name": "released",
+              "color": "ededed",
+              "default": false,
+              "description": null
+            }
+          ],
           "state": "closed",
           "locked": false,
           "assignee": null,
           "assignees": [],
           "milestone": null,
-          "comments": 0,
+          "comments": 2,
           "created_at": "2025-12-17T20:28:43Z",
-          "updated_at": "2026-02-06T17:08:16Z",
+          "updated_at": "2026-02-17T23:35:34Z",
           "closed_at": "2026-02-06T17:08:16Z",
           "author_association": "COLLABORATOR",
           "type": null,
