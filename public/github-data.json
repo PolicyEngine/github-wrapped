@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-02T06:24:57.533Z",
+  "fetchedAt": "2026-03-09T06:27:50.923Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -7967,6 +7967,114 @@
           "repo": "policyengine-github-agent"
         },
         {
+          "sha": "fa0425e0a7d8a71fbb1fa19e9fa2c5080b456ccb",
+          "message": "Fix asset path handling for production builds",
+          "date": "2025-11-02T15:06:37.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "8bf7e3e83e28f284d4dd22d17f629fff586cec17",
+          "message": "Add slide to tech slides",
+          "date": "2025-11-02T16:49:15.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "a4e937f7ef9dae5ab17d50e9b2b7130c29b28ccb",
+          "message": "Reformat data output slide to match presentation style",
+          "date": "2025-11-02T16:29:24.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "bb9d5a74024b727baaf7b5cd2c865ec2256d57cd",
+          "message": "Prevent F key fullscreen on microcalibrate dashboard slide",
+          "date": "2025-11-02T15:20:52.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "3534d3eae913595e21b5b737fbbd2ad2236e05f9",
+          "message": "Merge pull request #13 from PolicyEngine/local-area-presentation",
+          "date": "2025-11-02T15:00:10.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "21be7f6622fc550c9381f61a0aa624b43213fee1",
+          "message": "Merge branch 'main' into local-area-presentation",
+          "date": "2025-11-02T14:59:50.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "282e80f49e0deb494bc104160f3b49e3d5c2e7e9",
+          "message": "Fix end slide",
+          "date": "2025-11-02T14:59:29.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "5a3c6db3527b3be746cc4162b71a153d8da6e1e8",
+          "message": "Add constituency map improvements",
+          "date": "2025-11-02T14:57:46.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "da137e1e61360ce931a395578455ad9c8ee38e89",
+          "message": "Add slide improvements",
+          "date": "2025-11-02T14:38:51.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "665f9dbe5e480555a3220b8a6866532b7dfb5d77",
+          "message": "Add v0",
+          "date": "2025-11-02T13:51:48.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "ab03dc094e41ba1181db79f5060eb31af1c0348f",
+          "message": "Fix bug in slide footer",
+          "date": "2025-11-02T13:39:11.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "9186cab442470a4fb47457f5487354df42059240",
+          "message": "Add data format slide before microcalibrate dashboard",
+          "date": "2025-11-02T16:25:08.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "a62f0c72bfa70721b55ae732d84d68e427fbf065",
+          "message": "Remove live demo coming up text",
+          "date": "2025-11-03T16:08:46.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "884fe85542b8e5809ffa23958ae9d6c04c818c05",
+          "message": "Add report",
+          "date": "2025-11-01T15:21:18.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "5b9de40b86b9d80d0dde42a37a16cd342ae4bb89",
+          "message": "Add positioning fix",
+          "date": "2025-11-01T16:13:39.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "2be6610c92e6bf477b774d1cd3129acd06aa5444",
+          "message": "Add modular Next.js slides app with event agenda",
+          "date": "2025-11-01T16:10:21.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "f6a2b5c014ce4c05e893c3c559dff58492799513",
+          "message": "Organise",
+          "date": "2025-11-01T15:22:36.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "22896bf944c7c0e8df84a892144624f7504213ae",
+          "message": "Improve agenda styling for items without slides",
+          "date": "2025-11-01T16:12:10.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
           "sha": "14c25acbf11a1c97597e6276943d953ad94de78f",
           "message": "Merge pull request #1 from PolicyEngine/fix-logo-paths-and-agenda",
           "date": "2025-11-01T16:17:40.000Z",
@@ -7982,12 +8090,6 @@
           "sha": "f58e65766b1efd5fb792e469db2b1077a7a73da0",
           "message": "Fix logo paths with basePath utility for GitHub Pages deployment",
           "date": "2025-11-01T16:22:37.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "884fe85542b8e5809ffa23958ae9d6c04c818c05",
-          "message": "Add report",
-          "date": "2025-11-01T15:21:18.000Z",
           "repo": "policyengine-uk-event-2025"
         },
         {
@@ -8090,108 +8192,6 @@
           "sha": "db08787aad4a09461a084f1b7060515134927615",
           "message": "Add AI presentation slides with improved layouts",
           "date": "2025-11-01T16:52:14.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "22896bf944c7c0e8df84a892144624f7504213ae",
-          "message": "Improve agenda styling for items without slides",
-          "date": "2025-11-01T16:12:10.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "2be6610c92e6bf477b774d1cd3129acd06aa5444",
-          "message": "Add modular Next.js slides app with event agenda",
-          "date": "2025-11-01T16:10:21.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "f6a2b5c014ce4c05e893c3c559dff58492799513",
-          "message": "Organise",
-          "date": "2025-11-01T15:22:36.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "5b9de40b86b9d80d0dde42a37a16cd342ae4bb89",
-          "message": "Add positioning fix",
-          "date": "2025-11-01T16:13:39.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "a62f0c72bfa70721b55ae732d84d68e427fbf065",
-          "message": "Remove live demo coming up text",
-          "date": "2025-11-03T16:08:46.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "9186cab442470a4fb47457f5487354df42059240",
-          "message": "Add data format slide before microcalibrate dashboard",
-          "date": "2025-11-02T16:25:08.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "bb9d5a74024b727baaf7b5cd2c865ec2256d57cd",
-          "message": "Prevent F key fullscreen on microcalibrate dashboard slide",
-          "date": "2025-11-02T15:20:52.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "3534d3eae913595e21b5b737fbbd2ad2236e05f9",
-          "message": "Merge pull request #13 from PolicyEngine/local-area-presentation",
-          "date": "2025-11-02T15:00:10.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "21be7f6622fc550c9381f61a0aa624b43213fee1",
-          "message": "Merge branch 'main' into local-area-presentation",
-          "date": "2025-11-02T14:59:50.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "282e80f49e0deb494bc104160f3b49e3d5c2e7e9",
-          "message": "Fix end slide",
-          "date": "2025-11-02T14:59:29.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "5a3c6db3527b3be746cc4162b71a153d8da6e1e8",
-          "message": "Add constituency map improvements",
-          "date": "2025-11-02T14:57:46.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "da137e1e61360ce931a395578455ad9c8ee38e89",
-          "message": "Add slide improvements",
-          "date": "2025-11-02T14:38:51.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "665f9dbe5e480555a3220b8a6866532b7dfb5d77",
-          "message": "Add v0",
-          "date": "2025-11-02T13:51:48.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "ab03dc094e41ba1181db79f5060eb31af1c0348f",
-          "message": "Fix bug in slide footer",
-          "date": "2025-11-02T13:39:11.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "fa0425e0a7d8a71fbb1fa19e9fa2c5080b456ccb",
-          "message": "Fix asset path handling for production builds",
-          "date": "2025-11-02T15:06:37.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "8bf7e3e83e28f284d4dd22d17f629fff586cec17",
-          "message": "Add slide to tech slides",
-          "date": "2025-11-02T16:49:15.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "a4e937f7ef9dae5ab17d50e9b2b7130c29b28ccb",
-          "message": "Reformat data output slide to match presentation style",
-          "date": "2025-11-02T16:29:24.000Z",
           "repo": "policyengine-uk-event-2025"
         },
         {
@@ -17164,21 +17164,15 @@
           "repo": "perf-2025"
         },
         {
-          "sha": "9cbf3b5345768467aebbe1518bd1425e88f96563",
-          "message": "Fix line length issues for flake8 compliance",
-          "date": "2025-09-01T22:07:37.000-04:00",
+          "sha": "e88e0435f102fa6c30023bf2ce4a78b36f20c36d",
+          "message": "Add CI/CD workflows and comprehensive test suite",
+          "date": "2025-09-01T21:38:15.000-04:00",
           "repo": "policyengine-snapscreener-validation"
         },
         {
           "sha": "7ee13a124d4af331962260d87d6c3e3b8a60fa5c",
           "message": "Initial commit: PolicyEngine SNAP Screener Validation package",
           "date": "2025-09-01T21:17:51.000-04:00",
-          "repo": "policyengine-snapscreener-validation"
-        },
-        {
-          "sha": "e88e0435f102fa6c30023bf2ce4a78b36f20c36d",
-          "message": "Add CI/CD workflows and comprehensive test suite",
-          "date": "2025-09-01T21:38:15.000-04:00",
           "repo": "policyengine-snapscreener-validation"
         },
         {
@@ -17212,15 +17206,21 @@
           "repo": "policyengine-snapscreener-validation"
         },
         {
-          "sha": "5be3533a028ac8088bfd2757f4c6a8901016c63c",
-          "message": "Add GitHub Pages deployment configuration",
-          "date": "2025-09-15T07:50:28.000-04:00",
-          "repo": "congressional-district-mock"
+          "sha": "9cbf3b5345768467aebbe1518bd1425e88f96563",
+          "message": "Fix line length issues for flake8 compliance",
+          "date": "2025-09-01T22:07:37.000-04:00",
+          "repo": "policyengine-snapscreener-validation"
         },
         {
           "sha": "a87d0ac07b794a1c2c0f3d317a4e0059d2db3bd1",
           "message": "Add GitHub Actions CI/CD workflow for automatic deployment",
           "date": "2025-09-15T07:51:47.000-04:00",
+          "repo": "congressional-district-mock"
+        },
+        {
+          "sha": "5be3533a028ac8088bfd2757f4c6a8901016c63c",
+          "message": "Add GitHub Pages deployment configuration",
+          "date": "2025-09-15T07:50:28.000-04:00",
           "repo": "congressional-district-mock"
         },
         {
@@ -17236,18 +17236,6 @@
           "repo": "congressional-district-mock"
         },
         {
-          "sha": "fd98007fbf6360338929e7d3296686c251df4b0b",
-          "message": "Add GitHub Pages site with CI deployment",
-          "date": "2025-10-16T06:12:17.000-04:00",
-          "repo": "pritzker"
-        },
-        {
-          "sha": "7eaa29d48c723b8528f2c8b09744874760bcf96b",
-          "message": "Trigger Pages deployment",
-          "date": "2025-10-16T06:13:21.000-04:00",
-          "repo": "pritzker"
-        },
-        {
           "sha": "df7fee736965e3e544a5d79d18ab96950a5e20eb",
           "message": "Add comprehensive application responses",
           "date": "2025-10-16T05:59:28.000-04:00",
@@ -17260,15 +17248,21 @@
           "repo": "pritzker"
         },
         {
-          "sha": "c8466dcf00f49287f3a556897bbbaaaa27b5b573",
-          "message": "Enhance YTD budget response with Open Collective data",
-          "date": "2025-10-27T20:58:15.000-04:00",
+          "sha": "7eaa29d48c723b8528f2c8b09744874760bcf96b",
+          "message": "Trigger Pages deployment",
+          "date": "2025-10-16T06:13:21.000-04:00",
           "repo": "pritzker"
         },
         {
-          "sha": "7d3345ee3a015442c203129e26f4252d87753a54",
-          "message": "Update project name and char limit for Project Summary",
-          "date": "2025-10-27T21:26:03.000-04:00",
+          "sha": "fd98007fbf6360338929e7d3296686c251df4b0b",
+          "message": "Add GitHub Pages site with CI deployment",
+          "date": "2025-10-16T06:12:17.000-04:00",
+          "repo": "pritzker"
+        },
+        {
+          "sha": "e80f298ceb66cb6b44e15d72019cd8736fbc51d5",
+          "message": "Emphasize state-level policy variation in project need",
+          "date": "2025-10-27T21:29:19.000-04:00",
           "repo": "pritzker"
         },
         {
@@ -17278,9 +17272,9 @@
           "repo": "pritzker"
         },
         {
-          "sha": "e80f298ceb66cb6b44e15d72019cd8736fbc51d5",
-          "message": "Emphasize state-level policy variation in project need",
-          "date": "2025-10-27T21:29:19.000-04:00",
+          "sha": "7d3345ee3a015442c203129e26f4252d87753a54",
+          "message": "Update project name and char limit for Project Summary",
+          "date": "2025-10-27T21:26:03.000-04:00",
           "repo": "pritzker"
         },
         {
@@ -17293,72 +17287,6 @@
           "sha": "31309cb1b77d9aca6a6062f8163cf599104a4369",
           "message": "Fix SNAP reference - state eligibility rules not supplements",
           "date": "2025-10-27T21:32:04.000-04:00",
-          "repo": "pritzker"
-        },
-        {
-          "sha": "f21c9cb85e282b83ac4f0a1a381ff2020b2c4c95",
-          "message": "Add training and support experience to capacity",
-          "date": "2025-10-27T21:39:01.000-04:00",
-          "repo": "pritzker"
-        },
-        {
-          "sha": "b28c6764134ed55c529772a0c1b9fa68671ee649",
-          "message": "Fix budget file alignment with Pritzker template",
-          "date": "2025-10-27T21:55:24.000-04:00",
-          "repo": "pritzker"
-        },
-        {
-          "sha": "e313515512b2c1c08ff5308f6c84dcea38106548",
-          "message": "Add complete budget and project metadata",
-          "date": "2025-10-27T21:53:28.000-04:00",
-          "repo": "pritzker"
-        },
-        {
-          "sha": "78c0a750f1ea7dbb01f82bec8a248dbd0f270b2d",
-          "message": "Add total organization revenue to budget",
-          "date": "2025-10-27T22:13:45.000-04:00",
-          "repo": "pritzker"
-        },
-        {
-          "sha": "27792e5158fb905d67b8dc0d1f061f0ab7ab124b",
-          "message": "Rename current year budget to 2025 (not FY2026)",
-          "date": "2025-10-27T22:25:01.000-04:00",
-          "repo": "pritzker"
-        },
-        {
-          "sha": "51636544b0d7b479cb0fce066148e15bcd172cbb",
-          "message": "Complete budget narrative tab with expense justifications",
-          "date": "2025-10-27T22:06:23.000-04:00",
-          "repo": "pritzker"
-        },
-        {
-          "sha": "5477ccc6e5c1653010626aa1020517fddb7daf7d",
-          "message": "Remove PolicyEngine details from YTD budget (now in financial position)",
-          "date": "2025-10-27T22:45:55.000-04:00",
-          "repo": "pritzker"
-        },
-        {
-          "sha": "31e618e9715c153b8212c7bca20f3a5d3838789d",
-          "message": "Add PolicyEngine Statement of Financial Position (Oct 2025)",
-          "date": "2025-10-27T22:44:57.000-04:00",
-          "repo": "pritzker"
-        },
-        {
-          "sha": "d70231b91f311e5e068b600eaf5baa3ff40d675b",
-          "message": "Add PolicyEngine current year budget (FY2026)",
-          "date": "2025-10-27T22:23:10.000-04:00",
-          "repo": "pritzker"
-        },
-        {
-          "sha": "ddb185a0cecf39488f3bac4164b3c6e52806b408",
-          "message": "Update 2025 budget with actual spending data from Open Collective",
-          "date": "2025-10-27T22:38:38.000-04:00",
-          "repo": "pritzker"
-        },
-        {
-          "sha": "8e969b8185691e4cf33d3a803327cea68719a3db",
-          "message": "Add financial documents to GitHub Pages with download links",
-          "date": "2025-10-27T22:49:20.000-04:00",
           "repo": "pritzker"
         },
         {
@@ -17380,6 +17308,60 @@
           "repo": "pritzker"
         },
         {
+          "sha": "51636544b0d7b479cb0fce066148e15bcd172cbb",
+          "message": "Complete budget narrative tab with expense justifications",
+          "date": "2025-10-27T22:06:23.000-04:00",
+          "repo": "pritzker"
+        },
+        {
+          "sha": "78c0a750f1ea7dbb01f82bec8a248dbd0f270b2d",
+          "message": "Add total organization revenue to budget",
+          "date": "2025-10-27T22:13:45.000-04:00",
+          "repo": "pritzker"
+        },
+        {
+          "sha": "c8466dcf00f49287f3a556897bbbaaaa27b5b573",
+          "message": "Enhance YTD budget response with Open Collective data",
+          "date": "2025-10-27T20:58:15.000-04:00",
+          "repo": "pritzker"
+        },
+        {
+          "sha": "27792e5158fb905d67b8dc0d1f061f0ab7ab124b",
+          "message": "Rename current year budget to 2025 (not FY2026)",
+          "date": "2025-10-27T22:25:01.000-04:00",
+          "repo": "pritzker"
+        },
+        {
+          "sha": "d70231b91f311e5e068b600eaf5baa3ff40d675b",
+          "message": "Add PolicyEngine current year budget (FY2026)",
+          "date": "2025-10-27T22:23:10.000-04:00",
+          "repo": "pritzker"
+        },
+        {
+          "sha": "ddb185a0cecf39488f3bac4164b3c6e52806b408",
+          "message": "Update 2025 budget with actual spending data from Open Collective",
+          "date": "2025-10-27T22:38:38.000-04:00",
+          "repo": "pritzker"
+        },
+        {
+          "sha": "5477ccc6e5c1653010626aa1020517fddb7daf7d",
+          "message": "Remove PolicyEngine details from YTD budget (now in financial position)",
+          "date": "2025-10-27T22:45:55.000-04:00",
+          "repo": "pritzker"
+        },
+        {
+          "sha": "31e618e9715c153b8212c7bca20f3a5d3838789d",
+          "message": "Add PolicyEngine Statement of Financial Position (Oct 2025)",
+          "date": "2025-10-27T22:44:57.000-04:00",
+          "repo": "pritzker"
+        },
+        {
+          "sha": "8e969b8185691e4cf33d3a803327cea68719a3db",
+          "message": "Add financial documents to GitHub Pages with download links",
+          "date": "2025-10-27T22:49:20.000-04:00",
+          "repo": "pritzker"
+        },
+        {
           "sha": "64bb29dee038cb82a8fb7178f07c4d355c95d75b",
           "message": "Separate question text from response for copying",
           "date": "2025-10-27T20:42:44.000-04:00",
@@ -17389,6 +17371,24 @@
           "sha": "68ada53d71e21521b89ed75511d4cca12ed2a77d",
           "message": "Move questions to YAML, responses ONLY in markdown files",
           "date": "2025-10-27T20:52:50.000-04:00",
+          "repo": "pritzker"
+        },
+        {
+          "sha": "f21c9cb85e282b83ac4f0a1a381ff2020b2c4c95",
+          "message": "Add training and support experience to capacity",
+          "date": "2025-10-27T21:39:01.000-04:00",
+          "repo": "pritzker"
+        },
+        {
+          "sha": "e313515512b2c1c08ff5308f6c84dcea38106548",
+          "message": "Add complete budget and project metadata",
+          "date": "2025-10-27T21:53:28.000-04:00",
+          "repo": "pritzker"
+        },
+        {
+          "sha": "b28c6764134ed55c529772a0c1b9fa68671ee649",
+          "message": "Fix budget file alignment with Pritzker template",
+          "date": "2025-10-27T21:55:24.000-04:00",
           "repo": "pritzker"
         },
         {
@@ -38435,6 +38435,72 @@
       ],
       "commits": [
         {
+          "sha": "5c20adfe9fd869a0df59e4e072edced0cecf5c1c",
+          "message": "plot",
+          "date": "2025-11-02T18:19:42.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "88e83fdfd38d09e2425869798279d345df5b7f1b",
+          "message": "plot",
+          "date": "2025-11-02T18:18:43.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "ba121d6e2562dd7d9448b192059ece24d2a4f9a7",
+          "message": "scope",
+          "date": "2025-11-02T19:32:04.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "fb759b899d555771a413a1fe517f5cdbc07466f3",
+          "message": "graph",
+          "date": "2025-11-02T19:02:18.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "2a029ec7322fd5d41ac861bd5c98ca02a6a5bef6",
+          "message": "scope",
+          "date": "2025-11-02T17:50:52.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "79eefa920186155b79169a0c8ab08b2ee955b5d4",
+          "message": "scope",
+          "date": "2025-11-02T17:46:53.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "4547d62fb0049064cc4237911a5f4d27683fa71b",
+          "message": "Fix merge conflict markers in DataMethodologySlide",
+          "date": "2025-11-02T18:05:45.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "c860ad8ee72691ae4d9996771ec3b6fc3b808c39",
+          "message": "scope",
+          "date": "2025-11-02T18:00:10.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "f7663b5b4947732cd980e78161fa8e4d2a0bc6d5",
+          "message": "carbon",
+          "date": "2025-11-02T13:00:15.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "5a2cfb1016f7035b489a1feac2f376f262cee04b",
+          "message": "add dashbaord",
+          "date": "2025-11-02T14:16:43.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "ca78bd7dcdf42943870c7df799703df741cae417",
+          "message": "word",
+          "date": "2025-11-02T14:18:16.000Z",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
           "sha": "87a5eca15fe6fb2ac7898dde7ab3e175f816ba25",
           "message": "Merge pull request #3 from PolicyEngine/add-vat",
           "date": "2025-11-01T18:46:44.000Z",
@@ -38468,72 +38534,6 @@
           "sha": "9762780dd8d99a3dc85fef6d69c19a335313c435",
           "message": "edit names",
           "date": "2025-11-01T17:02:06.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "f7663b5b4947732cd980e78161fa8e4d2a0bc6d5",
-          "message": "carbon",
-          "date": "2025-11-02T13:00:15.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "5a2cfb1016f7035b489a1feac2f376f262cee04b",
-          "message": "add dashbaord",
-          "date": "2025-11-02T14:16:43.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "ca78bd7dcdf42943870c7df799703df741cae417",
-          "message": "word",
-          "date": "2025-11-02T14:18:16.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "c860ad8ee72691ae4d9996771ec3b6fc3b808c39",
-          "message": "scope",
-          "date": "2025-11-02T18:00:10.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "4547d62fb0049064cc4237911a5f4d27683fa71b",
-          "message": "Fix merge conflict markers in DataMethodologySlide",
-          "date": "2025-11-02T18:05:45.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "79eefa920186155b79169a0c8ab08b2ee955b5d4",
-          "message": "scope",
-          "date": "2025-11-02T17:46:53.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "2a029ec7322fd5d41ac861bd5c98ca02a6a5bef6",
-          "message": "scope",
-          "date": "2025-11-02T17:50:52.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "fb759b899d555771a413a1fe517f5cdbc07466f3",
-          "message": "graph",
-          "date": "2025-11-02T19:02:18.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "ba121d6e2562dd7d9448b192059ece24d2a4f9a7",
-          "message": "scope",
-          "date": "2025-11-02T19:32:04.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "5c20adfe9fd869a0df59e4e072edced0cecf5c1c",
-          "message": "plot",
-          "date": "2025-11-02T18:19:42.000Z",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "88e83fdfd38d09e2425869798279d345df5b7f1b",
-          "message": "plot",
-          "date": "2025-11-02T18:18:43.000Z",
           "repo": "policyengine-uk-event-2025"
         },
         {
@@ -60591,14 +60591,14 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-19T16:13:09Z",
-          "updated_at": "2025-12-19T16:13:09Z",
-          "closed_at": null,
+          "updated_at": "2026-03-03T02:59:11Z",
+          "closed_at": "2026-03-03T02:59:11Z",
           "assignee": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -60629,7 +60629,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-claude/issues/35/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "pinned_comment": null,
           "score": 1
         },
@@ -90317,18 +90317,6 @@
           "repo": "spm-calculator"
         },
         {
-          "sha": "87af82387ff46e1bc7b2b4e1491486461b7dba77",
-          "message": "Merge pull request #24 from PolicyEngine/ben-last-minute",
-          "date": "2025-11-02T21:55:03.000-05:00",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
-          "sha": "8e58c99e98ad446f94b3afed5eedbaff3464a2cc",
-          "message": "slide 11",
-          "date": "2025-11-02T21:53:26.000-05:00",
-          "repo": "policyengine-uk-event-2025"
-        },
-        {
           "sha": "b6074389333ee95b26773f9fdc238617b3cbd7a1",
           "message": "Merge pull request #23 from PolicyEngine/ben-last-minute",
           "date": "2025-11-02T21:28:41.000-05:00",
@@ -90344,6 +90332,18 @@
           "sha": "37992e4e082d4c01e1e90d81792cb0fd21bbcf6e",
           "message": "A slide 10. Still needs work",
           "date": "2025-11-02T21:13:24.000-05:00",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "87af82387ff46e1bc7b2b4e1491486461b7dba77",
+          "message": "Merge pull request #24 from PolicyEngine/ben-last-minute",
+          "date": "2025-11-02T21:55:03.000-05:00",
+          "repo": "policyengine-uk-event-2025"
+        },
+        {
+          "sha": "8e58c99e98ad446f94b3afed5eedbaff3464a2cc",
+          "message": "slide 11",
+          "date": "2025-11-02T21:53:26.000-05:00",
           "repo": "policyengine-uk-event-2025"
         },
         {
