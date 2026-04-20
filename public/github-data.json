@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-13T06:51:59.306Z",
+  "fetchedAt": "2026-04-20T06:53:04.300Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -17020,14 +17020,14 @@
               "description": "High priority issue"
             }
           ],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 2,
           "created_at": "2025-12-01T02:22:25Z",
-          "updated_at": "2025-12-09T09:46:46Z",
-          "closed_at": null,
+          "updated_at": "2026-04-13T18:34:06Z",
+          "closed_at": "2026-04-13T18:34:06Z",
           "assignee": null,
           "author_association": "CONTRIBUTOR",
           "type": null,
@@ -17058,7 +17058,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-data/issues/238/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "pinned_comment": null,
           "score": 1
         },
@@ -17180,14 +17180,14 @@
               "description": "High priority issue"
             }
           ],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 2,
           "created_at": "2025-11-30T17:42:20Z",
-          "updated_at": "2025-12-09T09:46:51Z",
-          "closed_at": null,
+          "updated_at": "2026-04-13T18:24:22Z",
+          "closed_at": "2026-04-13T18:24:22Z",
           "assignee": null,
           "author_association": "CONTRIBUTOR",
           "type": null,
@@ -17218,7 +17218,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-uk-data/issues/237/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "pinned_comment": null,
           "score": 1
         },
@@ -25359,14 +25359,14 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-19T15:32:20Z",
-          "updated_at": "2026-01-31T12:41:02Z",
-          "closed_at": null,
+          "updated_at": "2026-04-17T18:51:47Z",
+          "closed_at": "2026-04-17T18:51:47Z",
           "assignee": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -25397,7 +25397,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7015/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "pinned_comment": null,
           "score": 1
         },
@@ -90711,14 +90711,14 @@
               "description": "Something isn't working"
             }
           ],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
-          "comments": 3,
+          "comments": 4,
           "created_at": "2025-08-27T18:47:46Z",
-          "updated_at": "2026-01-29T15:46:58Z",
-          "closed_at": null,
+          "updated_at": "2026-04-17T18:58:56Z",
+          "closed_at": "2026-04-17T18:58:56Z",
           "assignee": null,
           "author_association": "COLLABORATOR",
           "type": null,
@@ -90749,7 +90749,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/435/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "pinned_comment": null,
           "score": 1
         },
