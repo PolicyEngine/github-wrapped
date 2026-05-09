@@ -15,10 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Setup Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: 22
+      - uses: oven-sh/setup-bun@v2
 
       - name: Fetch GitHub data
         env:

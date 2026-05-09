@@ -1,12 +1,13 @@
+'use client';
+
 import { useState, useEffect } from 'react'
-import './App.css'
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 // Filter out automated PRs from display list (not from counts)
 const isAutomatedPR = (pr) => pr.title?.startsWith('Update PolicyEngine')
 
-function App() {
+export default function App() {
   const [data, setData] = useState(null)
   const [selectedMember, setSelectedMember] = useState(null)
   const [memberData, setMemberData] = useState(null)
@@ -17,7 +18,7 @@ function App() {
 
   // Load pre-fetched data
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}github-data.json`)
+    fetch('/github-data.json')
       .then(res => res.json())
       .then(data => {
         setData(data)
@@ -411,4 +412,3 @@ function App() {
   )
 }
 
-export default App

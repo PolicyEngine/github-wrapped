@@ -6,10 +6,11 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+bun-debug.log*
 
 node_modules
-dist
-dist-ssr
+.next
+out
 *.local
 
 # Generated data is now committed (refreshed via workflow)
@@ -24,3 +25,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Vercel
+.vercel
+
+# Next.js / TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# We use bun
+package-lock.json
