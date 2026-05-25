@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-18T07:32:30.032Z",
+  "fetchedAt": "2026-05-25T07:42:56.130Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -36,9 +36,10 @@
         "CLAUDE.md": 2,
         "uk-local-areas-dashboard": 2,
         "policyengine.py": 396,
-        "pulse": 16,
+        "policyengine-us-data": 6,
+        "pulse": 12,
         "policyengine-data": 1,
-        "policyengine-us-data": 43,
+        "policyengine-app": 41,
         "microdf": 3,
         "policyengine-uk": 21,
         "policyengine-api-v2": 1,
@@ -60,14 +61,14 @@
         237
       ],
       "monthlyCommits": [
-        68,
-        50,
-        15,
-        28,
-        138,
-        65,
-        105,
-        111,
+        62,
+        39,
+        31,
+        35,
+        122,
+        74,
+        110,
+        107,
         93,
         20,
         147,
@@ -8383,9 +8384,9 @@
         "commits": 2954,
         "prs": 529,
         "prs_merged": 385,
-        "reviews": 716,
+        "reviews": 718,
         "issues": 617,
-        "repos": 74
+        "repos": 73
       },
       "repoCommits": {
         "obbba-household-explorer": 18,
@@ -8420,10 +8421,9 @@
         "policyengine-canada": 4,
         "policyengine-nz": 13,
         "pe-compile": 6,
-        "policyengine-us-data": 136,
-        "policyengine-data": 2,
-        "pulse": 1,
-        "policyengine-app": 267
+        "policyengine-us-data": 126,
+        "policyengine-app": 278,
+        "policyengine-data": 2
       },
       "monthlyPRs": [
         5,
@@ -8440,18 +8440,18 @@
         77
       ],
       "monthlyCommits": [
-        14,
+        25,
         28,
         31,
         27,
         30,
         33,
-        163,
+        157,
         219,
-        52,
+        50,
         78,
         299,
-        26
+        23
       ],
       "prs": [
         {
@@ -12800,6 +12800,97 @@
           "score": 1
         },
         {
+          "url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2821",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-app",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2821/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2821/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2821/events",
+          "html_url": "https://github.com/PolicyEngine/policyengine-app/pull/2821",
+          "id": 3714507656,
+          "node_id": "PR_kwDOIS8n6s64Gn-a",
+          "number": 2821,
+          "title": "Bump codecov/codecov-action from 5.5.1 to 5.5.2 in the sub-major group",
+          "user": {
+            "login": "dependabot[bot]",
+            "id": 49699333,
+            "node_id": "MDM6Qm90NDk2OTkzMzM=",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+            "html_url": "https://github.com/apps/dependabot",
+            "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+            "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+            "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+            "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+            "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+            "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+            "type": "Bot",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "labels": [
+            {
+              "id": 6124339028,
+              "node_id": "LA_kwDOIS8n6s8AAAABbQn_VA",
+              "url": "https://api.github.com/repos/PolicyEngine/policyengine-app/labels/dependencies",
+              "name": "dependencies",
+              "color": "0366d6",
+              "default": false,
+              "description": "Pull requests that update a dependency file"
+            },
+            {
+              "id": 6124339038,
+              "node_id": "LA_kwDOIS8n6s8AAAABbQn_Xg",
+              "url": "https://api.github.com/repos/PolicyEngine/policyengine-app/labels/github_actions",
+              "name": "github_actions",
+              "color": "000000",
+              "default": false,
+              "description": "Pull requests that update GitHub Actions code"
+            }
+          ],
+          "state": "closed",
+          "locked": false,
+          "assignees": [],
+          "milestone": null,
+          "comments": 1,
+          "created_at": "2025-12-10T10:11:28Z",
+          "updated_at": "2026-05-23T13:50:56Z",
+          "closed_at": "2026-05-23T13:50:55Z",
+          "assignee": null,
+          "author_association": "CONTRIBUTOR",
+          "issue_field_values": [],
+          "type": null,
+          "active_lock_reason": null,
+          "draft": false,
+          "pull_request": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-app/pulls/2821",
+            "html_url": "https://github.com/PolicyEngine/policyengine-app/pull/2821",
+            "diff_url": "https://github.com/PolicyEngine/policyengine-app/pull/2821.diff",
+            "patch_url": "https://github.com/PolicyEngine/policyengine-app/pull/2821.patch",
+            "merged_at": "2026-05-23T13:50:55Z"
+          },
+          "body": "Bumps the sub-major group with 1 update: [codecov/codecov-action](https://github.com/codecov/codecov-action).\n\nUpdates `codecov/codecov-action` from 5.5.1 to 5.5.2\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/codecov/codecov-action/releases\">codecov/codecov-action's releases</a>.</em></p>\n<blockquote>\n<h2>v5.5.2</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>check gpg only when skip-validation = false by <a href=\"https://github.com/maxweng-sentry\"><code>@​maxweng-sentry</code></a> in <a href=\"https://redirect.github.com/codecov/codecov-action/pull/1894\">codecov/codecov-action#1894</a></li>\n<li>chore: <code>disable_search</code> alignment by <a href=\"https://github.com/freemanzMrojo\"><code>@​freemanzMrojo</code></a> in <a href=\"https://redirect.github.com/codecov/codecov-action/pull/1881\">codecov/codecov-action#1881</a></li>\n<li>chore(release): 5.5.2 by <a href=\"https://github.com/thomasrockhu-codecov\"><code>@​thomasrockhu-codecov</code></a> in <a href=\"https://redirect.github.com/codecov/codecov-action/pull/1902\">codecov/codecov-action#1902</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a href=\"https://github.com/maxweng-sentry\"><code>@​maxweng-sentry</code></a> made their first contribution in <a href=\"https://redirect.github.com/codecov/codecov-action/pull/1894\">codecov/codecov-action#1894</a></li>\n<li><a href=\"https://github.com/freemanzMrojo\"><code>@​freemanzMrojo</code></a> made their first contribution in <a href=\"https://redirect.github.com/codecov/codecov-action/pull/1881\">codecov/codecov-action#1881</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/codecov/codecov-action/compare/v5.5.1...v5.5.2\">https://github.com/codecov/codecov-action/compare/v5.5.1...v5.5.2</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/codecov/codecov-action/blob/main/CHANGELOG.md\">codecov/codecov-action's changelog</a>.</em></p>\n<blockquote>\n<h2>v5.5.2</h2>\n<h3>What's Changed</h3>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/codecov/codecov-action/compare/v5.5.1..v5.5.2\">https://github.com/codecov/codecov-action/compare/v5.5.1..v5.5.2</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/codecov/codecov-action/commit/671740ac38dd9b0130fbe1cec585b89eea48d3de\"><code>671740a</code></a> chore(release): 5.5.2 (<a href=\"https://redirect.github.com/codecov/codecov-action/issues/1902\">#1902</a>)</li>\n<li><a href=\"https://github.com/codecov/codecov-action/commit/96b38e9e60ee60a8c3911f4612407bba2f9195fb\"><code>96b38e9</code></a> chore: <code>disable_search</code> alignment (<a href=\"https://redirect.github.com/codecov/codecov-action/issues/1881\">#1881</a>)</li>\n<li><a href=\"https://github.com/codecov/codecov-action/commit/9b6d1f84bde660b0f784003009b1f0aa4663cdeb\"><code>9b6d1f8</code></a> check gpg only when skip-validation = false (<a href=\"https://redirect.github.com/codecov/codecov-action/issues/1894\">#1894</a>)</li>\n<li>See full diff in <a href=\"https://github.com/codecov/codecov-action/compare/v5.5.1...v5.5.2\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=codecov/codecov-action&package-manager=github_actions&previous-version=5.5.1&new-version=5.5.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore <dependency name> major version` will close this group update PR and stop Dependabot creating any more for the specific dependency's major version (unless you unignore this specific dependency's major version or upgrade to it yourself)\n- `@dependabot ignore <dependency name> minor version` will close this group update PR and stop Dependabot creating any more for the specific dependency's minor version (unless you unignore this specific dependency's minor version or upgrade to it yourself)\n- `@dependabot ignore <dependency name>` will close this group update PR and stop Dependabot creating any more for the specific dependency (unless you unignore this specific dependency or upgrade to it yourself)\n- `@dependabot unignore <dependency name>` will remove all of the ignore conditions of the specified dependency\n- `@dependabot unignore <dependency name> <ignore condition>` will remove the ignore condition of the specified dependency and ignore conditions\n\n\n</details>",
+          "reactions": {
+            "url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2821/reactions",
+            "total_count": 0,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+          },
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-app/issues/2821/timeline",
+          "performed_via_github_app": null,
+          "state_reason": null,
+          "score": 1
+        },
+        {
           "url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/457",
           "repository_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data",
           "labels_url": "https://api.github.com/repos/PolicyEngine/policyengine-us-data/issues/457/labels{/name}",
@@ -14871,120 +14962,6 @@
             "eyes": 0
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6874/timeline",
-          "performed_via_github_app": null,
-          "state_reason": null,
-          "score": 1
-        },
-        {
-          "url": "https://api.github.com/repos/PolicyEngine/uk-autumn-budget-dashboard/issues/33",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/uk-autumn-budget-dashboard",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/uk-autumn-budget-dashboard/issues/33/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/uk-autumn-budget-dashboard/issues/33/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/uk-autumn-budget-dashboard/issues/33/events",
-          "html_url": "https://github.com/PolicyEngine/uk-autumn-budget-dashboard/pull/33",
-          "id": 3675035194,
-          "node_id": "PR_kwDOQDq0jc62CwPf",
-          "number": 33,
-          "title": "Edit scatter plot and obr number for fuel duty",
-          "user": {
-            "login": "vahid-ahmadi",
-            "id": 57112303,
-            "node_id": "MDQ6VXNlcjU3MTEyMzAz",
-            "avatar_url": "https://avatars.githubusercontent.com/u/57112303?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/vahid-ahmadi",
-            "html_url": "https://github.com/vahid-ahmadi",
-            "followers_url": "https://api.github.com/users/vahid-ahmadi/followers",
-            "following_url": "https://api.github.com/users/vahid-ahmadi/following{/other_user}",
-            "gists_url": "https://api.github.com/users/vahid-ahmadi/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/vahid-ahmadi/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/vahid-ahmadi/subscriptions",
-            "organizations_url": "https://api.github.com/users/vahid-ahmadi/orgs",
-            "repos_url": "https://api.github.com/users/vahid-ahmadi/repos",
-            "events_url": "https://api.github.com/users/vahid-ahmadi/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/vahid-ahmadi/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "labels": [],
-          "state": "closed",
-          "locked": false,
-          "assignees": [
-            {
-              "login": "vahid-ahmadi",
-              "id": 57112303,
-              "node_id": "MDQ6VXNlcjU3MTEyMzAz",
-              "avatar_url": "https://avatars.githubusercontent.com/u/57112303?v=4",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/vahid-ahmadi",
-              "html_url": "https://github.com/vahid-ahmadi",
-              "followers_url": "https://api.github.com/users/vahid-ahmadi/followers",
-              "following_url": "https://api.github.com/users/vahid-ahmadi/following{/other_user}",
-              "gists_url": "https://api.github.com/users/vahid-ahmadi/gists{/gist_id}",
-              "starred_url": "https://api.github.com/users/vahid-ahmadi/starred{/owner}{/repo}",
-              "subscriptions_url": "https://api.github.com/users/vahid-ahmadi/subscriptions",
-              "organizations_url": "https://api.github.com/users/vahid-ahmadi/orgs",
-              "repos_url": "https://api.github.com/users/vahid-ahmadi/repos",
-              "events_url": "https://api.github.com/users/vahid-ahmadi/events{/privacy}",
-              "received_events_url": "https://api.github.com/users/vahid-ahmadi/received_events",
-              "type": "User",
-              "user_view_type": "public",
-              "site_admin": false
-            }
-          ],
-          "milestone": null,
-          "comments": 1,
-          "created_at": "2025-11-28T14:01:44Z",
-          "updated_at": "2025-11-28T14:10:11Z",
-          "closed_at": "2025-11-28T14:10:11Z",
-          "assignee": {
-            "login": "vahid-ahmadi",
-            "id": 57112303,
-            "node_id": "MDQ6VXNlcjU3MTEyMzAz",
-            "avatar_url": "https://avatars.githubusercontent.com/u/57112303?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/vahid-ahmadi",
-            "html_url": "https://github.com/vahid-ahmadi",
-            "followers_url": "https://api.github.com/users/vahid-ahmadi/followers",
-            "following_url": "https://api.github.com/users/vahid-ahmadi/following{/other_user}",
-            "gists_url": "https://api.github.com/users/vahid-ahmadi/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/vahid-ahmadi/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/vahid-ahmadi/subscriptions",
-            "organizations_url": "https://api.github.com/users/vahid-ahmadi/orgs",
-            "repos_url": "https://api.github.com/users/vahid-ahmadi/repos",
-            "events_url": "https://api.github.com/users/vahid-ahmadi/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/vahid-ahmadi/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "author_association": "COLLABORATOR",
-          "issue_field_values": [],
-          "type": null,
-          "active_lock_reason": null,
-          "draft": false,
-          "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/uk-autumn-budget-dashboard/pulls/33",
-            "html_url": "https://github.com/PolicyEngine/uk-autumn-budget-dashboard/pull/33",
-            "diff_url": "https://github.com/PolicyEngine/uk-autumn-budget-dashboard/pull/33.diff",
-            "patch_url": "https://github.com/PolicyEngine/uk-autumn-budget-dashboard/pull/33.patch",
-            "merged_at": "2025-11-28T14:10:11Z"
-          },
-          "body": null,
-          "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/uk-autumn-budget-dashboard/issues/33/reactions",
-            "total_count": 0,
-            "+1": 0,
-            "-1": 0,
-            "laugh": 0,
-            "hooray": 0,
-            "confused": 0,
-            "heart": 0,
-            "rocket": 0,
-            "eyes": 0
-          },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/uk-autumn-budget-dashboard/issues/33/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1
@@ -18105,8 +18082,8 @@
         "LegislationBuilder": 10,
         "us-state-eitcs-ctcs": 19,
         "uprating": 14,
-        "policyengine-us-data": 30,
         "policyengine-app": 54,
+        "policyengine-us-data": 30,
         "crfb-tob-impacts": 85,
         "us-nc-sources": 5,
         "new-york-credit-comparison": 8,
@@ -26411,14 +26388,14 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 2,
           "created_at": "2025-12-14T22:23:22Z",
-          "updated_at": "2025-12-14T22:37:33Z",
-          "closed_at": null,
+          "updated_at": "2026-05-23T20:00:51Z",
+          "closed_at": "2026-05-23T20:00:51Z",
           "assignee": null,
           "author_association": "COLLABORATOR",
           "issue_field_values": [],
@@ -26450,7 +26427,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/6975/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "completed",
           "pinned_comment": null,
           "score": 1
         },
@@ -27764,8 +27741,8 @@
         "policyengine-uk-data": 60,
         "uk-two-child-limit-app": 17,
         "policyengine-canada": 5,
-        "policyengine-us-data": 34,
         "policyengine-app": 111,
+        "policyengine-us-data": 34,
         "uk-public-services-imputation": 5,
         "event-september": 4,
         "policyengine-api": 12,
@@ -40071,10 +40048,10 @@
           "repo": "policyengine-canada"
         },
         {
-          "sha": "053e5f8c2279e2912204b4a9c21f435a6e36e399",
-          "message": "Impute SSA card-type (#223)",
-          "date": "2025-05-14T15:14:52.000+01:00",
-          "repo": "policyengine-us-data"
+          "sha": "f4d8dc5694e86e700cee7e2fbfb0cc9b71cc28c9",
+          "message": "Edit the UK income tax and NI reforms blog post (#2813)",
+          "date": "2025-11-21T14:16:45.000Z",
+          "repo": "policyengine-app"
         }
       ]
     },
@@ -40101,8 +40078,8 @@
         "state-medicaid-dashboard": 9,
         "LegislationBuilder": 1,
         "acacalc": 1,
-        "policyengine-us-data": 35,
         "policyengine-app": 25,
+        "policyengine-us-data": 35,
         "scotland-mansion-tax": 8,
         "crs-presentation-us": 14,
         "snap-district-map": 8,
@@ -51204,82 +51181,82 @@
           "repo": "acacalc"
         },
         {
-          "sha": "b51f9e3795c771ce2fa5d59a9e3d99fa4e302d04",
-          "message": "updates",
-          "date": "2025-07-08T15:40:26.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "27e4800986ae3cd4abc38a2e815159c34033c441",
+          "message": "Adds ACA-calc streamlit app (#2763)",
+          "date": "2025-10-01T15:39:21.000-04:00",
+          "repo": "policyengine-app"
         },
         {
-          "sha": "ee6c850786a75754058b6504a88bad457dcfe341",
-          "message": "readme",
-          "date": "2025-07-07T10:10:17.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "eaf5f6bae550d667243abdd8336955f2ae2ad631",
+          "message": "lint",
+          "date": "2025-09-30T17:49:17.000-04:00",
+          "repo": "policyengine-app"
         },
         {
-          "sha": "3b15c495c6dbde9914ed3d2dea1b0aea4be17d5b",
-          "message": "medicaid",
-          "date": "2025-07-03T12:30:13.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "900129a5b256e0e972340fbe8fdb96cf0809daaf",
+          "message": "italic",
+          "date": "2025-09-30T17:45:48.000-04:00",
+          "repo": "policyengine-app"
         },
         {
-          "sha": "15a6c0a0c5a085da779787ea1ed2f6185282803f",
-          "message": "enrollment",
-          "date": "2025-07-03T10:53:44.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "364290cb72ab564504318a07c65bc4edd22d63a5",
+          "message": "ah",
+          "date": "2025-09-30T17:45:36.000-04:00",
+          "repo": "policyengine-app"
         },
         {
-          "sha": "e2729a8709eeb24e4811e12fab719bdd6fd6bd9b",
-          "message": "recreation",
-          "date": "2025-07-03T10:47:44.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "e10e18b40d5abaf68fd725cf11eb7bc418d4b053",
+          "message": "here",
+          "date": "2025-09-30T17:45:26.000-04:00",
+          "repo": "policyengine-app"
         },
         {
-          "sha": "35136b803ac204a4cbc69bd3d355914d17075423",
-          "message": "new branch attempt",
-          "date": "2025-07-03T10:43:45.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "841ab449f01962515d5074bb43ce1594509ad83a",
+          "message": "Fix ACA post",
+          "date": "2025-09-30T17:44:14.000-04:00",
+          "repo": "policyengine-app"
         },
         {
-          "sha": "ffc5879162e8201bd76520a0a5ce5a5b7da5197e",
-          "message": "1",
-          "date": "2025-05-13T14:06:42.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "b0efbfa8e9fbc127f23e8ad22d022492d3155aee",
+          "message": "ACA analysis write-up (#2761)",
+          "date": "2025-09-30T16:46:51.000-04:00",
+          "repo": "policyengine-app"
         },
         {
-          "sha": "ddbedd58aaf2873226d9419378418fcc2436abae",
-          "message": "third times the charm",
-          "date": "2025-05-13T13:59:42.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "fac39ed5d74767f630fab943f4ec5273f6aa2cde",
+          "message": "delete",
+          "date": "2025-04-01T15:50:51.000-04:00",
+          "repo": "policyengine-app"
         },
         {
-          "sha": "49671e7bc517693c4c6ae695650dff05e7e6e5cc",
-          "message": "take up seeds",
-          "date": "2025-06-11T16:16:05.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "70bf5b79159306502a064ae5d21b943c031164be",
+          "message": "Upload April 1st Blog Post",
+          "date": "2025-04-01T15:40:48.000-04:00",
+          "repo": "policyengine-app"
         },
         {
-          "sha": "f4367e9d741886d2026583d0bcdb1e91b4a7be3f",
-          "message": "Add take-up flags for Medicaid and ACA PTC",
-          "date": "2025-06-10T16:42:24.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "078f9d421f5fcb649aa4bb99ac4a9a72526356b2",
+          "message": "prettier",
+          "date": "2025-02-19T11:38:03.000-05:00",
+          "repo": "policyengine-app"
         },
         {
-          "sha": "5ced541b73d083ab18ddd320b2c718155ebc82e4",
-          "message": "Merge pull request #299 from PolicyEngine/main",
-          "date": "2025-06-13T12:52:06.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "2bf468e33f60eef0dca96aaecb7041d3c7bf49f2",
+          "message": "footnotes",
+          "date": "2025-02-19T11:30:43.000-05:00",
+          "repo": "policyengine-app"
         },
         {
-          "sha": "e172b258ed53cd7e518e51fc1c4533ac3fe0a113",
-          "message": "Update Marketplace variable to be Now",
-          "date": "2025-06-10T14:59:46.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "119670811c70a7c5be9c8d7d7c1646b2167b6eaf",
+          "message": "fix",
+          "date": "2025-02-19T11:24:54.000-05:00",
+          "repo": "policyengine-app"
         },
         {
-          "sha": "56a85f4dae589d63b254cbff79f8edb15f1d4cc8",
-          "message": "Update Marketplace variable to be Now",
-          "date": "2025-06-10T14:17:47.000-04:00",
-          "repo": "policyengine-us-data"
+          "sha": "f69a5f14a59487a77acffbf6820031c388deb02e",
+          "message": "update",
+          "date": "2025-02-19T11:24:11.000-05:00",
+          "repo": "policyengine-app"
         }
       ]
     },
@@ -63142,8 +63119,8 @@
         "policyengine-api-v2-alpha": 2,
         "code-snippets": 27,
         "policyengine.py": 27,
-        "policyengine-us-data": 26,
         "policyengine-app": 155,
+        "policyengine-us-data": 26,
         "policyengine-api": 396,
         "microdf": 2,
         "policyengine-us": 28,
@@ -72213,162 +72190,6 @@
           "repo": "policyengine.py"
         },
         {
-          "sha": "7291c312e188ddc16200e1dbef8966a5889da7f7",
-          "message": "Merge pull request #195 from PolicyEngine/feat/county-fips-dataset",
-          "date": "2025-03-27T15:58:27.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "37d5a138f5c42213f33ce1bdc344143d8f11c9f6",
-          "message": "test: Clean up tests",
-          "date": "2025-03-26T18:13:45.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "9163bd3e42c4f4e987702a900624982d218ada34",
-          "message": "feat: Basic test implementation; refactoring needed",
-          "date": "2025-03-26T18:01:36.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "c996689fd98421fa5f9d6d7550af3f1f6722911b",
-          "message": "fix: Replace removed ZIP code data",
-          "date": "2025-03-26T17:57:07.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "a043ddbf26c037ec6a87b4eefea635eb8f7c1213",
-          "message": "chore: Add relevant comment, remove deprecated filepath",
-          "date": "2025-03-26T17:42:00.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "475c27e76ae1210f0fa7434877254bcdb1cbe163",
-          "message": "fix: Upload county FIPS data to Hugging Face when completed",
-          "date": "2025-03-26T17:37:28.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "8153978423d71b0a3a4fdd4a440bd038fc7f3af3",
-          "message": "fix: Download census data instead of storing",
-          "date": "2025-03-26T17:04:34.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "c42f95ab5e463d26a5e448719d845544b40da04b",
-          "message": "test: Add tests",
-          "date": "2025-03-21T16:18:56.000-04:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "b47511d66341a3a90526d4718885c49fe09ec646",
-          "message": "fix: Read FIPS CSV so as to preserve string typing",
-          "date": "2025-03-21T02:00:34.000-04:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "58d4554127261cb448892121d0521d4439894d43",
-          "message": "chore: Lint & changelog",
-          "date": "2025-03-17T21:50:24.000-04:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "5ab7cc311648319c9c8c026b11b1fbab745a40c6",
-          "message": "fix: Improve county FIPS dataset generation code",
-          "date": "2025-03-17T21:49:49.000-04:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "d5333ff148b1d16a8e4a112776a5b72e2071776c",
-          "message": "feat: Add county FIPS dataset export code",
-          "date": "2025-03-17T20:55:21.000-04:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "2d59a6f6dec58860000c7658dfdcd4c5a9f15aca",
-          "message": "feat: Add county FIPS dataset",
-          "date": "2025-03-17T20:54:09.000-04:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "694826111ddc289027a0dec304d389c92081466b",
-          "message": "Update package version",
-          "date": "2025-03-27T22:58:48.000Z",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "c7d9090e2bf603ab99ffd6a99d71b3499053be03",
-          "message": "Merge pull request #200 from PolicyEngine/fix/remove-local-write",
-          "date": "2025-03-28T11:06:43.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "81dabae4e5d18d3b6d75c101d982fa2fd2aa67fa",
-          "message": "chore: Remove unneeded test, lint & changelog",
-          "date": "2025-03-27T18:26:54.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "e30f6f8f4b6f2aeb8d1db1429cad186fdeab12f0",
-          "message": "fix: Properly select encoding for dataset",
-          "date": "2025-03-27T18:24:33.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "6423201b410aa35290a0083b6f52885889345d43",
-          "message": "fix: Remove unneeded local build of county FIPS dataset",
-          "date": "2025-03-27T16:12:03.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "dec3e335247d1f2414d5ec9d78ae0aab3fd316bc",
-          "message": "Update package version",
-          "date": "2025-03-28T18:07:04.000Z",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "e409eadf3052cec77f1e49dc470d26e57f091517",
-          "message": "Merge pull request #208 from PolicyEngine/fix/dont-downsample-pooled-cps",
-          "date": "2025-04-22T14:24:26.000-04:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "95ca793085c12e28754de5a386051eddeb00cdba",
-          "message": "fix: Rename downsampling_fraction to frac, apply 1 by default",
-          "date": "2025-04-16T15:15:27.000-04:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "2340cffefb5ce0f87ea48755d207b69d3c5082c9",
-          "message": "fix: Make fixes from review",
-          "date": "2025-04-14T16:59:21.000-04:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "165eb39a6d8813b09f45490d5cd7766a70e1919a",
-          "message": "fix: Attempt to preserve original dtype when downsampling",
-          "date": "2025-04-11T18:03:40.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "7fd2fa241e253c87a84491a8c9c273afa5ddf595",
-          "message": "chore: Add warning",
-          "date": "2025-04-11T15:08:14.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "8526e9ee10836ee03f67b09d9e301f15c14c9785",
-          "message": "fix: Naïve fix for CPS downsampling in Pooled 3-year CPS",
-          "date": "2025-04-11T15:06:30.000-07:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "0f33a2f00b08fb6beab1804955ef2d53c3f11e0e",
-          "message": "Update package version",
-          "date": "2025-04-22T18:24:46.000Z",
-          "repo": "policyengine-us-data"
-        },
-        {
           "sha": "ee27b3d24fb2f0a3f6d465b30e3d332bea89a6be",
           "message": "Merge pull request #2805 from PolicyEngine/fix/migrate-articles-to-legacy",
           "date": "2025-11-03T01:07:48.000Z",
@@ -72463,6 +72284,162 @@
           "message": "Merge pull request #2629 from PolicyEngine/Remove-mean-strategy-from-aggregateValues-function",
           "date": "2025-07-01T22:50:50.000-04:00",
           "repo": "policyengine-app"
+        },
+        {
+          "sha": "6142dc4799814cdcb0e33b3ee7ac77361bb253cc",
+          "message": "Merge pull request #2634 from PolicyEngine/dependabot/npm_and_yarn/sub-major-7dbb783640",
+          "date": "2025-07-01T22:36:47.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "7e9363373b83bffe6292b528b669e986d4ce80c6",
+          "message": "Merge pull request #2628 from PolicyEngine/remove-blocks-of-demonstration-code-in-HouseholdAIModal",
+          "date": "2025-07-01T18:29:59.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "51872ab660da2b3ba10db40f64de99b4599dcb12",
+          "message": "Merge pull request #2621 from PolicyEngine/fix/use-proper-cliff-schema",
+          "date": "2025-06-24T14:08:54.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "dd496b06ddaed0a0f2d60b5f5d99320a97cc1feb",
+          "message": "fix: Update cliff impacts to use new schema",
+          "date": "2025-06-23T17:47:35.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "5c6f4271af3b6f451ac3f753531c03bf0ce4c325",
+          "message": "Merge pull request #2546 from SEEDART007/explain-ai-clickable",
+          "date": "2025-06-19T14:04:41.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "381a32d8238fc9c2e66415475039f6a97d9e444b",
+          "message": "Merge pull request #2552 from SEEDART007/hover-correction",
+          "date": "2025-06-19T13:55:39.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "6642044a4c293073aaeeaa20a577598a18aa3631",
+          "message": "fix: Remove API v1 fallback from app (#2607)",
+          "date": "2025-06-10T17:42:27.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "576cc667d6c15df96046f7bd28a9ab3c6654daa5",
+          "message": "feat: Add search param to run API v1 (#2603)",
+          "date": "2025-06-10T06:34:12.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "eddee444a5f6160900f51eba2a7a1140e28b139c",
+          "message": "Merge pull request #2593 from PolicyEngine/dependabot/npm_and_yarn/sub-major-ce1d9e9957",
+          "date": "2025-06-05T19:26:32.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "833baf82cefc32985d46ce104d61e274b660f286",
+          "message": "Merge pull request #2594 from v-lerie/valerie/issue2576",
+          "date": "2025-06-05T18:43:15.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "b99bb0b99cfa61d4dfc409c1f8e5418b40bc4ff3",
+          "message": "Merge pull request #2588 from hua7450/hua7450/issue2559",
+          "date": "2025-06-02T21:20:52.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "da8bf36594bbc5dd5b6ac0922e6c7aa84d949c9b",
+          "message": "Merge pull request #2521 from harnish7576/harnish7576/issue_2486_subissue_2487_re-enabling-variable-parameter-explorer",
+          "date": "2025-05-30T17:19:42.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "d73836411ff7f1ce8c9ace6e0dd572ff62d41c1d",
+          "message": "chore: Remove deprecated log",
+          "date": "2025-05-30T17:14:35.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "ad4914a7ea081165c09bbd06a67b1c5a58974ce4",
+          "message": "Merge pull request #2570 from PolicyEngine/fix/properly-set-bools",
+          "date": "2025-05-26T17:59:18.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "eec6ff7e17d5312c64094de251868b4089050559",
+          "message": "fix: Respond to comments from AI",
+          "date": "2025-05-26T17:53:25.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "c7127299f6f93fa33623e00a54652d37b8701929",
+          "message": "Add 10 year impacts to app (#2502)",
+          "date": "2025-05-24T04:00:07.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "a7a501de0981ebe1db50e4a0446b4632eaedb080",
+          "message": "chore: Add tests",
+          "date": "2025-05-24T01:01:09.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "770c5e7fc5750dc8060f1d256a7d7b9b5590e066",
+          "message": "fix: Prevent Boolean param setting error",
+          "date": "2025-05-22T21:01:15.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "41c4e3652cd50787ba5cbb71bc282382dbb503f4",
+          "message": "Merge pull request #2556 from PolicyEngine/codex/find-and-implement-easy-improvement",
+          "date": "2025-05-21T10:56:16.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "f19fec28407e76bda97ef2621be8d705d83f061d",
+          "message": "Merge pull request #2555 from PolicyEngine/fix/remove-enhanced-us-filter",
+          "date": "2025-05-20T19:24:12.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "21074c0b4b4586b1da702a0000b386a61a7aa0ae",
+          "message": "fix: Remove enhanced_us filter",
+          "date": "2025-05-20T18:51:52.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "e90c45a5bdac9344c384ffdf31509cecf9955750",
+          "message": "Redirect enhanced_us region requests and remove deprecated `enhanced_us` code (#2551)",
+          "date": "2025-05-20T08:45:34.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "35274b26a358f3f3bdd8dfbb09a7e2d213fb3c01",
+          "message": "Add functionality to aggregate multi-year outputs (#2499)",
+          "date": "2025-05-20T06:53:05.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "51083d513a58969cdeda3f2827016ce65bb15f17",
+          "message": "Merge pull request #2525 from UzairMalik17/master",
+          "date": "2025-05-16T15:07:40.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "8ff8708044df80d6fcf209609c18796af2fc0bcc",
+          "message": "Merge pull request #2503 from v-lerie/valerie/issue2447",
+          "date": "2025-05-06T19:25:59.000-04:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "d71e72b95957ce9869a61eff0778e267ab64d1fa",
+          "message": "Merge pull request #2478 from harnish7576/harnish7576/issue2111_adding_reset_to_parameter_editor",
+          "date": "2025-05-06T19:11:46.000-04:00",
+          "repo": "policyengine-app"
         }
       ]
     },
@@ -72485,8 +72462,8 @@
       },
       "repoCommits": {
         "child-poverty-impact-dashboard": 2,
-        "policyengine-us-data": 12,
         "policyengine-app": 40,
+        "policyengine-us-data": 12,
         "crfb-tob-impacts": 52,
         "us-nc-sources": 3,
         "new-york-credit-comparison": 1,
@@ -81471,14 +81448,14 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-11-18T20:32:09Z",
-          "updated_at": "2025-11-18T20:32:09Z",
-          "closed_at": null,
+          "updated_at": "2026-05-19T09:47:22Z",
+          "closed_at": "2026-05-19T09:47:22Z",
           "assignee": null,
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
@@ -81510,7 +81487,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/analysis-notebooks/issues/95/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "not_planned",
           "pinned_comment": null,
           "score": 1
         },
@@ -82804,78 +82781,6 @@
           "repo": "child-poverty-impact-dashboard"
         },
         {
-          "sha": "3c000981a112883c5386040fc4ef8e67eaf9eb13",
-          "message": "switch to PyPi",
-          "date": "2025-12-19T12:17:34.000-05:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "ecde9650576aecc2235c2d12fe6780920ccf4588",
-          "message": "Remove unused calculate_spm_thresholds_by_puma function",
-          "date": "2025-12-12T12:09:54.000-05:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "0addc175e0838d35ba40090104abea54a951725d",
-          "message": "Remove redundant comments and unused functions from spm.py",
-          "date": "2025-12-12T12:08:38.000-05:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "ea3391dd7b9d6a27128f93eea9d9b777fc7ebf01",
-          "message": "Address PR review feedback: revert ACS changes and simplify CPS",
-          "date": "2025-12-12T12:02:57.000-05:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "23fce035a345fa5cd45c040556afeba210c86e45",
-          "message": "Use national SPM thresholds for ACS (no geographic adjustment)",
-          "date": "2025-12-10T13:52:26.000-05:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "db241aba83271d8b80664d502a68ac97bc79b767",
-          "message": "Merge branch 'main' into use-spm-calculator",
-          "date": "2025-12-09T13:20:23.000-05:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "88749b0405dbed9b6b0384ced929fbd501ec6835",
-          "message": "Use PUMA-level geographic adjustments for ACS SPM thresholds",
-          "date": "2025-12-09T13:18:56.000-05:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "74286690d914df83251f631297348eb847dbe071",
-          "message": "Convert long_term_projections.ipynb to markdown to fix MyST build",
-          "date": "2025-12-05T11:08:52.000-05:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "d8a5beeb28d991f2f413f5c1d17f9ccc27c9a0b8",
-          "message": "Clear notebook outputs to fix MyST documentation build",
-          "date": "2025-12-05T10:33:20.000-05:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "103ad5ad0faa2027e3a0c20e889fcbbec42c9250",
-          "message": "Merge branch 'use-spm-calculator' of https://github.com/DTrim99/policyengine-us-data into use-spm-calculator",
-          "date": "2025-12-04T16:47:46.000-05:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "e9fa47e0f200926fd2ee9ea7848572984ac5bb7b",
-          "message": "Use spm-calculator to compute SPM thresholds",
-          "date": "2025-12-04T16:08:39.000-05:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "9582ecfab65a7e0cec797b8ab32720797f40baec",
-          "message": "Use spm-calculator to compute SPM thresholds",
-          "date": "2025-12-04T16:08:39.000-05:00",
-          "repo": "policyengine-us-data"
-        },
-        {
           "sha": "675fcda879f08969e033e32defb9ef53a5cdc106",
           "message": "Embed RI CTC Calculator (#2792)",
           "date": "2025-10-31T17:03:14.000-04:00",
@@ -83114,6 +83019,78 @@
           "message": "Add David Trimmer to About page",
           "date": "2025-01-11T14:35:48.000-05:00",
           "repo": "policyengine-app"
+        },
+        {
+          "sha": "3c000981a112883c5386040fc4ef8e67eaf9eb13",
+          "message": "switch to PyPi",
+          "date": "2025-12-19T12:17:34.000-05:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "ecde9650576aecc2235c2d12fe6780920ccf4588",
+          "message": "Remove unused calculate_spm_thresholds_by_puma function",
+          "date": "2025-12-12T12:09:54.000-05:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "0addc175e0838d35ba40090104abea54a951725d",
+          "message": "Remove redundant comments and unused functions from spm.py",
+          "date": "2025-12-12T12:08:38.000-05:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "ea3391dd7b9d6a27128f93eea9d9b777fc7ebf01",
+          "message": "Address PR review feedback: revert ACS changes and simplify CPS",
+          "date": "2025-12-12T12:02:57.000-05:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "23fce035a345fa5cd45c040556afeba210c86e45",
+          "message": "Use national SPM thresholds for ACS (no geographic adjustment)",
+          "date": "2025-12-10T13:52:26.000-05:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "db241aba83271d8b80664d502a68ac97bc79b767",
+          "message": "Merge branch 'main' into use-spm-calculator",
+          "date": "2025-12-09T13:20:23.000-05:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "88749b0405dbed9b6b0384ced929fbd501ec6835",
+          "message": "Use PUMA-level geographic adjustments for ACS SPM thresholds",
+          "date": "2025-12-09T13:18:56.000-05:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "74286690d914df83251f631297348eb847dbe071",
+          "message": "Convert long_term_projections.ipynb to markdown to fix MyST build",
+          "date": "2025-12-05T11:08:52.000-05:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "d8a5beeb28d991f2f413f5c1d17f9ccc27c9a0b8",
+          "message": "Clear notebook outputs to fix MyST documentation build",
+          "date": "2025-12-05T10:33:20.000-05:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "103ad5ad0faa2027e3a0c20e889fcbbec42c9250",
+          "message": "Merge branch 'use-spm-calculator' of https://github.com/DTrim99/policyengine-us-data into use-spm-calculator",
+          "date": "2025-12-04T16:47:46.000-05:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "e9fa47e0f200926fd2ee9ea7848572984ac5bb7b",
+          "message": "Use spm-calculator to compute SPM thresholds",
+          "date": "2025-12-04T16:08:39.000-05:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "9582ecfab65a7e0cec797b8ab32720797f40baec",
+          "message": "Use spm-calculator to compute SPM thresholds",
+          "date": "2025-12-04T16:08:39.000-05:00",
+          "repo": "policyengine-us-data"
         },
         {
           "sha": "46098a73da144086828637ff0f80eee1243c45c7",
@@ -113367,8 +113344,8 @@
         "L0": 2,
         "maria-microintern": 7,
         "policyengine-canada": 1,
-        "policyengine-data": 95,
         "policyengine-us-data": 39,
+        "policyengine-data": 95,
         "policyengine-app": 6,
         "policyengine-api": 1,
         "us-congressional-districts": 45,
@@ -123890,6 +123867,12 @@
           "repo": "policyengine-canada"
         },
         {
+          "sha": "7a2a1dd17ed0d1ea817fee66694640e779a52e39",
+          "message": "Rename ucgid to ucgid_str in database (#420)",
+          "date": "2025-08-08T12:19:02.000+02:00",
+          "repo": "policyengine-us-data"
+        },
+        {
           "sha": "7a533dc8d464da0a4e5f4a8d51d0dcfeae6d1ed0",
           "message": "Merge pull request #16 from PolicyEngine/add-key-normalisation",
           "date": "2025-08-07T11:28:05.000+02:00",
@@ -123914,15 +123897,153 @@
           "repo": "policyengine-data"
         },
         {
-          "sha": "7a2a1dd17ed0d1ea817fee66694640e779a52e39",
-          "message": "Rename ucgid to ucgid_str in database (#420)",
-          "date": "2025-08-08T12:19:02.000+02:00",
+          "sha": "28508d3cd8674f4cde5dc01c9ab212945c0c7d86",
+          "message": "Cleaning ACS age, SOI agi, hardcoded, and SNAP targets (#373)",
+          "date": "2025-07-18T19:01:34.000+02:00",
           "repo": "policyengine-us-data"
         },
         {
-          "sha": "981477d114472b56983eb92cf206e7ecd5e6622f",
-          "message": "Auto loan balance imputation (#231)",
-          "date": "2025-05-14T16:29:18.000+02:00",
+          "sha": "e5643f4b9e28a261399c721ba6085de1c736d118",
+          "message": "minor fixes",
+          "date": "2025-03-07T16:02:28.000-03:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "c6197d717224fe6d8c9d7927d01df5934bf6cfb3",
+          "message": "fix image format",
+          "date": "2025-03-04T16:19:19.000+01:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "23ac9892cf6d893c53f7bd16881706c805442374",
+          "message": "Add files via upload",
+          "date": "2025-03-04T16:18:25.000+01:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "8e4005502d4a7b4bb491a569374909578f0764dd",
+          "message": "Delete src/images/authors/maria-juaristi.JPG",
+          "date": "2025-03-04T15:58:48.000+01:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "9467cbf13e6b250ee89a4de4c5c5199a940e909c",
+          "message": "Update staff.js",
+          "date": "2025-03-04T15:39:42.000+01:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "9a639e520a4218a022693a328eb5a6457a04a522",
+          "message": "Add María Juaristi to team page",
+          "date": "2025-03-04T11:36:58.000-03:00",
+          "repo": "policyengine-app"
+        },
+        {
+          "sha": "9b6f3786a1866f806a010c21ee12c1e33e9463b2",
+          "message": "Merge pull request #12 from PolicyEngine/maria/calibration_functions",
+          "date": "2025-08-06T16:12:03.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "6869668e0a51f753c68e9109413527136ae8b1c4",
+          "message": "update testing logic to be more comprehensive",
+          "date": "2025-07-30T12:56:26.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "2bed8021fcd65bb4150f8b90f3d1549514efef98",
+          "message": "enable test with local file",
+          "date": "2025-07-29T14:18:59.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "b3929eea9b0a7c7b4b1792b8bb09095ecd8a5854",
+          "message": "update to new database format",
+          "date": "2025-07-29T11:16:35.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "1643f1523dc2896a161383f3a12c28f0301dd55c",
+          "message": "restore dependencies after merge",
+          "date": "2025-07-29T10:41:49.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "c9072f67cdb6cd9d5ed3a068a71f67034a3b0a5b",
+          "message": "changelog entry",
+          "date": "2025-07-29T10:40:22.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "250e0f053c23bc8ce51800771acd00b941b75857",
+          "message": "Merge branch 'main' of https://github.com/PolicyEngine/policyengine-data into maria/calibration_functions",
+          "date": "2025-07-29T10:39:10.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "9b05744a08171363e4df3fe25516518d324af4b8",
+          "message": "add time to changelog",
+          "date": "2025-07-24T17:00:35.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "f43465cc45e8e79f3bac9231315092c34acc878a",
+          "message": "add sqlalchemy to the dependencies",
+          "date": "2025-07-24T16:56:18.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "6e4db1750e3cc474052d87221c50a7b0454be4fc",
+          "message": "update changelog entry",
+          "date": "2025-07-24T16:55:35.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "a3122ee1c6b5e19479bd679ad73bfc0b7f93b3b6",
+          "message": "leave placeholder in test for when database is published to the cloud",
+          "date": "2025-07-24T16:53:50.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "38fb677481e035c8a3333248739167cbd7add9da",
+          "message": "add test",
+          "date": "2025-07-24T16:47:43.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "585aac297ba83ce424aec834c5d3e5aaee55def2",
+          "message": "target reescaling logic",
+          "date": "2025-07-24T15:52:08.000+02:00",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "70d4e81aa7f5abfc6de103b4512b494da32ad15f",
+          "message": "Update package version",
+          "date": "2025-08-06T14:12:23.000Z",
+          "repo": "policyengine-data"
+        },
+        {
+          "sha": "4b7389190250036f51fbce414b149302305cc394",
+          "message": "update microimpute version",
+          "date": "2025-08-01T18:38:15.000+02:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "32cc33e75f5f14641b83d70fea2535cf698dfc60",
+          "message": "lint",
+          "date": "2025-08-01T11:33:40.000+02:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "895b921ff1e5a5131c8e98ffdfbce73e69e0dd86",
+          "message": "skip missing imputed variables",
+          "date": "2025-08-01T11:29:28.000+02:00",
+          "repo": "policyengine-us-data"
+        },
+        {
+          "sha": "af2c8288462fb9e693277134c19b0c9dfb02f53a",
+          "message": "Update microimpute version",
+          "date": "2025-08-01T11:10:02.000+02:00",
           "repo": "policyengine-us-data"
         },
         {
@@ -123944,9 +124065,9 @@
           "repo": "policyengine-us-data"
         },
         {
-          "sha": "1dfbf41be699653d0a61a50bb741f54c14d0da1f",
-          "message": "Changing to auto loan interest imputation (#255)",
-          "date": "2025-05-22T12:56:14.000+02:00",
+          "sha": "981477d114472b56983eb92cf206e7ecd5e6622f",
+          "message": "Auto loan balance imputation (#231)",
+          "date": "2025-05-14T16:29:18.000+02:00",
           "repo": "policyengine-us-data"
         },
         {
@@ -123974,9 +124095,9 @@
           "repo": "policyengine-us-data"
         },
         {
-          "sha": "48cc0f60ac50a5d7e64f68425c23c099f408582d",
-          "message": "Impute net worth from the scf onto the cps (with QRF) (#282)",
-          "date": "2025-06-09T12:44:43.000+02:00",
+          "sha": "1dfbf41be699653d0a61a50bb741f54c14d0da1f",
+          "message": "Changing to auto loan interest imputation (#255)",
+          "date": "2025-05-22T12:56:14.000+02:00",
           "repo": "policyengine-us-data"
         },
         {
@@ -123986,9 +124107,9 @@
           "repo": "policyengine-us-data"
         },
         {
-          "sha": "d3a475ff484fffce1241bafdb2a69d046d62a130",
-          "message": "Update package version",
-          "date": "2025-06-13T11:06:03.000Z",
+          "sha": "48cc0f60ac50a5d7e64f68425c23c099f408582d",
+          "message": "Impute net worth from the scf onto the cps (with QRF) (#282)",
+          "date": "2025-06-09T12:44:43.000+02:00",
           "repo": "policyengine-us-data"
         },
         {
@@ -124100,9 +124221,9 @@
           "repo": "policyengine-us-data"
         },
         {
-          "sha": "8b01ffebabd542551daf00653ab8d699b11ab31a",
-          "message": "Add AGI State targets (#316)",
-          "date": "2025-07-01T16:50:56.000+02:00",
+          "sha": "d3a475ff484fffce1241bafdb2a69d046d62a130",
+          "message": "Update package version",
+          "date": "2025-06-13T11:06:03.000Z",
           "repo": "policyengine-us-data"
         },
         {
@@ -124112,34 +124233,10 @@
           "repo": "policyengine-us-data"
         },
         {
-          "sha": "1c99bdd77a9929c93d67f9c346c380f844e49b83",
-          "message": "more dependencies",
-          "date": "2025-07-22T13:54:55.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "ec784b48f46e80fdcf224398a5363dd926cacb05",
-          "message": "add workflow files",
-          "date": "2025-07-22T11:51:39.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "09fcf56389c5f6cc25328dc8703163736a0698b8",
-          "message": "add changelog",
-          "date": "2025-07-22T11:47:05.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "0da7109e60494e48ee67f02dbaf8278c57197123",
-          "message": "set up makefile, .toml and test suite",
-          "date": "2025-07-22T11:39:20.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "9840bac26c010fc3527b07e2e2d2cf3f1430c13b",
-          "message": "datetime.date to datetime.datetime object",
-          "date": "2025-07-27T18:27:30.000+02:00",
-          "repo": "policyengine-data"
+          "sha": "8b01ffebabd542551daf00653ab8d699b11ab31a",
+          "message": "Add AGI State targets (#316)",
+          "date": "2025-07-01T16:50:56.000+02:00",
+          "repo": "policyengine-us-data"
         },
         {
           "sha": "7d2c78818717166526c6020536cdf629d3981d97",
@@ -124292,142 +124389,22 @@
           "repo": "policyengine-data"
         },
         {
-          "sha": "85ff7e52664ff953fe83df17b62c0b1d556aa78a",
-          "message": "forgot to run chmod",
-          "date": "2025-07-28T18:54:59.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
           "sha": "37690e7460aa0e0c1353af352ed2ee0729f8652c",
           "message": "Update package version",
           "date": "2025-07-28T16:55:17.000Z",
           "repo": "policyengine-data"
         },
         {
-          "sha": "28508d3cd8674f4cde5dc01c9ab212945c0c7d86",
-          "message": "Cleaning ACS age, SOI agi, hardcoded, and SNAP targets (#373)",
-          "date": "2025-07-18T19:01:34.000+02:00",
-          "repo": "policyengine-us-data"
+          "sha": "85ff7e52664ff953fe83df17b62c0b1d556aa78a",
+          "message": "forgot to run chmod",
+          "date": "2025-07-28T18:54:59.000+02:00",
+          "repo": "policyengine-data"
         },
         {
           "sha": "4dbf2d34cb2c63c03bcea2f0aafc3b11ee98bce9",
           "message": "Unpin microdf",
           "date": "2025-07-24T12:46:20.000+02:00",
           "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "4b7389190250036f51fbce414b149302305cc394",
-          "message": "update microimpute version",
-          "date": "2025-08-01T18:38:15.000+02:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "32cc33e75f5f14641b83d70fea2535cf698dfc60",
-          "message": "lint",
-          "date": "2025-08-01T11:33:40.000+02:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "895b921ff1e5a5131c8e98ffdfbce73e69e0dd86",
-          "message": "skip missing imputed variables",
-          "date": "2025-08-01T11:29:28.000+02:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "af2c8288462fb9e693277134c19b0c9dfb02f53a",
-          "message": "Update microimpute version",
-          "date": "2025-08-01T11:10:02.000+02:00",
-          "repo": "policyengine-us-data"
-        },
-        {
-          "sha": "9b6f3786a1866f806a010c21ee12c1e33e9463b2",
-          "message": "Merge pull request #12 from PolicyEngine/maria/calibration_functions",
-          "date": "2025-08-06T16:12:03.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "6869668e0a51f753c68e9109413527136ae8b1c4",
-          "message": "update testing logic to be more comprehensive",
-          "date": "2025-07-30T12:56:26.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "2bed8021fcd65bb4150f8b90f3d1549514efef98",
-          "message": "enable test with local file",
-          "date": "2025-07-29T14:18:59.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "b3929eea9b0a7c7b4b1792b8bb09095ecd8a5854",
-          "message": "update to new database format",
-          "date": "2025-07-29T11:16:35.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "1643f1523dc2896a161383f3a12c28f0301dd55c",
-          "message": "restore dependencies after merge",
-          "date": "2025-07-29T10:41:49.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "c9072f67cdb6cd9d5ed3a068a71f67034a3b0a5b",
-          "message": "changelog entry",
-          "date": "2025-07-29T10:40:22.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "250e0f053c23bc8ce51800771acd00b941b75857",
-          "message": "Merge branch 'main' of https://github.com/PolicyEngine/policyengine-data into maria/calibration_functions",
-          "date": "2025-07-29T10:39:10.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "9b05744a08171363e4df3fe25516518d324af4b8",
-          "message": "add time to changelog",
-          "date": "2025-07-24T17:00:35.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "f43465cc45e8e79f3bac9231315092c34acc878a",
-          "message": "add sqlalchemy to the dependencies",
-          "date": "2025-07-24T16:56:18.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "6e4db1750e3cc474052d87221c50a7b0454be4fc",
-          "message": "update changelog entry",
-          "date": "2025-07-24T16:55:35.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "a3122ee1c6b5e19479bd679ad73bfc0b7f93b3b6",
-          "message": "leave placeholder in test for when database is published to the cloud",
-          "date": "2025-07-24T16:53:50.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "38fb677481e035c8a3333248739167cbd7add9da",
-          "message": "add test",
-          "date": "2025-07-24T16:47:43.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "585aac297ba83ce424aec834c5d3e5aaee55def2",
-          "message": "target reescaling logic",
-          "date": "2025-07-24T15:52:08.000+02:00",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "70d4e81aa7f5abfc6de103b4512b494da32ad15f",
-          "message": "Update package version",
-          "date": "2025-08-06T14:12:23.000Z",
-          "repo": "policyengine-data"
-        },
-        {
-          "sha": "ea40502e69b3dc00438588aadc96a762370c7f9d",
-          "message": "Merge pull request #17 from PolicyEngine/maria/matrix_creation",
-          "date": "2025-08-20T10:27:24.000+02:00",
-          "repo": "policyengine-data"
         }
       ]
     },
