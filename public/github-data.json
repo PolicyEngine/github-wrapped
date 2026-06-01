@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-25T07:42:56.130Z",
+  "fetchedAt": "2026-06-01T07:56:00.954Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -12,7 +12,7 @@
         "github": "nikhilwoodruff",
         "name": "Nikhil Woodruff",
         "avatar": "https://avatars.githubusercontent.com/u/35577657?v=4",
-        "estimatedActivity": 634,
+        "estimatedActivity": 628,
         "aliases": [
           "nwoodruff-co"
         ],
@@ -8376,17 +8376,17 @@
         "github": "MaxGhenis",
         "name": "Max Ghenis",
         "avatar": "https://avatars.githubusercontent.com/u/6076111?v=4",
-        "estimatedActivity": 575,
+        "estimatedActivity": 581,
         "aliases": [],
         "bio": "Co-founder and CEO of @PolicyEngine"
       },
       "stats": {
-        "commits": 2954,
+        "commits": 3115,
         "prs": 529,
         "prs_merged": 385,
         "reviews": 718,
         "issues": 617,
-        "repos": 73
+        "repos": 74
       },
       "repoCommits": {
         "obbba-household-explorer": 18,
@@ -8408,6 +8408,7 @@
         "policyengine-project-management-comparison": 8,
         "gitlab-ai-economic-opportunity-2025": 1,
         "us-sources": 2,
+        "arch-data": 54,
         "policyengine-uk-data": 45,
         "policyengine-context-generator": 1,
         "L0": 33,
@@ -8415,15 +8416,15 @@
         "LegislationBuilder": 2,
         "atlas": 104,
         "uprating": 1,
+        "microplex": 98,
         "marketing-materials": 5,
         "thanksgiving-2025": 20,
         "uk-two-child-limit-app": 1,
         "policyengine-canada": 4,
         "policyengine-nz": 13,
         "pe-compile": 6,
-        "policyengine-us-data": 126,
-        "policyengine-app": 278,
-        "policyengine-data": 2
+        "policyengine-us-data": 8,
+        "policyengine-app": 246
       },
       "monthlyPRs": [
         5,
@@ -8440,18 +8441,18 @@
         77
       ],
       "monthlyCommits": [
-        25,
-        28,
+        2,
+        10,
         31,
-        27,
-        30,
-        33,
-        157,
-        219,
+        23,
+        28,
+        25,
+        64,
+        215,
         50,
         78,
         299,
-        23
+        175
       ],
       "prs": [
         {
@@ -18071,7 +18072,7 @@
         "commits": 2150,
         "prs": 426,
         "prs_merged": 389,
-        "reviews": 448,
+        "reviews": 446,
         "issues": 479,
         "repos": 27
       },
@@ -63110,7 +63111,7 @@
         "commits": 2410,
         "prs": 256,
         "prs_merged": 237,
-        "reviews": 249,
+        "reviews": 248,
         "issues": 637,
         "repos": 15
       },
