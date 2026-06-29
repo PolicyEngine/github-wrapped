@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-22T08:12:34.826Z",
+  "fetchedAt": "2026-06-29T07:52:57.486Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -2873,7 +2873,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 1,
@@ -3581,7 +3581,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 4,
@@ -5726,7 +5726,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [
             {
               "login": "vahid-ahmadi",
@@ -8800,7 +8800,7 @@
             }
           ],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 2,
@@ -8962,7 +8962,7 @@
             }
           ],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 2,
@@ -17059,7 +17059,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 0,
@@ -17287,7 +17287,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 0,
@@ -57396,7 +57396,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [
             {
               "login": "vahid-ahmadi",
@@ -57535,7 +57535,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [
             {
               "login": "vahid-ahmadi",
@@ -57688,7 +57688,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [
             {
               "login": "vahid-ahmadi",
@@ -60509,7 +60509,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [
             {
               "login": "vahid-ahmadi",
@@ -62385,7 +62385,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [
             {
               "login": "vahid-ahmadi",
@@ -65147,7 +65147,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [
             {
               "login": "vahid-ahmadi",
@@ -65377,7 +65377,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [
             {
               "login": "vahid-ahmadi",
@@ -66359,7 +66359,7 @@
           },
           "labels": [],
           "state": "closed",
-          "locked": true,
+          "locked": false,
           "assignees": [
             {
               "login": "vahid-ahmadi",
@@ -79193,14 +79193,14 @@
               "description": "New feature or request"
             }
           ],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-23T22:51:09Z",
-          "updated_at": "2025-12-23T22:51:09Z",
-          "closed_at": null,
+          "updated_at": "2026-06-24T09:35:51Z",
+          "closed_at": "2026-06-24T09:35:51Z",
           "assignee": null,
           "author_association": "COLLABORATOR",
           "issue_field_values": [],
@@ -79232,7 +79232,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7037/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "not_planned",
           "pinned_comment": null,
           "score": 1
         },
@@ -79345,14 +79345,14 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-23T20:01:00Z",
-          "updated_at": "2025-12-23T20:01:00Z",
-          "closed_at": null,
+          "updated_at": "2026-06-24T09:35:51Z",
+          "closed_at": "2026-06-24T09:35:51Z",
           "assignee": null,
           "author_association": "COLLABORATOR",
           "issue_field_values": [],
@@ -79384,7 +79384,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7033/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "not_planned",
           "pinned_comment": null,
           "score": 1
         },
@@ -79815,7 +79815,7 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-22T18:24:24Z",
-          "updated_at": "2025-12-22T18:31:29Z",
+          "updated_at": "2026-06-23T14:09:34Z",
           "closed_at": null,
           "assignee": null,
           "author_association": "COLLABORATOR",
@@ -79848,7 +79848,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7026/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "reopened",
           "pinned_comment": null,
           "score": 1
         },
@@ -79885,14 +79885,14 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-21T19:59:47Z",
-          "updated_at": "2025-12-22T20:09:13Z",
-          "closed_at": null,
+          "updated_at": "2026-06-23T10:08:29Z",
+          "closed_at": "2026-06-23T10:08:29Z",
           "assignee": null,
           "author_association": "COLLABORATOR",
           "issue_field_values": [],
@@ -79924,7 +79924,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7025/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "not_planned",
           "pinned_comment": null,
           "score": 1
         },
