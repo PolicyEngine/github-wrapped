@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-20T07:11:44.050Z",
+  "fetchedAt": "2026-07-27T07:17:11.927Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -123124,7 +123124,7 @@
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
-          "commits": 1,
+          "commits": 0,
           "review_comments": 0,
           "files": [
             {
