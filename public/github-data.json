@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-03T07:14:33.606Z",
+  "fetchedAt": "2026-08-10T06:36:09.257Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -48,7 +48,7 @@
         "grants": 148,
         "obr-forecast-household-calculator": 1,
         "dc-office-comparison": 12,
-        "populace-dynamics": 29,
+        "microcosm-dynamics": 29,
         "policyengine-us": 260
       },
       "monthlyPRs": [
@@ -505,12 +505,12 @@
           ]
         },
         {
-          "url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/4",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/4/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/4/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/4/events",
-          "html_url": "https://github.com/PolicyEngine/populace-dynamics/pull/4",
+          "url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/4",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/4/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/4/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/4/events",
+          "html_url": "https://github.com/PolicyEngine/microcosm-dynamics/pull/4",
           "id": 3724177499,
           "node_id": "PR_kwDOQLKNTs64m5HS",
           "number": 4,
@@ -552,15 +552,15 @@
           "active_lock_reason": null,
           "draft": true,
           "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/pulls/4",
-            "html_url": "https://github.com/PolicyEngine/populace-dynamics/pull/4",
-            "diff_url": "https://github.com/PolicyEngine/populace-dynamics/pull/4.diff",
-            "patch_url": "https://github.com/PolicyEngine/populace-dynamics/pull/4.patch",
+            "url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/pulls/4",
+            "html_url": "https://github.com/PolicyEngine/microcosm-dynamics/pull/4",
+            "diff_url": "https://github.com/PolicyEngine/microcosm-dynamics/pull/4.diff",
+            "patch_url": "https://github.com/PolicyEngine/microcosm-dynamics/pull/4.patch",
             "merged_at": "2025-12-12T17:14:43Z"
           },
           "body": "## Summary\n\nAdds reviews of the planning document from multiple stakeholder perspectives to identify areas for improvement before presenting to funders.\n\n## Reviewers\n\n| Reviewer | File | Focus Area |\n|----------|------|------------|\n| John Sabelhaus | `SABELHAUS_FEEDBACK.md` | Wealth/SCF integration, QRF methodology, validation |\n| Indivar Dutta-Gupta | `feedback-dutta-gupta.md` | Equity metrics, SSI prioritization, progressive safeguards |\n| Jason Fichtner | `feedback_fichtner.md` | SSA/fiscal policy, solvency analysis |\n| Max Ghenis | `feedback_ghenis.md` | Self-review, timeline realism, proof-of-concept strategy |\n\n## Key Themes\n\n1. **Wealth dimension missing** - Need SCF calibration targets for comprehensive retirement security\n2. **SSI should be prioritized** - Not an extension, already in PolicyEngine-US\n3. **Timeline depends on development approach** - AI-assisted could be much faster\n4. **Equity metrics should be default outputs** - Not optional add-ons\n5. **Proof-of-concept first** - De-risk before full funding ask\n\n## Status\n\nThese reviews are for internal planning. Key feedback should be integrated into the main document before presenting to funders.\n\n---\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>",
           "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/4/reactions",
+            "url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/4/reactions",
             "total_count": 0,
             "+1": 0,
             "-1": 0,
@@ -571,7 +571,7 @@
             "rocket": 0,
             "eyes": 0
           },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/4/timeline",
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/4/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
@@ -630,12 +630,12 @@
           ]
         },
         {
-          "url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/3",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/3/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/3/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/3/events",
-          "html_url": "https://github.com/PolicyEngine/populace-dynamics/pull/3",
+          "url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/3",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/3/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/3/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/3/events",
+          "html_url": "https://github.com/PolicyEngine/microcosm-dynamics/pull/3",
           "id": 3724106716,
           "node_id": "PR_kwDOQLKNTs64mplY",
           "number": 3,
@@ -677,15 +677,15 @@
           "active_lock_reason": null,
           "draft": true,
           "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/pulls/3",
-            "html_url": "https://github.com/PolicyEngine/populace-dynamics/pull/3",
-            "diff_url": "https://github.com/PolicyEngine/populace-dynamics/pull/3.diff",
-            "patch_url": "https://github.com/PolicyEngine/populace-dynamics/pull/3.patch",
+            "url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/pulls/3",
+            "html_url": "https://github.com/PolicyEngine/microcosm-dynamics/pull/3",
+            "diff_url": "https://github.com/PolicyEngine/microcosm-dynamics/pull/3.diff",
+            "patch_url": "https://github.com/PolicyEngine/microcosm-dynamics/pull/3.patch",
             "merged_at": null
           },
           "body": "## Summary\n\nThis PR adds a proposed timeline and budget section to the roadmap. These estimates are presented as **one proposal for discussion**, not a final plan.\n\n### Proposed:\n- **Timeline**: 18 months across 6 phases\n- **Personnel**: ~1.5 FTE (Max 60%, Ben 50%, John 30%)\n- **Budget**: ~$270,000-370,000\n\n### Alternative scenarios included:\n- Accelerated (12 months)\n- Extended (24 months)  \n- MVP (9 months)\n\n## Context\n\nThis content was separated from the main roadmap to allow the methodology and phasing to be reviewed independently from timeline/budget assumptions. The \"Open Questions for Planning\" section in master frames the key decisions that need discussion before finalizing these estimates.\n\n## Questions for discussion\n\n1. Does the 18-month timeline reflect realistic expectations given AI-assisted development?\n2. Is the personnel allocation appropriate, or should we consider different team structures?\n3. Should we pursue a planning grant first to align on approach before full funding?\n4. How does existing PolicyEngine infrastructure (SSI, SNAP, etc. already implemented) change the scope estimate?\n\n---\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>",
           "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/3/reactions",
+            "url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/3/reactions",
             "total_count": 0,
             "+1": 0,
             "-1": 0,
@@ -696,7 +696,7 @@
             "rocket": 0,
             "eyes": 0
           },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/3/timeline",
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/3/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
@@ -3909,12 +3909,12 @@
           ]
         },
         {
-          "url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/2",
-          "repository_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics",
-          "labels_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/2/labels{/name}",
-          "comments_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/2/comments",
-          "events_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/2/events",
-          "html_url": "https://github.com/PolicyEngine/populace-dynamics/pull/2",
+          "url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/2",
+          "repository_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics",
+          "labels_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/2/labels{/name}",
+          "comments_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/2/comments",
+          "events_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/2/events",
+          "html_url": "https://github.com/PolicyEngine/microcosm-dynamics/pull/2",
           "id": 3692122660,
           "node_id": "PR_kwDOQLKNTs627xeQ",
           "number": 2,
@@ -3956,15 +3956,15 @@
           "active_lock_reason": null,
           "draft": false,
           "pull_request": {
-            "url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/pulls/2",
-            "html_url": "https://github.com/PolicyEngine/populace-dynamics/pull/2",
-            "diff_url": "https://github.com/PolicyEngine/populace-dynamics/pull/2.diff",
-            "patch_url": "https://github.com/PolicyEngine/populace-dynamics/pull/2.patch",
+            "url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/pulls/2",
+            "html_url": "https://github.com/PolicyEngine/microcosm-dynamics/pull/2",
+            "diff_url": "https://github.com/PolicyEngine/microcosm-dynamics/pull/2.diff",
+            "patch_url": "https://github.com/PolicyEngine/microcosm-dynamics/pull/2.patch",
             "merged_at": "2025-12-03T22:23:30Z"
           },
           "body": "## Summary\n\nUpdate Node.js to 24.x (Active LTS - Krypton).\n\n## Test plan\n\n- [ ] CI passes\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
           "reactions": {
-            "url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/2/reactions",
+            "url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/2/reactions",
             "total_count": 0,
             "+1": 0,
             "-1": 0,
@@ -3975,7 +3975,7 @@
             "rocket": 0,
             "eyes": 0
           },
-          "timeline_url": "https://api.github.com/repos/PolicyEngine/populace-dynamics/issues/2/timeline",
+          "timeline_url": "https://api.github.com/repos/PolicyEngine/microcosm-dynamics/issues/2/timeline",
           "performed_via_github_app": null,
           "state_reason": null,
           "score": 1,
@@ -48146,14 +48146,14 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": true,
           "assignees": [],
           "milestone": null,
           "comments": 0,
           "created_at": "2025-12-31T13:46:01Z",
-          "updated_at": "2026-01-08T16:35:05Z",
-          "closed_at": null,
+          "updated_at": "2026-08-04T13:00:25Z",
+          "closed_at": "2026-08-04T13:00:25Z",
           "assignee": null,
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
