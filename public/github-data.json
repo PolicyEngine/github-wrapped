@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-17T06:14:59.439Z",
+  "fetchedAt": "2026-08-24T06:20:22.743Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -69398,111 +69398,111 @@
           "repo": "policyengine-us"
         },
         {
-          "sha": "0c215f306fe05eff9e4469eee565fa1fc72c7880",
-          "message": "edit total_wealth",
-          "date": "2025-07-21T15:38:12.000+01:00",
+          "sha": "1de513d089aeb45817d00b9636de15c2963b37f6",
+          "message": "Fix basic state pension calculation (#1208)",
+          "date": "2025-12-08T21:36:48.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "f44821d5354aaa5a5008b57a35ce4c223cd83652",
-          "message": "Merge branch 'parameterize-lha-age-35' of https://github.com/policyengine/policyengine-uk into parameterize-lha-age-35",
-          "date": "2025-07-21T11:26:19.000+01:00",
+          "sha": "cb6afe8cb45e22b7dba4fd22d41c876b6a38ae34",
+          "message": "Update package version",
+          "date": "2025-12-08T10:55:06.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "6dbe7af8c5e302b3d01d497fa0498f6f2060d16c",
-          "message": "taxcalc",
-          "date": "2025-07-21T11:26:06.000+01:00",
+          "sha": "055f3ae0cae036b9764f7e991920c573cfe698ea",
+          "message": "Merge pull request #1445 from PolicyEngine/fix-changelog-encoding",
+          "date": "2025-12-08T10:54:27.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "9e83e1cc1313994867eefd671ec224d1b0066c9e",
-          "message": "taxcalc",
-          "date": "2025-07-21T11:06:35.000+01:00",
+          "sha": "08ddd066a1e4871764bed4814ea02a75d07ed212",
+          "message": "Fix changelog encoding - replace pound symbol with GBP",
+          "date": "2025-12-08T10:51:50.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "593254e0b4612f014f33553d9cd79b9d3e08667c",
-          "message": "undo some changes",
-          "date": "2025-07-21T11:01:03.000+01:00",
+          "sha": "5c4f6dec163ea779ded3d5c35d18eb6870e301e7",
+          "message": "Merge pull request #1444 from PolicyEngine/bump-version-salary-sacrifice",
+          "date": "2025-12-08T10:47:52.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "498cdca673937f6eb426c49bf2cfb55087968815",
-          "message": "matplotlib",
-          "date": "2025-07-21T10:55:28.000+01:00",
+          "sha": "994566f9e6740fc3354354def9146e3bafe7a98e",
+          "message": "Bump version for salary sacrifice cap reform",
+          "date": "2025-12-08T10:46:30.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "10c6ab793d152487648cce699c3c1f60e56e750f",
-          "message": "Merge branch 'master' into parameterize-lha-age-35",
-          "date": "2025-07-21T10:39:04.000+01:00",
+          "sha": "6ca74dc0752d57fbc73f462c3304870449ad7d6e",
+          "message": "Merge pull request #1441 from PolicyEngine/edit-salary-sacrifice3",
+          "date": "2025-12-08T10:20:54.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "1401af30231d6dfc50d1255c6524506bdbed3d46",
-          "message": "Fix Makefile to use current Python environment for tests",
-          "date": "2025-07-21T10:35:48.000+01:00",
+          "sha": "349e5e1b82fc5f8d459280fb48d7846f2c4aec3b",
+          "message": "Update VAT expected impact to 20.9 billion (matches CI data)",
+          "date": "2025-12-07T13:59:50.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "b582103b939443778499c52c1003d60815356f34",
+          "sha": "e2be13c2711d4b8efbd751540c3539f106669822",
           "message": "debug",
-          "date": "2025-07-21T10:07:50.000+01:00",
+          "date": "2025-12-07T13:49:27.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "a5df8765b9d7ee3d6d9a8f941f906f81ccf44e8c",
-          "message": "apply max comments",
-          "date": "2025-07-21T09:59:55.000+01:00",
+          "sha": "158a0e5d700d11f21149ea91dc249a26d0589cb8",
+          "message": "Resolve merge conflict with master",
+          "date": "2025-12-07T13:43:23.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "3ebbc89977a10d45f922ff013cfd495a2a42aca4",
+          "sha": "a0c465ed29e9cfd0bd95c1434a00bcf97a613421",
+          "message": "Fix formatting and update VAT expected impact",
+          "date": "2025-12-07T13:43:06.000Z",
+          "repo": "policyengine-uk"
+        },
+        {
+          "sha": "9d0f9486ad23ca0ec51b63ca35d93f8f0571ff48",
+          "message": "Fix fuel duty rates to use OBR November 2025 RPI forecasts (#1442)",
+          "date": "2025-12-05T16:29:10.000Z",
+          "repo": "policyengine-uk"
+        },
+        {
+          "sha": "cabfef4c196fb53da4da6eca706cfa0745fec1a0",
           "message": "edit",
-          "date": "2025-07-18T11:56:36.000+01:00",
+          "date": "2025-12-04T12:57:45.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "89b345d00ad60be46aa1a1791d6b2cb6e2ccccd1",
-          "message": "fix employer_ni_fixed_employer_cost_change",
-          "date": "2025-07-15T12:22:30.000+01:00",
+          "sha": "a3be2051fb992a803a30458963713526ec764bca",
+          "message": "debug",
+          "date": "2025-12-04T12:54:20.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "9339129c40de9bde458317105f0c2353228f3b6c",
-          "message": "Parameterize age 35",
-          "date": "2025-07-11T14:26:43.000+01:00",
+          "sha": "4ea9988edad499dafed71e77c696aa877d30f07d",
+          "message": "change tests",
+          "date": "2025-12-04T12:39:50.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "7766846a97147058b3121982afddb5ca2f9251f5",
-          "message": "add page ref",
-          "date": "2025-06-17T11:41:19.000+01:00",
+          "sha": "d9b80ebecfdf33da1d4f198d098e7f4163d39584",
+          "message": "add decile test",
+          "date": "2025-12-04T12:30:26.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "11ad602fe4c7f682085e1d23080732564431e4a6",
-          "message": "edit date",
-          "date": "2025-06-16T12:10:06.000+01:00",
+          "sha": "e747117c08c264b129342bcc7ec33bf0e696716d",
+          "message": "tests",
+          "date": "2025-12-04T12:27:32.000Z",
           "repo": "policyengine-uk"
         },
         {
-          "sha": "cf433720781bdba4edff1964392db80d7cc78a12",
-          "message": "Add tests for abolishing parameters (#1148)",
-          "date": "2025-06-11T14:52:13.000+01:00",
-          "repo": "policyengine-uk"
-        },
-        {
-          "sha": "46aeaf05b7c47450d48b83de1101d035efad89df",
-          "message": "add references",
-          "date": "2025-06-11T13:54:23.000+01:00",
-          "repo": "policyengine-uk"
-        },
-        {
-          "sha": "e9993dbdbe8e888b1b1bc5a66fe0fe73f095868c",
-          "message": "update for fiscal year",
-          "date": "2025-06-10T12:44:03.000+01:00",
+          "sha": "1805da52b00d45f51afa53c087819c1a4a4ada0d",
+          "message": "format",
+          "date": "2025-12-04T12:26:23.000Z",
           "repo": "policyengine-uk"
         }
       ]
@@ -113739,12 +113739,6 @@
           "repo": "policyengine-us"
         },
         {
-          "sha": "b3dc5de5fdab43369c81b89a5f598aedcbd0b0ce",
-          "message": "add codecov coverage (#1237)",
-          "date": "2025-07-15T13:58:44.000+02:00",
-          "repo": "policyengine-uk"
-        },
-        {
           "sha": "35a5492515b01911afabfe079d9a28f857a71804",
           "message": "standardize to only necessary decimals",
           "date": "2025-07-22T11:03:51.000+02:00",
@@ -113760,6 +113754,12 @@
           "sha": "2b4d5289381cd01022ee0b61e1a9c931c880ed6c",
           "message": "standardize to 0.0 decimals in parameters",
           "date": "2025-07-21T18:49:06.000+02:00",
+          "repo": "policyengine-uk"
+        },
+        {
+          "sha": "b3dc5de5fdab43369c81b89a5f598aedcbd0b0ce",
+          "message": "add codecov coverage (#1237)",
+          "date": "2025-07-15T13:58:44.000+02:00",
           "repo": "policyengine-uk"
         },
         {
