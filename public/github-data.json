@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-07T06:33:56.936Z",
+  "fetchedAt": "2026-09-14T06:30:38.619Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -12,7 +12,7 @@
         "github": "MaxGhenis",
         "name": "Max Ghenis",
         "avatar": "https://avatars.githubusercontent.com/u/6076111?v=4",
-        "estimatedActivity": 621,
+        "estimatedActivity": 625,
         "aliases": [],
         "bio": "Co-founder and CEO of @PolicyEngine"
       },
@@ -4465,7 +4465,9 @@
               "name": "dependencies",
               "color": "0366d6",
               "default": false,
-              "description": "Pull requests that update a dependency file"
+              "description": "Pull requests that update a dependency file",
+              "archived_at": null,
+              "archived_by": null
             },
             {
               "id": 6124339038,
@@ -4474,7 +4476,9 @@
               "name": "github_actions",
               "color": "000000",
               "default": false,
-              "description": "Pull requests that update GitHub Actions code"
+              "description": "Pull requests that update GitHub Actions code",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -7436,7 +7440,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "open",
@@ -7522,7 +7528,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "open",
@@ -7608,7 +7616,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "open",
@@ -7694,7 +7704,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "open",
@@ -7780,7 +7792,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "open",
@@ -7866,7 +7880,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "open",
@@ -8796,7 +8812,9 @@
               "name": "priority/high",
               "color": "d73a4a",
               "default": false,
-              "description": "High priority issue"
+              "description": "High priority issue",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -8958,7 +8976,9 @@
               "name": "priority/high",
               "color": "d73a4a",
               "default": false,
-              "description": "High priority issue"
+              "description": "High priority issue",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -14193,7 +14213,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -23337,7 +23359,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -23533,7 +23557,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -23729,7 +23755,9 @@
               "name": "variables",
               "color": "0052cc",
               "default": false,
-              "description": ""
+              "description": "",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -23925,7 +23953,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -25191,7 +25221,9 @@
               "name": "bug",
               "color": "d73a4a",
               "default": true,
-              "description": "Something isn't working"
+              "description": "Something isn't working",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -26172,7 +26204,9 @@
               "name": "bug",
               "color": "d73a4a",
               "default": true,
-              "description": "Something isn't working"
+              "description": "Something isn't working",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -36706,7 +36740,7 @@
         "github": "daphnehanse11",
         "name": "Daphne Hansell",
         "avatar": "https://avatars.githubusercontent.com/u/128793799?v=4",
-        "estimatedActivity": 103,
+        "estimatedActivity": 99,
         "aliases": [],
         "bio": null
       },
@@ -45702,7 +45736,9 @@
               "name": "aca-subsidy",
               "color": "DA30A7",
               "default": false,
-              "description": "Affordable Care Act subsidy"
+              "description": "Affordable Care Act subsidy",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -46066,7 +46102,9 @@
               "name": "aca-subsidy",
               "color": "DA30A7",
               "default": false,
-              "description": "Affordable Care Act subsidy"
+              "description": "Affordable Care Act subsidy",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -46194,7 +46232,9 @@
               "name": "medicaid",
               "color": "d4c5f9",
               "default": false,
-              "description": "Medicaid and related health programs"
+              "description": "Medicaid and related health programs",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -59376,7 +59416,9 @@
               "name": "⚙️ Engineering...",
               "color": "ededed",
               "default": false,
-              "description": null
+              "description": null,
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -65007,7 +65049,9 @@
               "name": "bug-fix",
               "color": "FE0940",
               "default": false,
-              "description": "A change that fixes a bug"
+              "description": "A change that fixes a bug",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -65131,7 +65175,9 @@
               "name": "bug-fix",
               "color": "FE0940",
               "default": false,
-              "description": "A change that fixes a bug"
+              "description": "A change that fixes a bug",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -65375,7 +65421,9 @@
               "name": "bug",
               "color": "d73a4a",
               "default": true,
-              "description": "Something isn't working"
+              "description": "Something isn't working",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "open",
@@ -65512,7 +65560,9 @@
               "name": "bug",
               "color": "d73a4a",
               "default": true,
-              "description": "Something isn't working"
+              "description": "Something isn't working",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -66357,7 +66407,9 @@
               "name": "bug",
               "color": "d73a4a",
               "default": true,
-              "description": "Something isn't working"
+              "description": "Something isn't working",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -66494,7 +66546,9 @@
               "name": "bug-fix",
               "color": "FE0940",
               "default": false,
-              "description": "A change that fixes a bug"
+              "description": "A change that fixes a bug",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -67221,7 +67275,9 @@
               "name": "blog",
               "color": "03C941",
               "default": false,
-              "description": "Reports or blog posts."
+              "description": "Reports or blog posts.",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -67370,7 +67426,9 @@
               "name": "blog",
               "color": "03C941",
               "default": false,
-              "description": "Reports or blog posts."
+              "description": "Reports or blog posts.",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -67498,7 +67556,9 @@
               "name": "blog",
               "color": "03C941",
               "default": false,
-              "description": "Reports or blog posts."
+              "description": "Reports or blog posts.",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -68001,7 +68061,9 @@
               "name": "bug",
               "color": "d73a4a",
               "default": true,
-              "description": "Something isn't working"
+              "description": "Something isn't working",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -68601,7 +68663,9 @@
               "name": "bug",
               "color": "d73a4a",
               "default": true,
-              "description": "Something isn't working"
+              "description": "Something isn't working",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -68729,7 +68793,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -68815,7 +68881,9 @@
               "name": "bug",
               "color": "d73a4a",
               "default": true,
-              "description": "Something isn't working"
+              "description": "Something isn't working",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -78138,7 +78206,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -78376,7 +78446,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -78462,7 +78534,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -78548,7 +78622,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -78634,7 +78710,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -78720,7 +78798,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -78806,7 +78886,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -78892,7 +78974,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -78978,7 +79062,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -79064,7 +79150,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -80458,7 +80546,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -90668,7 +90758,9 @@
               "name": "states/pa",
               "color": "39163D",
               "default": false,
-              "description": "Pennsylvania"
+              "description": "Pennsylvania",
+              "archived_at": null,
+              "archived_by": null
             },
             {
               "id": 7798295559,
@@ -90677,7 +90769,9 @@
               "name": "2025",
               "color": "392C39",
               "default": false,
-              "description": "Adjustments for tax year 2025"
+              "description": "Adjustments for tax year 2025",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -99454,7 +99548,9 @@
               "name": "bug",
               "color": "d73a4a",
               "default": true,
-              "description": "Something isn't working"
+              "description": "Something isn't working",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "open",
@@ -99540,7 +99636,9 @@
               "name": "released",
               "color": "ededed",
               "default": false,
-              "description": null
+              "description": null,
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -100588,7 +100686,9 @@
               "name": "released",
               "color": "ededed",
               "default": false,
-              "description": null
+              "description": null,
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -100793,7 +100893,9 @@
               "name": "bug",
               "color": "d73a4a",
               "default": true,
-              "description": "Something isn't working"
+              "description": "Something isn't working",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "open",
@@ -109231,7 +109333,9 @@
               "name": "enhancement",
               "color": "a2eeef",
               "default": true,
-              "description": "New feature or request"
+              "description": "New feature or request",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -109427,7 +109531,9 @@
               "name": "good first issue",
               "color": "7057ff",
               "default": true,
-              "description": "Good for newcomers"
+              "description": "Good for newcomers",
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
@@ -115724,7 +115830,9 @@
               "name": "released",
               "color": "ededed",
               "default": false,
-              "description": null
+              "description": null,
+              "archived_at": null,
+              "archived_by": null
             }
           ],
           "state": "closed",
