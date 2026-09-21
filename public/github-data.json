@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-14T06:30:38.619Z",
+  "fetchedAt": "2026-09-21T06:31:06.535Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -63333,7 +63333,7 @@
           "id": 3270401395,
           "node_id": "PR_kwDOCDKyuM6hAZFF",
           "number": 263,
-          "title": "Fix sum() axis functionality",
+          "title": "Fix weighted sum axes and missing-value options",
           "user": {
             "login": "juaristi22",
             "id": 127882282,
@@ -63356,14 +63356,14 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
           "comments": 1,
           "created_at": "2025-07-28T15:37:42Z",
-          "updated_at": "2026-08-11T10:01:58Z",
-          "closed_at": null,
+          "updated_at": "2026-09-16T11:20:56Z",
+          "closed_at": "2026-09-16T11:20:56Z",
           "assignee": null,
           "author_association": "COLLABORATOR",
           "issue_field_values": [],
@@ -63375,9 +63375,9 @@
             "html_url": "https://github.com/PolicyEngine/microdf/pull/263",
             "diff_url": "https://github.com/PolicyEngine/microdf/pull/263.diff",
             "patch_url": "https://github.com/PolicyEngine/microdf/pull/263.patch",
-            "merged_at": null
+            "merged_at": "2026-09-16T11:20:56Z"
           },
-          "body": "Fix #262",
+          "body": "`MicroDataFrame.sum` now honors positional and named axes and supports `skipna`, `numeric_only` and `min_count` without silently dropping numeric columns, including duplicate column names. Column reductions return a plain Series of weighted totals. Row reductions return unweighted row totals as a MicroSeries with independent observation weights, so subsequent population aggregation remains weighted.\n\nThe update resolves the review findings around argument binding, missing-value options and empty-row identities. `axis=None` follows the installed pandas version, invalid or duplicate arguments raise errors, and custom scalar aggregations retain their existing positional arguments. The branch is rebased onto current `main` and uses the current typed changelog format.\n\nValidation: 38 targeted sum regressions and all 155 tests pass on pandas 2.3.1 and 3.0.5; independent probes cover axes, empty inputs, duplicate columns and weight isolation. All 226 tests also pass with the concurrent weight-propagation, covariance/correlation and CI fixes merged locally, including cross-feature probes. Formatting, lint and towncrier pass.\n\nThis PR shares a small weighted-product prerequisite commit with #318 (the #300 fix). Both target `main` and merge cleanly together. Use merge commits to retain that shared history; a squash or rebase merge would require rebasing the remaining branch before merging it.\n\nCloses #262.\n",
           "reactions": {
             "url": "https://api.github.com/repos/PolicyEngine/microdf/issues/263/reactions",
             "total_count": 0,
@@ -79923,7 +79923,7 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [
             {
@@ -79951,8 +79951,8 @@
           "milestone": null,
           "comments": 1,
           "created_at": "2025-12-20T05:40:15Z",
-          "updated_at": "2025-12-22T18:31:52Z",
-          "closed_at": null,
+          "updated_at": "2026-09-17T08:55:15Z",
+          "closed_at": "2026-09-17T08:55:15Z",
           "assignee": {
             "login": "hua7450",
             "id": 113824411,
@@ -80004,7 +80004,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/policyengine-us/issues/7024/timeline",
           "performed_via_github_app": null,
-          "state_reason": null,
+          "state_reason": "not_planned",
           "pinned_comment": null,
           "score": 1
         },
