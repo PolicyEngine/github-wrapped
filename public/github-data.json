@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-21T06:31:06.535Z",
+  "fetchedAt": "2026-09-28T06:34:37.786Z",
   "period": {
     "start": "2025-01-01",
     "end": "2025-12-31"
@@ -12,12 +12,12 @@
         "github": "MaxGhenis",
         "name": "Max Ghenis",
         "avatar": "https://avatars.githubusercontent.com/u/6076111?v=4",
-        "estimatedActivity": 625,
+        "estimatedActivity": 627,
         "aliases": [],
         "bio": "Co-founder and CEO of @PolicyEngine"
       },
       "stats": {
-        "commits": 3108,
+        "commits": 3158,
         "prs": 539,
         "prs_merged": 392,
         "reviews": 720,
@@ -1031,14 +1031,14 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 2,
           "created_at": "2025-12-11T04:27:29Z",
-          "updated_at": "2025-12-11T18:41:47Z",
-          "closed_at": null,
+          "updated_at": "2026-09-25T11:58:25Z",
+          "closed_at": "2026-09-25T11:58:25Z",
           "assignee": null,
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
@@ -9716,12 +9716,12 @@
         "bio": "@PolicyEngine, @UBICenter, @PSLmodels."
       },
       "stats": {
-        "commits": 2266,
+        "commits": 2269,
         "prs": 274,
         "prs_merged": 396,
         "reviews": 193,
         "issues": 507,
-        "repos": 33
+        "repos": 34
       },
       "repoCommits": {
         "policyengine-github-agent": 48,
@@ -9740,10 +9740,11 @@
         "salt-amt-calculator": 29,
         "uk-autumn-budget-dashboard": 3,
         "policyengine-claude": 8,
+        "uk-autumn-budget-dashboard-2026": 3,
         "policyengine-core": 19,
         "obbba-household-by-household": 30,
         "structural-reforms-demo": 6,
-        "policyengine-uk-data": 322,
+        "policyengine-uk-data": 319,
         "policyengine.py": 11
       },
       "monthlyPRs": [
@@ -9765,14 +9766,14 @@
         36,
         41,
         41,
-        78,
+        75,
         95,
         218,
         84,
         31,
         27,
-        104,
-        265
+        105,
+        267
       ],
       "prs": [
         {
@@ -13000,14 +13001,14 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "open",
+          "state": "closed",
           "locked": false,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 2,
           "created_at": "2025-11-25T00:26:53Z",
-          "updated_at": "2025-12-01T18:18:39Z",
-          "closed_at": null,
+          "updated_at": "2026-09-25T12:04:11Z",
+          "closed_at": "2026-09-25T12:04:11Z",
           "assignee": null,
           "author_association": "CONTRIBUTOR",
           "issue_field_values": [],
@@ -25138,14 +25139,14 @@
             "site_admin": false
           },
           "labels": [],
-          "state": "closed",
+          "state": "open",
           "locked": false,
           "assignees": [],
           "milestone": null,
-          "comments": 1,
+          "comments": 2,
           "created_at": "2025-11-11T19:22:32Z",
-          "updated_at": "2025-11-12T16:07:32Z",
-          "closed_at": "2025-11-12T16:07:32Z",
+          "updated_at": "2026-09-22T14:39:22Z",
+          "closed_at": null,
           "assignee": null,
           "author_association": "COLLABORATOR",
           "issue_field_values": [],
@@ -25177,7 +25178,7 @@
           },
           "timeline_url": "https://api.github.com/repos/PolicyEngine/microdf/issues/264/timeline",
           "performed_via_github_app": null,
-          "state_reason": "not_planned",
+          "state_reason": "reopened",
           "pinned_comment": null,
           "score": 1
         },
@@ -47951,20 +47952,19 @@
         "github": "anth-volk",
         "name": "Anthony V.",
         "avatar": "https://avatars.githubusercontent.com/u/14987227?v=4",
-        "estimatedActivity": 97,
+        "estimatedActivity": 95,
         "aliases": [],
         "bio": "Full-stack developer. Ethical technologist. International relations professional."
       },
       "stats": {
-        "commits": 2410,
-        "prs": 257,
-        "prs_merged": 238,
+        "commits": 2420,
+        "prs": 256,
+        "prs_merged": 237,
         "reviews": 249,
-        "issues": 637,
+        "issues": 634,
         "repos": 16
       },
       "repoCommits": {
-        "household-api-analytics": 2,
         "policyengine-api-v2-alpha": 2,
         "code-snippets": 27,
         "policyengine-us": 28,
@@ -47972,17 +47972,18 @@
         "policyengine-uk": 3,
         "salt-amt-calculator": 2,
         "uk-autumn-budget-dashboard": 12,
+        "uk-autumn-budget-dashboard-2026": 12,
         "policyengine-core": 4,
         "policyengine.py": 27,
         "policyengine-us-data": 26,
         "policyengine-app": 155,
-        "policyengine-api": 362
+        "policyengine-api": 352
       },
       "monthlyPRs": [
         8,
         13,
         17,
-        12,
+        11,
         16,
         18,
         17,
@@ -47993,17 +47994,17 @@
         32
       ],
       "monthlyCommits": [
-        68,
-        142,
+        63,
+        137,
         114,
-        89,
+        87,
         103,
         98,
         45,
         157,
         70,
         15,
-        27,
+        39,
         72
       ],
       "prs": [
@@ -56694,18 +56695,6 @@
       ],
       "commits": [
         {
-          "sha": "4aec5db5f34a6a8d3452b86831dd76231b317a23",
-          "message": "Merge pull request #28 from PolicyEngine/feat/filter-by-month",
-          "date": "2025-04-11T17:19:56.000-07:00",
-          "repo": "household-api-analytics"
-        },
-        {
-          "sha": "717b881da49299d695eaa89e91c88f6ea3e418dd",
-          "message": "feat: Add time selection options",
-          "date": "2025-04-11T17:18:38.000-07:00",
-          "repo": "household-api-analytics"
-        },
-        {
           "sha": "7c545d2ca8caf39e568b4b8808efff17812a2838",
           "message": "feat: Apply indexing to parameter-values (#50)",
           "date": "2025-12-30T02:16:57.000+04:00",
@@ -57292,6 +57281,18 @@
           "message": "Update PolicyEngine Household API",
           "date": "2025-08-29T01:24:02.000Z",
           "repo": "policyengine-household-api"
+        },
+        {
+          "sha": "b13fc08a16a86fae4358a95d2886fc6d0a028b5c",
+          "message": "Merge pull request #902 from PolicyEngine/bump-policyengine-us-to-1.380.0",
+          "date": "2025-08-28T22:53:45.000-02:30",
+          "repo": "policyengine-household-api"
+        },
+        {
+          "sha": "31f381752cfe0ea643e4d8cc4221488b23644af4",
+          "message": "Update PolicyEngine Household API",
+          "date": "2025-08-27T23:15:52.000Z",
+          "repo": "policyengine-household-api"
         }
       ]
     },
@@ -57305,12 +57306,12 @@
         "bio": "Research Associate @PolicyEngine"
       },
       "stats": {
-        "commits": 699,
+        "commits": 749,
         "prs": 158,
         "prs_merged": 118,
         "reviews": 44,
         "issues": 69,
-        "repos": 21
+        "repos": 22
       },
       "repoCommits": {
         "policyengine-uk-event-2025": 17,
@@ -57320,6 +57321,7 @@
         "UK-tax-dashboard": 3,
         "uk-autumn-budget-dashboard": 50,
         "policyengine-claude": 3,
+        "uk-autumn-budget-dashboard-2026": 50,
         "policyengine-uk-data": 60,
         "uk-two-child-limit-app": 17,
         "policyengine-canada": 5,
@@ -57355,9 +57357,9 @@
         61,
         47,
         19,
-        40,
-        133,
-        67
+        51,
+        149,
+        90
       ],
       "prs": [
         {
